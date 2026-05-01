@@ -1,0 +1,7 @@
+# Publish-only repository.
+# Keep generated public assets trackable and ignore all intermediate workflow files.
+*
+!.gitignore
+!*.html
+!*.css
+!*.xml
