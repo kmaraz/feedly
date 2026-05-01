@@ -4,46 +4,62 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Thu, 30 Apr 2026 21:36:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 07:22:04 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] The Pulse: token spend breaks budgets – what next?</title>
-      <link>https://blog.pragmaticengineer.com/the-pulse-token-spend-breaks-budgets-what-next/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/c6a8639eb7c874c26ad9406ea4d7f5d64b046855</guid>
-      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
+      <title>[Reddit Programming] You can beat the binary search</title>
+      <link>https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/aa36124c846a60fbadc49c2375ae2345aa8e585e</guid>
+      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Daniel Lemire benchmarks a SIMD Quad search for Roaring Bitmap-style sorted 16-bit arrays and shows that a hybrid of block-level interpolation and SIMD equality checks can beat ordinary binary search, with different warm-cache and cold-cache behavior on Intel and Apple hardware.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Classic asymptotics are not the whole story when the data shape is small fixed-width values and the CPU can compare many lanes at once.&lt;/li&gt;&lt;li&gt;The algorithm narrows to 16-element blocks, then uses SIMD for the final membership check instead of continuing scalar binary search.&lt;/li&gt;&lt;li&gt;Warm-cache and cold-cache results diverged across Intel and Apple systems, so hardware-specific benchmarking is part of the design work.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] You’ve Got (Too Much) Mail: Behind the Scenes of the 3/25/26 Voice Outage</title>
+      <link>https://discord.com/blog/behind-the-scenes-of-the-3-25-26-voice-outage</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/b3a2384cfcd735baa6203eea1afd5d48c710698b</guid>
+      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Discord documents how a routine Kubernetes scaling change killed 17% of session processes, triggered reconnect storms, and then exposed a deeper Erlang/Elixir bottleneck where supervisor mailbox growth blocked outbound voice-syncer connections and service discovery updates.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Graceful-drain checks need to be enforced by deployment machinery, not left as best-effort behavior during scale-down.&lt;/li&gt;&lt;li&gt;Per-host rate limits can become too permissive after a migration that changes pod count or host topology.&lt;/li&gt;&lt;li&gt;Shared connection-pool supervisors and service-discovery clients can turn an upstream traffic spike into a system-wide recovery blocker.&lt;/li&gt;&lt;li&gt;Discord’s fixes combined admission control, more accurate upstream rate limits, extra capacity, and partitioned supervision for connection pools.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] “Performing” Consensus</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t07h8c/performing_consensus/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/e5785b91a343ed6bba96084fa1af99f321195962</guid>
+      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread surfaces a common planning failure: approval sections and lightweight docs can create the appearance of consensus while postponing the hard choices about tradeoffs, ownership, dates, and technical direction.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A charter can establish broad intent, but it should not be treated as technical alignment when the hard decisions are absent.&lt;/li&gt;&lt;li&gt;Reviewers should ask for explicit choices, risks, and rejected alternatives instead of signing vague coordination documents.&lt;/li&gt;&lt;li&gt;Consensus theater often persists because a doc with no concrete commitments is socially hard to reject.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How many handoffs are between a merged PR and production on your team?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t02lq7/how_many_handoffs_are_between_a_merged_pr_and/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/25cdb08ba47792ef9c28e3703fe3e1e4aff851d8</guid>
+      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A team measured seven handoffs between merge and production and found wait time dominated active work; the useful part is the comparison with teams that move compliance, testing, and approval checks before merge or automate deployment after merge.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Measure handoff wait time separately from active engineering time; the queue is often the real delivery bottleneck.&lt;/li&gt;&lt;li&gt;Compliance and risk checks can be expressed as merge conditions or risk-tiered controls instead of manual post-merge gates for every change.&lt;/li&gt;&lt;li&gt;A merged PR should ideally enter a predictable automated path, with manual intervention reserved for exceptional risk.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] For retired engineers, how did you plot your career?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t05rv8/for_retired_engineers_how_did_you_plot_your_career/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/f82493a1e0345086041206a9474c521762620b0a</guid>
+      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread has useful career-risk framing around AI and long software careers: long-term prediction is weak, so the durable strategy is to optimize explicitly for savings rate, interesting problems, adaptability, and roles where engineering judgment still matters.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Do not plan around a precise 20-year job forecast; choose what to optimize for and revisit that choice as the market changes.&lt;/li&gt;&lt;li&gt;Financial independence buys the option to keep building software on your own terms rather than under every industry cycle.&lt;/li&gt;&lt;li&gt;Several comments point toward platform, quality, systems design, and organizational judgment as durable complements to AI-assisted coding.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Engineering] TBM 420: The AI Playbook Puzzle</title>
+      <link>https://cutlefish.substack.com/p/tbm-420-the-ai-playbook-puzzle</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/8f8d11da65b2cdf3b16511f589f4c2e73f177963</guid>
+      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
       <category>Engineering</category>
-      <description>&lt;p&gt;Gergely Orosz reports that AI coding token spend is rising roughly an order of magnitude at many companies, forcing teams to choose between open-ended adoption, model routing, cheaper defaults, pooled budgets, and stronger ROI measurement.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Uncapped agent usage can turn model choice into a material engineering cost, not just a tooling preference.&lt;/li&gt;&lt;li&gt;Teams are starting with cheaper default models, high-end model restrictions, monthly spend reporting, and outcome measurement.&lt;/li&gt;&lt;li&gt;The real bottleneck is shifting from code generation to review, product direction, and governance of when expensive models are justified.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;John Cutler argues that AI playbooks mostly amplify existing operating models: weak strategy, static PRDs, stage gates, and checkbox transformation get worse faster, while living context, adversarial thinking, prototyping, and better conversations become more powerful.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Adding AI to a broken process usually increases polish and velocity without improving judgment.&lt;/li&gt;&lt;li&gt;The useful AI leverage is in keeping context current, sharpening reviews, improving conversations, and stress-testing assumptions.&lt;/li&gt;&lt;li&gt;The meta-skill is reading context: knowing which old practices still apply, which constraints changed, and which habits need to be retired.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] The Importance of Native Randomness in CSS</title>
-      <link>https://css-tricks.com/the-importance-of-native-randomness-in-css/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/f69752bd776b3da91889d8a04c44bb233e6fdb0b</guid>
-      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
+      <title>[Informatics] Designing Stable Interfaces For Streaming Content</title>
+      <link>https://smashingmagazine.com/2026/04/designing-stable-interfaces-streaming-content/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/dd1be9c00fd2680fd8ec0006214eb328551c8050</guid>
+      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Alvaro Montoro explains why native CSS randomization matters: it moves visual variation back into the styling layer instead of pushing layout decisions into JavaScript or build-time tooling.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Past CSS randomness patterns were deterministic hacks, build-time freezes, server-side injections, or JavaScript workarounds.&lt;/li&gt;&lt;li&gt;CSS Values and Units Level 5 adds `random()` and `random-item()` so the browser can resolve variation inside CSS itself.&lt;/li&gt;&lt;li&gt;The useful framing is architectural: use the least powerful web layer that can express the behavior cleanly.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Philosophy] Pluralistic: How not to ban surveillance pricing (30 Apr 2026)</title>
-      <link>https://pluralistic.net/2026/04/30/something-must-be-done/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/a12a7f6f8103f43825b3d047e7801fae5f6d8b77</guid>
-      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
-      <category>Philosophy</category>
-      <description>&lt;p&gt;Cory Doctorow argues that Maryland&amp;#x27;s surveillance-pricing law is mostly theater because it narrows scope to groceries, preserves consent loopholes, exempts common pricing tactics, and blocks private enforcement.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Regulation can fail by design when loopholes are placed in scope, consent, exemptions, and enforcement.&lt;/li&gt;&lt;li&gt;Surveillance pricing is framed as a data-driven way to extract more from people with less leverage, not as neutral personalization.&lt;/li&gt;&lt;li&gt;The policy lesson transfers to tech governance: read the enforcement mechanism before trusting the headline claim.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] OpenData Buffer: HA pipelines without Kafka</title>
-      <link>https://www.opendata.dev/blog/buffer-ha-pipelines-without-kafka/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/59ba2127c58513c331c9cd3000b1d9efc5ee50b4</guid>
-      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;OpenData describes a Kafka alternative for telemetry-style ingestion that uses object storage, append-only data files, and a manifest to trade Kafka&amp;#x27;s general log semantics for lower operational and monthly cost.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Telemetry and event pipelines often need durable buffering and at-least-once delivery, not strict ordering or full consumer-group semantics.&lt;/li&gt;&lt;li&gt;A narrower protocol over object storage can cut cost sharply when the workload has fixed participants and tolerates sub-second to low-second latency.&lt;/li&gt;&lt;li&gt;The tradeoff is less flexibility: throughput, partitioning, participant count, and latency tuning move into explicit system design decisions.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] No, Really, Bash Is Not Enough: Why Large-Scale CI Needs an Orchestrator</title>
-      <link>https://www.iankduncan.com/engineering/2026-02-06-bash-is-not-enough</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/70a789a246882590bf3460f78aa354dc81d79541</guid>
-      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Ian Duncan argues that shell scripts are fine for linear CI but break down once pipelines need dependency graphs, parallelism, artifact passing, conditional execution, caching, and failure propagation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A mature CI pipeline is a scheduler plus dependency model, not a longer shell script.&lt;/li&gt;&lt;li&gt;The article connects practical CI pain to build-system theory: schedulers, rebuilders, traces, and minimal rebuilds are real design choices.&lt;/li&gt;&lt;li&gt;Keeping a script entrypoint is compatible with using an orchestrator; the boundary is where coordination logic starts to dominate command execution.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Joas Pambou gives a practical frontend treatment of streaming interfaces, covering scroll ownership, layout stability, render buffering, interrupted streams, retry state, live regions, keyboard access, and reduced-motion concerns.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Auto-scroll should follow the stream only while the user is already at the bottom; scrolling up must transfer control back to the user.&lt;/li&gt;&lt;li&gt;Avoid rebuilding streaming DOM on every token; append to live text nodes and batch writes with requestAnimationFrame.&lt;/li&gt;&lt;li&gt;Interrupted streams need explicit cleanup, incomplete-state labeling, retry affordances, and accessible announcements through live regions.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
