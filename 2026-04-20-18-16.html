@@ -4,62 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-20T16:27:38.926Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-20T16:27:38.926Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Tech</h2>
         <article class="card">
           <h3><a href="https://www.debugbear.com/blog/shopify-speed-optimization">Shopify Speed Optimization: Fixing The Real Bottlenecks</a></h3>
           <p>DebugBear reframes Shopify performance work around bottlenecks users feel first: overweight hero media, synchronous carousel code, and third-party scripts that delay the initial paint. The practical value is the concrete sequencing and thresholds, including smaller hero assets, poster images before video, and treating app script execution order as a first-class architectural concern.</p>
           <ul><li>Optimize the hero section before lower-page assets because above-the-fold media dominates perceived speed and LCP.</li><li>Poster images preserve video-driven design without making the video file the initial rendering bottleneck.</li><li>Heavy carousel libraries hurt twice: transfer size and main-thread execution before the hero can paint.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://stripe.dev/blog/payment-api-design">Stripe’s payments APIs: The first 10 years</a></h3>

@@ -4,69 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-26T11:57:47.711Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-26T11:57:47.711Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Engineering</h2>
         <article class="card">
           <h3><a href="https://cutlefish.substack.com/p/tbm-419-stop-being-so-negative-stop">TBM 419: Stop Being So Negative! Stop Being So Naive!</a></h3>
           <p>John Cutler separates outcome optimism from capability optimism: one protects momentum, the other pressure-tests reality so the plan survives contact with it. The useful model is explicit sequencing between debate mode and execution mode, with responsibility on question-askers to connect risks to constructive action.</p>
           <ul><li>Teams need both morale-preserving optimism and risk-facing optimism; each protects a different part of delivery.</li><li>Conflict becomes useful when the group names the mode: pressure-test the route first, then commit to the climb.</li><li>Critical questions lose value when they raise fear without proposing a response or a decision path.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Informatics</h2>
         <article class="card">
           <h3><a href="https://www.bennadel.com/blog/4890-ai-makes-sitting-with-discomfort-feel-shameful.htm">AI Makes Sitting With Discomfort Feel Shameful</a></h3>
           <p>Ben Nadel documents a real cost of AI tooling hype: slow technical exploration now feels socially inefficient even when it builds durable judgment, taste, and debugging depth. The piece is a useful counterweight to productivity framing because it names the craft value of sitting with a hard problem before delegating it.</p>
           <ul><li>AI changes the emotional baseline around slow learning; exploratory discomfort starts to feel like waste.</li><li>Manual investigation still builds domain judgment that short prompting loops often skip.</li><li>The productivity story is incomplete when it ignores taste, context, and the ability to reason through unfamiliar failure modes.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://shbhmrzd.github.io/java/concurrency/virtual-threads/2026/04/25/java-virtual-threads-pinning-and-the-deadlock-problem.html">Java Virtual Threads: The Pinning Problem, the Deadlock, and the Fix in Java 24</a></h3>

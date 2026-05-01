@@ -4,62 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-24T13:10:38Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-24T13:10:38Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Tech</h2>
         <article class="card">
           <h3><a href="https://www.debugbear.com/blog/which-government-website-is-the-fastest">Which Country Has The Fastest Government Website?</a></h3>
           <p>DebugBear compares 25 government homepages using CrUX LCP, CLS, and INP data, then ties the ranking to concrete implementation choices. The useful part is the performance diagnosis: gov.uk wins through a mobile-first text-heavy design, CDN investment, and low TTFB, while slower sites expose common LCP failures such as render-blocking resources, background-image discovery delays, late client-side rendering, and hidden content.</p>
           <ul><li>Real-user Core Web Vitals are a better starting point than local lab scores when comparing public-service websites.</li><li>Text-first layouts, fast TTFB, and simple initial rendering create measurable LCP advantages.</li><li>Background images, render-blocking JavaScript, and CSS-hidden content can turn otherwise reasonable pages into slow pages.</li><li>Performance and accessibility overlap for public services because slow pages exclude users on weaker devices and networks.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://www.reddit.com/r/programming/comments/1su7irb/why_i_spent_years_trying_to_make_css_states/">Why I spent years trying to make CSS states predictable</a></h3>

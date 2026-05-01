@@ -4,64 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #f5efe4;
-        --ink: #1f1b16;
-        --card: #fffaf2;
-        --accent: #a64b00;
-        --line: #d9cbb5;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        background:
-          radial-gradient(circle at top left, rgba(166, 75, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f7f0e6 0%, var(--bg) 100%);
-        color: var(--ink);
-      }
-      main {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      h1, h2, h3 {
-        margin: 0;
-      }
-      h1 {
-        font-size: clamp(2rem, 4vw, 3.4rem);
-        margin-bottom: 12px;
-      }
-      .meta {
-        color: #5f5648;
-        margin-bottom: 36px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 20px;
-        box-shadow: 0 10px 30px rgba(54, 36, 12, 0.05);
-        margin-top: 16px;
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-10T09:51:11.252Z</p>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-10T09:51:11.252Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
       
-    <section>
+    <section class="digest-section">
       <h2>Engineering</h2>
       
       <article class="card">
@@ -71,7 +26,7 @@
       </article>
     </section>
 
-    <section>
+    <section class="digest-section">
       <h2>Programming</h2>
       
       <article class="card">
@@ -81,7 +36,7 @@
       </article>
     </section>
 
-    <section>
+    <section class="digest-section">
       <h2>Tech</h2>
       
       <article class="card">
@@ -91,7 +46,7 @@
       </article>
     </section>
 
-    <section>
+    <section class="digest-section">
       <h2>Reddit Programming</h2>
       
       <article class="card">

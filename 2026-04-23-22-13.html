@@ -4,69 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-23T20:19:48.868Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-23T20:19:48.868Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Engineering</h2>
         <article class="card">
           <h3><a href="https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/">The Pulse: ‘Tokenmaxxing’ as a weird new trend</a></h3>
           <p>Gergely Orosz documents how internal token leaderboards at Meta, Microsoft, and Salesforce turned AI adoption into a gamified spend metric, pushing engineers toward wasteful prompting, throwaway agent runs, and avoidable quality failures. The strongest operational lesson is Shopify’s narrower model: measure usage, cut off runaway spend, and inspect expensive sessions without rewarding raw token volume.</p>
           <ul><li>Token totals become a gamed proxy metric as soon as status, review pressure, or quotas are attached to them.</li><li>Leaderboard-driven AI adoption can reduce quality by rewarding volume over outcome and by normalizing unnecessary agent runs.</li><li>Circuit breakers and review of unusual spend are safer controls than public rankings of who burned the most tokens.</li><li>Internal overuse incentives may also be serving as an expensive way to generate real-world traces for model training.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Informatics</h2>
         <article class="card">
           <h3><a href="https://css-tricks.com/recreating-apples-vision-pro-animation-in-css/">Recreating Apple’s Vision Pro Animation in CSS</a></h3>
           <p>John Rhea rebuilds Apple’s Vision Pro scroll animation with modern CSS primitives, using view timelines, sticky positioning, grid-overlaid background layers, and viewport-derived geometry to reproduce a complex staged effect without JavaScript scroll control. The useful signal is in the implementation tradeoffs: responsive motion becomes tractable, while Firefox support and frame-by-frame image swapping remain hard limits.</p>
           <ul><li>A single CSS grid cell with layered background elements can recreate the front-and-back depth effect without absolute-position sprawl.</li><li>View timelines plus a sticky container let the animation begin when the component enters view and stay pinned while it plays.</li><li>Custom properties derived from viewport dimensions make multi-stage translation distances responsive enough for intricate scroll animation.</li><li>Replacing scroll-scrubbed video with keyframed background-image swaps works as a proof of concept and increases asset and browser-support costs.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Philosophy</h2>
         <article class="card">
           <h3><a href="https://pluralistic.net/2026/04/23/poison-pill/">Pluralistic: The (other) problem with automatic conversion of free software to proprietary software (23 Apr 2026)</a></h3>

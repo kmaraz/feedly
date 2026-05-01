@@ -4,78 +4,41 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-18T13:35:20.286Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-18T13:35:20.286Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Informatics</h2>
         <p class="empty">No articles kept.</p>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Philosophy</h2>
         <article class="card">
           <h3><a href="https://pluralistic.net/2026/04/17/for-youze/">Pluralistic: Tiktokification shall set us free (17 Apr 2026)</a></h3>
           <p>Doctorow argues that platforms envy TikTok-style feeds because creators and AI slop can be optimized for engagement more predictably than friends, so social platforms are deliberately replacing the non-fungible social graph with interchangeable content. It is worth keeping because it provides a durable model for why algorithmic feeds and AI-generated media can weaken the very lock-in that made social networks valuable.</p>
           <ul><li>Friends are the platform&#x27;s stickiest asset because shared history is non-fungible and hard to replace elsewhere.</li><li>Reels, creators, and AI slop are fungible, which makes feeds easier to swap across competing platforms.</li><li>Platforms are trading long-term moat for short-term engagement by suppressing friend activity in favor of interchangeable content.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Other</h2>
         <p class="empty">No articles kept.</p>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Psychology</h2>
         <article class="card">
           <h3><a href="https://mindblog.dericbownds.net/2026/04/from-animal-to-humans-multimodality-as.html">From Animal to Humans - Multimodality as a safeguard of honesty in communication and language</a></h3>
           <p>This post summarizes an upcoming paper arguing that multimodal communication helps preserve honesty through cross-validation and harder-to-fake signal combinations, then adds a sharper commentary about digital environments where signals are already recombined by platforms and algorithms. It is worth keeping because it offers a useful model for evaluating communication quality in AI-mediated and socially mediated systems.</p>
           <ul><li>Multiple channels can improve honesty when they originate from one coherent source and can cross-check one another.</li><li>Digital platforms weaken that assumption by mixing personal intent with group style, packaging, ranking, and algorithmic amplification.</li><li>Reliable interpretation now requires reading the message, the framing conditions, and the circulation path together.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Visualization</h2>
         <p class="empty">No articles kept.</p>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sosciu/saving_challenging_projects_was_my_niche_but_ai/">Saving challenging projects was my niche, but AI codebases are making me miserable</a></h3>

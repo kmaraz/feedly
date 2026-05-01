@@ -4,69 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-30T08:05:19.691Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-30T08:05:19.691Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Informatics</h2>
         <article class="card">
           <h3><a href="https://css-tricks.com/almanac/functions/c/contrast-color/">contrast-color()</a></h3>
           <p>The CSS-Tricks almanac entry explains the CSS Color 5 contrast-color() function, which maps a background color to black or white text. The useful detail is its narrow contract: it simplifies theme and swatch defaults, but only returns black or white and still needs @supports and fallback planning.</p>
           <ul><li>contrast-color() is a browser-native way to choose black or white text against a supplied color.</li><li>The function helps design-system defaults, badges, and color swatches, but it is not a full contrast engine for arbitrary palettes.</li><li>Use feature queries and fallbacks because CSS Color 5 support is still an adoption boundary.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Visualization</h2>
         <article class="card">
           <h3><a href="https://flowingdata.com/2026/04/29/masterclass-in-misleading-charts/">Masterclass in misleading charts</a></h3>
           <p>FlowingData points to Hank Green&#x27;s teardown of a climate-chart video as a compact lesson in chart dishonesty: cherry-picked ranges, fabricated data, and calm narration can make manipulation feel reasonable. It connects to a broader defensive habit of checking encodings, scales, and framing before accepting the visual claim.</p>
           <ul><li>Misleading charts often work by combining real-looking visual form with selective or invented data.</li><li>Axes, scale ranges, and omitted context should be inspected before the conclusion is trusted.</li><li>Calm delivery and polished presentation are not evidence; the data pipeline behind the chart still matters.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://medium.com/p/fe8ad3eae36c">Rate Limiters Are System Boundaries</a></h3>

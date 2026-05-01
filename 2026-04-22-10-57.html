@@ -4,69 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-22T09:10:06Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-22T09:10:06Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Engineering</h2>
         <article class="card">
           <h3><a href="https://cutlefish.substack.com/p/tbm-418-campfires-trails-and-quests">TBM 418: Campfires, Trails, and Quests</a></h3>
           <p>John Cutler argues that AI improves product work when it enriches the team’s loop of traces and conversations, and worsens it when it mass-produces polished artifacts that preserve broken planning models. The useful pattern is multiplayer: pair prompting, shared context pointers, and AI-assisted synthesis that compound into better conversations and fresher mental models.</p>
           <ul><li>AI amplifies broken product rituals if it is used to mass-produce requirements, plans, and status artifacts without changing how teams learn.</li><li>Shared context pointers, pair prompting, and evolving traces make AI valuable because they raise the leverage of cross-functional conversations.</li><li>The core output of good AI collaboration is shared understanding that carries into later decisions, not a standalone deliverable.</li><li>Teams need loops where trails feed campfires and campfires update trails so the context graph keeps improving over time.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Psychology</h2>
         <article class="card">
           <h3><a href="https://mindblog.dericbownds.net/2026/04/the-physiology-of-agency-in-age-of-ai.html">The Physiology of Agency in the Age of AI</a></h3>
           <p>Deric Bownds argues that agency is a physiological, load-bearing emotion, so AI systems that shift people from initiating and judging work to merely ratifying machine suggestions could create learned-helplessness-like costs long before society notices them. The essay is strongest when it reframes AI agency loss as a design and public-health question rather than a free-will debate.</p>
           <ul><li>Wegner’s work on conscious will and Seligman’s learned helplessness research suggest perceived agency affects motivation, regulation, and health.</li><li>AI can preserve agency when the human remains the initiator, director, and final judge of the collaboration.</li><li>Systems that pre-structure reflection and decision-making too aggressively risk pushing users into passive approval loops.</li><li>Interface and workflow design should protect authorship and self-regulation, not only convenience and speed.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://incident.io/blog/bloom-filters">Bloom filters: the niche trick behind a 16× faster API | Blog | incident.io</a></h3>

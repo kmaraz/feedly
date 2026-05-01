@@ -4,62 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-15T22:12:16Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-15T22:12:16Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Engineering</h2>
         <article class="card">
           <h3><a href="https://cutlefish.substack.com/p/tbm-416-investment-stewardship-as">TBM 416: Investment Stewardship (As Habit)</a></h3>
           <p>John Cutler argues that engineering ROI is a stewardship practice, not a spreadsheet exercise: teams earn the right to talk about return only by building leading indicators, explicit bets, and hiring discipline over time. It is worth keeping because it gives a durable frame for evaluating engineering investment without collapsing into vanity metrics or fake precision.</p>
           <ul><li>Engineering ROI work starts long before a finance challenge, through repeated habit-building around leading indicators, hypotheses, and updates.</li><li>Headcount is a stewardship question; adding people to a dysfunctional system often hides the underlying problem instead of improving return.</li><li>Useful investment models are directional and iterative, which makes honest proxies and Bayesian-style updates more valuable than precise-looking nonsense.</li><li>Finance conversations improve when product and engineering teams make the causal chain explicit and accept that many outcomes arrive with long lags.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1smeh9m/dealing_with_a_team_with_primitive_infra_that/">Dealing with a Team with primitive Infra that seems fine with it. Cultural Mismatch?</a></h3>

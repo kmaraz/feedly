@@ -4,62 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-21T22:12:17Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-21T22:12:17Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Informatics</h2>
         <article class="card">
           <h3><a href="https://www.smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/">Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design</a></h3>
           <p>Eleanor Hecks shows that common inactivity-based session expiry patterns penalize users who read slowly, navigate with assistive tech, or need more time for motor input, then turns the fix into concrete design guidance around advance warnings, extend-session controls, and preserved progress.</p>
           <ul><li>Treat inactivity heuristics as an accessibility risk because reading, screen-reader navigation, and slower motor input can look idle.</li><li>Warn before expiry and provide an accessible control to extend the session.</li><li>Preserve progress with auto-save so reauthentication does not erase completed work.</li><li>Absolute timeouts are often easier to communicate and recover from than silent activity-based timeouts.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/">Announcing TypeScript 7.0 Beta</a></h3>

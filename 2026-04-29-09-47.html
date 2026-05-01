@@ -4,76 +4,39 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-29T07:50:52.659Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-29T07:50:52.659Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Frontend</h2>
         <article class="card">
           <h3><a href="https://blog.angular.dev/back-from-baby-bonding-agents-building-blocks-and-the-future-of-ai-engineering-07c0afb816a3?source=rss----447683c3d9a3---4">Back from Baby Bonding: Agents, Building Blocks, and the Future of AI Engineering</a></h3>
           <p>The Angular team describes agent skills as reusable instruction, script, and resource packages, then uses the Angular AI Tutor to show why AI product logic needs routing and modular context blocks. The useful part is the failure mode: one large rules file worked for one tutor, then became coupled, duplicated, and hard to update across frameworks.</p>
           <ul><li>Treat agent instructions as a context pipeline with routing, reuse, token budget, and stability concerns.</li><li>A single large prompt can ship a working product, then become the maintenance bottleneck when syntax and behavior need separate evolution.</li><li>Reusable AI tooling needs explicit mechanisms for skill selection; file splitting alone leaves the model guessing which block applies.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Psychology</h2>
         <article class="card">
           <h3><a href="https://theconversation.com/placebo-effect-can-work-as-well-as-real-medicine-but-your-body-may-need-permission-to-use-it-279923">Placebo effect can work as well as real medicine - but your body may need permission to use it</a></h3>
           <p>The article frames placebo response as a measurable biological system gated by expectation, context, and trusted social cues. Its strongest idea is the resource-allocation model: the body may wait for safety signals before spending energy on immune or recovery responses, which also explains why ritual and authority can manipulate the same mechanism.</p>
           <ul><li>Placebo response is presented as biology: endorphins, dopamine, immune signaling, and hormone changes can move after contextual cues.</li><li>The evolutionary framing treats healing as costly resource allocation, with trusted social signals acting as permission to spend resources.</li><li>The same mechanism helps explain why wellness rituals and expensive inert treatments can gain power through authority and setting.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Visualization</h2>
         <article class="card">
           <h3><a href="https://flowingdata.com/2026/04/29/writing-style-as-your-digital-fingerprint/">Writing style as your digital fingerprint</a></h3>
           <p>FlowingData points to writing-style identification as a practical anonymity problem for modern LLMs. The notable signal is the reported ability to identify an author from unpublished writing samples, which makes style itself a privacy surface for public posts, private drafts, and pseudonymous accounts.</p>
           <ul><li>Stylometry plus stronger LLMs can make writing style behave like an identifier.</li><li>Pseudonymous writing has a new linkage risk when enough public or private samples exist.</li><li>AI privacy reviews should include authorship inference, especially for internal documents, anonymous feedback, and public community participation.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1syco4s/not_once_in_12_years_have_i_found_ui_snapshot/">Not once in 12 years have I found UI snapshot testing useful</a></h3>

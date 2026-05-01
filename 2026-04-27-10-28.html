@@ -4,55 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-27T08:32:41Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-27T08:32:41Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Frontend</h2>
         <article class="card">
           <h3><a href="https://saschb2b.com/blog/react-compiler-year-in-review">The React Compiler at Eighteen Months: The Arc, the Debates, and What&#x27;s Next</a></h3>
@@ -63,21 +26,21 @@
           <p>Jason Cohen gives a practical hiring test for roles where the interviewer cannot evaluate domain expertise: look for candidates whose ideas immediately change how you see your company, whose questions expose real constraints, and whose reference checks reveal the environment where they thrive.</p>
           <ul><li>Use real company problems to watch how a candidate clarifies constraints and applies experience.</li><li>Strong candidates make you want to act on their ideas during or immediately after the interview.</li><li>Reference checks should map fit conditions, failure modes, and natural strengths.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Informatics</h2>
         <article class="card">
           <h3><a href="https://blog.miguelgrinberg.com/post/how-bitwarden-encrypts-and-decrypts-secrets">How Bitwarden Encrypts and Decrypts Secrets</a></h3>
           <p>Miguel Grinberg explains Bitwarden and Vaultwarden client-side encryption: the passphrase unlocks a random master key, the master key splits into encryption and MAC keys, and the server stores encrypted blobs. The working Python walkthrough ties security architecture to concrete decryption and integrity checks.</p>
           <ul><li>Secrets are encrypted with a random master key; the account passphrase unlocks that master key.</li><li>Encrypted fields include IV, ciphertext, and HMAC; integrity verification precedes AES-CBC decryption.</li><li>Self-hosted password managers still depend on client trust and supply-chain exposure.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Psychology</h2>
         <article class="card">
           <h3><a href="https://aneeshsathe.com/the-lightening-of-intent/">The Lightening of Intent: Why Execution Got Cheap and Intent Got Live</a></h3>
           <p>Aneesh Sathe argues that AI collapses execution cost and makes intent the scarce resource: direction-setting, taste, and the ability to hold confusion long enough to choose. The piece is a useful mental model for why agents amplify explicit intent and also magnify poor intent.</p>
           <ul><li>When output generation gets cheap, selection and direction become bottlenecks.</li><li>AI makes infrastructure responsive to prompts, so taste and goal formulation govern quality.</li><li>Intent collisions will push competition toward better judgment, access, and substrate design.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Programming</h2>
         <article class="card">
           <h3><a href="https://essenceia.github.io/projects/floating_dragon/">Floating point from scratch: Hard Mode</a></h3>
@@ -88,7 +51,7 @@
           <p>Addy Osmani frames coding agents as model plus harness: prompts, tools, memory, sandboxes, hooks, observability, and verification loops. The core engineering point is to treat every repeated agent failure as harness feedback and encode durable guardrails around the model.</p>
           <ul><li>Capability often comes from tooling, context policy, and feedback loops around the model.</li><li>AGENTS files, skills, sandbox defaults, and verification hooks are production infrastructure.</li><li>Long-horizon agent work needs explicit planning, resumable filesystem state, and repeated verification.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://derekrodriguez.dev/parse-dont-validate-through-the-years-with-c-/">Parse, don&#x27;t validate through the years with C++</a></h3>

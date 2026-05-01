@@ -4,55 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-11T21:09:25.653Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-11T21:09:25.653Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Programming</h2>
         <article class="card">
           <h3><a href="https://www.reddit.com/r/programming/comments/1sgkrif/signals_are_not_guarantees_the_mismatch_between/">Signals Are Not Guarantees - the mismatch between what e2e tests say and what they actually check</a></h3>
@@ -71,7 +34,7 @@
           <p>Michael Stapelberg argues that incident response gets needlessly delayed when software cannot clearly report what build is running. It is worth keeping because the fix is simple and durable: stamp version data into builds, plumb it through runtime surfaces, and report it where operators debug.</p>
           <ul><li>Version reporting is operational tooling, not cosmetic metadata.</li><li>The most useful identifier is the VCS revision because other release details can be derived from it.</li><li>Runtime diagnostics should report the effective running binary and loaded configuration, not only the invoked binary.</li><li>Clear build stamps remove hours of uncertainty during rollback, reproduction, and support work.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>ExperiencedDevs</h2>
         <article class="card">
           <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sg1glq/ive_been_trying_to_work_towards_level_5/">I&#x27;ve been trying to work towards &quot;Level 5&quot; AI-assisted development for a year. I&#x27;m not quite there, but this is the flow that&#x27;s working for me.</a></h3>

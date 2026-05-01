@@ -4,55 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-14T08:40:57Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-14T08:40:57Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Informatics</h2>
         <article class="card">
           <h3><a href="https://leaddev.com/uncategorized/the-architecture-gap-your-ai-agent-will-expose">The architecture gap your AI agent will expose</a></h3>
@@ -63,21 +26,21 @@
           <p>LeadDev frames AI-assisted development as a code-review bottleneck problem, not a coding-speed problem. It is worth keeping because it combines survey data with a useful shift in review practice: humans are moving from line-by-line inspection toward validating intent, constraints, and the output of earlier automated checks.</p>
           <ul><li>AI increases code volume and release size faster than manual review capacity grows.</li><li>Human review is moving left toward specs, acceptance criteria, and pre-merge validation rather than only reading final diffs.</li><li>Legible AI-generated code can still hide more logic, security, and maintainability defects than human-written code.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Tech</h2>
         <article class="card">
           <h3><a href="https://3perf.com/blog/chrome-throttling/">Chrome DevTools Throttling Is Not Accurate</a></h3>
           <p>This article explains why Chrome DevTools network throttling is a rough request-level approximation rather than a faithful model of real slow networks. It is worth keeping because it gives a concrete reason many performance investigations go wrong and names better packet-level alternatives.</p>
           <ul><li>DevTools splits bandwidth across requests and misses packet-level behavior such as prioritization, loss, and handshake effects.</li><li>Critical resources can appear much slower in DevTools than they do on realistic mobile networks.</li><li>Use packet-level tools like WebPageTest, Network Link Conditioner, or sitespeed throttling when network realism matters.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Visualization</h2>
         <article class="card">
           <h3><a href="https://flowingdata.com/2026/04/14/william-s-cleveland-rip/">William S. Cleveland, RIP</a></h3>
           <p>This obituary is a compact reminder of how much modern visualization still inherits from William Cleveland’s work on graphical perception and data-first statistical practice. It is worth keeping because it ties current charting habits back to the researcher who helped turn visualization into a disciplined field.</p>
           <ul><li>Cleveland helped shift statistics toward learning from real data instead of centering only mathematical theory.</li><li>His research on graphical perception shaped later visualization work and many everyday charting conventions.</li><li>Foundational texts and field-building ideas still matter because modern tooling quietly embeds their assumptions.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://www.reddit.com/r/programming/comments/1skg8vj/everything_should_be_typed_scalar_types_are_not/">Everything Should Be Typed: Scalar Types Are Not Enough</a></h3>

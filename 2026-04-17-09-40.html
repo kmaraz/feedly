@@ -4,69 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feedly Digest</title>
-    <style>
-      :root {
-        --bg: #f4efe7;
-        --card: #fffaf3;
-        --ink: #1d1a16;
-        --line: #d8c8b0;
-        --accent: #9f4a00;
-      }
-      body {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
-          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
-      }
-      main {
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 48px 20px 80px;
-      }
-      .meta {
-        color: #5f5549;
-        margin-bottom: 32px;
-      }
-      section {
-        margin-bottom: 36px;
-      }
-      .card {
-        margin-top: 16px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 18px 20px;
-        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
-      }
-      a {
-        color: var(--accent);
-      }
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <h1>Feedly Digest</h1>
-      <p class="meta">Generated: 2026-04-17T07:51:31Z</p>
-      <section>
+      <header class="page-header">
+        <div>
+          <h1>Feedly Digest</h1>
+          <p class="meta">Generated: 2026-04-17T07:51:31Z</p>
+        </div>
+        <a class="nav-link" href="./archive.html">Archive</a>
+      </header>
+      <section class="digest-section">
         <h2>Engineering</h2>
         <article class="card">
           <h3><a href="https://cutlefish.substack.com/p/tbm-417-before-you-fire-all-your">TBM 417: Before You Fire All Your Glue People Because of AI</a></h3>
           <p>John Cutler examines how organizations misapply AI heuristics to invisible coordination work and end up stripping out the people who preserve context, follow-through, and cross-team coherence. It is worth keeping because it gives a durable test for deciding which work AI can accelerate and which work still depends on human glue.</p>
           <ul><li>Visible artifacts are a weak proxy for the coordination work underneath them; replacing the person while keeping the artifact can hollow out the system.</li><li>AI is strongest on work that teams already agree should happen and can describe clearly; ambiguous cross-functional maintenance needs a higher skepticism level.</li><li>Staff reductions driven by surface-level heuristics can create delayed structural failures that only appear after the coordinating people are gone.</li><li>Evaluate candidate AI substitutions by tracing who currently creates context, drives follow-through, and resolves edge-case ambiguity.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Informatics</h2>
         <article class="card">
           <h3><a href="https://css-tricks.com/the-javascript-module-system-architecture/">A Well-Designed JavaScript Module System is Your First Architecture Decision</a></h3>
           <p>Victor Amejimaobari argues that JavaScript modules define system boundaries, dependency direction, and team interfaces, then uses module graphs, barrel files, and coupling failures to show how module choices become architectural decisions. It is worth keeping because it turns everyday import and export choices into a concrete frontend maintainability model.</p>
           <ul><li>ESM static imports improve analyzability and tree-shaking, so module-system constraints shape build behavior as much as runtime behavior.</li><li>Module graphs expose circular dependencies, overloaded utility modules, and boundary violations early enough to prevent large refactors later.</li><li>Barrel files trade import convenience for build-time and bundle-size costs that become material in large frontends.</li><li>Module boundaries tend to mirror team boundaries, so ownership and communication patterns show up directly in architecture.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Programming</h2>
         <article class="card">
           <h3><a href="https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/">Capacity Efficiency at Meta: How Unified AI Agents Optimize Performance at Hyperscale</a></h3>
@@ -77,7 +40,7 @@
           <p>Meta lays out a post-quantum migration framework built around prioritization, cryptographic inventory, external dependency tracking, guardrails, and staged maturity levels from awareness to deployment. It is worth keeping because it turns a vague future-security concern into an operational migration program.</p>
           <ul><li>PQC readiness starts with inventory and prioritization, because teams cannot migrate what they have not mapped or ranked.</li><li>Migration levels provide a planning language for partial progress, which helps teams move before every dependency is resolved.</li><li>Guardrails matter alongside rollout: deprecating vulnerable key generation and API usage reduces fresh quantum debt during the migration.</li><li>Hybrid deployments provide a practical safety margin while PQC standards, hardware support, and implementations continue to mature.</li></ul>
         </article>
-      </section><section>
+      </section><section class="digest-section">
         <h2>Reddit Programming</h2>
         <article class="card">
           <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sn3v5u/reality_check_around_requirements_management/">Reality check around requirements management</a></h3>
