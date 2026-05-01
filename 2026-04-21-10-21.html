@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-21T08:31:07Z</p>
+      <section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://www.smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/">Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design</a></h3>
+          <p>Eleanor Hecks shows how ordinary session timeout policies become accessibility failures for users with motor, cognitive, or vision impairments, then turns the problem into concrete design guidance around warning windows, extend controls, and preserved progress.</p>
+          <ul><li>Inactivity heuristics can mistake reading, screen-reader navigation, and slower motor input for abandonment.</li><li>Warn before expiry and provide a simple way to extend the session without restarting the task.</li><li>Preserve draft state so reauthentication does not erase long forms or multi-step flows.</li><li>Explicit absolute time limits can be easier to handle than short activity-based timeouts.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sqnjk6/the_older_i_get_the_more_i_value_boring/">The older I get the more I value boring, predictable tooling</a></h3>
+          <p>This thread compresses a mature tooling heuristic: the cost of novelty shows up later as onboarding friction, opaque build setups, and painful production debugging, so experienced engineers increasingly optimize for tools that stay understandable under stress.</p>
+          <ul><li>Evaluate tooling by debuggability, operability, and handoff cost to the next engineer.</li><li>Novel abstractions age badly when failures require specialized tribal knowledge.</li><li>Production traceability is a stronger filter than launch-week excitement.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sqyvuu/discussion_the_gap_between_being_technically/">[Discussion] The gap between being technically right and actually influencing decisions</a></h3>
+          <p>The discussion argues that senior leverage increasingly comes from making technical context legible to people outside the code, especially by expressing the cost of inaction in terms stakeholders already manage.</p>
+          <ul><li>Technical accuracy and organizational influence are separate engineering skills.</li><li>Translate failure modes into cost, delay, or risk that non-technical stakeholders can act on.</li><li>Senior judgment includes deciding how to package the argument, not only whether the argument is correct.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sqns1g/how_do_you_answer_is_this_commit_in_prod_in_a/">How do you answer &#x27;is this commit in prod?&#x27; in a mostly-autonomous pipeline?</a></h3>
+          <p>This thread surfaces a concrete control-plane gap in AI-heavy delivery systems: code can move from patch to production automatically while teams still lack a single trustworthy answer about what commit is running where and when someone should have been told.</p>
+          <ul><li>Track lineage from commit to artifact to deployed workload in one queryable path.</li><li>Autonomous changes still need explicit audit and notification surfaces.</li><li>Deployment automation without rollout visibility creates avoidable operational risk.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sqghdc/our_devs_stopped_reading_security_scan_results/">Our devs stopped reading security scan results entirely and I&#x27;m not sure I can blame them</a></h3>
+          <p>The thread captures a familiar security failure mode: once scanner precision falls low enough, engineers rationally treat the tool as noise, and the security program starts training people to close real bugs as fast as fake ones.</p>
+          <ul><li>Detection trust is part of the control, because false positives erode the system itself.</li><li>Tune scanners and triage flows for signal quality, not coverage metrics alone.</li><li>Measure whether findings are trusted and acted on, not only whether tools emit them.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

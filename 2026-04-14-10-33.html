@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-14T08:40:57Z</p>
+      <section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://leaddev.com/uncategorized/the-architecture-gap-your-ai-agent-will-expose">The architecture gap your AI agent will expose</a></h3>
+          <p>This piece argues that agent failures are architectural failures as much as model failures. It is worth keeping because it turns vague AI-agent anxiety into concrete system design work: isolated test environments, explicit write boundaries, and observability built around reasoning and state transitions.</p>
+          <ul><li>AgentOps needs capabilities beyond MLOps, especially state management, tool orchestration, behavioral evaluation, and dynamic execution monitoring.</li><li>Small production-like testing pods are a practical way to observe agent behavior and limit blast radius before real deployment.</li><li>Engineering teams should define which systems are AI-writable, which remain human-controlled, and what logging is required to reconstruct agent decisions.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://leaddev.com/ai/as-ai-helps-us-write-more-code-whos-catching-the-bugs">Use of AI has us creating more code than we can review</a></h3>
+          <p>LeadDev frames AI-assisted development as a code-review bottleneck problem, not a coding-speed problem. It is worth keeping because it combines survey data with a useful shift in review practice: humans are moving from line-by-line inspection toward validating intent, constraints, and the output of earlier automated checks.</p>
+          <ul><li>AI increases code volume and release size faster than manual review capacity grows.</li><li>Human review is moving left toward specs, acceptance criteria, and pre-merge validation rather than only reading final diffs.</li><li>Legible AI-generated code can still hide more logic, security, and maintainability defects than human-written code.</li></ul>
+        </article>
+      </section><section>
+        <h2>Tech</h2>
+        <article class="card">
+          <h3><a href="https://3perf.com/blog/chrome-throttling/">Chrome DevTools Throttling Is Not Accurate</a></h3>
+          <p>This article explains why Chrome DevTools network throttling is a rough request-level approximation rather than a faithful model of real slow networks. It is worth keeping because it gives a concrete reason many performance investigations go wrong and names better packet-level alternatives.</p>
+          <ul><li>DevTools splits bandwidth across requests and misses packet-level behavior such as prioritization, loss, and handshake effects.</li><li>Critical resources can appear much slower in DevTools than they do on realistic mobile networks.</li><li>Use packet-level tools like WebPageTest, Network Link Conditioner, or sitespeed throttling when network realism matters.</li></ul>
+        </article>
+      </section><section>
+        <h2>Visualization</h2>
+        <article class="card">
+          <h3><a href="https://flowingdata.com/2026/04/14/william-s-cleveland-rip/">William S. Cleveland, RIP</a></h3>
+          <p>This obituary is a compact reminder of how much modern visualization still inherits from William Cleveland’s work on graphical perception and data-first statistical practice. It is worth keeping because it ties current charting habits back to the researcher who helped turn visualization into a disciplined field.</p>
+          <ul><li>Cleveland helped shift statistics toward learning from real data instead of centering only mathematical theory.</li><li>His research on graphical perception shaped later visualization work and many everyday charting conventions.</li><li>Foundational texts and field-building ideas still matter because modern tooling quietly embeds their assumptions.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1skg8vj/everything_should_be_typed_scalar_types_are_not/">Everything Should Be Typed: Scalar Types Are Not Enough</a></h3>
+          <p>This post argues that scalar types create false confidence because they preserve representation while erasing meaning. It is worth keeping because it makes a sharp practical case for newtypes or branded types around IDs, units, and money values to prevent entire classes of semantic bugs.</p>
+          <ul><li>Scalar sameness lets identifier, amount, and unit mixups compile cleanly even when the meaning is wrong.</li><li>Structs solve positional ambiguity, but they still accept semantically invalid assignments when fields share primitive types.</li><li>Distinct domain types let the compiler enforce meaning instead of only checking raw shape.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1skd09v/send_a_program_not_a_data_structure/">Send a Program, Not a Data Structure</a></h3>
+          <p>This essay uses PostScript, shaders, SQL, eBPF, and Pretext to explain a durable architecture choice: whether the sender should ship fixed data or a program for an interpreter. It is worth keeping because it gives a reusable mental model for recognizing when a growing data format is really trying to encode behavior.</p>
+          <ul><li>If receiver logic keeps expanding to interpret richer data, the format may be carrying behavior it should not carry.</li><li>Stable interpreters can concentrate complexity more cleanly than endlessly evolving wire formats and parsers.</li><li>Sending programs introduces security, debuggability, and termination concerns, so it is an architectural tradeoff, not a free win.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sk9bhg/i_learned_something_about_gpus_today/">I learned something about GPUs today</a></h3>
+          <p>This debugging writeup shows how per-instance integer-like data became unstable in a fragment shader because perspective-correct interpolation introduced tiny float drift on some GPUs. It is worth keeping because it captures a concrete GPU mental model that many experienced application developers still miss.</p>
+          <ul><li>Writing the same value to every vertex of a triangle does not guarantee identical values in every fragment on real hardware.</li><li>Float carriers for categorical or integer-like data can produce hardware-specific off-by-one behavior across shader stages.</li><li>Tiny biasing tricks or non-interpolated paths are often safer when shader data represents categories rather than measurements.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sk962j/a_bug_on_the_dark_side_of_the_moon/">A bug on the dark side of the Moon</a></h3>
+          <p>This piece describes finding a lock leak in Apollo Guidance Computer gyro code by distilling assembly into behavioral specifications with Allium. It is worth keeping because it combines historical failure analysis with a strong example of specification-driven auditing surfacing bugs in famous codebases.</p>
+          <ul><li>Heavily read or historically important code can still hide simple error-path bugs when scrutiny stays informal.</li><li>Behavioral specs are useful compression because they model lifecycle constraints that raw code browsing can miss.</li><li>The most revealing defects often live in abnormal exits where general cleanup runs and resource-specific cleanup does not.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sk7epc/antipatterns_in_event_modelling_passive/">Anti-patterns in event modelling - Passive Aggressive Events</a></h3>
+          <p>This article argues that many event-driven designs hide commands behind event language and then act surprised when critical-path workflows become brittle. It is worth keeping because it offers a clean test for separating true events from coordination messages that need explicit ownership and observability.</p>
+          <ul><li>If one specific consumer must take one specific next action, the message is effectively a command.</li><li>Events can be ignored, but commands can be rejected, and that difference shapes failure handling.</li><li>Critical-path workflows benefit from explicit coordinators and observability rather than passive chains of expected follow-up events.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sk70tx/why_i_built_a_new_http_client_after_working_on/">Why I built a new HTTP client after working on HTTPX</a></h3>
+          <p>This reflection from a former HTTPX maintainer argues that most HTTP clients couple HTTP semantics and transport mechanics too tightly. It is worth keeping because the separation it proposes is a portable design lesson, not just a library announcement.</p>
+          <ul><li>HTTP protocol behavior and transport behavior evolve at different speeds and deserve separate layers.</li><li>Strict protocol-transport separation improves testability and makes backend swaps less disruptive.</li><li>Many complaints about a client being slow are really complaints about its transport implementation, not its HTTP semantics.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

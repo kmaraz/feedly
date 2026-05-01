@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-28T16:15:17.020Z</p>
+      <section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://blog.axiorema.com/engineering/quickly-restoring-1m-files-from-backup/">Quickly restoring 1M+ files from backup</a></h3>
+          <p>The VisualSVN backup post documents a Windows restore problem where millions of small files make per-file durability flushing too slow. The useful lesson is the failure-analysis path: compare write-through, per-file flushing, repository repacking, and volume-level flushing, then choose a volume-root flush that trades documented guarantees for restore-time scalability.</p>
+          <ul><li>Durability cost scales with the number of flush boundaries; a million tiny files can turn correct per-file persistence into a recovery-time problem.</li><li>Backup restores need to preserve the exact backed-up shape; repacking during restore changes failure modes and integrity guarantees.</li><li>The chosen approach flushed the volume root directory through a normal directory handle, giving volume-level persistence behavior with ordinary process privileges.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://purplesyringa.moe/blog/wasm-is-not-quite-a-stack-machine/">Wasm is not quite a stack machine</a></h3>
+          <p>The Wasm post argues that WebAssembly’s stack-machine label hides the real programming model. Wasm encodes expression evaluation with a stack. Practical reuse, optimization, and control flow quickly move through locals, so experience from Forth-style stack VMs transfers poorly.</p>
+          <ul><li>Wasm has producers and consumers of stack values, with almost no general stack-manipulation operations.</li><li>Common subexpression reuse and non-trivial optimization require locals, which makes the model closer to expression trees plus registers.</li><li>Binary postfix encoding is an implementation convenience; the textual format already exposes a tree-shaped expression model.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://gitperf.com/">High Performance Git</a></h3>
+          <p>High Performance Git is a free book that treats Git as an object database, index, graph walker, filesystem cache, and transport protocol. It is directly relevant to large-repo and agent workflow debugging because it covers commit graphs, Bloom filters, MIDX, bitmaps, sparse-index, partial clone, protocol behavior, and recovery.</p>
+          <ul><li>Git slowness needs layer-by-layer diagnosis across objects, refs, index, history traversal, transport, and working-tree shape.</li><li>Large-repo fixes depend on data shape: sparse checkout, partial clone, commit-graph, bitmaps, and maintenance target different bottlenecks.</li><li>The book includes recovery and instrumentation material, which is more useful than another command cookbook.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://chrisdell.info/using-rust-to-build-a-1-dollar-handheld-gaming-console/">Using Rust to Build a $1 Handheld Gaming Console</a></h3>
+          <p>The embedded Rust write-up shows how a playable game fits on a CH32V003-class device by cutting abstractions to match hard memory and CPU limits. The valuable parts are concrete: skip a framebuffer, use the SSD1306 display memory as persistent state, replace floats with fixed-point math, and pack tile maps into ROM-friendly integers.</p>
+          <ul><li>A 2 KiB RAM target makes otherwise normal abstractions unaffordable; the display controller can become part of the memory model.</li><li>Software-emulated floating point caused the major performance cliff; fixed-point math restored frame rate.</li><li>Packing map tiles into `u64` columns made collision and rendering cheap enough for the device.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sxt1zu/is_trunk_based_development_a_wrong_choice_in_the/">Is Trunk Based Development a wrong choice in the IoT context?</a></h3>
+          <p>The r/ExperiencedDevs thread raises a useful deployment-shape question: trunk-based development advice changes when every merge triggers a heavy canary rollout to edge devices. The durable point is to separate branch length, release exposure, test cadence, and customer value, because web-app defaults can waste deployment capacity in IoT.</p>
+          <ul><li>Short-lived PRs still help review and integration, even when production rollout is expensive.</li><li>Dormant epic code needs feature flags, branch-by-abstraction, or a staging integration path that avoids repeated no-value edge deployments.</li><li>The core tradeoff is integration feedback versus deployment cost; treating trunk-based development as a slogan hides that design decision.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sxjkb2/asked_a_colleague_in_code_review_to_extract_magic/">Asked a colleague in code review to extract magic numbers and got told “devs should know”</a></h3>
+          <p>The code-review thread is a compact example of a small naming request turning into a trust problem. The useful lesson is that review comments need to identify the future-reader cost, while authors need to separate simplicity from implicit domain knowledge.</p>
+          <ul><li>Constants for latitude and longitude limits are less about knowing geography and more about preserving intent at the use site.</li><li>Review tone matters when the requested change is small; sarcasm converts a readability discussion into a collaboration issue.</li><li>A good review comment names the failure mode: future maintainers may scan the condition faster when the constraint is named.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sxi8d6/advice_on_what_i_can_do_to_change_things/">Advice on what I can do to change things</a></h3>
+          <p>The Staff engineer thread surfaces a common failure pattern: leadership asks for platform modernization, then fills the calendar with customer promises, AI-assisted scoping pressure, offshore-capacity fantasies, and unplanned on-call load. The transferable lesson is to turn vague influence into explicit constraints, tradeoff records, and named risks.</p>
+          <ul><li>A Staff role cannot fix an organization that rejects estimates; it can force decisions into written tradeoffs and visible capacity math.</li><li>AI-generated epics increase risk when nobody has enough system context to validate architecture, sequencing, and support cost.</li><li>Influence starts with narrowing the battlefield: pick one failure mode, define the owner, and make leadership accept or reject the cost.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

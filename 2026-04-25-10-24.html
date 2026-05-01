@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-25T08:28:10Z</p>
+      <section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://peterdohertys.website/blog-posts/dab-of-duck.html">A Dab of DuckDB</a></h3>
+          <p>The post shows DuckDB as a local analytical workbench that can query JSON, CSV, TSV, and Parquet with SQL, then gives a concrete 22,229-file JSON import example. The useful part is the boundary setting: DuckDB fits read-heavy single-node analytics on local SSDs, handles datasets larger than RAM, and can move from exploratory imports to file-backed databases and Parquet for repeat work.</p>
+          <ul><li>DuckDB can turn a directory of semi-structured files into a queryable SQL table with little setup.</li><li>The best fit is local analytical work where the dataset fits on one machine and random writes are limited.</li><li>Resource pragmas let you cap memory and CPU when running DuckDB inside normal developer workflows.</li><li>Converting raw JSON to Parquet or using file-backed databases changes performance characteristics for repeated analysis.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://blog.nilenso.com/blog/2026/01/20/lobsters-front-page/">How the Lobsters front page works</a></h3>
+          <p>The article reverse-engineers Lobsters ranking into base tag modifiers, logarithmic vote and comment-point terms, a fixed age term, and gates that limit controversial low-score posts. The algorithm section is concrete, and the closing reflection is useful because it separates ranking mechanics from the moderation, invite, and participation norms that shape the community.</p>
+          <ul><li>Tag modifiers and self-authored status set the initial rank before engagement arrives.</li><li>Votes and eligible comment points grow logarithmically, so early engagement matters more than late volume.</li><li>Age grows linearly and eventually dominates, which prevents old posts from staying on the front page indefinitely.</li><li>Community quality comes from moderation and participation incentives as much as ranking math.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://hhh.hn/rodecaster-duo-fw/">My audio interface has ssh enabled by default</a></h3>
+          <p>The author captures a Rodecaster Duo firmware update, finds a gzipped tarball without signature enforcement, observes default SSH public keys, and reconstructs the HID update flow with two simple commands. It is a compact hardware-security case study with a practical AI-assisted debugging angle: packet capture plus Claude Code was enough to map the update protocol and build custom firmware.</p>
+          <ul><li>Firmware-update paths need signature checks, recovery design, and explicit remote-access posture.</li><li>Default SSH keys on embedded devices create unclear ownership and disclosure risk even when password login is disabled.</li><li>Capturing disk and USB traffic can expose enough protocol structure to reproduce an updater manually.</li><li>AI assistance can accelerate reverse-engineering chores when the human validates packet boundaries and device behavior.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://kevinlynagh.com/newsletter/2026_04_overthinking/">On sabotaging projects by overthinking, scope creep, and structural diffing</a></h3>
+          <p>The essay uses woodworking and software-tool experiments to show how searching for prior art can silently expand a small project into a vague research program. The durable lesson is to define success criteria early, especially for agent-built tooling, because exploration around structural diffing, fuzzy search, or LLM workflows can consume the time that should have produced the minimal useful result.</p>
+          <ul><li>Clear success criteria keep project scope tied to the original problem.</li><li>Prior-art research is valuable when it informs a decision, and expensive when it keeps redefining the target.</li><li>Tool-building projects need a deliberate stop condition before abstraction work begins.</li><li>Small finished utilities can teach more than large design spaces left unresolved.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://glinscott.github.io/lz/part2.html">Modern LZ Compression Part 2: FSE and Arithmetic Coding</a></h3>
+          <p>The article takes a working LZ plus Huffman compressor and moves it toward modern practice with Silesia benchmarks, arithmetic-coding background, ANS and FSE explanation, FSE-coded sequence streams, repeat offsets, parser changes, and literal-table cleanup. The strongest idea is that compression gains often come from designing a better symbol stream before tuning the entropy coder.</p>
+          <ul><li>A wider benchmark set exposes whether compression changes generalize beyond one friendly corpus.</li><li>FSE and ANS give arithmetic-coding-like compression with implementation tradeoffs suited to modern codecs.</li><li>Repeat offsets and sequence-aware parsing improve the model the entropy coder sees.</li><li>Table representation and symbol-stream structure can matter as much as the coding algorithm itself.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sugrij/the_contract_your_test_didnt_mean_to_sign/">The Contract Your Test Did Not Mean to Sign</a></h3>
+          <p>The post argues that tests encode contracts at a specific scope, and brittle e2e suites often fail because the encoded contract moves faster than the product promise. The practical lens is to choose the surface deliberately: UI-scope tests protect UI behavior, application-scope tests protect capabilities, and lower-level checks should absorb mechanical churn where possible.</p>
+          <ul><li>Readable test code can still bind a suite to unstable interface mechanics.</li><li>The first design question for a test is the promise it protects and the conditions that should make it change.</li><li>Application-scope helpers can protect capabilities across UI, API, MCP, or other entry points.</li><li>Clear contract scope creates faster feedback loops for humans and coding agents.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://arpitbhayani.me/blogs/clock-sync-nightmare/">Clock Synchronization Is a Nightmare</a></h3>
+          <p>The article surveys clock drift, skew, and ordering failures across builds, databases, tracing, NTP, PTP, logical clocks, vector clocks, and Spanner TrueTime. The useful model is bounded uncertainty: physical clocks can support distributed guarantees only when the system carries explicit uncertainty or shifts ordering to causality-aware logical time.</p>
+          <ul><li>Clock skew breaks build systems, databases, and traces by making effects appear before causes.</li><li>NTP works for millisecond-class synchronization, while PTP needs hardware timestamping and network support for sub-microsecond precision.</li><li>Logical and vector clocks model causality without depending on one global physical timestamp.</li><li>TrueTime-style APIs expose an uncertainty interval, which lets systems wait or reason before committing ordering-sensitive work.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

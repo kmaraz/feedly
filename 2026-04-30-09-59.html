@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-30T08:05:19.691Z</p>
+      <section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://css-tricks.com/almanac/functions/c/contrast-color/">contrast-color()</a></h3>
+          <p>The CSS-Tricks almanac entry explains the CSS Color 5 contrast-color() function, which maps a background color to black or white text. The useful detail is its narrow contract: it simplifies theme and swatch defaults, but only returns black or white and still needs @supports and fallback planning.</p>
+          <ul><li>contrast-color() is a browser-native way to choose black or white text against a supplied color.</li><li>The function helps design-system defaults, badges, and color swatches, but it is not a full contrast engine for arbitrary palettes.</li><li>Use feature queries and fallbacks because CSS Color 5 support is still an adoption boundary.</li></ul>
+        </article>
+      </section><section>
+        <h2>Visualization</h2>
+        <article class="card">
+          <h3><a href="https://flowingdata.com/2026/04/29/masterclass-in-misleading-charts/">Masterclass in misleading charts</a></h3>
+          <p>FlowingData points to Hank Green&#x27;s teardown of a climate-chart video as a compact lesson in chart dishonesty: cherry-picked ranges, fabricated data, and calm narration can make manipulation feel reasonable. It connects to a broader defensive habit of checking encodings, scales, and framing before accepting the visual claim.</p>
+          <ul><li>Misleading charts often work by combining real-looking visual form with selective or invented data.</li><li>Axes, scale ranges, and omitted context should be inspected before the conclusion is trusted.</li><li>Calm delivery and polished presentation are not evidence; the data pipeline behind the chart still matters.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://medium.com/p/fe8ad3eae36c">Rate Limiters Are System Boundaries</a></h3>
+          <p>The post argues that rate limiting is a placement problem before it is an algorithm problem. A limiter that sits after expensive work has already been accepted cannot protect capacity; it merely turns overload into 503s instead of controlled 429s.</p>
+          <ul><li>The limiter belongs before scarce work, not after queues, database calls, or downstream fan-out have already absorbed the load.</li><li>Algorithm choice matters less than whether the limiter aligns with the real capacity boundary.</li><li>A useful rate-limit design defines the protected resource, the requester identity, and the response contract together.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.agwa.name/blog/post/fastcgi_is_the_better_protocol_for_reverse_proxies">FastCGI: 30 Years Old and Still the Better Protocol for Reverse Proxies</a></h3>
+          <p>Andrew Ayer argues that HTTP is a poor proxy-to-backend protocol because message framing and untrusted proxy headers create request-smuggling and trust-boundary hazards. FastCGI&#x27;s explicit records and parameter names separate client headers from proxy assertions, making an old protocol a surprisingly clean security boundary.</p>
+          <ul><li>HTTP/1.1 parser divergence keeps producing desync and request-smuggling bugs between proxies and backends.</li><li>Trusted proxy metadata carried as HTTP headers can collide with attacker-controlled client headers unless every layer scrubs perfectly.</li><li>FastCGI gives structural separation between client headers and proxy-supplied parameters, at the cost of weaker tooling and no WebSocket support.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://safedep.io/mini-shai-hulud-and-sap-compromise/">Mini Shai Hulud and SAP Compromise</a></h3>
+          <p>SafeDep documents a malicious SAP npm publish that added preinstall hooks to CAP and MTA packages, downloaded Bun, stole developer and cloud credentials, then used GitHub workflow tokens to poison victim repositories. The strongest lesson is that package install hooks, CI OIDC, editor tasks, and repository write tokens can chain into persistence.</p>
+          <ul><li>A dependency install hook is enough execution surface to steal local, npm, GitHub, AWS, Azure, and GCP credentials.</li><li>Workflow-scoped GitHub tokens can become a propagation channel when CI can commit back into repositories.</li><li>Package attestations, hook restrictions, token scoping, and install-time malware blocking are complementary controls, not substitutes.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854">GitHub RCE Vulnerability: CVE-2026-3854 Breakdown</a></h3>
+          <p>Wiz explains a GitHub Enterprise Server RCE rooted in semicolon injection into an internal X-Stat header passed through Git push options. The interesting part is architectural: multiple internal services trusted a serialized metadata header with last-write-wins parsing, so user-controlled push options could override security fields.</p>
+          <ul><li>GitHub.com was mitigated, but GHES admins need patched releases; vulnerable GHES instances expose repository and secret compromise risk.</li><li>User-controlled metadata must not share an ambiguous delimiter format with trusted policy fields.</li><li>The finding shows practical value from AI-assisted reverse engineering, but the root bug is still a classic parser and trust-boundary failure.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://softwaredoug.com/blog/2026/01/08/semantic-search-without-embeddings.html">Semantic Search Without Embeddings</a></h3>
+          <p>Doug Turnbull argues that semantic search is not synonymous with embeddings. A search system also needs explicit match criteria; taxonomies, domain features, and LLM-assisted classification can sometimes provide better include and exclude behavior than vector similarity thresholds.</p>
+          <ul><li>Semantic search needs representation, similarity, and a match decision; embeddings mainly cover the first two.</li><li>Vector similarity thresholds often fail when users specify multiple constraints or domain-specific terms.</li><li>Managed taxonomies and BM25-style indexes can still be strong when LLMs lower the cost of query and document classification.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://corrode.dev/blog/bugs-rust-wont-catch/">Bugs Rust Won&#x27;t Catch</a></h3>
+          <p>The uutils audit is used as a map of what Rust safety does not cover: TOCTOU path bugs, post-creation permission changes, string comparisons for filesystem identity, Unix byte boundaries, and panic-based denial of service. Rust removes memory unsafety, not operating-system semantics.</p>
+          <ul><li>Path-based checks across multiple syscalls are TOCTOU risks unless operations are anchored on file descriptors.</li><li>Unix tools must preserve bytes at boundaries; lossy UTF-8 conversion silently corrupts valid filesystem and stream data.</li><li>Every unwrap, expect, unchecked index, or panic path in untrusted input handling is a denial-of-service candidate.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://sethmlarson.dev/pip-relative-dependency-cooldowns">pip v26.1 adds support for relative dependency cooldowns</a></h3>
+          <p>Seth Larson documents pip&#x27;s new uploaded-prior-to relative dependency cooldown, which blocks installs of packages uploaded too recently. It is a practical supply-chain control: let PyPI malware triage catch fresh attacks while still handling security patches deliberately.</p>
+          <ul><li>A global pip setting such as uploaded-prior-to = P7D avoids installing packages published in the last seven days.</li><li>Cooldowns reduce exposure to fresh malware because most malicious uploads are detected and removed quickly.</li><li>Cooldowns should be paired with deliberate vulnerability patching so urgent security fixes are not delayed accidentally.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1szbjk3/managers_decided_ai_is_worth_5x_speedup_how_do_i/">Managers decided AI is worth 5x speedup; how do I explain to them how it really works?</a></h3>
+          <p>The r/ExperiencedDevs thread frames a common agentic-AI management failure: starting with a mandated 5x target before measuring which parts of research-heavy work are actually automatable. The useful decision point is to treat speedup as an empirical rollout metric, not a planning assumption.</p>
+          <ul><li>Research-heavy work should be decomposed before estimating AI leverage; not every step is promptable or parallelizable.</li><li>A fixed 5x target encourages sandbagging, burnout, and optimistic reporting unless backed by measured baseline data.</li><li>Run pilots that measure cycle time, review burden, rework, and defect rate before converting AI adoption into capacity plans.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sz9d0x/how_to_deal_with_juniors_shipping_ai_slop_code/">How to deal with juniors shipping AI slop code?</a></h3>
+          <p>The thread surfaces a quality problem in AI-assisted teams: juniors can produce working-looking code faster than they can explain, debug, or review it. The operational signal is that AI usage needs review discipline, debugging expectations, and ownership of generated code, not just prompt fluency.</p>
+          <ul><li>Generated code still needs an owner who can explain design choices and failure modes during review.</li><li>Debugging from stack traces and local reproduction remains a core skill; reprompting is not a replacement for diagnosis.</li><li>Teams need explicit AI usage standards around tests, explanation, review evidence, and when generated code must be rewritten.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1szdt65/how_to_deal_with_a_poorly_performing_seniorpeer/">How to deal with a poorly performing senior/peer?</a></h3>
+          <p>The thread is a concrete failure case for AI-assisted work without ownership: a senior engineer produces oversized PRs, broken requirements tags, bad conflict fixes, and reverse-engineered code he cannot explain in a regulated embedded system. The useful framing is performance risk, not taste or tooling preference.</p>
+          <ul><li>In regulated work, missing requirement tags, unreviewable PRs, and unexplained generated code are delivery and compliance risks.</li><li>Small PRs, local verification, clear ownership, and pre-review self-review are enforceable expectations for any senior engineer.</li><li>Escalation should focus on observable impact: review waste, rework, missed process controls, and inability to explain the implementation.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sz51ra/how_do_people_enforce_developers_to_write_tests/">How do people enforce developers to write tests without a strict code coverage requirement?</a></h3>
+          <p>The thread frames why coverage percentage is a weak test-quality control: it can be gamed, PR checkboxes are unenforceable, and review-only enforcement drifts to the lowest common denominator. The useful direction is to automate narrow contract checks around changed behavior while preserving reviewer authority for missing tests.</p>
+          <ul><li>Coverage percentage measures executed lines, not whether the important behavior is specified or protected from regression.</li><li>Soft controls such as PR checkboxes and warning comments are easy to bypass unless the team already has a strong test norm.</li><li>Better automation looks for changed behavior surfaces and missing adjacent tests, then gives reviewers a concrete enforcement point.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-21T21:32:13Z</p>
+      <section>
+        <h2>Programming</h2>
+        <article class="card">
+          <h3><a href="https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/">Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge</a></h3>
+          <p>Meta describes a Groups Search redesign that pairs lexical retrieval with dense semantic search, re-ranks candidates with a multi-task model, and uses LLM-based offline evaluation to judge nuanced relevance; the transferable part is the layered retrieval-and-evaluation architecture for messy community knowledge, not the product metrics.</p>
+          <ul><li>Hybrid retrieval closes wording gaps by running exact-term lookup and dense vector search in parallel.</li><li>A shared ranking layer can combine lexical and semantic features while optimizing for several engagement outcomes at once.</li><li>LLM-graded offline evaluation gives search teams a scalable way to measure borderline relevance instead of binary matches only.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.scylladb.com/2026/04/21/interleaving-writes-in-seastar">The Great Stream Fix: Interleaving Writes in Seastar with AI-Powered Invariants Tracing</a></h3>
+          <p>ScyllaDB documents how it removed Seastar&#x27;s restriction on mixing buffered and zero-copy writes by building invariant-based tests across a huge state space and using AI-assisted trace analysis to isolate remnant-buffer edge cases in asynchronous I/O code.</p>
+          <ul><li>Stateful I/O bugs become tractable when tests assert invariants over operation order, chunk size, and buffering mode instead of checking a few happy paths.</li><li>Mixed write modes hid assumptions about remnant-buffer capacity and state transitions that normal unit tests missed.</li><li>Trace analysis is useful when it is anchored to a deterministic failing case and a strong invariant, not used as a substitute for the test harness.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/javascript/comments/1sqmuej/http_resilience_tradeoffs_in_practice_retry_vs/">HTTP resilience tradeoffs in practice: retry vs Retry-After vs hedging (scenario data)</a></h3>
+          <p>This post compares three failure-handling tactics under controlled network chaos and surfaces the operational tradeoffs clearly: naive retries can raise success while worsening tail latency, Retry-After-aware retry helps in rate-limit scenarios, and hedging lowers latency by spending extra capacity.</p>
+          <ul><li>Retry policy needs latency budgets and load budgets, because higher success rates can still degrade p95 and p99 behavior.</li><li>Honoring Retry-After is a distinct control path from generic backoff and matters specifically in 429-heavy environments.</li><li>Hedging is a tail-latency tool with real duplicate-work cost, so it belongs on carefully chosen endpoints.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://frederickvanbrabant.com/blog/2026-04-17-good-architecture-shouldnt-need-a-carrot-or-a-stick/">Good architecture shouldn&#x27;t need a carrot or a stick</a></h3>
+          <p>Frederick Vanbrabant argues that architecture governance works best when approved building blocks become the default path of least resistance, moving teams away from architecture boards and embedded oversight toward paved-road standards that already package security, logging, and legal requirements.</p>
+          <ul><li>Governance scales when teams inherit a ready-made platform path instead of negotiating compliance from scratch on every project.</li><li>Paved-road architecture turns cross-cutting requirements into reusable defaults that shorten delivery timelines.</li><li>A modular menu of approved building blocks can preserve architectural review while shifting most decisions from gatekeeping to composition.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

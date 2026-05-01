@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest Archive</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f7f2;
+        --panel: #ffffff;
+        --ink: #1d241f;
+        --muted: #65706a;
+        --line: #d9dfd7;
+        --accent: #23614a;
+        --accent-soft: #dcebe3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+        color: var(--ink);
+        background:
+          linear-gradient(90deg, rgba(35, 97, 74, 0.07) 1px, transparent 1px),
+          linear-gradient(180deg, #fbfbf7 0%, var(--bg) 100%);
+        background-size: 28px 28px, auto;
+      }
+
+      main {
+        width: min(860px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 56px 0 80px;
+      }
+
+      header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 32px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.1rem, 5vw, 4.2rem);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      .meta {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      .current {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .current:focus-visible,
+      .digest-link:focus-visible {
+        outline: 3px solid var(--accent-soft);
+        outline-offset: 3px;
+      }
+
+      ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 10px;
+      }
+
+      li {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .digest-link {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+        align-items: center;
+        padding: 16px 18px;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .digest-link:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      time {
+        font-size: 1.04rem;
+        font-weight: 700;
+      }
+
+      .file {
+        color: var(--muted);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 0.86rem;
+      }
+
+      @media (max-width: 640px) {
+        main {
+          width: min(100% - 28px, 860px);
+          padding-top: 34px;
+        }
+
+        header {
+          display: block;
+        }
+
+        .current {
+          margin-top: 18px;
+        }
+
+        .digest-link {
+          grid-template-columns: 1fr;
+          gap: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>Feedly Digest Archive</h1>
+          <p class="meta">Previous digests, recent first.</p>
+        </div>
+        <a class="current" href="./index.html">Current digest</a>
+      </header>
+
+      <ol>
+        <li><a class="digest-link" href="./2026-04-30-23-34.html"><time datetime="2026-04-30T23:34">Apr 30, 2026 23:34</time><span class="file">2026-04-30-23-34.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-30-15-38.html"><time datetime="2026-04-30T15:38">Apr 30, 2026 15:38</time><span class="file">2026-04-30-15-38.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-30-09-59.html"><time datetime="2026-04-30T09:59">Apr 30, 2026 09:59</time><span class="file">2026-04-30-09-59.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-29-19-08.html"><time datetime="2026-04-29T19:08">Apr 29, 2026 19:08</time><span class="file">2026-04-29-19-08.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-29-09-47.html"><time datetime="2026-04-29T09:47">Apr 29, 2026 09:47</time><span class="file">2026-04-29-09-47.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-28-18-10.html"><time datetime="2026-04-28T18:10">Apr 28, 2026 18:10</time><span class="file">2026-04-28-18-10.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-28-11-13.html"><time datetime="2026-04-28T11:13">Apr 28, 2026 11:13</time><span class="file">2026-04-28-11-13.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-27-21-40.html"><time datetime="2026-04-27T21:40">Apr 27, 2026 21:40</time><span class="file">2026-04-27-21-40.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-27-10-28.html"><time datetime="2026-04-27T10:28">Apr 27, 2026 10:28</time><span class="file">2026-04-27-10-28.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-26-13-55.html"><time datetime="2026-04-26T13:55">Apr 26, 2026 13:55</time><span class="file">2026-04-26-13-55.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-25-10-24.html"><time datetime="2026-04-25T10:24">Apr 25, 2026 10:24</time><span class="file">2026-04-25-10-24.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-24-15-05.html"><time datetime="2026-04-24T15:05">Apr 24, 2026 15:05</time><span class="file">2026-04-24-15-05.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-23-22-13.html"><time datetime="2026-04-23T22:13">Apr 23, 2026 22:13</time><span class="file">2026-04-23-22-13.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-23-10-12.html"><time datetime="2026-04-23T10:12">Apr 23, 2026 10:12</time><span class="file">2026-04-23-10-12.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-22-10-57.html"><time datetime="2026-04-22T10:57">Apr 22, 2026 10:57</time><span class="file">2026-04-22-10-57.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-22-00-04.html"><time datetime="2026-04-22T00:04">Apr 22, 2026 00:04</time><span class="file">2026-04-22-00-04.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-21-23-22.html"><time datetime="2026-04-21T23:22">Apr 21, 2026 23:22</time><span class="file">2026-04-21-23-22.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-21-10-21.html"><time datetime="2026-04-21T10:21">Apr 21, 2026 10:21</time><span class="file">2026-04-21-10-21.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-20-18-16.html"><time datetime="2026-04-20T18:16">Apr 20, 2026 18:16</time><span class="file">2026-04-20-18-16.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-20-07-25.html"><time datetime="2026-04-20T07:25">Apr 20, 2026 07:25</time><span class="file">2026-04-20-07-25.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-19-17-15.html"><time datetime="2026-04-19T17:15">Apr 19, 2026 17:15</time><span class="file">2026-04-19-17-15.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-18-15-28.html"><time datetime="2026-04-18T15:28">Apr 18, 2026 15:28</time><span class="file">2026-04-18-15-28.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-17-09-40.html"><time datetime="2026-04-17T09:40">Apr 17, 2026 09:40</time><span class="file">2026-04-17-09-40.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-16-14-38.html"><time datetime="2026-04-16T14:38">Apr 16, 2026 14:38</time><span class="file">2026-04-16-14-38.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-16-00-06.html"><time datetime="2026-04-16T00:06">Apr 16, 2026 00:06</time><span class="file">2026-04-16-00-06.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-15-09-11.html"><time datetime="2026-04-15T09:11">Apr 15, 2026 09:11</time><span class="file">2026-04-15-09-11.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-14-13-24.html"><time datetime="2026-04-14T13:24">Apr 14, 2026 13:24</time><span class="file">2026-04-14-13-24.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-14-10-33.html"><time datetime="2026-04-14T10:33">Apr 14, 2026 10:33</time><span class="file">2026-04-14-10-33.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-13-10-15.html"><time datetime="2026-04-13T10:15">Apr 13, 2026 10:15</time><span class="file">2026-04-13-10-15.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-12-10-15.html"><time datetime="2026-04-12T10:15">Apr 12, 2026 10:15</time><span class="file">2026-04-12-10-15.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-11-23-01.html"><time datetime="2026-04-11T23:01">Apr 11, 2026 23:01</time><span class="file">2026-04-11-23-01.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-11.html"><time datetime="2026-04-11">Apr 11, 2026</time><span class="file">2026-04-11.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-10.html"><time datetime="2026-04-10">Apr 10, 2026</time><span class="file">2026-04-10.html</span></a></li>
+        <li><a class="digest-link" href="./2026-04-09.html"><time datetime="2026-04-09">Apr 09, 2026</time><span class="file">2026-04-09.html</span></a></li>
+      </ol>
+    </main>
+  </body>
+</html>

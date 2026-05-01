@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-30T21:36:10Z</p>
+      <section>
+        <h2>Engineering</h2>
+        <article class="card">
+          <h3><a href="https://blog.pragmaticengineer.com/the-pulse-token-spend-breaks-budgets-what-next/">The Pulse: token spend breaks budgets – what next?</a></h3>
+          <p>Gergely Orosz reports that AI coding token spend is rising roughly an order of magnitude at many companies, forcing teams to choose between open-ended adoption, model routing, cheaper defaults, pooled budgets, and stronger ROI measurement.</p>
+          <ul><li>Uncapped agent usage can turn model choice into a material engineering cost, not just a tooling preference.</li><li>Teams are starting with cheaper default models, high-end model restrictions, monthly spend reporting, and outcome measurement.</li><li>The real bottleneck is shifting from code generation to review, product direction, and governance of when expensive models are justified.</li></ul>
+        </article>
+      </section><section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://css-tricks.com/the-importance-of-native-randomness-in-css/">The Importance of Native Randomness in CSS</a></h3>
+          <p>Alvaro Montoro explains why native CSS randomization matters: it moves visual variation back into the styling layer instead of pushing layout decisions into JavaScript or build-time tooling.</p>
+          <ul><li>Past CSS randomness patterns were deterministic hacks, build-time freezes, server-side injections, or JavaScript workarounds.</li><li>CSS Values and Units Level 5 adds `random()` and `random-item()` so the browser can resolve variation inside CSS itself.</li><li>The useful framing is architectural: use the least powerful web layer that can express the behavior cleanly.</li></ul>
+        </article>
+      </section><section>
+        <h2>Philosophy</h2>
+        <article class="card">
+          <h3><a href="https://pluralistic.net/2026/04/30/something-must-be-done/">Pluralistic: How not to ban surveillance pricing (30 Apr 2026)</a></h3>
+          <p>Cory Doctorow argues that Maryland&#x27;s surveillance-pricing law is mostly theater because it narrows scope to groceries, preserves consent loopholes, exempts common pricing tactics, and blocks private enforcement.</p>
+          <ul><li>Regulation can fail by design when loopholes are placed in scope, consent, exemptions, and enforcement.</li><li>Surveillance pricing is framed as a data-driven way to extract more from people with less leverage, not as neutral personalization.</li><li>The policy lesson transfers to tech governance: read the enforcement mechanism before trusting the headline claim.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.opendata.dev/blog/buffer-ha-pipelines-without-kafka/">OpenData Buffer: HA pipelines without Kafka</a></h3>
+          <p>OpenData describes a Kafka alternative for telemetry-style ingestion that uses object storage, append-only data files, and a manifest to trade Kafka&#x27;s general log semantics for lower operational and monthly cost.</p>
+          <ul><li>Telemetry and event pipelines often need durable buffering and at-least-once delivery, not strict ordering or full consumer-group semantics.</li><li>A narrower protocol over object storage can cut cost sharply when the workload has fixed participants and tolerates sub-second to low-second latency.</li><li>The tradeoff is less flexibility: throughput, partitioning, participant count, and latency tuning move into explicit system design decisions.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.iankduncan.com/engineering/2026-02-06-bash-is-not-enough">No, Really, Bash Is Not Enough: Why Large-Scale CI Needs an Orchestrator</a></h3>
+          <p>Ian Duncan argues that shell scripts are fine for linear CI but break down once pipelines need dependency graphs, parallelism, artifact passing, conditional execution, caching, and failure propagation.</p>
+          <ul><li>A mature CI pipeline is a scheduler plus dependency model, not a longer shell script.</li><li>The article connects practical CI pain to build-system theory: schedulers, rebuilders, traces, and minimal rebuilds are real design choices.</li><li>Keeping a script entrypoint is compatible with using an orchestrator; the boundary is where coordination logic starts to dominate command execution.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

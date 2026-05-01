@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-19T15:21:31Z</p>
+      <section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://cybereason-public.github.io/owLSM/architecture/rule-evaluation.html">owLSM Rule Creation and Evaluation</a></h3>
+          <p>owLSM lays out an end-to-end design for compiling Sigma-like YAML rules into JSON tables and then into eBPF map structures, with postfix expressions, cached predicates, and precomputed DFAs handling evaluation in kernel space. It is worth keeping because it turns a vague rules-engine-in-eBPF idea into a concrete architecture with explicit staging boundaries and runtime tradeoffs.</p>
+          <ul><li>Compile rich rule syntax into normalized predicate tables before it reaches constrained runtimes.</li><li>Use postfix tokens and stack evaluation to keep kernel-side rule execution simple and predictable.</li><li>Precompute contains and regex DFAs in userspace so expensive parsing stays off the hot path.</li><li>Partition rules by event type and cache predicate results per event to reduce repeated work.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://byroot.github.io/ruby/performance/2026/04/18/faster-paths.html">Optimizing Ruby Path Methods</a></h3>
+          <p>Jean Boussier shows how Bootsnap and Ruby path handling were slowed by avoidable syscall patterns and conservative encoding logic, then tracks the fixes from profiling to API design, ending with Dir.scan and a much faster File.join. It is worth keeping because it is a concrete example of performance work that improves both local latency and massively parallel CI cost.</p>
+          <ul><li>Profile setup-time hotspots because small per-worker costs compound across large CI fleets.</li><li>Use simple happy-path benchmarks to estimate optimization headroom before changing internals.</li><li>Add fast paths for dominant encodings and input shapes while preserving correctness for rare cases.</li><li>Expose the right filesystem metadata in the API to eliminate N+1 syscalls at the source.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://github.com/coremaze/ME2-Writeup">Reverse Engineering ME2&#x27;s USB with a Heat Gun and a Knife</a></h3>
+          <p>This write-up documents a full recovery path for an undocumented USB interface: dump flash, identify the hidden microcontroller by die-photo matching, recover the instruction set, trace vendor SCSI extensions, and exploit an out-of-bounds read to extract internal ROM. It is worth keeping because it is a high-signal case study in turning incomplete hardware clues into a working protocol implementation.</p>
+          <ul><li>When software artifacts are gone, hardware teardown plus firmware dumping can rebuild the protocol surface.</li><li>Instruction-set discovery can come from physical die identification as much as from binary analysis.</li><li>Known transports such as USB mass storage and SCSI provide strong anchors for naming unknown code paths.</li><li>Small command-handler bugs can become powerful reverse-engineering primitives such as arbitrary reads.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.gresham.ac.uk/watch-now/what-really-happened-y2k">What Really Happened in Y2K?</a></h3>
+          <p>Martyn Thomas argues that Y2K was a real systems risk that looked quiet in production because inventory work, remediation, and cross-industry coordination succeeded before the rollover. It is worth keeping because it reframes Y2K as a near miss and a concrete lesson in software engineering, resilience, and executive action.</p>
+          <ul><li>Legacy representation shortcuts become systemic risk when the same assumption is embedded across many systems.</li><li>Inventory accuracy, supply-chain visibility, and deadline-driven governance were core parts of the Y2K remediation success.</li><li>Avoid single points of failure and excessive coupling because simultaneous faults create cascade risk.</li><li>Large preventive remediation programs can succeed when objectives, authority, and urgency are clear.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

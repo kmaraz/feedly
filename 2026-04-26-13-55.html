@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-26T11:57:47.711Z</p>
+      <section>
+        <h2>Engineering</h2>
+        <article class="card">
+          <h3><a href="https://cutlefish.substack.com/p/tbm-419-stop-being-so-negative-stop">TBM 419: Stop Being So Negative! Stop Being So Naive!</a></h3>
+          <p>John Cutler separates outcome optimism from capability optimism: one protects momentum, the other pressure-tests reality so the plan survives contact with it. The useful model is explicit sequencing between debate mode and execution mode, with responsibility on question-askers to connect risks to constructive action.</p>
+          <ul><li>Teams need both morale-preserving optimism and risk-facing optimism; each protects a different part of delivery.</li><li>Conflict becomes useful when the group names the mode: pressure-test the route first, then commit to the climb.</li><li>Critical questions lose value when they raise fear without proposing a response or a decision path.</li></ul>
+        </article>
+      </section><section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://www.bennadel.com/blog/4890-ai-makes-sitting-with-discomfort-feel-shameful.htm">AI Makes Sitting With Discomfort Feel Shameful</a></h3>
+          <p>Ben Nadel documents a real cost of AI tooling hype: slow technical exploration now feels socially inefficient even when it builds durable judgment, taste, and debugging depth. The piece is a useful counterweight to productivity framing because it names the craft value of sitting with a hard problem before delegating it.</p>
+          <ul><li>AI changes the emotional baseline around slow learning; exploratory discomfort starts to feel like waste.</li><li>Manual investigation still builds domain judgment that short prompting loops often skip.</li><li>The productivity story is incomplete when it ignores taste, context, and the ability to reason through unfamiliar failure modes.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://shbhmrzd.github.io/java/concurrency/virtual-threads/2026/04/25/java-virtual-threads-pinning-and-the-deadlock-problem.html">Java Virtual Threads: The Pinning Problem, the Deadlock, and the Fix in Java 24</a></h3>
+          <p>The article explains why Java virtual threads improve throughput for blocking I/O, how carrier threads get exhausted by pinning, and why synchronized blocks caused real production stalls at scale. The Java 24 fix matters because it removes a sharp edge that made virtual-thread adoption look safe until traffic exposed hidden blocking.</p>
+          <ul><li>Virtual threads improve concurrency by unmounting during blocking operations; latency still depends on the executed code and I/O path.</li><li>Pinned virtual threads can monopolize carrier threads and turn lightweight concurrency into a service-wide stall.</li><li>Thread dumps and carrier-thread behavior are the practical diagnostic surface for this failure mode.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://simonramstedt.com/blog/2026-04-09-npm-slop-and-wonky-software-supply-chains/">Npm Slop &amp; Wonky Software Supply Chains</a></h3>
+          <p>Simon Ramstedt argues that npm and PyPI center uploaded artifacts, leaving consumers with weak evidence that a package matches its public repository and original source. The strongest point is the attestation gap: source commits and workflows help, while runner images, tool downloads, and binary dependencies can remain outside the trust chain.</p>
+          <ul><li>Package hashes usually pin built artifacts; source and build-environment identity require separate provenance.</li><li>Attestations improve provenance, yet they can leave base images and runtime-downloaded tools unpinned.</li><li>Source pinning through git commits, vendoring, Nix, or Guix gives stronger control when the ecosystem allows it.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://madflojo.dev/posts/in-flight-request-tracking-in-asynchronous-systems/">In-Flight Request Tracking: Lessons from Card Payments and HTTP/2</a></h3>
+          <p>The post uses card payments and HTTP/2 to explain why overlapping requests turn correlation, timeout handling, and recovery into first-class architecture concerns. The practical lesson is that concurrency replaces implicit request-response certainty with identifiers, atomic state transitions, locality constraints, and reconciliation paths.</p>
+          <ul><li>Once requests overlap, a response needs an explicit correlation key and tracked in-flight state.</li><li>A timeout means no response matched before the deadline; the real operation may still succeed later.</li><li>Transport multiplexing solves stream correlation, while application retries, duplicates, and compensation remain product-level design work.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1svlq5z/i_am_the_platform_now/">I am the platform now</a></h3>
+          <p>The thread opener captures the hidden platform cost of headless ecommerce: a frontend decoupling decision moved routing, checkout glue, SEO metadata, caching, observability, and third-party failure handling onto one engineer. The signal is the ownership trap, where architectural flexibility becomes invisible operational load without a funded platform boundary.</p>
+          <ul><li>Headless architecture can transfer platform responsibilities into the product layer when ownership is underspecified.</li><li>Small operational fixes hide systemic platform work because fixing the ticket is faster than explaining the missing boundary.</li><li>Decoupling decisions need explicit owners for SEO, redirects, checkout resilience, caching, and integration failure modes.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.stephendiehl.com/posts/field_guide_to_bugs/">A Field Guide to Bugs</a></h3>
+          <p>Stephen Diehl turns common bug classes into a debugging taxonomy: reproducible failures, observation-sensitive failures, races, deadlocks, stale comments, wrong specs, and environmental drift. The piece is useful because it reinforces the habit of classifying the failure mode before changing code.</p>
+          <ul><li>A reproducible bug is a gift because it gives the scientific method something stable to work on.</li><li>Heisenbugs, races, and deadlocks require instrumentation and timing awareness before any fix has meaning.</li><li>Comments, docs, and specs can be the defective component even when the code follows them correctly.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://commitlog.cc/posts/caching-beyond-redis">Caching Beyond Redis: Real-World Strategies That Do Not Break Your System</a></h3>
+          <p>The article frames caching as a deliberate tradeoff between speed and correctness, then walks through in-process, distributed, and CDN caching failure modes. The useful part is the decision lens: cache only after choosing the expected latency gain, freshness tolerance, memory cost, invalidation path, and privacy boundary.</p>
+          <ul><li>Caching is a correctness tradeoff; every cached value needs a freshness policy and invalidation story.</li><li>In-process caches fit stable local lookups, distributed caches fit shared state, and CDNs fit public responses.</li><li>A fast stale value can be a production bug when the system never made staleness an explicit product choice.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1su50a4/what_the_heck_does_a_good_experienced_dev/">What the Heck Does a Good Experienced Dev Interview Even Look Like in 2026?</a></h3>
+          <p>The thread surfaces a repeated hiring problem in the AI era: traditional senior-engineer signals are easier to rehearse, generate, or obscure, so interview design drifts toward anti-cheating theatrics. The useful signal is the shift from puzzle difficulty toward live reasoning, project judgment, review behavior, and evidence of operating inside messy systems.</p>
+          <ul><li>AI-era interviews need live reasoning under follow-up questions, code review, and tradeoff discussion around polished artifacts.</li><li>Over-indexing on bot resistance can make interviews adversarial without measuring senior engineering judgment.</li><li>Code review, tradeoff discussion, and system-debugging walkthroughs map better to experienced-dev work than isolated timed exams.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sv7qpv/how_are_you_structuring_aiassisted_product/">How Are You Structuring AI-Assisted Product Development Workflows?</a></h3>
+          <p>The ExperiencedDevs thread asks for real workflow structure around AI-assisted product development, from requirements and generated mockups to implementation and test review. The value is the operational framing: AI changes the loop only when requirements, review checkpoints, test ownership, and iteration artifacts are explicit enough to survive generated output.</p>
+          <ul><li>AI-assisted product work still needs structured requirements and saved decisions before generation starts.</li><li>Generated UI, implementation, and tests require human review gates tied to product behavior and maintainability.</li><li>The hard part is process design: deciding what gets delegated, what gets verified, and what becomes the durable source of truth.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-28T09:15:59.818Z</p>
+      <section>
+        <h2>Philosophy</h2>
+        <article class="card">
+          <h3><a href="https://pluralistic.net/2026/04/27/mouseketeers/">Pluralistic: Vicky Osterweil&#x27;s &quot;The Extended Universe&quot; (28 Apr 2026)</a></h3>
+          <p>Cory Doctorow reviews Vicky Osterweil&#x27;s argument that Disney&#x27;s media empire links intellectual property, labor control, colonial framing, and franchise culture. The useful part is the method: criticism can expose the values embedded inside enjoyable work without reducing the work to simple approval or rejection.</p>
+          <ul><li>Close criticism is most useful when it explains why something compelling also carries ugly assumptions.</li><li>Disney is framed as an example of IP ownership, anti-labor control, and cultural dominance reinforcing each other.</li><li>Fan attachment and political critique can coexist when the analysis names the system that produced the work.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.developing.dev/p/turing-award-winner-data-abstraction">Turing Award Winner: Data Abstraction, Dijkstra, Distributed Systems | Barbara Liskov</a></h3>
+          <p>The Barbara Liskov transcript connects the 1970s software crisis to data abstraction, encapsulation, and later distributed-systems work. The durable thread is that large reliable systems need enforceable module boundaries and correctness reasoning at the right granularity.</p>
+          <ul><li>Data abstraction answered a real scaling problem: teams needed interfaces with hidden implementation details to reason about big programs locally.</li><li>Encapsulation is treated as a correctness aid; languages that let callers inspect internals make large-team reliability weaker.</li><li>Viewstamped replication is presented as continuity from modular programming into fault-tolerant distributed storage.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.ufried.com/blog/worst_enemies/">We are our own worst enemies</a></h3>
+          <p>Uwe Friedrichsen separates unavoidable progress from self-inflicted acceleration in IT, then applies the frame to AI hype and peer shaming. The practical value is the distinction between real technical change and vendor-amplified urgency that teams choose to internalize.</p>
+          <ul><li>Treat urgency as a claim to inspect; part of the current acceleration is created by vendors, consultants, media, and conference incentives.</li><li>AI adoption discourse often turns weak outcomes into personal blame, which hides tool limits and context mismatches.</li><li>A team can slow the reflex by separating essential change from FOMO-driven process churn.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

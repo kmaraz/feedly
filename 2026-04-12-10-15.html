@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-12T08:18:45.927Z</p>
+      <section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sipvi3/20_years_on_aws_and_never_not_my_job/">20 Years on AWS and Never Not My Job</a></h3>
+          <p>Colin Percival recounts two decades of working at AWS&#x27;s edge as an external operator and FreeBSD maintainer, showing how concrete critiques around signing, consistency, IAM, IMDS, virtualization, and boot modes gradually fed back into the platform. It is worth keeping because it compresses a long cloud-platform learning curve into a dense firsthand record of which design complaints aged well and how persistent technical feedback can shape infrastructure.</p>
+          <ul><li>Concrete threat models and design critiques from long-term external users can materially improve a platform when they are specific, technically grounded, and sustained over time.</li><li>Early security and API decisions, such as unsigned responses, canonicalization bugs, or metadata-exposed credentials, can remain latent liabilities for years before they fail loudly.</li><li>Pre-build design feedback on consistency semantics, IAM key scoping, hypervisor choices, and boot modes often yields more leverage than late alpha access after the architecture has hardened.</li><li>Infrastructure abstractions leak at the edges: supporting alternative runtimes exposed real dependencies on ABI stability, driver support, hypervisor versions, and instance boot semantics.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

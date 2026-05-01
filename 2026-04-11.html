@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-10T22:20:12Z</p>
+      <section>
+        <h2>Engineering</h2>
+        <article class="card">
+          <h3><a href="https://csswizardry.com/2026/04/font-family-doesnt-fall-back-the-way-you-think/">font-family Doesn’t Fall Back the Way You Think</a></h3>
+          <p>Harry Roberts explains a subtle CSS rule: once an element declares its own font-family, fallback resolution happens inside that declaration instead of inheriting the parent stack. It is worth keeping because it turns a common assumption into a concrete rendering and performance rule for design systems.</p>
+          <ul><li>font-family inheritance carries the full computed value, and child declarations do not borrow fallback fonts from ancestors.</li><li>A declaration like h1 { font-family: &quot;Open Sans&quot;; } can fall back to the user agent default while the web font is still loading.</li><li>Typography tokens should include their own fallback stacks instead of relying on body or root defaults.</li><li>Font-stack mistakes can show up as visible flashes of wrong text and layout shift, not only as stylistic inconsistencies.</li></ul>
+        </article>
+      </section><section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://smashingmagazine.com/2026/04/legacy-systems/">How To Improve UX In Legacy Systems</a></h3>
+          <p>Vitaly Friedman frames legacy UX work as a migration problem across workflows, dependencies, and user trust rather than a visual refresh. It stays because it lays out practical migration strategies and makes the rewrite-vs-increment decision explicit.</p>
+          <ul><li>Legacy systems often encode critical business knowledge, so discovery should start with workflow and dependency mapping rather than redesign instincts.</li><li>One broken legacy step can define the perceived quality of the whole product, even when the surrounding UI is modern.</li><li>Migration strategy should be chosen deliberately: big-bang, incremental, parallel, incremental-parallel, or targeted legacy UI upgrades.</li><li>Stakeholder trust and heavy-user involvement are part of the delivery work because you are migrating habits and operations, not only screens.</li></ul>
+        </article>
+      </section><section>
+        <h2>Philosophy</h2>
+        <p class="empty">No articles kept.</p>
+      </section><section>
+        <h2>Visualization</h2>
+        <p class="empty">No articles kept.</p>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1shmtl3/reproducing_the_aws_outage_race_condition_with_a/">Reproducing the AWS Outage Race Condition with a Model Checker</a></h3>
+          <p>Using AWS’s own outage post-mortem as a starting point, this piece models a simplified DynamoDB DNS-management race in Spin/Promela and shows how the failure can emerge from a bad interleaving between concurrent enactors. It is worth keeping because it demonstrates a concrete way to turn an incident narrative into an executable concurrency model.</p>
+          <ul><li>Post-mortem narratives can often be reduced into a smaller state model that is precise enough to expose the failure mechanism.</li><li>Model checking is useful for reasoning about rare interleavings that logs and intuition can miss.</li><li>Cleanup logic around versioned plans can be as dangerous as apply logic when multiple workers operate independently.</li><li>Formal methods become practical when used as focused debugging tools for high-risk concurrency behavior.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

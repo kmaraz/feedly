@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-18T13:35:20.286Z</p>
+      <section>
+        <h2>Informatics</h2>
+        <p class="empty">No articles kept.</p>
+      </section><section>
+        <h2>Philosophy</h2>
+        <article class="card">
+          <h3><a href="https://pluralistic.net/2026/04/17/for-youze/">Pluralistic: Tiktokification shall set us free (17 Apr 2026)</a></h3>
+          <p>Doctorow argues that platforms envy TikTok-style feeds because creators and AI slop can be optimized for engagement more predictably than friends, so social platforms are deliberately replacing the non-fungible social graph with interchangeable content. It is worth keeping because it provides a durable model for why algorithmic feeds and AI-generated media can weaken the very lock-in that made social networks valuable.</p>
+          <ul><li>Friends are the platform&#x27;s stickiest asset because shared history is non-fungible and hard to replace elsewhere.</li><li>Reels, creators, and AI slop are fungible, which makes feeds easier to swap across competing platforms.</li><li>Platforms are trading long-term moat for short-term engagement by suppressing friend activity in favor of interchangeable content.</li></ul>
+        </article>
+      </section><section>
+        <h2>Other</h2>
+        <p class="empty">No articles kept.</p>
+      </section><section>
+        <h2>Psychology</h2>
+        <article class="card">
+          <h3><a href="https://mindblog.dericbownds.net/2026/04/from-animal-to-humans-multimodality-as.html">From Animal to Humans - Multimodality as a safeguard of honesty in communication and language</a></h3>
+          <p>This post summarizes an upcoming paper arguing that multimodal communication helps preserve honesty through cross-validation and harder-to-fake signal combinations, then adds a sharper commentary about digital environments where signals are already recombined by platforms and algorithms. It is worth keeping because it offers a useful model for evaluating communication quality in AI-mediated and socially mediated systems.</p>
+          <ul><li>Multiple channels can improve honesty when they originate from one coherent source and can cross-check one another.</li><li>Digital platforms weaken that assumption by mixing personal intent with group style, packaging, ranking, and algorithmic amplification.</li><li>Reliable interpretation now requires reading the message, the framing conditions, and the circulation path together.</li></ul>
+        </article>
+      </section><section>
+        <h2>Visualization</h2>
+        <p class="empty">No articles kept.</p>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sosciu/saving_challenging_projects_was_my_niche_but_ai/">Saving challenging projects was my niche, but AI codebases are making me miserable</a></h3>
+          <p>This r/ExperiencedDevs thread comes from an engineer who used to rescue troubled systems and argues that AI-generated codebases are harder to recover because they expand surface area and erase the local reasoning that makes manual rehabilitation possible. It is worth keeping because it describes the maintenance-side failure mode of AI-assisted coding more concretely than generic AI-slop complaints.</p>
+          <ul><li>Repairability depends on coherent local conventions and traceable intent, not only on feature output speed.</li><li>AI-assisted expansion can turn rescue work into archaeology because many changes are superficially valid yet semantically ungrounded.</li><li>Teams need stricter review boundaries, ownership, and pruning discipline when AI increases code volume.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1soamj0/how_do_i_handle_a_vibecoding_manager/">How do I handle a vibecoding manager</a></h3>
+          <p>This r/ExperiencedDevs thread describes a new infrastructure manager opening Claude-generated PRs and meaningless tests in a core service without understanding the system. It is worth keeping because it treats unsafe AI use as a management and governance problem instead of a prompt-quality problem.</p>
+          <ul><li>Authority plus shallow context can inject low-quality AI changes faster than teams can safely review them.</li><li>Evidence-based pushback should focus on broken invariants, useless tests, and operational risk.</li><li>Core services need explicit standards for ownership, review depth, and when AI-generated changes are unacceptable.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1so6xls/what_do_you_call_this_problem_and_how_do_you_deal/">What do you call this problem, and how do you deal with it? The &quot;it will be fixed in the new version, so lets not put any work into the old version&quot;</a></h3>
+          <p>This r/ExperiencedDevs discussion names the familiar trap where a promised rewrite becomes the excuse for neglecting the current system even though the migration takes far longer than planned. It is worth keeping because it gives a durable framing for modernization debt as a governance failure.</p>
+          <ul><li>Rewrite promises do not remove the need for minimum viable controls and maintenance in the current system.</li><li>The longer cutover takes, the more unmanaged pain compounds in the supposedly temporary legacy path.</li><li>Teams need explicit criteria for what still gets fixed, documented, and versioned before the replacement is real.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

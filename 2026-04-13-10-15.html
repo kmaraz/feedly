@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4efe6;
+        --ink: #1f1b16;
+        --card: #fffaf2;
+        --accent: #8b3f06;
+        --line: #d8ccb9;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        background: radial-gradient(circle at top left, rgba(139, 63, 6, 0.12), transparent 30%), linear-gradient(180deg, #f8f2e8 0%, var(--bg) 100%);
+        color: var(--ink);
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      h1, h2, h3 {
+        margin: 0;
+      }
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        margin-bottom: 12px;
+      }
+      .meta {
+        color: #5f5648;
+        margin-bottom: 36px;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(54, 36, 12, 0.05);
+        margin-top: 16px;
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-13T08:24:40Z</p>
+      
+    <section>
+      <h2>Frontend</h2>
+      
+    <article class="card">
+      <h3><a href="https://leadershipintech.com/newsletters/2256-the-economics-of-software-teams">The economics of software teams</a></h3>
+      <p>This piece treats software teams as capital allocation decisions and works through what a team actually costs, what it must generate to justify itself, and why most organizations lack visibility into either number. It is worth keeping because it reframes engineering management around economic observability at the moment AI is increasing pressure on headcount assumptions.</p>
+      <ul>
+        <li>Team size should be justified with explicit cost and output assumptions rather than habit or status.</li><li>Economic visibility belongs in engineering management alongside roadmap and delivery tracking.</li><li>LLM-driven productivity pressure will expose organizations that treat engineering headcount as an unquestioned asset.</li>
+      </ul>
+    </article>
+    </section>
+
+    <section>
+      <h2>Informatics</h2>
+      
+    <article class="card">
+      <h3><a href="https://nedbatchelder.com/blog/202604/linklint">Linklint</a></h3>
+      <p>Ned Batchelder describes a Sphinx extension that suppresses redundant links during documentation builds by rewriting the doctree instead of editing source files. It is worth keeping because it is a compact example of AST-level tooling solving a real documentation quality problem while preserving accessibility constraints.</p>
+      <ul>
+        <li>Build-time tree rewrites can remove documentation noise without forcing source-format churn on authors.</li><li>Suppression rules stay tractable when they target narrow, defensible cases such as duplicate links in one paragraph or self-links inside a section.</li><li>Accessibility constraints should shape tooling decisions early, especially when visual cleanup would otherwise weaken link affordances.</li>
+      </ul>
+    </article>
+    </section>
+
+    <section>
+      <h2>Philosophy</h2>
+      
+    <article class="card">
+      <h3><a href="https://pluralistic.net/2026/04/12/always-great/">Pluralistic: Austerity creates fascism (13 Apr 2026)</a></h3>
+      <p>Doctorow uses the AI bubble as a live entry point for a broader political-economy argument: market crashes become socially explosive when governments answer elite losses with austerity for everyone else. It is worth keeping because it offers a durable model for separating financial collapse from the policy choices that turn collapse into authoritarian backlash.</p>
+      <ul>
+        <li>Economic crashes do their widest social damage through austerity policy choices, not through direct losses in ordinary workers’ financial portfolios.</li><li>When elites socialize losses and privatize gains, political anger becomes available to authoritarian movements.</li><li>Evaluating a technology bubble requires asking how institutions will distribute the fallout if the capital structure breaks.</li>
+      </ul>
+    </article>
+    </section>
+
+    <section>
+      <h2>Psychology</h2>
+      
+    <article class="card">
+      <h3><a href="https://mindblog.dericbownds.net/2026/04/the-default-mode-network-as.html">The Default Mode Network as a Bidirectional Interface Between World and Mind</a></h3>
+      <p>This post summarizes work showing that the default mode network contains receiver-like subregions engaged during perceptual decisions and sender-like subregions engaged during memory-guided thought. It is worth keeping because it turns a vague “internal thought” story into a more precise architectural model of how attention shifts between sensed input and internally constructed representations.</p>
+      <ul>
+        <li>The default mode network is functionally split rather than serving as a single undifferentiated internal-thought system.</li><li>Perceptually guided cognition leans on afferent, integrative DMN zones, while memory-guided cognition leans on efferent zones connected more broadly to perceptual-motor and attentional systems.</li><li>A useful mental model for cognition is dynamic switching between externally constrained interpretation and internally generated simulation.</li>
+      </ul>
+    </article>
+    </section>
+
+    <section>
+      <h2>Reddit Programming</h2>
+      
+    <article class="card">
+      <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sjjl5u/why_the_lowlevel_stigma/">Why the &quot;Low-Level&quot; stigma?</a></h3>
+      <p>This thread argues that dismissing low-level work as obsolete produces developers who can operate frameworks without understanding runtime consequences. It is worth keeping because it captures a recurring failure mode in modern tooling-heavy and AI-assisted workflows: abstractions become magic when nobody understands the layers underneath them.</p>
+      <ul>
+        <li>Low-level fundamentals improve debugging, performance reasoning, and judgment even for engineers who never write assembly professionally.</li><li>Abstractions stay safe only when enough people on the team can reason about the mechanisms they hide.</li><li>Training pipelines that optimize only for tool fluency risk producing operators with weak systems intuition.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3><a href="https://www.reddit.com/r/programming/comments/1sjvssn/the_psychology_of_bad_code_part_2_building/">The Psychology of Bad Code Part 2 – Building Systems That Support Secure Developer Behavior</a></h3>
+      <p>The post applies behavioral-economics thinking to application security and focuses on building systems that nudge developers toward secure behavior instead of relying on intention alone. It is worth keeping because the framing is practical, portable, and stronger than generic “train developers better” advice.</p>
+      <ul>
+        <li>Secure behavior scales when the safest path is also the easiest path through tooling and defaults.</li><li>Repeated insecure choices often indicate weak system design rather than weak developer character.</li><li>Security programs should optimize environment design and feedback loops, not only awareness campaigns.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3><a href="https://www.reddit.com/r/programming/comments/1sjg9v6/flat_error_codes_are_not_enough/">Flat Error Codes Are Not Enough</a></h3>
+      <p>This article pushes back on ultra-flat library error models and argues for preserving richer structure and context as errors move up the call graph. It is worth keeping because it addresses a common API-design simplification that makes failures harder to diagnose and harder to handle programmatically.</p>
+      <ul>
+        <li>Error messages alone are not a sufficient replacement for typed or structured failure information.</li><li>High-level business context should accumulate without erasing the low-level cause chain.</li><li>Good error design serves user-facing communication and machine-facing recovery logic at the same time.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3><a href="https://www.reddit.com/r/programming/comments/1sjejjk/paying_google_to_hack_macos_users/">Paying Google to Hack macOS Users?</a></h3>
+      <p>The piece attacks the normalization of `curl | shell` install flows and uses current examples to show how convenience patterns turn remote script execution into an accepted supply-chain habit. It is worth keeping because the operational lesson is immediate and broadly applicable across developer tooling.</p>
+      <ul>
+        <li>Remote install scripts are executable supply-chain dependencies and deserve the same scrutiny as any other production input.</li><li>Convenience-heavy installation patterns spread quickly from niche tools to mainstream vendors once they stop feeling exceptional.</li><li>Safer installation paths need to be explicit, reviewable, and easier to audit than ad hoc shell pipelines.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3><a href="https://www.reddit.com/r/programming/comments/1sjcdya/things_i_miss_about_spring_boot_after_switching/">Things I miss about Spring Boot after switching to Go</a></h3>
+      <p>This reflection uses a Java-to-Go move to make the hidden value of mature framework conventions visible again, especially in infrastructure-heavy backend work. It is worth keeping because it surfaces stack tradeoffs in terms of delivery ergonomics and repeated integration cost rather than language identity.</p>
+      <ul>
+        <li>Framework batteries remove large amounts of repeated infrastructure work even when they feel heavy or opinionated.</li><li>Simpler runtime stacks often shift complexity outward onto application teams and internal conventions.</li><li>Language and framework choices should be judged on delivery system behavior, not only on surface syntax or benchmark narratives.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1siqkc5/monorepo_vs_polyrepo_for_aidriven_development/">Monorepo vs Polyrepo for AI-driven development</a></h3>
+      <p>This discussion argues that monorepos gain additional leverage under AI-assisted development because context, documentation, shared instructions, and system-wide changes stay colocated. It is worth keeping because it reframes repository topology as a tooling-context problem rather than a pure source-control preference.</p>
+      <ul>
+        <li>AI-assisted workflows benefit from shared context, shared conventions, and a single place to discover system structure.</li><li>Fragmented repositories amplify differences in tests, documentation, and coordination overhead that humans and agents both have to pay.</li><li>Repository strategy should be evaluated against change flow and context assembly costs, not only team-boundary arguments.</li>
+      </ul>
+    </article>
+    </section>
+    </main>
+  </body>
+</html>

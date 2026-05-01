@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-21T22:12:17Z</p>
+      <section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://www.smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/">Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design</a></h3>
+          <p>Eleanor Hecks shows that common inactivity-based session expiry patterns penalize users who read slowly, navigate with assistive tech, or need more time for motor input, then turns the fix into concrete design guidance around advance warnings, extend-session controls, and preserved progress.</p>
+          <ul><li>Treat inactivity heuristics as an accessibility risk because reading, screen-reader navigation, and slower motor input can look idle.</li><li>Warn before expiry and provide an accessible control to extend the session.</li><li>Preserve progress with auto-save so reauthentication does not erase completed work.</li><li>Absolute timeouts are often easier to communicate and recover from than silent activity-based timeouts.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/">Announcing TypeScript 7.0 Beta</a></h3>
+          <p>TypeScript 7.0 Beta ports the compiler and language service to Go, keeps TypeScript 6.0 semantics, and reports roughly 10x faster builds with parallel checkers and builders, which makes it a meaningful tooling shift for large TypeScript codebases.</p>
+          <ul><li>The beta ships as `@typescript/native-preview` with `tsgo`, so teams can trial it side-by-side with TypeScript 6.</li><li>Parallel `--checkers` and `--builders` expose real scaling knobs for larger CI workloads and monorepos.</li><li>The transition still requires attention to 6.0 defaults such as `strict`, `module`, `types`, and `rootDir`.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://github.blog/open-source/git/highlights-from-git-2-54/">Highlights from Git 2.54</a></h3>
+          <p>Git 2.54 packages several workflow upgrades that matter in daily use: a simpler experimental `git history` command for targeted history edits, config-defined hooks, better HTTP 429 retry behavior, and geometric repacking as the default manual maintenance strategy.</p>
+          <ul><li>`git history reword` and `git history split` cover focused rewrite cases without a full interactive rebase.</li><li>Hooks can now live in config, which makes shared local automation easier to distribute and compose.</li><li>429 retry handling and geometric repacking improve resilience and repository maintenance with fewer custom workarounds.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://iprodan.dev/l/safe-alignment/">CSS safe alignment (flex &amp; grid)</a></h3>
+          <p>Ion Prodan explains the `safe` alignment keyword as a small CSS change that prevents centered or end-aligned flex and grid layouts from creating scroll traps when content overflows, which makes it a practical accessibility guardrail for responsive UIs.</p>
+          <ul><li>Use values like `safe center` when overflow could hide the start of content.</li><li>The same behavior applies across box-alignment properties in both flex and grid.</li><li>The fallback is effectively start alignment when the requested alignment would make content unreachable.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://bub.build/posts/why-rewrite-bub/">Why We Rewrote Bub</a></h3>
+          <p>The Bub rewrite argues that agent frameworks collapse under channel-specific code, feature flags, and unowned integrations, so the maintainable path is a smaller core with cleaner extension points instead of letting every new provider and skill land in the main runtime.</p>
+          <ul><li>Every extra channel or provider multiplies configuration surface and long-term maintenance cost.</li><li>Popular AI projects accumulate abandoned integrations quickly because contributors optimize for landing features, not owning them.</li><li>A stable agent core needs modular boundaries that keep optional capabilities outside the main system.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.hevcjs.dev/">hevc.js — HEVC/H.265 Decoder in WebAssembly</a></h3>
+          <p>hevc.js uses a from-scratch H.265 decoder in WebAssembly to transcode HEVC to H.264 in the browser, letting teams keep a single HEVC pipeline and only pay a client-side performance cost where native playback is missing.</p>
+          <ul><li>The library avoids dual encoding and duplicated manifests by converting only for unsupported browsers.</li><li>The main tradeoff is startup latency on the first segment, with smoother playback once buffered.</li><li>The implementation is unusually concrete: spec-transcribed C++17, validated against ffmpeg, and exposed as a dash.js plugin.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

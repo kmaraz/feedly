@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-20T05:33:59.604Z</p>
+      <section>
+        <h2>Frontend</h2>
+        <article class="card">
+          <h3><a href="https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/">Under the hood of MDN&#x27;s new frontend</a></h3>
+          <p>MDN explains how it replaced a React SPA wrapper and tangled CSS/build setup with server-rendered HTML plus Lit web components for isolated interactive islands. It is worth keeping because it is a concrete frontend architecture refactor that shows how to cut hydration and maintenance cost on a content-heavy site without giving up rich interactivity.</p>
+          <ul><li>Content-heavy sites can avoid SPA hydration overhead by combining static/server templating with small interactive islands.</li><li>Per-component CSS and JS loading reduces render-blocking bloat and cross-component regressions.</li><li>Lit and web components can support incremental migration even when an existing React app still exists.</li><li>Treat the content build pipeline as a first-class renderer instead of wrapping static HTML in an app shell.</li></ul>
+        </article>
+      </section><section>
+        <h2>Programming</h2>
+        <article class="card">
+          <h3><a href="https://yusufaytas.com/good-apis-age-slowly">Good APIs age slowly</a></h3>
+          <p>Yusuf Aytas argues that API quality is measured by how well a contract survives new consumers, changing implementations, and shifting requirements, not by how elegant the first version looks. It is worth keeping because it compresses a durable API design mental model into a short piece focused on boundaries, coupling, and long-term maintenance cost.</p>
+          <ul><li>Design contracts around stable domain concepts instead of current frontend payload shapes.</li><li>Expose less than feels convenient because visible internals quickly become obligations.</li><li>Convenient APIs often hide assumptions that later reappear as debugging and migration work.</li><li>Versioning does not repair unstable boundaries; it mainly relocates the cost.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1spb7g5/how_do_you_interview_someone_with_the_expectation/">How do you interview someone with the expectation they&#x27;ll be using AI tooling?</a></h3>
+          <p>This thread converges on a practical AI-era interview loop: evaluate debugging, code review, and reasoning under uncertainty instead of raw code generation speed. It is worth keeping because the comments turn vague “test AI usage” talk into concrete tactics such as seeded logic flaws, live explanation, and review-based exercises.</p>
+          <ul><li>Make debugging and code review primary interview tasks when models can draft boilerplate quickly.</li><li>Seed non-syntactic flaws such as unsafe defaults or typosquatted dependencies to test judgment.</li><li>Require candidates to explain fixes live so understanding is measured directly.</li><li>Optimize interviews for error detection and reasoning quality, not tokens typed.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sp1ew8/how_to_mentor_vibecoding_junior/">How to mentor vibecoding junior?</a></h3>
+          <p>The useful advice here is procedural: block unsafe PRs, require authors to explain code in their own words, and use concrete review gates so reviewers are not absorbing the missing thinking behind AI-generated changes. It is worth keeping because it frames AI overuse as a team quality and responsibility problem that needs explicit controls.</p>
+          <ul><li>Treat fully understood and debugged code as part of the deliverable, not an optional follow-up.</li><li>Use PR gates, repeated-feedback examples, and explicit explanation requirements to surface quality issues.</li><li>Do not let reviewers silently refactor or absorb unexplained AI code as cleanup labor.</li><li>Escalate persistent quality failures with concrete evidence from reviews and missed standards.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sp1vf7/has_anyone_successfully_shipped_a_greenfield/">Has anyone successfully shipped a greenfield production app (100k+ users) using llm assist?</a></h3>
+          <p>The strongest responses separate where AI helps from where humans must stay decisive: architecture, boundaries, and requirements need explicit human ownership, while AI can accelerate implementation inside that frame. It is worth keeping because the thread also names concrete failure modes around traceability, fabricated defaults, and structural bugs in AI-heavy greenfield work.</p>
+          <ul><li>Set architecture, patterns, and repo-specific rules before delegating implementation to agents.</li><li>Force at least one human-written failure-case test per AI-generated function or endpoint while context is fresh.</li><li>Traceability should connect generated code, commit or PR metadata, and deployed artifacts.</li><li>Models that invent defaults or skip clarification need human review even when throughput looks good.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sp8l59/how_do_you_actually_start_understanding_a_large/">How do you actually start understanding a large codebase?</a></h3>
+          <p>The best answers reject the idea of understanding a whole codebase at once and recommend building a mental model from narrow slices: start from a concrete use case, work backward from behavior or call stacks, and learn supporting frameworks one dependency at a time. It is worth keeping because it translates a vague “read the code” problem into a practical debugging workflow.</p>
+          <ul><li>Aim for one vertical slice or one abstraction layer at a time instead of whole-system comprehension.</li><li>Work backward from observable behavior, fan-out diagrams, or call stacks when forward tracing explodes.</li><li>Ignore private helpers early and learn major framework abstractions in isolation.</li><li>Feature work and debugging remain the fastest path to real system understanding.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

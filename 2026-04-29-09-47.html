@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-29T07:50:52.659Z</p>
+      <section>
+        <h2>Frontend</h2>
+        <article class="card">
+          <h3><a href="https://blog.angular.dev/back-from-baby-bonding-agents-building-blocks-and-the-future-of-ai-engineering-07c0afb816a3?source=rss----447683c3d9a3---4">Back from Baby Bonding: Agents, Building Blocks, and the Future of AI Engineering</a></h3>
+          <p>The Angular team describes agent skills as reusable instruction, script, and resource packages, then uses the Angular AI Tutor to show why AI product logic needs routing and modular context blocks. The useful part is the failure mode: one large rules file worked for one tutor, then became coupled, duplicated, and hard to update across frameworks.</p>
+          <ul><li>Treat agent instructions as a context pipeline with routing, reuse, token budget, and stability concerns.</li><li>A single large prompt can ship a working product, then become the maintenance bottleneck when syntax and behavior need separate evolution.</li><li>Reusable AI tooling needs explicit mechanisms for skill selection; file splitting alone leaves the model guessing which block applies.</li></ul>
+        </article>
+      </section><section>
+        <h2>Psychology</h2>
+        <article class="card">
+          <h3><a href="https://theconversation.com/placebo-effect-can-work-as-well-as-real-medicine-but-your-body-may-need-permission-to-use-it-279923">Placebo effect can work as well as real medicine - but your body may need permission to use it</a></h3>
+          <p>The article frames placebo response as a measurable biological system gated by expectation, context, and trusted social cues. Its strongest idea is the resource-allocation model: the body may wait for safety signals before spending energy on immune or recovery responses, which also explains why ritual and authority can manipulate the same mechanism.</p>
+          <ul><li>Placebo response is presented as biology: endorphins, dopamine, immune signaling, and hormone changes can move after contextual cues.</li><li>The evolutionary framing treats healing as costly resource allocation, with trusted social signals acting as permission to spend resources.</li><li>The same mechanism helps explain why wellness rituals and expensive inert treatments can gain power through authority and setting.</li></ul>
+        </article>
+      </section><section>
+        <h2>Visualization</h2>
+        <article class="card">
+          <h3><a href="https://flowingdata.com/2026/04/29/writing-style-as-your-digital-fingerprint/">Writing style as your digital fingerprint</a></h3>
+          <p>FlowingData points to writing-style identification as a practical anonymity problem for modern LLMs. The notable signal is the reported ability to identify an author from unpublished writing samples, which makes style itself a privacy surface for public posts, private drafts, and pseudonymous accounts.</p>
+          <ul><li>Stylometry plus stronger LLMs can make writing style behave like an identifier.</li><li>Pseudonymous writing has a new linkage risk when enough public or private samples exist.</li><li>AI privacy reviews should include authorship inference, especially for internal documents, anonymous feedback, and public community participation.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1syco4s/not_once_in_12_years_have_i_found_ui_snapshot/">Not once in 12 years have I found UI snapshot testing useful</a></h3>
+          <p>The thread separates low-value text snapshots from higher-signal visual regression and API-shape snapshots. The dominant pattern is familiar: snapshots rot when reviewers update them mechanically, while narrower golden outputs work when humans can quickly inspect the diff and connect it to an expected behavior change.</p>
+          <ul><li>HTML or component snapshots often create large unreadable diffs that reviewers approve mechanically.</li><li>Visual image diffs and JSON API snapshots get better support because the reviewed artifact maps directly to a meaningful contract.</li><li>Snapshot tests need a clear owner, CI enforcement, and a review habit that treats snapshot changes as behavior changes.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1syc76v/e2ee_for_a_healthcare_saas_with_auth0_sso/">E2EE for a healthcare SaaS with Auth0 SSO - replacing PIN with WebAuthn PRF, am I missing something?</a></h3>
+          <p>The post is a useful architecture checklist for zero-knowledge healthcare SaaS: Auth0 authenticates, a separate PIN or passkey-derived key wraps the DEK, and recovery remains a product risk. The unresolved part is production confidence around WebAuthn PRF coverage, cross-ecosystem migration, React Native support, and user lockout.</p>
+          <ul><li>Deriving encryption keys from Auth0 claims turns the identity provider into practical key escrow and weakens the zero-knowledge boundary.</li><li>WebAuthn PRF can improve unlock UX, while PIN and recovery-key fallbacks still need regular verification to prevent silent lockout.</li><li>Cross-device and mobile support are product architecture constraints, especially when passkey sync differs between Apple, Google, and native mobile flows.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sy8lpl/codebase_has_hundreds_of_isinstance_and_getattr/">Codebase has hundreds of isinstance() and getattr(). How to convince colleague to fix?</a></h3>
+          <p>The thread turns a Python code smell complaint into a better boundary-design discussion. The strongest advice is pragmatic: avoid ripping out defensive checks on taste alone, add typed and validated boundaries, model better patterns in changed code, and use lint or type-checking rules where the team has agreed on the contract.</p>
+          <ul><li>Repeated `getattr()` and `isinstance()` deep in business logic often means inputs are untyped, unvalidated, or mistrusted after validation.</li><li>The fix is usually typed parsing at boundaries plus tests, then simpler internal code that can trust the parsed shape.</li><li>A review campaign based only on smell loses credibility; small refactors with tests and agreed lint rules create a safer path.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://lasans.blog/articles/misc/email-addresses-deep-dive/">Email address deep dive for programmers</a></h3>
+          <p>This is a broad reference on email-address structure, validation, role accounts, catch-all behavior, provider quirks, disposable addresses, and security traps. The practical value is avoiding naive regex validation and understanding which rules are protocol truth, provider convention, or product-policy decision.</p>
+          <ul><li>Email validation needs separate handling for syntax, deliverability, provider normalization, and product abuse controls.</li><li>Limits are defined in octets, which matters once Unicode local parts or encoded domains enter the system.</li><li>Role addresses, plus-addressing, catch-all domains, and temporary inboxes are business-policy questions as much as parser questions.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit">PostgreSQL and the OOM Killer: Why We Use Strict Memory Overcommit</a></h3>
+          <p>Ubicloud explains why PostgreSQL prefers early `ENOMEM` failures over Linux OOM kills: killing one backend can force the postmaster to terminate all backends to protect shared memory and data integrity. The article also documents a Linux 6.5 accounting bug that inflated `Committed_AS`, then gives a concrete overcommit limit heuristic for dedicated Postgres hosts.</p>
+          <ul><li>`vm.overcommit_memory=2` can turn catastrophic OOM kills into transaction-level allocation failures that PostgreSQL can handle.</li><li>Kernel memory accounting bugs can stay invisible under default heuristics, then break strict overcommit weeks later through bogus `Committed_AS` growth.</li><li>Ubicloud uses `overcommit_kbytes = total_memory_kb * 0.8 + 2 GB`, adjusted for huge pages, to reserve kernel headroom and sidecar budget.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://evilgeniuslabs.ca/blog/from-cvs-to-git-thirty-years-of-source-control">From CVS to Git: thirty years of source control, lived from inside</a></h3>
+          <p>The essay traces source control from zip files and Visual SourceSafe through CVS, Subversion, BitKeeper, Git, and GitHub. Its durable value is the practitioner view of why Git won: local commits, cheap branching, content-addressed storage, and social tooling solved concrete pain from earlier centralized and lock-based systems.</p>
+          <ul><li>Older systems optimized around avoiding conflicts or centralizing truth; Git optimized around cheap local history and mergeable parallel work.</li><li>The GitHub layer made Git the default by turning distributed version control into review, identity, automation, and collaboration infrastructure.</li><li>The thread usefully notes a gap: monorepo-scale systems such as Perforce, Piper, Mercurial-at-Facebook, and Jujutsu are part of the missing follow-up history.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sy3wbv/approved_an_ai_feature_for_production_knowing_the/">Approved an AI feature for production knowing the security review didn&#x27;t actually answer the question. It shipped, nothing happened, I still don&#x27;t feel right about it.</a></h3>
+          <p>The thread surfaces a common AI governance failure: process sign-off can confirm that checkboxes were completed while leaving the real data-risk question unanswered. The concrete issue is customer credentials inside support tickets; the useful response is to measure and reduce credential ingestion at the source, define personal sign-off criteria, and separate vendor approval from actual residual-risk analysis.</p>
+          <ul><li>A completed review process is evidence of process completion, with separate evidence needed for the security question under review.</li><li>The main risk may already exist before the LLM step when customers can paste credentials into tickets and the system cannot quantify misses.</li><li>Engineer-of-record approval should state the specific criteria verified, the evidence used, and the unresolved residual risk.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sxyytp/how_do_you_handle_more_senior_teammates_who_raise/">How do you handle more senior teammates who raise flags, but never propose solutions?</a></h3>
+          <p>The thread is useful for PR and design-review dynamics. Good comments distinguish three cases: real communication gaps, culture where senior people block without owning alternatives, and juniors missing existing design constraints. The actionable pattern is to get design-system owners involved before implementation, document objections as constraints, and make late PR review about implementation details.</p>
+          <ul><li>Late architectural objections in PRs are expensive; early plan review turns many blockers into constraints or explicit approvals.</li><li>When a senior raises a concern without a solution, ask for the violated principle, the constraint being protected, and examples of acceptable designs.</li><li>Design-system feedback needs written component guidance; vague claims about intended use create status games and repeated rework.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

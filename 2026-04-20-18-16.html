@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-20T16:27:38.926Z</p>
+      <section>
+        <h2>Tech</h2>
+        <article class="card">
+          <h3><a href="https://www.debugbear.com/blog/shopify-speed-optimization">Shopify Speed Optimization: Fixing The Real Bottlenecks</a></h3>
+          <p>DebugBear reframes Shopify performance work around bottlenecks users feel first: overweight hero media, synchronous carousel code, and third-party scripts that delay the initial paint. The practical value is the concrete sequencing and thresholds, including smaller hero assets, poster images before video, and treating app script execution order as a first-class architectural concern.</p>
+          <ul><li>Optimize the hero section before lower-page assets because above-the-fold media dominates perceived speed and LCP.</li><li>Poster images preserve video-driven design without making the video file the initial rendering bottleneck.</li><li>Heavy carousel libraries hurt twice: transfer size and main-thread execution before the hero can paint.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://stripe.dev/blog/payment-api-design">Stripe’s payments APIs: The first 10 years</a></h3>
+          <p>Michelle Bu’s retrospective shows how Stripe moved from a narrow Charge and Token model toward PaymentIntents by treating API evolution as a product-debt problem, not a sequence of additive parameters. The durable lesson is that a unified contract needs predictable states and guarantees across payment methods before it needs elegance.</p>
+          <ul><li>API product debt accumulates when each new edge case becomes another flag instead of a model change.</li><li>Payment abstractions should encode initiation and finalization semantics consistently across methods.</li><li>Durable API design came from first-principles redesign around a small set of reusable concepts.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://binaryigor.com/modern-frontend-complexity.html">Modern Frontend Complexity: essential or accidental?</a></h3>
+          <p>Igor Roztropiński separates essential frontend complexity from accidental tooling complexity by focusing on the widening gap between browser runtime and modern TSX and SPA build stacks. The useful part is the concrete simplification proposal: push more UI back to server-rendered HTML, use HTMX for fragment navigation, and keep Web Components behavioral instead of framework-owned.</p>
+          <ul><li>A large share of frontend complexity comes from source-to-runtime translation layers, bundlers, polyfills, and framework conventions.</li><li>Server-rendered HTML plus fragment swaps can preserve interactivity while shrinking the amount of client code teams must reason about.</li><li>Behavioral Web Components let teams reuse interaction logic without tying structure to a full framework.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://blog.measure.sh/p/mobile-breaks-differently">Mobile breaks differently</a></h3>
+          <p>Anup Cowkur argues that mobile observability breaks when teams reuse backend assumptions for an environment they do not control. The piece is strong because it names the operational differences that change the design: irreversible releases, ANRs, symbolication pipelines, session reconstruction, and telemetry budgets constrained by battery and bandwidth.</p>
+          <ul><li>Mobile failures are release-management problems as much as code problems because fixes depend on app-store approval and user updates.</li><li>ANRs and symbolication need first-class pipelines; backend-style error tracking misses both.</li><li>Session reconstruction matters more than single-request traces because user journeys span backgrounding, retries, network loss, and OS intervention.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.bleepingcomputer.com/news/security/disgruntled-researcher-leaks-bluehammer-windows-zero-day-exploit/">Disgruntled researcher leaks “BlueHammer” Windows zero-day exploit</a></h3>
+          <p>BleepingComputer documents how a privately reported Windows privilege-escalation bug turned into a public zero-day after disclosure handling broke down. The durable signal is procedural: coordinated disclosure fails when reporting friction and slow response make researchers expect inaction, and the blast radius jumps again once a working exploit is public and forked.</p>
+          <ul><li>A local privilege-escalation chain still leads to full machine compromise once an attacker lands locally.</li><li>Disclosure programs need low-friction submission and credible responsiveness or researchers will route around them.</li><li>A public proof of concept changes the risk profile quickly because confirmation and forks accelerate copycat exploitation.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

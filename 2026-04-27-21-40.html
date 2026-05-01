@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-27T19:40:33.900Z</p>
+      <section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://thehardparts.dev/failure-modes/friendly-rewrite">The Friendly Rewrite · thehardparts.dev</a></h3>
+          <p>The piece names the clean-slate rewrite failure mode: pain in the current system turns into a parallel replacement with no explicit migration slice, cutover criteria, or retirement plan. The AI angle is sharp because generation can make the wrong rewrite look cheaper than the coordination work needed to land it.</p>
+          <ul><li>Freeze new rewrite scope until the first valuable migration slice and exit criteria are explicit.</li><li>Track parity, usage, and retirement as first-class delivery milestones.</li><li>Use AI for inventorying legacy behavior and dependency maps; keep migration strategy human-owned.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://medium.com/@ameyakulkarni2023/how-i-reverse-engineered-my-ides-database-to-build-a-real-time-ai-dashboard-e6b977819856">How I reverse-engineered a SQLite WAL database inside a VS Code extension - custom merge engine, header byte patching, and protobuf decoding without a schema</a></h3>
+          <p>A practical reverse-engineering writeup follows an AI IDE quota tracker from stale SQLite reads to WAL merging and schema-less protobuf decoding. The durable lesson is that local tool state can look accessible while the freshness and encoding layers carry the real complexity.</p>
+          <ul><li>SQLite WAL files can make a direct database read silently stale unless the write-ahead log is merged or interpreted.</li><li>Protobuf payloads can be inspected without a schema by walking wire tags and validating candidate fields against observed behavior.</li><li>Developer-tool integrations need freshness checks as much as data extraction code.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/">The fastest Linux timestamps</a></h3>
+          <p>Henrique Cabral documents a low-latency tracing constraint where timestamp cost matters at tens of nanoseconds, then compares Linux clock paths and a custom TSC-based timer. The useful part is the methodology: tail latency, precision, stability, and operational safety all matter before replacing vDSO-backed clocks.</p>
+          <ul><li>At microsecond pipeline stages, timestamp calls can become visible tracing overhead.</li><li>Clock benchmarks need tail distributions, stability checks, and average call cost in the same measurement loop.</li><li>Custom timers can win narrow performance budgets while adding portability and correctness risk.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://yusufaytas.com/message-brokers-are-modern-grids">Message Brokers Are Modern Grids</a></h3>
+          <p>Yusuf Aytas argues that shared Kafka and RabbitMQ clusters start behaving like utility grids once many teams use them for unrelated workloads. Average throughput hides the operational hazards: replay storms, retry loops, dead-letter ambiguity, and ownership gaps across tenants.</p>
+          <ul><li>Shared brokers need tenant-aware capacity thinking because replay and catch-up traffic differ from live traffic.</li><li>Dead-letter handling, replay permissions, retention, and ownership need explicit contracts per topic or queue.</li><li>The team creating broker load should stay close to the team paying the operational cost.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://dystroy.org/blog/box-to-save-memory/">Box to save memory in Rust</a></h3>
+          <p>A real Rust memory case study reduces a Smithy model loader from 895 MB by changing struct layout and boxing large optional fields during serde deserialization. The article is concrete about why enum and struct size propagate through collections and how to verify memory wins.</p>
+          <ul><li>Large optional fields inside frequently repeated structs can dominate memory through layout amplification.</li><li>Boxing selected fields trades pointer indirection for a smaller hot struct footprint.</li><li>Memory optimization should be proven with before-and-after measurement on the real dataset.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sx352a/dealing_with_career_fatigue/">Dealing with Career Fatigue</a></h3>
+          <p>The r/ExperiencedDevs thread surfaces a common senior-engineer fatigue pattern: endless firefighting, weak onboarding, poor management, job-market friction, and AI uncertainty compound into career exhaustion. The highest-signal replies frame recovery around detachment from company chaos, active optionality, and energy spent outside digital work.</p>
+          <ul><li>Treating employment as a time-for-money contract can reduce emotional coupling to broken systems.</li><li>Keeping interview readiness and exit options lowers the cost of leaving a chronically unhealthy team.</li><li>Non-digital hobbies and boundaries are recurring mitigations from experienced commenters.</li></ul>
+        </article>
+      </section><section>
+        <h2>Tech</h2>
+        <article class="card">
+          <h3><a href="https://web.dev/blog/web-platform-04-2026?hl=en">New to the web platform in April</a></h3>
+          <p>The April web platform roundup is worth scanning for concrete browser changes: `contrast-color()` reaches Baseline, scroll-driven animation range properties land across engines, Firefox adds `ariaNotify()`, and lazy-loaded image sizing gets simpler.</p>
+          <ul><li>`contrast-color()` can simplify accessible foreground selection across major engines.</li><li>`ariaNotify()` gives authors a direct path for queued screen-reader announcements where live regions are awkward.</li><li>Scroll animation range properties and lazy image `sizes=&quot;auto&quot;` reduce JavaScript and markup work in common UI cases.</li></ul>
+        </article>
+      </section><section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://css-tricks.com/using-nonexistent-nth-letter-selector-now/">Let’s Use the Nonexistent ::nth-letter Selector Now</a></h3>
+          <p>Lee Meyer builds a working `::nth-letter` experiment through JavaScript, SplitText, and stylesheet rewriting, which makes the missing CSS primitive concrete. The article is most valuable as a tour of why custom CSS syntax is hard: invalid selectors disappear before scripts can inspect them, so the workaround has to intercept raw stylesheet text.</p>
+          <ul><li>The platform lacks a native per-letter pseudo-element, so demos still rely on generated spans or script-driven rewrites.</li><li>Invalid CSS selectors are discarded by the parser before normal CSSOM access, which blocks simple polyfills.</li><li>Custom CSS syntax needs raw stylesheet interception and carries risks similar to monkey-patching JavaScript globals.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.smashingmagazine.com/2026/04/bug-free-workforce-ai-disrupting-teams/">The “Bug-Free” Workforce: How AI Efficiency Is Subtly Disrupting The Interactions That Build Strong Teams</a></h3>
+          <p>Casey Hudetz and Eric Olive argue that AI removes many small cross-functional interruptions, and those interruptions also build trust, context, and coordination. The practical point is to preserve intentional collaboration paths while automating narrow lookup and drafting work.</p>
+          <ul><li>AI self-service can reduce coordination load and also remove weak social ties that teams depend on later.</li><li>Team AI adoption should track trust, psychological safety, and coordination failures alongside task speed.</li><li>Structured cross-functional reviews, office hours, and shared experiments can replace some lost informal contact.</li></ul>
+        </article>
+      </section><section>
+        <h2>Philosophy</h2>
+        <article class="card">
+          <h3><a href="https://pluralistic.net/2026/04/27/analogs-and-analogies/">Pluralistic: The enshittification multiverse (27 Apr 2026)</a></h3>
+          <p>Cory Doctorow extends enshittification from digital platforms to any mechanism that worsens an experience to shift value from users to the operator. The useful frame is zero-sum extraction: surveillance pricing, degraded service, and artificial scarcity become comparable value-transfer patterns.</p>
+          <ul><li>Enshittification is framed as value transfer through deliberate degradation across platforms, pricing systems, and service design.</li><li>Surveillance pricing can extract from one buyer while harming other sellers that depend on the same buyer budget.</li><li>The analogy is useful when it identifies who profits from worsening the system and who absorbs the cost.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

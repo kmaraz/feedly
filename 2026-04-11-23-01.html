@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-11T21:09:25.653Z</p>
+      <section>
+        <h2>Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sgkrif/signals_are_not_guarantees_the_mismatch_between/">Signals Are Not Guarantees - the mismatch between what e2e tests say and what they actually check</a></h3>
+          <p>This piece argues that many end-to-end tests assert UI signals instead of the behavioral guarantees users actually care about. It is worth keeping because it turns flaky e2e maintenance into a sharper testing rule: assert the promise, not the representation.</p>
+          <ul><li>A disappearing spinner or visible banner is evidence, not the product contract by itself.</li><li>Behavior-focused assertions survive UI refactors better than representation-focused checks.</li><li>Good e2e tests encode the user-visible guarantee that must remain true across implementation changes.</li><li>Flaky suites often come from testing incidental signals that drift away from the real outcome.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sh4ehp/i_wrote_a_postgresql_patch_to_make_materialized/">I wrote a PostgreSQL patch to make materialized view refreshes O(delta) instead of O(total)</a></h3>
+          <p>The article highlights a costly PostgreSQL limitation: materialized view refreshes still process the full dataset even when only a small delta changed. It stays because it clarifies the real cost model and shows why incremental maintenance matters in production systems.</p>
+          <ul><li>PostgreSQL materialized views do not provide incremental refresh out of the box.</li><li>Large views turn tiny source changes into whole-dataset work unless you build a delta-aware path.</li><li>The operational question is how much changed, not how large the total view is.</li><li>Teams depending on near-real-time derived tables need to validate refresh complexity early.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sh4li2/one_method_was_using_71_of_cpu_heres_the_flame/">One Method Was Using 71% of CPU. Here&#x27;s the Flame Graph.</a></h3>
+          <p>This walkthrough uses Java Flight Recorder and Mission Control to show iterative performance work: remove the hottest method, re-profile, and let the next bottleneck surface. It is worth keeping because it gives a concrete workflow for turning profiler output into disciplined optimization rounds.</p>
+          <ul><li>Performance tuning works in rounds because the next bottleneck becomes visible only after the loudest one is removed.</li><li>Start from the overview signals: heap, GC, CPU, and contention point you to different classes of problems.</li><li>Profile under realistic concurrency or you will miss lock contention that stays invisible at lighter load.</li><li>JFR and JMC provide enough evidence to justify optimizations with concrete before-and-after numbers.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1sdy11q/stamp_it_all_programs_must_report_their_version/">Stamp It! All Programs Must Report Their Version</a></h3>
+          <p>Michael Stapelberg argues that incident response gets needlessly delayed when software cannot clearly report what build is running. It is worth keeping because the fix is simple and durable: stamp version data into builds, plumb it through runtime surfaces, and report it where operators debug.</p>
+          <ul><li>Version reporting is operational tooling, not cosmetic metadata.</li><li>The most useful identifier is the VCS revision because other release details can be derived from it.</li><li>Runtime diagnostics should report the effective running binary and loaded configuration, not only the invoked binary.</li><li>Clear build stamps remove hours of uncertainty during rollback, reproduction, and support work.</li></ul>
+        </article>
+      </section><section>
+        <h2>ExperiencedDevs</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sg1glq/ive_been_trying_to_work_towards_level_5/">I&#x27;ve been trying to work towards &quot;Level 5&quot; AI-assisted development for a year. I&#x27;m not quite there, but this is the flow that&#x27;s working for me.</a></h3>
+          <p>This thread frames high-autonomy AI development as a process problem more than a model problem. It stays because the core claim is transferable: structured specs, review flow, and task management create more leverage than chasing one-shot coding performance.</p>
+          <ul><li>Agentic development quality depends heavily on spec quality and decomposition discipline.</li><li>Higher autonomy comes from workflow structure, not from giving a stronger model a looser prompt.</li><li>Review and orchestration are part of the system design when multiple coding agents are involved.</li><li>The practical ceiling on AI-assisted development is often process maturity, not raw model capability.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

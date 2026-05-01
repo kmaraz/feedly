@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Feedly Digest</title>
+    <link>https://www.maraz.sk/feedly/</link>
+    <description>Current article list from the Feedly digest on maraz.sk.</description>
+    <lastBuildDate>Thu, 30 Apr 2026 21:36:10 +0000</lastBuildDate>
+    <item>
+      <title>[Engineering] The Pulse: token spend breaks budgets – what next?</title>
+      <link>https://blog.pragmaticengineer.com/the-pulse-token-spend-breaks-budgets-what-next/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/c6a8639eb7c874c26ad9406ea4d7f5d64b046855</guid>
+      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;Gergely Orosz reports that AI coding token spend is rising roughly an order of magnitude at many companies, forcing teams to choose between open-ended adoption, model routing, cheaper defaults, pooled budgets, and stronger ROI measurement.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Uncapped agent usage can turn model choice into a material engineering cost, not just a tooling preference.&lt;/li&gt;&lt;li&gt;Teams are starting with cheaper default models, high-end model restrictions, monthly spend reporting, and outcome measurement.&lt;/li&gt;&lt;li&gt;The real bottleneck is shifting from code generation to review, product direction, and governance of when expensive models are justified.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Informatics] The Importance of Native Randomness in CSS</title>
+      <link>https://css-tricks.com/the-importance-of-native-randomness-in-css/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/f69752bd776b3da91889d8a04c44bb233e6fdb0b</guid>
+      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Alvaro Montoro explains why native CSS randomization matters: it moves visual variation back into the styling layer instead of pushing layout decisions into JavaScript or build-time tooling.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Past CSS randomness patterns were deterministic hacks, build-time freezes, server-side injections, or JavaScript workarounds.&lt;/li&gt;&lt;li&gt;CSS Values and Units Level 5 adds `random()` and `random-item()` so the browser can resolve variation inside CSS itself.&lt;/li&gt;&lt;li&gt;The useful framing is architectural: use the least powerful web layer that can express the behavior cleanly.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Philosophy] Pluralistic: How not to ban surveillance pricing (30 Apr 2026)</title>
+      <link>https://pluralistic.net/2026/04/30/something-must-be-done/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/a12a7f6f8103f43825b3d047e7801fae5f6d8b77</guid>
+      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Cory Doctorow argues that Maryland&amp;#x27;s surveillance-pricing law is mostly theater because it narrows scope to groceries, preserves consent loopholes, exempts common pricing tactics, and blocks private enforcement.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Regulation can fail by design when loopholes are placed in scope, consent, exemptions, and enforcement.&lt;/li&gt;&lt;li&gt;Surveillance pricing is framed as a data-driven way to extract more from people with less leverage, not as neutral personalization.&lt;/li&gt;&lt;li&gt;The policy lesson transfers to tech governance: read the enforcement mechanism before trusting the headline claim.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] OpenData Buffer: HA pipelines without Kafka</title>
+      <link>https://www.opendata.dev/blog/buffer-ha-pipelines-without-kafka/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/59ba2127c58513c331c9cd3000b1d9efc5ee50b4</guid>
+      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;OpenData describes a Kafka alternative for telemetry-style ingestion that uses object storage, append-only data files, and a manifest to trade Kafka&amp;#x27;s general log semantics for lower operational and monthly cost.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Telemetry and event pipelines often need durable buffering and at-least-once delivery, not strict ordering or full consumer-group semantics.&lt;/li&gt;&lt;li&gt;A narrower protocol over object storage can cut cost sharply when the workload has fixed participants and tolerates sub-second to low-second latency.&lt;/li&gt;&lt;li&gt;The tradeoff is less flexibility: throughput, partitioning, participant count, and latency tuning move into explicit system design decisions.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] No, Really, Bash Is Not Enough: Why Large-Scale CI Needs an Orchestrator</title>
+      <link>https://www.iankduncan.com/engineering/2026-02-06-bash-is-not-enough</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-04-30/70a789a246882590bf3460f78aa354dc81d79541</guid>
+      <pubDate>Thu, 30 Apr 2026 21:36:10 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Ian Duncan argues that shell scripts are fine for linear CI but break down once pipelines need dependency graphs, parallelism, artifact passing, conditional execution, caching, and failure propagation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A mature CI pipeline is a scheduler plus dependency model, not a longer shell script.&lt;/li&gt;&lt;li&gt;The article connects practical CI pain to build-system theory: schedulers, rebuilders, traces, and minimal rebuilds are real design choices.&lt;/li&gt;&lt;li&gt;Keeping a script entrypoint is compatible with using an orchestrator; the boundary is where coordination logic starts to dominate command execution.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

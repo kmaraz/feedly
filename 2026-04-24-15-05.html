@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-24T13:10:38Z</p>
+      <section>
+        <h2>Tech</h2>
+        <article class="card">
+          <h3><a href="https://www.debugbear.com/blog/which-government-website-is-the-fastest">Which Country Has The Fastest Government Website?</a></h3>
+          <p>DebugBear compares 25 government homepages using CrUX LCP, CLS, and INP data, then ties the ranking to concrete implementation choices. The useful part is the performance diagnosis: gov.uk wins through a mobile-first text-heavy design, CDN investment, and low TTFB, while slower sites expose common LCP failures such as render-blocking resources, background-image discovery delays, late client-side rendering, and hidden content.</p>
+          <ul><li>Real-user Core Web Vitals are a better starting point than local lab scores when comparing public-service websites.</li><li>Text-first layouts, fast TTFB, and simple initial rendering create measurable LCP advantages.</li><li>Background images, render-blocking JavaScript, and CSS-hidden content can turn otherwise reasonable pages into slow pages.</li><li>Performance and accessibility overlap for public services because slow pages exclude users on weaker devices and networks.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1su7irb/why_i_spent_years_trying_to_make_css_states/">Why I spent years trying to make CSS states predictable</a></h3>
+          <p>The post documents a concrete frontend design-system problem: CSS component states overlap through specificity and source order, so variant growth turns styling into manual conflict resolution. The proposed Tasty model lets authors declare state priority and compiles mutually exclusive selectors, which is relevant to long-lived component libraries where hover, disabled, theme, breakpoint, container, and modifier states all interact.</p>
+          <ul><li>Stateful component styles become fragile when state priority lives implicitly in selector ordering.</li><li>A compiler can turn declared priority into non-overlapping selectors and remove a class of cascade regressions.</li><li>This abstraction pays off most in design systems with years of variants, themes, and multiple authors.</li><li>The useful test for styling abstractions is extension safety under production component pressure.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/programming/comments/1su5w1d/while_github_actions_remains_a_key_part_of_this/">While GitHub Actions remains a key part of this vision, we are allocating resources towards other areas ...</a></h3>
+          <p>The thread collects sharp GitHub Actions ergonomics failures around reusable workflows, composite actions, GHCR-backed jobs, secrets handling, input typing, artifact actions, and abandoned official action repositories. It is useful as a field report on CI platform risk: production workflows often depend on loosely maintained primitives whose edges only appear during real pipeline design.</p>
+          <ul><li>Reusable workflows and composite actions have different checkout, input, and secret semantics, which raises maintenance cost.</li><li>Official action repositories can remain central to production CI while accepting little or no external contribution.</li><li>CI design should treat marketplace and official actions as dependencies with ownership, support, and lifecycle risk.</li><li>Shared scripts and generated workflow code can be more predictable than deeply nested Actions abstractions.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://socket.dev/blog/bitwarden-cli-compromised">Bitwarden CLI Compromised in Ongoing Checkmarx Supply Chain Campaign</a></h3>
+          <p>Socket reports that the Bitwarden CLI npm package version 2026.4.0 was compromised through a GitHub Actions supply-chain path connected to the broader Checkmarx campaign. The payload targeted developer and CI secrets, including GitHub, npm, cloud, SSH, environment, and AI-tool configuration data, which makes the incident more relevant than ordinary package malware for engineering teams that automate releases through npm and Actions.</p>
+          <ul><li>A trusted security tool can become a CI/CD entry point when its npm distribution path is compromised.</li><li>Blast-radius analysis should include developer workstations, GitHub Actions runners, npm tokens, cloud credentials, SSH keys, and AI-tool config files.</li><li>Affected environments should rotate exposed secrets, review unexpected workflows, inspect public repository creation, and hunt for published package changes.</li><li>Short-lived credentials, narrow token scopes, locked-down workflow permissions, and package provenance checks reduce recovery cost.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://david.alvarezrosa.com/posts/devirtualization-and-static-polymorphism/">Devirtualization and Static Polymorphism</a></h3>
+          <p>The article explains virtual dispatch cost at the assembly level, then shows when compilers can devirtualize calls and when static polymorphism can remove runtime dispatch from latency-sensitive paths. The value is the concrete bridge from object layout and vtables to branch prediction, inlining, cache behavior, CRTP, and C++20 concepts.</p>
+          <ul><li>Virtual dispatch adds an object pointer and an indirect call path that can block inlining and hurt prediction.</li><li>Compilers can devirtualize only when the concrete target is provable at compile time.</li><li>Static polymorphism trades runtime flexibility for compile-time specialization and zero-dispatch abstractions.</li><li>The right decision depends on whether extension at runtime is required or performance-critical call sites dominate.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.seangoedecke.com/bad-code-at-big-companies/">How good engineers write bad code at big companies</a></h3>
+          <p>Sean Goedecke argues that bad code in large companies often comes from organizational design, not weak engineers: teams rotate, codebases outlive owners, and many changes are made by people new to the system under deadline pressure. The useful framing is that code quality depends on preserving system expertise and making review load explicit.</p>
+          <ul><li>Large organizations trade local code expertise for staffing flexibility and frequent internal mobility.</li><li>Long-lived systems accumulate changes from engineers who are competent yet new to that specific codebase.</li><li>Informal reliance on old hands creates hidden review bottlenecks and fragile ownership.</li><li>Improving quality requires retention of system knowledge, explicit ownership, and review capacity.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773">An update on the rust-coreutils rewrite for Ubuntu 26.04</a></h3>
+          <p>Canonical explains how the uutils/rust-coreutils migration for Ubuntu 26.04 moved from ambition to release engineering: internal review was judged insufficient, Zellic performed a two-phase external audit, 113 findings were reported, upstream fixed most of them, and the team adjusted the LTS scope based on remaining risk. It is a strong case study in shipping foundational rewrites under security and compatibility constraints.</p>
+          <ul><li>Core infrastructure rewrites need independent security review before LTS-level trust.</li><li>Audit findings should feed upstream fixes rather than stay as private downstream patches.</li><li>Shipping a partial scope can be the correct release decision when the remaining risk is known.</li><li>Transparent migration notes make risk posture inspectable for downstream users.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1stm1uw/how_do_you_keep_your_understanding_of_your/">How do you keep your understanding of your codebase and systems consistently high?</a></h3>
+          <p>The thread prompt is useful because it names a failure mode of AI-assisted coding: engineers can produce code they cannot explain. The proposed countermeasure is lightweight self-interrogation during coding, with questions about assumptions, production breakage, and whether the implementation can be explained without rereading it.</p>
+          <ul><li>AI-assisted output still needs causal understanding from the engineer who ships it.</li><li>Useful review questions include assumptions, production failure modes, and plain-language explanation.</li><li>Reflection prompts are cheap enough to use during coding, review, and debugging.</li><li>Team rituals around review and knowledge sharing need consistency to prevent understanding drift.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1stkmw4/transactional_outbox_pattern_apply_or_not_to/">Transactional outbox pattern, apply or not to</a></h3>
+          <p>The thread presents a classic dual-write failure mode: a service writes DynamoDB status first, then sends to SQS, with a compensating status update if the send fails. The useful lesson is the framing: rare failure plus manual support is a business decision, while DynamoDB streams, EventBridge, or an outbox-style flow make the event emission path explicit and recoverable.</p>
+          <ul><li>Dual writes create correctness risk even when the second operation rarely fails.</li><li>Manual remediation through logs and support alerts should be treated as an operational contract.</li><li>DynamoDB streams or an outbox-style handoff can make state changes the durable source of event emission.</li><li>The design argument should compare failure impact, detection time, recovery cost, and extra infrastructure cost.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-27T08:32:41Z</p>
+      <section>
+        <h2>Frontend</h2>
+        <article class="card">
+          <h3><a href="https://saschb2b.com/blog/react-compiler-year-in-review">The React Compiler at Eighteen Months: The Arc, the Debates, and What&#x27;s Next</a></h3>
+          <p>Sascha Becker reviews the React Compiler after 18 months, framing its impact as fewer re-render bugs, less manual memoization, and stricter enforcement of the Rules of React. The useful part is the migration map: start with the ESLint plugin, measure real interactions, and track every `use no memo` escape hatch as debt.</p>
+          <ul><li>Greenfield adoption is mostly build configuration; brownfield adoption is a cleanup project.</li><li>Compiler wins target rerender scaling. Network waterfalls, bundle size, and startup cost remain separate bottlenecks.</li><li>Rules of React violations become observable through lint failures and skipped compilation.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://longform.asmartbear.com/hire-better-than-you/">How to hire people who are better than you</a></h3>
+          <p>Jason Cohen gives a practical hiring test for roles where the interviewer cannot evaluate domain expertise: look for candidates whose ideas immediately change how you see your company, whose questions expose real constraints, and whose reference checks reveal the environment where they thrive.</p>
+          <ul><li>Use real company problems to watch how a candidate clarifies constraints and applies experience.</li><li>Strong candidates make you want to act on their ideas during or immediately after the interview.</li><li>Reference checks should map fit conditions, failure modes, and natural strengths.</li></ul>
+        </article>
+      </section><section>
+        <h2>Informatics</h2>
+        <article class="card">
+          <h3><a href="https://blog.miguelgrinberg.com/post/how-bitwarden-encrypts-and-decrypts-secrets">How Bitwarden Encrypts and Decrypts Secrets</a></h3>
+          <p>Miguel Grinberg explains Bitwarden and Vaultwarden client-side encryption: the passphrase unlocks a random master key, the master key splits into encryption and MAC keys, and the server stores encrypted blobs. The working Python walkthrough ties security architecture to concrete decryption and integrity checks.</p>
+          <ul><li>Secrets are encrypted with a random master key; the account passphrase unlocks that master key.</li><li>Encrypted fields include IV, ciphertext, and HMAC; integrity verification precedes AES-CBC decryption.</li><li>Self-hosted password managers still depend on client trust and supply-chain exposure.</li></ul>
+        </article>
+      </section><section>
+        <h2>Psychology</h2>
+        <article class="card">
+          <h3><a href="https://aneeshsathe.com/the-lightening-of-intent/">The Lightening of Intent: Why Execution Got Cheap and Intent Got Live</a></h3>
+          <p>Aneesh Sathe argues that AI collapses execution cost and makes intent the scarce resource: direction-setting, taste, and the ability to hold confusion long enough to choose. The piece is a useful mental model for why agents amplify explicit intent and also magnify poor intent.</p>
+          <ul><li>When output generation gets cheap, selection and direction become bottlenecks.</li><li>AI makes infrastructure responsive to prompts, so taste and goal formulation govern quality.</li><li>Intent collisions will push competition toward better judgment, access, and substrate design.</li></ul>
+        </article>
+      </section><section>
+        <h2>Programming</h2>
+        <article class="card">
+          <h3><a href="https://essenceia.github.io/projects/floating_dragon/">Floating point from scratch: Hard Mode</a></h3>
+          <p>Julia Desmazes rebuilds floating point from IEEE 754 semantics through a bfloat16 hardware implementation, including NaNs, signed zero, denormals, rounding, verification, and ASIC constraints. It is a rare end-to-end account of how abstract numeric rules turn into silicon behavior and compiler surprises.</p>
+          <ul><li>Using floats and understanding the representation are separate levels of competence.</li><li>Edge cases such as NaNs, signed zero, subnormals, and rounding modes drive hardware complexity.</li><li>Verification has to check language behavior, standard-library assumptions, and synthesized hardware.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://addyosmani.com/blog/agent-harness-engineering/">Agent Harness Engineering</a></h3>
+          <p>Addy Osmani frames coding agents as model plus harness: prompts, tools, memory, sandboxes, hooks, observability, and verification loops. The core engineering point is to treat every repeated agent failure as harness feedback and encode durable guardrails around the model.</p>
+          <ul><li>Capability often comes from tooling, context policy, and feedback loops around the model.</li><li>AGENTS files, skills, sandbox defaults, and verification hooks are production infrastructure.</li><li>Long-horizon agent work needs explicit planning, resumable filesystem state, and repeated verification.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://derekrodriguez.dev/parse-dont-validate-through-the-years-with-c-/">Parse, don&#x27;t validate through the years with C++</a></h3>
+          <p>Derek Rodriguez applies the classic parse, do not validate idea across C++98 through C++23, showing how parsing can produce types that encode valid data at the boundary. The value is the progression from manual status codes to stronger language support for making invalid states unrepresentable.</p>
+          <ul><li>Parsing at boundaries keeps bad input from spreading as partially valid structs.</li><li>Type design removes repeated downstream validation branches and clarifies ownership of correctness.</li><li>Newer C++ features improve ergonomics; the core invariant still belongs in the domain type.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/">Fast16: High-Precision Software Sabotage 5 Years Before Stuxnet</a></h3>
+          <p>SentinelLabs documents fast16, a 2005 Lua-powered sabotage framework with a boot-start filesystem driver that patched high-precision calculation software in memory. The strongest signal is the architecture: modular encrypted Lua payloads, propagation through Windows admin surfaces, environment-aware evasion, and deterministic tampering before Stuxnet.</p>
+          <ul><li>Scripting engines inside implants let operators change behavior without recompiling.</li><li>Filesystem-level interception let the payload alter executable code as it was read from disk.</li><li>Precision sabotage targets trust in computational results, which makes detection harder than availability attacks.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://dubeykartikay.com/posts/sembed-engine-vector-search-performance/">How I Made My Vector Search Engine 16x Faster Without Changing the Algorithm</a></h3>
+          <p>Kartikay Dubey shows a 16x vector-search speedup from data layout changes with the same Vamana algorithm and unchanged recall. The useful lesson is mechanical: flatten vectors, reduce pointer chasing, remove square roots from ordering, cache scores, and inspect the generated assembly around hot loops.</p>
+          <ul><li>Big-O hides CPU costs from cache misses, indirection, virtual calls, and scalar math.</li><li>Contiguous arrays and lightweight views made each node visit cheaper without changing search behavior.</li><li>Performance claims are stronger when paired with before/after latency, build time, visited-node, and recall measurements.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://techtrenches.dev/p/the-west-forgot-how-to-make-things">The West Forgot How to Make Things. Now It&#x27;s Forgetting How to Code</a></h3>
+          <p>Denis Stetskov compares AI-driven junior hiring cuts to lost manufacturing know-how in defense production, using Stinger, shells, and Fogbank as evidence that tacit capability takes years to rebuild. The software argument is operational: generated code moves the bottleneck to review, ownership, and judgment.</p>
+          <ul><li>Skipping junior pipelines can create senior-engineer shortages several years later.</li><li>Documentation preserves facts; tacit debugging and systems judgment require practice.</li><li>AI-heavy workflows need stronger PR context, reviewer ownership, and explicit mechanisms for transferring expertise.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

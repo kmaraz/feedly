@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedly Digest</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --card: #fffaf3;
+        --ink: #1d1a16;
+        --line: #d8c8b0;
+        --accent: #9f4a00;
+      }
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(159, 74, 0, 0.12), transparent 30%),
+          linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      .meta {
+        color: #5f5549;
+        margin-bottom: 32px;
+      }
+      section {
+        margin-bottom: 36px;
+      }
+      .card {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 24px rgba(30, 24, 18, 0.05);
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Feedly Digest</h1>
+      <p class="meta">Generated: 2026-04-15T22:12:16Z</p>
+      <section>
+        <h2>Engineering</h2>
+        <article class="card">
+          <h3><a href="https://cutlefish.substack.com/p/tbm-416-investment-stewardship-as">TBM 416: Investment Stewardship (As Habit)</a></h3>
+          <p>John Cutler argues that engineering ROI is a stewardship practice, not a spreadsheet exercise: teams earn the right to talk about return only by building leading indicators, explicit bets, and hiring discipline over time. It is worth keeping because it gives a durable frame for evaluating engineering investment without collapsing into vanity metrics or fake precision.</p>
+          <ul><li>Engineering ROI work starts long before a finance challenge, through repeated habit-building around leading indicators, hypotheses, and updates.</li><li>Headcount is a stewardship question; adding people to a dysfunctional system often hides the underlying problem instead of improving return.</li><li>Useful investment models are directional and iterative, which makes honest proxies and Bayesian-style updates more valuable than precise-looking nonsense.</li><li>Finance conversations improve when product and engineering teams make the causal chain explicit and accept that many outcomes arrive with long lags.</li></ul>
+        </article>
+      </section><section>
+        <h2>Reddit Programming</h2>
+        <article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1smeh9m/dealing_with_a_team_with_primitive_infra_that/">Dealing with a Team with primitive Infra that seems fine with it. Cultural Mismatch?</a></h3>
+          <p>This `r/ExperiencedDevs` thread starts with a team trapped in bloated microservices, weak observability, and constant firefighting, then converges on a more useful response than “rebuild the platform”: tie infra work to repeated pain, start with one small leverage point, and avoid cargo-cult complexity. It is worth keeping because it sharpens the difference between intentionally simple infrastructure and underpowered infrastructure that quietly taxes every incident and release.</p>
+          <ul><li>Microservices without tracing, log management, service discovery, and usable test environments create an outsized debugging tax.</li><li>Infrastructure work gets traction when it is attached to visible recurring pain such as broken releases, outage triage, or repetitive arguments.</li><li>The practical move is incremental: buy back a little time with one well-chosen improvement, then compound from there.</li><li>Simple infrastructure can be correct for low-complexity systems, so the real question is fitness for operational load rather than prestige tooling.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1sm7s9d/as_agents_write_more_code_how_do_you_maintain/">As agents write more code, how do you maintain your mental model of the system?</a></h3>
+          <p>The thread asks how engineers stay oriented when agents generate most of the implementation, and the best answers converge on the same point: understanding now has to be preserved through explicit architecture, decomposition, and review discipline. It is worth keeping because it turns a vague fear about AI detachment into a concrete operating model for maintaining debugging ability and system judgment.</p>
+          <ul><li>A usable mental model comes from knowing service boundaries, message flow, and responsibility splits, even when the agent writes the code.</li><li>Planning and decomposition remain the control points where engineers keep ownership of the system shape.</li><li>Reading generated code still matters, especially for incident response and for checking that the implementation matches the intended architecture.</li><li>Post-hoc documentation helps, though it is weaker than designing the structure first and verifying the generated changes against it.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1slxc6c/my_company_embraces_vibe_coders/">My company embraces vibe coders</a></h3>
+          <p>This thread is partly a vent and partly a field report on what uncontrolled vibe coding looks like inside an existing organization: hidden runtime costs, cleanup work pushed onto experienced engineers, and teams treating generated output as if standards no longer apply. It is worth keeping because the comments quickly turn that frustration into concrete governance advice around surfacing cost, enforcing quality gates, and making low-quality AI output impossible to ignore.</p>
+          <ul><li>The first visible failure mode is often operational cost or wasteful polling, not only ugly code style.</li><li>Specs, linting, tests, and pipeline enforcement are the practical boundary between experimentation and unbounded code slop.</li><li>Experienced engineers should expose the impact of low-quality AI output instead of silently absorbing the cleanup burden.</li><li>AI adoption without ownership and quality controls redistributes toil upward to the people already responsible for reliability.</li></ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
