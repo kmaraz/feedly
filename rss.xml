@@ -4,62 +4,94 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Fri, 01 May 2026 07:22:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 14:19:34 +0000</lastBuildDate>
     <item>
-      <title>[Reddit Programming] You can beat the binary search</title>
-      <link>https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/aa36124c846a60fbadc49c2375ae2345aa8e585e</guid>
-      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Daniel Lemire benchmarks a SIMD Quad search for Roaring Bitmap-style sorted 16-bit arrays and shows that a hybrid of block-level interpolation and SIMD equality checks can beat ordinary binary search, with different warm-cache and cold-cache behavior on Intel and Apple hardware.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Classic asymptotics are not the whole story when the data shape is small fixed-width values and the CPU can compare many lanes at once.&lt;/li&gt;&lt;li&gt;The algorithm narrows to 16-element blocks, then uses SIMD for the final membership check instead of continuing scalar binary search.&lt;/li&gt;&lt;li&gt;Warm-cache and cold-cache results diverged across Intel and Apple systems, so hardware-specific benchmarking is part of the design work.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] You’ve Got (Too Much) Mail: Behind the Scenes of the 3/25/26 Voice Outage</title>
-      <link>https://discord.com/blog/behind-the-scenes-of-the-3-25-26-voice-outage</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/b3a2384cfcd735baa6203eea1afd5d48c710698b</guid>
-      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Discord documents how a routine Kubernetes scaling change killed 17% of session processes, triggered reconnect storms, and then exposed a deeper Erlang/Elixir bottleneck where supervisor mailbox growth blocked outbound voice-syncer connections and service discovery updates.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Graceful-drain checks need to be enforced by deployment machinery, not left as best-effort behavior during scale-down.&lt;/li&gt;&lt;li&gt;Per-host rate limits can become too permissive after a migration that changes pod count or host topology.&lt;/li&gt;&lt;li&gt;Shared connection-pool supervisors and service-discovery clients can turn an upstream traffic spike into a system-wide recovery blocker.&lt;/li&gt;&lt;li&gt;Discord’s fixes combined admission control, more accurate upstream rate limits, extra capacity, and partitioned supervision for connection pools.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] “Performing” Consensus</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t07h8c/performing_consensus/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/e5785b91a343ed6bba96084fa1af99f321195962</guid>
-      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread surfaces a common planning failure: approval sections and lightweight docs can create the appearance of consensus while postponing the hard choices about tradeoffs, ownership, dates, and technical direction.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A charter can establish broad intent, but it should not be treated as technical alignment when the hard decisions are absent.&lt;/li&gt;&lt;li&gt;Reviewers should ask for explicit choices, risks, and rejected alternatives instead of signing vague coordination documents.&lt;/li&gt;&lt;li&gt;Consensus theater often persists because a doc with no concrete commitments is socially hard to reject.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How many handoffs are between a merged PR and production on your team?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t02lq7/how_many_handoffs_are_between_a_merged_pr_and/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/25cdb08ba47792ef9c28e3703fe3e1e4aff851d8</guid>
-      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;A team measured seven handoffs between merge and production and found wait time dominated active work; the useful part is the comparison with teams that move compliance, testing, and approval checks before merge or automate deployment after merge.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Measure handoff wait time separately from active engineering time; the queue is often the real delivery bottleneck.&lt;/li&gt;&lt;li&gt;Compliance and risk checks can be expressed as merge conditions or risk-tiered controls instead of manual post-merge gates for every change.&lt;/li&gt;&lt;li&gt;A merged PR should ideally enter a predictable automated path, with manual intervention reserved for exceptional risk.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] For retired engineers, how did you plot your career?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t05rv8/for_retired_engineers_how_did_you_plot_your_career/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/f82493a1e0345086041206a9474c521762620b0a</guid>
-      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread has useful career-risk framing around AI and long software careers: long-term prediction is weak, so the durable strategy is to optimize explicitly for savings rate, interesting problems, adaptability, and roles where engineering judgment still matters.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Do not plan around a precise 20-year job forecast; choose what to optimize for and revisit that choice as the market changes.&lt;/li&gt;&lt;li&gt;Financial independence buys the option to keep building software on your own terms rather than under every industry cycle.&lt;/li&gt;&lt;li&gt;Several comments point toward platform, quality, systems design, and organizational judgment as durable complements to AI-assisted coding.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Engineering] TBM 420: The AI Playbook Puzzle</title>
-      <link>https://cutlefish.substack.com/p/tbm-420-the-ai-playbook-puzzle</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/8f8d11da65b2cdf3b16511f589f4c2e73f177963</guid>
-      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;John Cutler argues that AI playbooks mostly amplify existing operating models: weak strategy, static PRDs, stage gates, and checkbox transformation get worse faster, while living context, adversarial thinking, prototyping, and better conversations become more powerful.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Adding AI to a broken process usually increases polish and velocity without improving judgment.&lt;/li&gt;&lt;li&gt;The useful AI leverage is in keeping context current, sharpening reviews, improving conversations, and stress-testing assumptions.&lt;/li&gt;&lt;li&gt;The meta-skill is reading context: knowing which old practices still apply, which constraints changed, and which habits need to be retired.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Informatics] Designing Stable Interfaces For Streaming Content</title>
-      <link>https://smashingmagazine.com/2026/04/designing-stable-interfaces-streaming-content/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-01/dd1be9c00fd2680fd8ec0006214eb328551c8050</guid>
-      <pubDate>Fri, 01 May 2026 07:22:04 +0000</pubDate>
+      <title>[Informatics] What's !important #10: HTML-in-Canvas, Hex Maps, E-ink Optimization, and More</title>
+      <link>https://css-tricks.com/whats-important-10/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/f1116d4d372a5ee7bbb7659a6955e584182ccf2f</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Joas Pambou gives a practical frontend treatment of streaming interfaces, covering scroll ownership, layout stability, render buffering, interrupted streams, retry state, live regions, keyboard access, and reduced-motion concerns.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Auto-scroll should follow the stream only while the user is already at the bottom; scrolling up must transfer control back to the user.&lt;/li&gt;&lt;li&gt;Avoid rebuilding streaming DOM on every token; append to live text nodes and batch writes with requestAnimationFrame.&lt;/li&gt;&lt;li&gt;Interrupted streams need explicit cleanup, incomplete-state labeling, retry affordances, and accessible announcements through live regions.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;CSS-Tricks rounds up current web-platform experiments: HTML-in-Canvas, a hex-map analytics build, e-ink UI constraints, CSS image replacement with content, sizes=auto for responsive images, and recent browser feature deltas.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;HTML-in-Canvas is still experimental, but the API direction matters because it keeps semantic HTML while allowing canvas effects.&lt;/li&gt;&lt;li&gt;E-ink devices expose a gap between useful Media Queries Level 5 capabilities and the limited proprietary browsers that actually ship on readers.&lt;/li&gt;&lt;li&gt;The content property can replace image sources, including image-set(), which is a practical escape hatch when markup cannot be changed.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Programming] How Meta Is Strengthening End-to-End Encrypted Backups</title>
+      <link>https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/0a3f4db1d1fb7d5250671182b62384ad1786f198</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Meta describes the HSM-based Backup Key Vault behind encrypted WhatsApp and Messenger backups, then adds over-the-air fleet key distribution and published deployment evidence to make HSM fleet authenticity auditable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Messenger needs HSM fleet public keys to rotate without app updates, so Meta distributes validation bundles signed by Cloudflare and counter-signed by Meta.&lt;/li&gt;&lt;li&gt;The architecture separates backup recovery secrets from Meta and cloud storage providers by keeping recovery-code handling inside tamper-resistant HSMs.&lt;/li&gt;&lt;li&gt;Publishing evidence for each HSM fleet deployment turns trust in the backup infrastructure into something users and auditors can verify against a whitepaper.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Have your Iceberg Cubed, Not Sorted: Meet Qbeast, the OTree Spatial Index</title>
+      <link>https://jack-vanlightly.com/blog/2025/11/19/have-your-iceberg-cubed-not-sorted-meet-qbeast-the-otree-spatial-index</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/2e0c3bdbca0097e5d53f3d7b8e31de9af3a3a241</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Jack Vanlightly explains Qbeast&amp;#x27;s OTree as an adaptive spatial layout index for Iceberg and Delta tables, positioned between rigid clustered indexes and loose file-level data skipping.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The OTree organizes data into adaptive multidimensional cubes instead of fixed partitions or a one-dimensional sort order.&lt;/li&gt;&lt;li&gt;Query engines can keep using standard Iceberg or Delta metadata while writers and maintenance jobs use the index to keep file layout close to the data distribution.&lt;/li&gt;&lt;li&gt;The design attacks partition skew, changing distributions, and layout drift by making the table structure respond to density in the indexed dimensions.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How Containers Work: Building a Docker-like Container From Scratch</title>
+      <link>https://labs.iximiuz.com/tutorials/container-filesystem-from-scratch</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/a7b5f76fd618415b5b182dd8979e5e5a77111b0e</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Ivan Velichko builds a Docker-like container filesystem view using stock Linux tools, showing how mount namespaces, bind mounts, mount propagation, and pivot_root create the illusion of an isolated distro inside a container.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A mount namespace isolates the mount table, not the underlying files; the filesystem view only diverges after the namespace creates different mount points.&lt;/li&gt;&lt;li&gt;Container root filesystems are ordinary Linux mount mechanics composed carefully, not runtime magic.&lt;/li&gt;&lt;li&gt;Understanding pivot_root and mount propagation makes container behavior easier to debug than treating Docker as an opaque boundary.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] The Three Durable Function Forms</title>
+      <link>https://jack-vanlightly.com/blog/2025/12/10/the-three-durable-function-forms</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/e03a76c5e5d6447447dda2752418e32710805fc4</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;This durable-execution essay reduces overloaded workflow terminology into three forms: stateless functions, sessions, and actors, distinguished by identity, lifetime, addressability, and state ownership.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stateless durable functions are one-shot computations; sessions are interactive executions with execution-scoped state; actors are persistent identities with durable state.&lt;/li&gt;&lt;li&gt;The behavior-state continuum gives a clearer vocabulary for comparing workflow engines, virtual objects, and actor frameworks.&lt;/li&gt;&lt;li&gt;Choosing the wrong form can blur whether state belongs to an execution, an entity, or a passive event.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] The Tiny UDP Cannon: An Android VPN Bypass</title>
+      <link>https://lowlevel.fun/posts/tiny-udp-cannon-android-vpn-bypass/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/1c225ea5095ebe3a6c5ea54d86d746b3f4470a49</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The write-up documents an Android 16 VPN-lockdown bypass where an app registers a QUIC close payload and lets system_server send UDP bytes on the physical network after the app socket dies.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The bypass works because lockdown routing filters app UIDs while system_server is exempt and can send on physical Wi-Fi.&lt;/li&gt;&lt;li&gt;A convenience API for graceful QUIC teardown becomes a packet-sending primitive because it accepts caller-supplied payloads without a permission check tied to VPN lockdown.&lt;/li&gt;&lt;li&gt;The failure mode is a useful example of confused-deputy risk across Binder APIs, system UIDs, and network policy enforcement.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Adaptive compression for inverted index</title>
+      <link>https://blog.serenedb.com/search-optimization-5</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/ceb8285e6373037e9baf4e702be0d0331f3a373b</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;SereneDB details an adaptive posting-list format for IResearch where each block chooses its own encoding, eliminating fixed-format and tail-block penalties on sorted document IDs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Per-block codec competition beats one-format-per-posting-list because local gap distributions vary across the same term&amp;#x27;s posting list.&lt;/li&gt;&lt;li&gt;Doc IDs get delta-coded candidates such as SIMD bitpacking, bitset, constant delta, StreamVByte, and raw values; frequencies use a different menu because they are not monotonic.&lt;/li&gt;&lt;li&gt;The bitset path needed SIMD materialization to avoid turning better compression into slower scoring when callers need flat doc ID arrays.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] For Linux kernel vulnerabilities, there is no heads-up to distributions</title>
+      <link>https://www.openwall.com/lists/oss-security/2026/04/30/10</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/40208f1067214242e5df52a3f48f02f1ba5c16fc</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The oss-security thread shows a practical distribution-maintainer problem: a severe kernel vulnerability fix landed in newer stable releases while older longterm branches still needed a workaround and had received no coordinated heads-up.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Linux kernel vulnerability disclosure does not automatically route through linux-distros; reporters must choose that path.&lt;/li&gt;&lt;li&gt;Longterm kernels can remain exposed even after newer stable branches receive a fix when backporting is not straightforward.&lt;/li&gt;&lt;li&gt;Maintainers may need short-term mitigations, such as disabling an affected module, while waiting for a confident backport.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] I brought down production twice in a week. Am I going to get fired?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t13tws/i_brought_down_production_twice_in_a_week_am_i/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/81b183da21b125a8d727c820183685947e92209f</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread turns a production feature-flag mistake into a useful guardrail discussion: bad access control and identical prod/dev UI are system failures, but repeating the same mistake before adding personal checks erodes trust.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Production admin surfaces need explicit visual separation, least-privilege access, and approval gates for destructive toggles.&lt;/li&gt;&lt;li&gt;Post-incident fixes should include both system guardrails and personal process changes; removing one engineer&amp;#x27;s access is not a complete remediation.&lt;/li&gt;&lt;li&gt;The best comments separate blameless incident analysis from accountability for repeating the same failure pattern.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Top companies with no preprod. Their prod also contains their preprod.</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t0jrgl/top_companies_with_no_preprod_their_prod_also/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/1f2b34b699042b0b1b0dab9d0ddb0ccb5a02f0c0</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The discussion clarifies that large companies skipping a classic preprod environment are not skipping validation; they replace environment fidelity with test volume, feature flags, canaries, metrics, automatic rollback, and small production exposure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;At extreme scale, a separate staging environment can become less representative than a tiny production canary with real traffic and fast rollback.&lt;/li&gt;&lt;li&gt;Testing in production only works when commits already pass deep automated tests and deployment is guarded by phased rollout and metric-based aborts.&lt;/li&gt;&lt;li&gt;The tradeoff depends on domain risk, architecture scale, and operational maturity; copying the pattern without the controls is just removing safety.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Has anyone actually seen an outsourced dev team from a big IT firm deliver something on time that didn't need to be rebuilt?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t0e3e6/has_anyone_actually_seen_an_outsourced_dev_team/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/353d2fd243752b51076aebfbea6d8b98f179d0c5</guid>
+      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread is blunt but useful on outsourcing incentives: many failures are less about geography than low-context teams, weak accountability, flat monthly billing, and contracts that reward duration over working software.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Business and product context can matter more than raw coding capacity; outsourcing that context transfer often costs as much as implementation.&lt;/li&gt;&lt;li&gt;Flat billing and weak delivery penalties create incentives to extend work, add ceremony, and avoid admitting a bad fit.&lt;/li&gt;&lt;li&gt;Several comments distinguish cheap body-shopping from high-trust contracting, making incentive alignment the durable lesson rather than nationality.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
