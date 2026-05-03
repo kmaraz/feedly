@@ -4,94 +4,86 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Sat, 02 May 2026 14:19:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:20:19 +0000</lastBuildDate>
     <item>
-      <title>[Informatics] What's !important #10: HTML-in-Canvas, Hex Maps, E-ink Optimization, and More</title>
-      <link>https://css-tricks.com/whats-important-10/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/f1116d4d372a5ee7bbb7659a6955e584182ccf2f</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;CSS-Tricks rounds up current web-platform experiments: HTML-in-Canvas, a hex-map analytics build, e-ink UI constraints, CSS image replacement with content, sizes=auto for responsive images, and recent browser feature deltas.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;HTML-in-Canvas is still experimental, but the API direction matters because it keeps semantic HTML while allowing canvas effects.&lt;/li&gt;&lt;li&gt;E-ink devices expose a gap between useful Media Queries Level 5 capabilities and the limited proprietary browsers that actually ship on readers.&lt;/li&gt;&lt;li&gt;The content property can replace image sources, including image-set(), which is a practical escape hatch when markup cannot be changed.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] How Meta Is Strengthening End-to-End Encrypted Backups</title>
-      <link>https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/0a3f4db1d1fb7d5250671182b62384ad1786f198</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Meta describes the HSM-based Backup Key Vault behind encrypted WhatsApp and Messenger backups, then adds over-the-air fleet key distribution and published deployment evidence to make HSM fleet authenticity auditable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Messenger needs HSM fleet public keys to rotate without app updates, so Meta distributes validation bundles signed by Cloudflare and counter-signed by Meta.&lt;/li&gt;&lt;li&gt;The architecture separates backup recovery secrets from Meta and cloud storage providers by keeping recovery-code handling inside tamper-resistant HSMs.&lt;/li&gt;&lt;li&gt;Publishing evidence for each HSM fleet deployment turns trust in the backup infrastructure into something users and auditors can verify against a whitepaper.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Have your Iceberg Cubed, Not Sorted: Meet Qbeast, the OTree Spatial Index</title>
-      <link>https://jack-vanlightly.com/blog/2025/11/19/have-your-iceberg-cubed-not-sorted-meet-qbeast-the-otree-spatial-index</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/2e0c3bdbca0097e5d53f3d7b8e31de9af3a3a241</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <title>[Reddit Programming] Why should a Trace-ID be 128 bits? (A Surprisingly Long Answer)</title>
+      <link>https://newsletter.signoz.io/p/why-should-a-trace-id-be-128-bits</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/1ad7f046b27a6fe1ee452757ff539abfe1e32e9a</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Jack Vanlightly explains Qbeast&amp;#x27;s OTree as an adaptive spatial layout index for Iceberg and Delta tables, positioned between rigid clustered indexes and loose file-level data skipping.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The OTree organizes data into adaptive multidimensional cubes instead of fixed partitions or a one-dimensional sort order.&lt;/li&gt;&lt;li&gt;Query engines can keep using standard Iceberg or Delta metadata while writers and maintenance jobs use the index to keep file layout close to the data distribution.&lt;/li&gt;&lt;li&gt;The design attacks partition skew, changing distributions, and layout drift by making the table structure respond to density in the indexed dimensions.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This article explains why distributed tracing standards use large random identifiers instead of counters: independent services need collision resistance without coordination, and the birthday paradox makes apparently large ID spaces fail earlier than intuition suggests.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Trace IDs are a coordination-avoidance mechanism as much as an observability identifier.&lt;/li&gt;&lt;li&gt;Collision probability grows with the square of generated IDs, so fleet-wide history matters more than per-request intuition.&lt;/li&gt;&lt;li&gt;128-bit IDs buy operational safety across high-volume systems, long retention windows, and mixed vendor ecosystems.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How Containers Work: Building a Docker-like Container From Scratch</title>
-      <link>https://labs.iximiuz.com/tutorials/container-filesystem-from-scratch</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/a7b5f76fd618415b5b182dd8979e5e5a77111b0e</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <title>[Reddit Programming] Falsify - Pre-registration + CI for AI claims</title>
+      <link>https://falsify.dev/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/379f24950e8405068b4c8c02fac5e2024e068b5e</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Ivan Velichko builds a Docker-like container filesystem view using stock Linux tools, showing how mount namespaces, bind mounts, mount propagation, and pivot_root create the illusion of an isolated distro inside a container.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A mount namespace isolates the mount table, not the underlying files; the filesystem view only diverges after the namespace creates different mount points.&lt;/li&gt;&lt;li&gt;Container root filesystems are ordinary Linux mount mechanics composed carefully, not runtime magic.&lt;/li&gt;&lt;li&gt;Understanding pivot_root and mount propagation makes container behavior easier to debug than treating Docker as an opaque boundary.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Falsify proposes a small protocol for AI and ML benchmark claims: declare the metric, threshold, dataset, and evaluation plan before the run, hash the canonical spec, then let CI reject tampered or post-hoc claims.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Benchmark credibility improves when the claim is locked before the test set is inspected.&lt;/li&gt;&lt;li&gt;A canonical manifest plus SHA-256 turns benchmark drift into a detectable artifact instead of a trust argument.&lt;/li&gt;&lt;li&gt;The useful part is not the branding; it is the pattern of making model-performance claims falsifiable in CI.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The Three Durable Function Forms</title>
-      <link>https://jack-vanlightly.com/blog/2025/12/10/the-three-durable-function-forms</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/e03a76c5e5d6447447dda2752418e32710805fc4</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <title>[Reddit Programming] Reading Algorithms Like an Engineer: Vamana ANN Dev Log</title>
+      <link>https://dubeykartikay.com/posts/reading-algorithms-like-an-engineer/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/d74730e1c6ed03d563fb49b4293b79c40a643510</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This durable-execution essay reduces overloaded workflow terminology into three forms: stateless functions, sessions, and actors, distinguished by identity, lifetime, addressability, and state ownership.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stateless durable functions are one-shot computations; sessions are interactive executions with execution-scoped state; actors are persistent identities with durable state.&lt;/li&gt;&lt;li&gt;The behavior-state continuum gives a clearer vocabulary for comparing workflow engines, virtual objects, and actor frameworks.&lt;/li&gt;&lt;li&gt;Choosing the wrong form can blur whether state belongs to an execution, an entity, or a passive event.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The Vamana ANN implementation write-up shows how a correct-looking translation of an algorithm can still lose badly to brute force when the data structures fail to preserve the algorithm&amp;#x27;s real invariants and cost model.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Pseudocode sets such as candidate lists and visited nodes hide the real engineering decisions.&lt;/li&gt;&lt;li&gt;Small benchmarks can expose whether an implementation has earned the theory or is only carrying traversal overhead.&lt;/li&gt;&lt;li&gt;Performance fixes came from bounded sorted candidates, cheap visited checks, duplicate prevention, and pruning behavior that matched the paper&amp;#x27;s intent.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The Tiny UDP Cannon: An Android VPN Bypass</title>
-      <link>https://lowlevel.fun/posts/tiny-udp-cannon-android-vpn-bypass/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/1c225ea5095ebe3a6c5ea54d86d746b3f4470a49</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <title>[Reddit Programming] Metastability in Recovery: Cascading Recovery with a Loop</title>
+      <link>https://charap.co/metastability-in-recovery-cascading-recovery-with-a-loop/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/c3ee36382fa8e9bcaed89a8e296cb3138b6bb73d</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The write-up documents an Android 16 VPN-lockdown bypass where an app registers a QUIC close payload and lets system_server send UDP bytes on the physical network after the app socket dies.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The bypass works because lockdown routing filters app UIDs while system_server is exempt and can send on physical Wi-Fi.&lt;/li&gt;&lt;li&gt;A convenience API for graceful QUIC teardown becomes a packet-sending primitive because it accepts caller-supplied payloads without a permission check tied to VPN lockdown.&lt;/li&gt;&lt;li&gt;The failure mode is a useful example of confused-deputy risk across Binder APIs, system UIDs, and network policy enforcement.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Charapko documents a failure mode where recovery itself becomes destabilizing: delayed upstream work forces downstream recomputation, refetching, and feedback load that can keep a larger system in a recovery loop.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Failure isolation does not guarantee recovery isolation; backlog replay can propagate load after the original fault is gone.&lt;/li&gt;&lt;li&gt;Amplified recovery appears when the recovery unit is more expensive than the original unit of work.&lt;/li&gt;&lt;li&gt;Recovery paths need budgets, stream shaping, end-to-end capacity planning, and designs that avoid expensive cold-path recomputation.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Adaptive compression for inverted index</title>
-      <link>https://blog.serenedb.com/search-optimization-5</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/ceb8285e6373037e9baf4e702be0d0331f3a373b</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <title>[Reddit Programming] Does AI generated code change the review process itself?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t1zfsz/does_ai_generated_code_change_the_review_process/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/20b1623443316c3e2a8e136883a90705de4c2a01</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;SereneDB details an adaptive posting-list format for IResearch where each block chooses its own encoding, eliminating fixed-format and tail-block penalties on sorted document IDs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Per-block codec competition beats one-format-per-posting-list because local gap distributions vary across the same term&amp;#x27;s posting list.&lt;/li&gt;&lt;li&gt;Doc IDs get delta-coded candidates such as SIMD bitpacking, bitset, constant delta, StreamVByte, and raw values; frequencies use a different menu because they are not monotonic.&lt;/li&gt;&lt;li&gt;The bitset path needed SIMD materialization to avoid turning better compression into slower scoring when callers need flat doc ID arrays.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The thread surfaces a review failure mode specific to AI-assisted work: reviewers can spend time circling code that looks plausible but lacks an accountable explanation, turning review into uncertainty management instead of a clear accept-or-reject decision.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A reviewer should be able to ask why a change exists and get an author-owned answer, not a second layer of generated justification.&lt;/li&gt;&lt;li&gt;AI output shifts review effort away from style and toward approach, fit, test quality, ownership, and evidence.&lt;/li&gt;&lt;li&gt;Succinct PR descriptions with the what, why, and unusual decisions become more important as generated code volume rises.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] For Linux kernel vulnerabilities, there is no heads-up to distributions</title>
-      <link>https://www.openwall.com/lists/oss-security/2026/04/30/10</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/40208f1067214242e5df52a3f48f02f1ba5c16fc</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <title>[Reddit Programming] How have you used LLMs to improve development productivity at an organization level?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t1z9ax/how_have_you_used_llms_particularly_tool_calling/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/caa22a827b67ca60a8099fc0af60aff81eedf1af</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The oss-security thread shows a practical distribution-maintainer problem: a severe kernel vulnerability fix landed in newer stable releases while older longterm branches still needed a workaround and had received no coordinated heads-up.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Linux kernel vulnerability disclosure does not automatically route through linux-distros; reporters must choose that path.&lt;/li&gt;&lt;li&gt;Longterm kernels can remain exposed even after newer stable branches receive a fix when backporting is not straightforward.&lt;/li&gt;&lt;li&gt;Maintainers may need short-term mitigations, such as disabling an affected module, while waiting for a confident backport.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The discussion is useful because it moves past individual coding speed and lists organization-level patterns with measurable leverage: incident first-response summaries, bug reproduction agents, standards-aware review, and codified refactoring workflows.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The highest-leverage LLM workflows target bottlenecks with visible queues: triage, reproduction, incident context, static-scan fixes, and repetitive standards enforcement.&lt;/li&gt;&lt;li&gt;Documentation generation has weak ROI when humans must heavily proofread it for the same audience.&lt;/li&gt;&lt;li&gt;Reliable org-level automation needs instrumentation and repeatable workflow boundaries, not vague productivity claims.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] I brought down production twice in a week. Am I going to get fired?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t13tws/i_brought_down_production_twice_in_a_week_am_i/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/81b183da21b125a8d727c820183685947e92209f</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <title>[Reddit Programming] How are experienced teams preventing architectural drift as AI-assisted development scales?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t1scp3/how_are_experienced_teams_preventing/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/ebe8b3e84b570092529a06fa52602895ae3d1220</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread turns a production feature-flag mistake into a useful guardrail discussion: bad access control and identical prod/dev UI are system failures, but repeating the same mistake before adding personal checks erodes trust.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Production admin surfaces need explicit visual separation, least-privilege access, and approval gates for destructive toggles.&lt;/li&gt;&lt;li&gt;Post-incident fixes should include both system guardrails and personal process changes; removing one engineer&amp;#x27;s access is not a complete remediation.&lt;/li&gt;&lt;li&gt;The best comments separate blameless incident analysis from accountability for repeating the same failure pattern.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This thread frames AI-assisted development as a throughput-versus-review-capacity problem and points toward repo-specific constraints, ADRs, design review, and adversarial review agents as the practical control surface.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Generated code does not remove design work; it increases the need for explicit constraints before review.&lt;/li&gt;&lt;li&gt;Architectural standards need to be written down and exposed to the tools that generate and review code.&lt;/li&gt;&lt;li&gt;Review capacity should be protected by pre-review guardrails, not spent rediscovering project conventions on every larger PR.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Top companies with no preprod. Their prod also contains their preprod.</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t0jrgl/top_companies_with_no_preprod_their_prod_also/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/1f2b34b699042b0b1b0dab9d0ddb0ccb5a02f0c0</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <title>[Reddit Programming] Architecture decisions made in meetings disappear faster than the ones written in PRs</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t1nehy/architecture_decisions_made_in_meetings_disappear/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/6c8c550e1442c98440b1e7303ca151111ecb514b</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The discussion clarifies that large companies skipping a classic preprod environment are not skipping validation; they replace environment fidelity with test volume, feature flags, canaries, metrics, automatic rollback, and small production exposure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;At extreme scale, a separate staging environment can become less representative than a tiny production canary with real traffic and fast rollback.&lt;/li&gt;&lt;li&gt;Testing in production only works when commits already pass deep automated tests and deployment is guarded by phased rollout and metric-based aborts.&lt;/li&gt;&lt;li&gt;The tradeoff depends on domain risk, architecture scale, and operational maturity; copying the pattern without the controls is just removing safety.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The discussion reinforces a simple operational rule: architecture rationale that lives only in meetings or private notes decays quickly, while PR descriptions, ADRs, scoped design docs, and source-controlled decision records remain reachable months later.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The decision record should live where future maintainers already inspect the code path.&lt;/li&gt;&lt;li&gt;PR descriptions preserve local rationale; ADRs preserve broader design constraints and alternatives.&lt;/li&gt;&lt;li&gt;Verbal consensus without a committed artifact creates avoidable future archaeology.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Has anyone actually seen an outsourced dev team from a big IT firm deliver something on time that didn't need to be rebuilt?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t0e3e6/has_anyone_actually_seen_an_outsourced_dev_team/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-02/353d2fd243752b51076aebfbea6d8b98f179d0c5</guid>
-      <pubDate>Sat, 02 May 2026 14:19:34 +0000</pubDate>
+      <title>[Reddit Programming] Unsigned sizes: a five year mistake</title>
+      <link>https://c3-lang.org/blog/unsigned-sizes-a-five-year-mistake/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/50e127d188e9a8f653246dcf60e1e74f9909cb66</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread is blunt but useful on outsourcing incentives: many failures are less about geography than low-context teams, weak accountability, flat monthly billing, and contracts that reward duration over working software.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Business and product context can matter more than raw coding capacity; outsourcing that context transfer often costs as much as implementation.&lt;/li&gt;&lt;li&gt;Flat billing and weak delivery penalties create incentives to extend work, add ceremony, and avoid admitting a bad fit.&lt;/li&gt;&lt;li&gt;Several comments distinguish cheap body-shopping from high-trust contracting, making incentive alignment the durable lesson rather than nationality.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The C3 language post argues that unsigned default sizes create more footguns than safety: casts become warning suppressors, wraparound bugs look plausible, and signed sizes simplify ordinary indexing and length arithmetic.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Unsigned types encode modulo behavior, not useful application-level ranges.&lt;/li&gt;&lt;li&gt;Making sizes unsigned forces casts or implicit conversions into common indexing code, which normalizes dangerous arithmetic.&lt;/li&gt;&lt;li&gt;A language-level default can be wrong even when the original rationale sounds mathematically precise.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Approaching zero bugs?</title>
+      <link>https://daniel.haxx.se/blog/2026/04/30/approaching-zero-bugs/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-03/2d60ff8f501b82eea607277af46f96d565536363</guid>
+      <pubDate>Sun, 03 May 2026 19:20:19 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Daniel Stenberg uses curl&amp;#x27;s bug and vulnerability history to question whether stronger analyzers and AI tools are actually moving projects toward zero bugs, proposing bug age and bugfix rate as better signals than tool excitement.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Better bug-finding tools surface existing defects faster; they do not prove that total latent defects are near zero.&lt;/li&gt;&lt;li&gt;If tools were approaching completeness, newly found vulnerabilities should trend younger over time.&lt;/li&gt;&lt;li&gt;For curl, the available curves do not yet show a clear move toward fewer or younger bugs.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
