@@ -4,150 +4,134 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Tue, 05 May 2026 20:32:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 10:55:40 +0000</lastBuildDate>
     <item>
-      <title>[Informatics] AI agenti: bezpečnostní průser, na který nemá ani Anthropic odpověď</title>
-      <link>https://www.umeligence.cz/blog/ai-agenti-bezpecnost-prompt-injection</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/67058d480fc0c37d3d6944e6da745168f84c900c</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Informatics] Google's Prompt API</title>
+      <link>https://css-tricks.com/googles-prompt-api/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/4e569b2cd70f7039e3980118f3a5752d67302d4b</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;The article walks through prompt injection as a structural security problem for agents connected to email, files, calendars, and payment-capable tools. It is useful because it separates statistical model defenses from deterministic system boundaries and treats connectors, memory, and tool access as the real risk multipliers.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agent risk changes when untrusted text can influence tools with real authority.&lt;/li&gt;&lt;li&gt;Prompt-injection filtering is probabilistic; the system design still needs least privilege, explicit trust boundaries, and confirmation for dangerous actions.&lt;/li&gt;&lt;li&gt;Persistent memory and connected inboxes create attack paths that can survive beyond one chat session.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;CSS-Tricks relays the objection to Chrome&amp;#x27;s Prompt API: Gemini Nano is bundled into Chrome, and the proposed browser API depends on Google-specific generative-AI use policies rather than neutral web-platform semantics.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Browser AI APIs can become policy surfaces, not only technical capabilities.&lt;/li&gt;&lt;li&gt;User-agent-specific acceptable-use rules are a bad fit for interoperable web standards.&lt;/li&gt;&lt;li&gt;Bundling a local model into the browser changes the privacy, storage, and consent model of ordinary browser updates.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] Fixed-Height Cards: More Fragile Than They Look</title>
-      <link>https://css-tricks.com/fixed-height-cards-more-fragile-than-they-look/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/7944fde82efa661b85a5e4062e47899c79932e88</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Informatics] The Architecture Of Local-First Web Development</title>
+      <link>https://smashingmagazine.com/2026/05/architecture-local-first-web-development/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/81561ee6f81c289c9a49e916cc901169f49424f1</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;The piece shows how fixed card heights, line clamps, absolute-positioned actions, and guessed padding create brittle layouts that fail under translation, missing images, larger fonts, and narrow viewports. The better pattern is intrinsic sizing, grid alignment, flex column flow, and explicit stress tests for real content.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A card layout that works only because overflow is hidden is already under strain.&lt;/li&gt;&lt;li&gt;Let grid and flexbox handle alignment instead of hard-coding pixel ceilings inside components.&lt;/li&gt;&lt;li&gt;Stress-test components with long words, larger text, wrapped controls, missing media, and narrow widths before treating them as stable.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A production-grounded local-first architecture guide that treats the client as a replica with its own database and the server as a sync peer. The useful part is the fit analysis: local-first works for user-generated, collaborative, offline-tolerant data and is wrong for server-generated, transactional, or very large datasets.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Local-first is a data architecture, not a service-worker or PWA pattern.&lt;/li&gt;&lt;li&gt;Start with one feature, such as drafts or collaborative notes, instead of forcing a whole product into the model.&lt;/li&gt;&lt;li&gt;Browser SQLite over OPFS is now practical, but Safari behavior, write serialization, telemetry, and sync conflicts remain real engineering costs.&lt;/li&gt;&lt;li&gt;The hard part is not local storage; it is reconciliation across independently writable replicas.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Programming] High Performance Git</title>
-      <link>https://gitperf.com/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/90502220961f7e5597e1d7f31ffd25cd47966d51</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;This free book treats Git as a content-addressed database, filesystem cache, graph walker, and transfer protocol, then works through the performance costs of objects, refs, indexes, packfiles, commit graphs, sparse checkouts, partial clones, protocol v2, and repository recovery.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Git performance problems usually come from storage shape, history traversal, ref scale, transfer policy, or index cost rather than one slow command.&lt;/li&gt;&lt;li&gt;Large repos need commit-graphs, Bloom filters, multi-pack indexes, bitmaps, sparse index, partial clone, and scheduled maintenance as design tools.&lt;/li&gt;&lt;li&gt;The material is directly relevant for monorepos, CI, developer-experience work, and debugging slow local Git operations.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Why you can't allocate a human-readable ID before the record exists</title>
-      <link>https://simoninglis.com/posts/task-keys-cmdock/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/f0d2b39d00d8b42c7ce06cf3cdeab3e2cc755fc6</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;The article uses a task-key system to show why human-readable identifiers must be assigned atomically with record creation, not reserved before the durable object exists. It turns a small product feature into a concrete lesson about idempotency keys, retries, reapers, and partial failure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The idempotency key should gate the reservation, while the public number should be assigned only when the real object commits.&lt;/li&gt;&lt;li&gt;Pending allocation rows need a reconciliation job because clients cannot be trusted to retry forever.&lt;/li&gt;&lt;li&gt;A clean human-facing sequence such as SYN-42 still needs failure-mode design behind it.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Philosophy] Pluralistic: The three armies fighting for the post-American world</title>
-      <link>https://pluralistic.net/2026/05/05/three-is-a-magic-number/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/23ffd88720fabfe5353486a0ebddee64d79e4b55</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Philosophy] Pluralistic: Bubbles are REALLY evil</title>
+      <link>https://pluralistic.net/2026/05/07/dump-the-pumpers/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/e53111f42dd271801f2dd471ad5f938afffc4cde</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Philosophy</category>
-      <description>&lt;p&gt;Doctorow frames a post-American internet as a coalition between digital-rights activists, entrepreneurs chasing Big Tech margins, and national-security hawks worried about dependence on US platforms. The useful model is not ideological agreement, but overlapping incentives around interoperability, local control, and reduced platform leverage.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Coalitions can be operationally powerful even when their members disagree on almost everything except the immediate target.&lt;/li&gt;&lt;li&gt;Tariffs, platform dependence, and anticircumvention rules turn interoperability from a rights issue into an economic and sovereignty issue.&lt;/li&gt;&lt;li&gt;Digital public goods become more plausible when activists, investors, and state-security interests temporarily point in the same direction.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Doctorow separates the useful residue of bubbles from the damage of the bubble itself. His AI-bubble framing is concrete: GPUs, open models, datacenters, and trained workers may remain useful, but that does not make the capital transfer and resource burn defensible.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Judge AI tools separately from the financing story around them.&lt;/li&gt;&lt;li&gt;Some bubbles leave infrastructure behind, but the residue is usually subsidized by people who were misled into absorbing the losses.&lt;/li&gt;&lt;li&gt;A post-bubble AI ecosystem could still produce durable tools, especially if open models and underused compute become cheaper.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The Consensus Trap</title>
-      <link>https://the-hard-parts.iliemad.workers.dev/failure-modes/consensus-trap</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/a1f22fa4f98f2b01c425a88556372a9cacf7277e</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] Idempotency Is Easy Until the Second Request Is Different</title>
+      <link>https://blog.dochia.dev/blog/idempotency/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/8f9134f3c5cb45b313255b7bcbf61a936e7789fa</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This failure-mode note describes how inclusive consultation turns into stalled decisions when no one owns the call. The operational fix is simple and sharp: name a decision owner, time-box input, separate consultation from approval, and accept that not every stakeholder will be fully satisfied.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Endless alignment is often unclear decision rights disguised as responsible process.&lt;/li&gt;&lt;li&gt;A DRI model works only when the owner can actually decide after consultation.&lt;/li&gt;&lt;li&gt;Decision records are useful delivery hygiene, but they do not replace ownership.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A detailed idempotency design article that moves beyond replay caches into request equivalence, durable operation records, in-progress ownership, downstream uncertainty, expiry, and recovery states.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The idempotency key claims an operation; it does not define whether two requests are semantically the same.&lt;/li&gt;&lt;li&gt;Store a canonical request hash and reject the same key with a different validated command.&lt;/li&gt;&lt;li&gt;IN_PROGRESS, FAILED_RETRYABLE, FAILED_REPLAYABLE, and UNKNOWN_REQUIRES_RECOVERY are API contract states, not internal implementation details.&lt;/li&gt;&lt;li&gt;A retry system must define response replay, downstream deduplication, expiry behavior, and reconciliation after partial success.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Figma's next-generation data caching platform</title>
-      <link>https://www.figma.com/blog/figmas-next-generation-data-caching-platform/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/d822b069833dc49b685a554cad1aea7c79a60e35</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] Rethinking Last-Mile Routing at Scale: Near-Linear Planning on Commodity Hardware</title>
+      <link>https://optimization-online.org/2026/04/rethinking-last-mile-routing-at-scale-near-linear-planning-on-commodity-hardware/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/c8263a176433525a8e23b15c2a652b54eb2dd835</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Figma describes FigCache, a stateless RESP proxy and first-party client layer that turns a fragmented Redis estate into a unified cache data plane. The design is valuable because it moves connection pooling, routing, observability, failover handling, and guardrails below application code while keeping migration reversible.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Redis became a critical-path dependency, so Figma inserted a proxy layer to absorb connection volatility and topology changes.&lt;/li&gt;&lt;li&gt;The proxy parses structured Redis commands, supports composable routing engines, and can fan out eligible cross-shard read pipelines.&lt;/li&gt;&lt;li&gt;The rollout used first-party wrappers, feature flags, incremental domains, production stress tests, and a low-friction endpoint change.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The paper presents a scalable vehicle-routing pipeline that handles one million stops on commodity hardware by decomposing the planning problem into constraint-aware clustering, allocation, rebalancing, and route-level optimization.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Large routing problems become tractable when computation is organized into bounded stages instead of one monolithic planner.&lt;/li&gt;&lt;li&gt;The reported evaluation reduces measured route distance and route count against the public Amazon baseline under the same external measurement protocol.&lt;/li&gt;&lt;li&gt;Hard constraints and soft operational constraints are treated differently, which matches real last-mile planning better than perfect-compliance models.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Should I Run Plain Docker Compose in Production in 2026?</title>
-      <link>https://distr.sh/blog/running-docker-in-production/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/22a8849fe499c65d8f6f1c5f4655e62208ddccde</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] Faster timeseries aggregations</title>
+      <link>https://www.opendata.dev/blog/faster-timeseries-aggregations</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/7b2ff5c0480fbfe7c6fea08968a06e7e03a9acb3</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The post gives a practical boundary for production Docker Compose: it can work for single-node and customer-managed deployments, but only if operators deliberately close the gaps around orphan containers, disk cleanup, log rotation, health recovery, image pinning, socket exposure, and updates.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Compose reconciles a host once; it is not a scheduler or control plane.&lt;/li&gt;&lt;li&gt;`--remove-orphans`, image pruning, log caps, pinned images, and socket controls are operational requirements, not polish.&lt;/li&gt;&lt;li&gt;The correct comparison is not Compose versus Kubernetes in the abstract, but the host&amp;#x27;s actual reliability and maintenance surface.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A query-engine performance writeup showing how a timeseries aggregation path moved from naive step-by-step scanning toward cursor-based and tiled columnar execution for better cache locality.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A monotonic time range lets the engine use stateful cursors instead of repeated binary searches.&lt;/li&gt;&lt;li&gt;Series-major memory layout can thrash CPU caches when aggregation touches many series per step.&lt;/li&gt;&lt;li&gt;Tiling and columnar execution trade implementation complexity for real cache efficiency and higher throughput.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Formatting an entire 25 million line codebase overnight: the rubyfmt story</title>
-      <link>https://stripe.dev/blog/formatting-an-entire-25-million-line-codebase-overnight-the-rubyfmt-story</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/bb45bae6c13f9ff03425a3da79630a002775ff93</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] Server-Driven UI in 22 lines of TypeScript</title>
+      <link>https://neciudan.dev/implementing-server-driven-ui</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/22979d3a51326bfce5206d4e9f6351102cd75116</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Stripe&amp;#x27;s rubyfmt rollout is a large-scale developer-productivity case study: the formatter had to be fast enough for editor use, correct enough for a huge Ruby codebase, and deployable through a coordinated all-repo migration rather than endless piecemeal formatting churn.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Formatter adoption at monorepo scale is an organizational migration, not only a parser problem.&lt;/li&gt;&lt;li&gt;Correctness validation, blame-ignore support, and rollout coordination matter as much as formatting style.&lt;/li&gt;&lt;li&gt;A single consistent tool can remove recurring review noise, but the migration needs explicit ownership and timing.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A practical server-driven UI walkthrough built around a JSON tree, component registry, recursive renderer, and action dispatcher. The strongest section is the warning about contract versioning for old mobile clients.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Server-driven UI fits cases where layout decisions change faster than clients can ship.&lt;/li&gt;&lt;li&gt;The server can only request component types and prop shapes that the installed client understands.&lt;/li&gt;&lt;li&gt;Changing an existing node shape is more dangerous than adding a new component type; version the contract and emit old and new shapes during migration.&lt;/li&gt;&lt;li&gt;Production renderers need per-node error boundaries, registry-miss logging, and controlled action dispatch.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] AI likes deep modules</title>
-      <link>https://gomonk.substack.com/p/ai-likes-deep-modules</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/040c08ccd86bca4eeb40a2e77babefdac324cad2</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] Platform Engineering End-to-End</title>
+      <link>https://www.lucavall.in/blog/platform-engineering-end-to-end</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/45eb44759ff832069a13ecacd8b56e80207363c6</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The essay applies Ousterhout&amp;#x27;s deep-module idea to AI-assisted development: splitting code is not enough if modules leak Kubernetes objects, complex structs, or other implementation details through shallow wrappers. Deep interfaces absorb complexity so both humans and LLMs have less system state to hold.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A module is deep when a small interface hides substantial implementation complexity.&lt;/li&gt;&lt;li&gt;Shallow wrappers can increase complexity by moving boilerplate without reducing what callers must know.&lt;/li&gt;&lt;li&gt;AI-generated code needs especially clear module boundaries because models tend to reproduce visible surface complexity.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A broad platform-engineering primer that defines the platform as an internal product, not an infra ticket queue. It is strongest on when to say no, when not to form a platform team, and why median-developer workflows matter.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A platform should curate primitives, absorb repeated glue, centralize migrations, and let teams operate systems without each team becoming infra specialists.&lt;/li&gt;&lt;li&gt;A service catalog and metadata registry are not decoration; they are the ownership and dependency map.&lt;/li&gt;&lt;li&gt;Do not build the platform only for loud expert teams, or the median teams will bypass it.&lt;/li&gt;&lt;li&gt;Small orgs usually need shared conventions before they need a named platform team.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Architecture by Autocomplete</title>
-      <link>https://cekrem.github.io/posts/architecture-by-autocomplete/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/0080327d62b78cdc76b01c17086e374c7fefab05</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] Trying to Wrap My Head Agentic Swarms</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t5tbk1/trying_to_wrap_my_head_agentic_swarms/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/145aed7193e89e9875853061c64f449ec682dbda</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The post argues that AI-generated code often flattens domain concepts into primitive strings, numbers, dates, and maps because that is the statistical average of training data. The review heuristic is concrete: count the primitives in the domain core and replace flattened concepts with domain types and smart constructors.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Primitive obsession is a useful diagnostic for AI-assisted code that lacks domain theory.&lt;/li&gt;&lt;li&gt;Domain types encode negative space: what values and state transitions should be impossible.&lt;/li&gt;&lt;li&gt;Reviewing AI output should start with types because they reveal whether the domain model was actually understood.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A high-signal r/ExperiencedDevs thread pushing back on overnight autonomous agent swarms. The useful consensus is that decomposition and smaller context windows are real, but unreviewed emergent multi-agent work is still mostly a way to create expensive, unreviewable output.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Parallel agents are credible when the tasks are bounded, independently verifiable, and scoped to reduce context size.&lt;/li&gt;&lt;li&gt;The weak form is orchestration; the dangerous form is delegating correctness to agents talking to each other.&lt;/li&gt;&lt;li&gt;Large generated changes still need human review strategy, test evidence, and integration discipline.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] on-call is 90% hunting, 10% fixing</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t3gu9o/oncall_is_90_hunting_10_fixing/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/861eb7680238edfe337567aa9d9abe2a821d3fe0</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] I think my frontend architecture framework is missing something. What?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t5vmor/i_think_my_frontend_architecture_framework_is/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/269d185e07a8ffd3a312da43da8ea482a9503820</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread captures a common incident-response failure mode: the code fix is short, but the real work is reconstructing context across alerts, traces, deploy history, Slack threads, ownership gaps, and prior postmortems. The durable point is that incident knowledge needs to become searchable operational memory, not evaporate after every page.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Modern on-call toil often comes from context reconstruction across tools rather than from the final code change.&lt;/li&gt;&lt;li&gt;Deploy archaeology, ownership metadata, and service dependency context need to be available during the incident, not only in the postmortem.&lt;/li&gt;&lt;li&gt;Postmortems that no one can retrieve during the next incident are documentation theater.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A useful architecture-communication thread because the feedback rejects an elaborate metaphor and asks for direct domain language. The underlying dimensions, such as cost, scale, UX, and hard-to-change foundations, are useful; the lesson is not to hide them behind extra cognitive load.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Architecture discussions get worse when the framing forces people to decode the metaphor before discussing the system.&lt;/li&gt;&lt;li&gt;Use direct terms for tradeoffs, constraints, reversibility, and user impact.&lt;/li&gt;&lt;li&gt;A shared decision frame is valuable only if it reduces ambiguity in actual reviews.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Struggling with flaky end-to-end tests due to data dependencies</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t3gnwx/struggling_with_flaky_endtoend_tests_due_to_data/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/ef07a6f861b977139466462a68bb85f4550acbd9</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] Architects who've worked on large scale gov/healthcare systems what actually breaks during modernization?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t5l36j/architects_whove_worked_on_large_scale/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/01384bce5349c2fd4417e4a662c8135a7c0917f7</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread surfaces a common test-architecture trap: teams run long end-to-end flows because production data dependencies are hard to model, then every upstream state inconsistency breaks checkout-level confidence. The better direction is deterministic setup, isolated scenario data, and more behavior checks below the full browser/API journey.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A checkout test should not need every previous workflow step to succeed just to reach the state under test.&lt;/li&gt;&lt;li&gt;Move most behavior checks to API, integration, contract, and component levels; reserve full E2E for a few critical journeys.&lt;/li&gt;&lt;li&gt;Use owned seeded data, scenario IDs, reset helpers, and isolated accounts instead of shared mutable QA fixtures.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A modernization thread where the experienced answers point away from clean-architecture theory and toward budgets, vendor incentives, compliance gates, air-gapped operations, institutional memory, testing gaps, and basic infra debt.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Modernization fails when governance, ownership, and funding assumptions are wrong, even if the target architecture is technically coherent.&lt;/li&gt;&lt;li&gt;Cloud migration can lose politically when operating cost is underestimated against legacy baselines.&lt;/li&gt;&lt;li&gt;Regulated deployments often spend more time in approval and evidence gates than implementation.&lt;/li&gt;&lt;li&gt;Microservices and event-driven designs are weak defaults when the real problem is neglected fundamentals.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Update on "Co-authored-by: Copilot" in commit messages</title>
-      <link>https://github.com/microsoft/vscode/issues/314311</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/00efb6e04abad5d4d010a69ab0d005708b637037</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] How do you handle workplace disagreements when you think you're right?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t59cyn/how_do_you_handle_workplace_disagreements_when/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/d97c731e15b10da6a140006b6ad1be9a7938dd51</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The VS Code issue is a concrete failure case for AI provenance defaults: an attribution setting was changed toward broader Copilot commit trailers, a bug attributed non-Copilot code even with AI disabled, and the team had to revert the default to off. The lesson is about consent, kill switches, release process, and provenance metadata semantics.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI attribution must be opt-in, explicit, and disabled by global AI-off settings.&lt;/li&gt;&lt;li&gt;A feature that writes into commit history needs stronger review, tests, and rollout controls than ordinary UI polish.&lt;/li&gt;&lt;li&gt;`Co-authored-by` and `Assisted-by` are not interchangeable; provenance labels should match the actual contribution.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A practical thread about a saved-filters design dispute: one JSON blob per user versus per-record CRUD. The durable part is influence strategy: document the risk, make the failure mode concrete, offer the alternative, and reserve escalation for failures that are actually dangerous.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A technically stronger design can still lose if the decision owner judges the risk acceptable for v1.&lt;/li&gt;&lt;li&gt;Silent overwrite and future migration cost are better arguments than abstract purity.&lt;/li&gt;&lt;li&gt;After the risk is documented and the owner decides, continuing to argue can cost more than the design flaw.&lt;/li&gt;&lt;li&gt;Escalate when the failure mode is severe, user-visible, or hard to reverse.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The peril of laziness lost</title>
-      <link>https://bcantrill.dtrace.org/2026/04/12/the-peril-of-laziness-lost/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/bd3f718049ac7fbb8374c3150299e90f1a31aaaf</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
+      <title>[Reddit Programming] Are Senior Managers coding in your workplace with AI? Do they add value?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t547ix/are_senior_managers_coding_in_your_workplace_with/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/c054e3c7c0662477cf49c22819881d21b0c066e3</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Bryan Cantrill argues that LLMs lack the programmer virtue of laziness: they do not feel the future cost of extra code, weak abstractions, or accumulated cognitive load. The useful framing is that AI should be used in service of simpler systems, not as a throughput machine for generating more surface area.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Good abstraction comes from optimizing future human effort, which current LLMs do not experience.&lt;/li&gt;&lt;li&gt;Lines of code are a perverse metric when models can generate volume without owning maintenance cost.&lt;/li&gt;&lt;li&gt;AI-assisted engineering needs human constraints, taste, and review discipline to keep systems smaller and clearer.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;An r/ExperiencedDevs thread on executives and senior managers opening AI-generated PRs. The repeated failure mode is not that managers cannot write code; it is bypassing context, ownership, review standards, credentials policy, and the last 20 percent of production work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI-generated management PRs need the same review bar as any other change.&lt;/li&gt;&lt;li&gt;Prototype repos and constrained sandboxes are safer than drive-by changes in production systems.&lt;/li&gt;&lt;li&gt;The risk is political pressure to merge weak work, not only technical quality.&lt;/li&gt;&lt;li&gt;Credential access, data safety, and ownership boundaries need explicit policy before senior leaders start shipping agent-generated code.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Tech] Trustworthy JavaScript for the Open Web</title>
-      <link>https://hacks.mozilla.org/2026/05/trustworthy-javascript-for-the-open-web/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/af43af9af03ebf7ef05da32861aba3742ed5e245</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
-      <category>Tech</category>
-      <description>&lt;p&gt;Mozilla outlines WAICT, a browser-side integrity and transparency model for web apps where users must not blindly trust the server to deliver safe JavaScript. The key idea is to bind client code to public manifests and logs so selective malicious code delivery becomes detectable and enforceable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;End-to-end encrypted web apps still depend on server-delivered JavaScript unless the browser can verify what code was served.&lt;/li&gt;&lt;li&gt;Integrity and transparency logs can make targeted malicious builds observable instead of invisible.&lt;/li&gt;&lt;li&gt;The Firefox Nightly prototype is early, but the trust model is important for high-sensitivity browser applications.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] OpenTelemetry signals from first principles</title>
+      <link>https://kodraus.github.io/opentelemetry/2026/05/04/otel-first-principles.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/c4c9482254aa218abd662985a831567ec0cfd027</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A compact explanation of OpenTelemetry signals by deriving logs, traces, and metrics from the same event model. It is useful because it strips away vendor and framework vocabulary.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A log is an event with timestamp, message, severity, and context.&lt;/li&gt;&lt;li&gt;A span is an event with duration and hierarchical identifiers, which lets you see call structure and parallelism.&lt;/li&gt;&lt;li&gt;Trace propagation carries those identifiers across process boundaries.&lt;/li&gt;&lt;li&gt;Metrics sample resource state, count event frequency, or bucket durations when raw event volume is too high.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Ux] Experiment Estimation Study: How Well Can 1,391 Guesses Predict A/B Test Effects?</title>
-      <link>http://goodui.org/blog/experiment-estimation-study/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/e6f9a99c61cc7aace4de6953776cfbdea5a626b7</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
-      <category>Ux</category>
-      <description>&lt;p&gt;GoodUI compares 1,391 professional guesses against real A/B test outcomes and finds that humans are noisy, mildly optimistic estimators. Crowds reduce random error but do not remove shared positive bias, so estimates are useful for prioritization but cannot replace experiments.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The median individual estimate missed the real effect by about 2.7 percentage points.&lt;/li&gt;&lt;li&gt;People were directionally right about 64% of the time but tended to overestimate positive impact.&lt;/li&gt;&lt;li&gt;Aggregating five to ten estimates reduces noise, but systematic bias remains.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] The performance bug hiding in our Cloud Run billing settings</title>
+      <link>https://oblique.security/blog/the-performance-bug-hiding-in-our-billing-settings/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/dddc0d0147b8a9df3f04d229da869ed6b8bbd677</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A debugging story where slow database queries and saturated connection pools were caused by Cloud Run CPU throttling background goroutines after HTTP requests finished. The fix was one billing-related annotation, but the lesson is broader: better traces do not save you if the platform assumption is wrong.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Cloud Run request-based billing throttles CPU when no HTTP request is in flight, even if in-process background work continues.&lt;/li&gt;&lt;li&gt;The symptom can look exactly like database latency because the client is suspended while holding connections.&lt;/li&gt;&lt;li&gt;Use instance-based CPU for services that run scheduled jobs, queue consumers, or background goroutines inside the web process.&lt;/li&gt;&lt;li&gt;Observability narrowed the problem, but the final fix came from challenging the runtime and billing model.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Visualization] Estimating how much text on the internet is generated</title>
-      <link>https://flowingdata.com/2026/05/04/estimating-how-much-text-on-the-internet-is-generated/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-05/8003790a993c0fec8ab6e252a854727e4e19f21f</guid>
-      <pubDate>Tue, 05 May 2026 20:32:24 +0000</pubDate>
-      <category>Visualization</category>
-      <description>&lt;p&gt;FlowingData points to research estimating that roughly 35% of newly published websites by mid-2025 used AI-generated or AI-assisted text. The result is useful because it complicates the usual story: semantic diversity dropped and sentiment became more positive, but the study did not find statistically significant evidence of lower factual accuracy or stylistic diversity.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI-generated or AI-assisted text appears to have become a large share of newly published websites within three years of ChatGPT&amp;#x27;s launch.&lt;/li&gt;&lt;li&gt;The measured effects include lower semantic diversity and more positive sentiment.&lt;/li&gt;&lt;li&gt;The study&amp;#x27;s findings diverge from the common assumption that generated web text necessarily reduces factual accuracy.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] Performance trick: optimistic vs pessimistic checks</title>
+      <link>https://lemire.me/blog/2025/12/20/performance-trick-optimistic-vs-pessimistic-checks/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/1e69040f055e0e9224de1b6a3f91951c6662cb89</guid>
+      <pubDate>Thu, 07 May 2026 10:55:40 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Daniel Lemire compares early-exit ASCII validation with an optimistic OR-reduction loop. The concrete lesson is that branchless code can autovectorize and win hard when the expected data is usually valid.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A pessimistic early-return loop is best when invalid input is common and early.&lt;/li&gt;&lt;li&gt;An optimistic reduction can be several times faster on mostly valid data because compilers can vectorize it.&lt;/li&gt;&lt;li&gt;The correct validation strategy depends on expected data distribution, not only algorithmic complexity.&lt;/li&gt;&lt;li&gt;Hand-tuned SIMD libraries can recover both speed and precise error reporting.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
