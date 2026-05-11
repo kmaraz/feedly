@@ -4,70 +4,134 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Thu, 07 May 2026 22:10:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 06:39:22 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] The Pulse: AI load breaks GitHub - why not other vendors?</title>
-      <link>https://blog.pragmaticengineer.com/the-pulse-ai-load-breaks-github/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/f130d34103f61445491b76d0af62487aa771fda3</guid>
-      <pubDate>Thu, 07 May 2026 22:10:09 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;Gergely Orosz documents GitHub&amp;#x27;s recent reliability failures as a mix of data-integrity incidents, repeated outages, AI-agent load growth, infrastructure migration pressure, and accumulated technical and organizational debt.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The most serious incident was not just availability loss: squash merges through merge queue produced incorrect merge commits for 2,092 pull requests.&lt;/li&gt;&lt;li&gt;GitHub attributes much of the pressure to AI-driven load, but the article argues that a roughly 3.5x load increase over two years should have been forecast and designed for earlier.&lt;/li&gt;&lt;li&gt;AI-era developer tooling can turn one platform into a shared bottleneck: review, CI, search, notifications, mergeability checks, and background jobs all amplify pull-request traffic.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Frontend] When everyone has AI and the company still learns nothing</title>
+      <link>https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/fd8dbc50f3119b01ffe0a8b61d254ea4dc2ea939</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Robert Glaser argues that individual AI usage does not become organizational learning unless companies instrument the real loops where intent, agent work, verification, and human judgment happen. The useful measurement is not token spend, seat usage, or pull-request count; it is whether teams turn local discoveries into reusable capabilities, safer delegation, and faster learning.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI adoption moves from seat rollout to a messy middle where usage is uneven, hidden, and hard to compare.&lt;/li&gt;&lt;li&gt;Organizations need agent operations, loop intelligence, and capability distribution to meet in one feedback path.&lt;/li&gt;&lt;li&gt;Measuring people creates gaming; measuring loops can expose where backpressure, verification, or reusable workflows are missing.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Engineering] Better Browser Caching with No-Vary-Search</title>
-      <link>https://csswizardry.com/2026/05/better-browser-caching-with-no-vary-search/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/9a4bdba51bfe293c066e94f7f2a4b7f0a75e5f2c</guid>
-      <pubDate>Thu, 07 May 2026 22:10:09 +0000</pubDate>
+      <title>[Engineering] TBM 421: Minimally Viable Consistency (Part 3)</title>
+      <link>https://cutlefish.substack.com/p/tbm-421-minimally-viable-consistency</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/1a2c5f392b37f8215d64b5d9b36d40c3a0ea83a8</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
       <category>Engineering</category>
-      <description>&lt;p&gt;Harry Roberts explains how the `No-Vary-Search` response header lets browser caches ignore irrelevant query parameters while preserving parameters that actually change the response.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tracking parameters such as `utm_source`, `gclid`, and `fbclid` often create duplicate cache entries for byte-identical pages.&lt;/li&gt;&lt;li&gt;`No-Vary-Search: params=(...)` can ignore specific parameters; `params, except=(...)` can ignore all except meaningful variants such as color or size.&lt;/li&gt;&lt;li&gt;The header is only safe when ignored parameters do not affect server-rendered content.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;John Cutler separates consistency into sharp consistency, flexible consistency, and legible variety. The AI-specific angle is strong: agents can translate between local team reality and global reporting formats, but that translation can also remove the human sensemaking that normally builds alignment.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Use sharp consistency when sameness itself is valuable, flexible consistency when only intent must match, and legible variety when differences should stay visible.&lt;/li&gt;&lt;li&gt;AI can maintain multiple concurrent frames for the same work, but hidden translation can produce legibility without understanding.&lt;/li&gt;&lt;li&gt;A useful consistency rule should be tested by asking what would actually break if it disappeared tomorrow.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Tech] Behind the Scenes Hardening Firefox with Claude Mythos Preview</title>
-      <link>https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/c9f713278306cbe879f8b3b0abf487a6f7b47ea2</guid>
-      <pubDate>Thu, 07 May 2026 22:10:09 +0000</pubDate>
+      <title>[Reddit Programming] An Interactive Intro to CRDTs</title>
+      <link>https://jakelazaroff.com/words/an-interactive-intro-to-crdts/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/65476faf6497f950cce46e55cba9169b725d0531</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Jake Lazaroff explains CRDTs through interactive visualizations and code instead of treating them as purely academic distributed-systems machinery. It is useful as a compact refresher on how replicas can accept local writes, merge state, and converge without central coordination.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;CRDTs trade coordination for carefully designed merge semantics.&lt;/li&gt;&lt;li&gt;Interactive examples make the conflict-resolution model easier to reason about than algebra-first explanations.&lt;/li&gt;&lt;li&gt;The core design question is not whether replicas diverge, but whether their later merge is deterministic and meaningful.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Replacing a 3 GB SQLite database with a 10 MB FST</title>
+      <link>https://til.andrew-quinn.me/posts/replacing-a-3-gb-sqlite-database-with-a-7-mb-fst-finite-state-trandsucer-binary/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/ff9524ae67ec204676158e862c0fcc91dfbfcac1</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Andrew Quinn documents replacing a large SQLite FTS dictionary artifact with a finite-state transducer and getting roughly a 300x size reduction. The lesson is not just the data structure win; it shows when a static, specialized representation beats a general database after the problem shape is better understood.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prefix and suffix sharing can make an FST dramatically smaller than a trie or SQLite FTS table for static language data.&lt;/li&gt;&lt;li&gt;A rough first solution can be the right move when it preserves learning and makes the later specialized solution obvious.&lt;/li&gt;&lt;li&gt;The right storage engine depends on mutability, query shape, and distribution constraints, not default familiarity.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Idempotency Is Easy Until the Second Request Is Different</title>
+      <link>https://blog.dochia.dev/blog/idempotency/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/8f9134f3c5cb45b313255b7bcbf61a936e7789fa</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Dochia&amp;#x27;s article treats idempotency as a durable operation contract, not a replay cache. It covers the failure modes real APIs hit: same key with different commands, concurrent retries, provider uncertainty, stale in-progress records, expiry, downstream events, and response replay semantics.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A robust idempotency record needs scope, operation name, canonical command hash, execution state, replayable result, and expiry policy.&lt;/li&gt;&lt;li&gt;Same scoped key plus different canonical command should be rejected with a stable conflict instead of silently replayed.&lt;/li&gt;&lt;li&gt;Retries after provider success, queue duplication, schema changes, or region failover need recovery paths, not optimistic re-execution.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] AI coding CLIs face TrustFall risk from one-click MCP server execution</title>
+      <link>https://www.developer-tech.com/news/ai-coding-clis-trustfall-mcp-server-execution-risk/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/7ffbc5d37c96e5a57d0a9c88f02bcb01a08ae762</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The article reports on Adversa&amp;#x27;s TrustFall finding: project-defined MCP servers in coding CLI repositories can execute native processes after a broad folder-trust prompt, including in some automated CI contexts. The operational point is concrete: repository-controlled agent configuration is executable supply-chain surface.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Project `.mcp.json` and Claude settings can define or approve MCP servers that run with the user&amp;#x27;s privileges.&lt;/li&gt;&lt;li&gt;Folder trust is too broad when it implicitly approves executable agent tooling.&lt;/li&gt;&lt;li&gt;Teams should review MCP configuration changes, deny project-scoped auto-approval by default, and isolate agent CI from sensitive credentials.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How are you handling project conventions across Cursor / Claude Code / Copilot?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t8237u/how_are_you_handling_project_conventions_across/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/7519d9ddf3d4489ea94ef2c35beb35d25b98ce75</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;This discussion surfaces a real maintenance problem: tool-specific AI instruction files drift across Cursor, Claude Code, Copilot, and CI prompts. The strongest response points toward a small authoritative `AGENTS.md`-style file plus executable project commands, with generated or referenced tool-specific copies only where necessary.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI instruction drift is already a cross-tool configuration problem, not just a prompt-writing annoyance.&lt;/li&gt;&lt;li&gt;Concrete repo commands, dependency metadata, and decision rules age better than long duplicated prose prompts.&lt;/li&gt;&lt;li&gt;A neutral source of truth plus generation or references is safer than manually maintaining N parallel rule files.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] What part of your senior dev work still has zero AI in it?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t84nex/what_part_of_your_senior_dev_work_still_has_zero/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/78cfabf390e81114c524d5d471c53d4687299839</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread distinguishes implementation leverage from senior-engineering judgment. Commenters converge on people work, problem framing, contradictory priorities, coordination, and post-AI verification as the parts where current tools still lag or create hidden rework.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Coding is not always the bottleneck; contextualization, prioritization, and coordination often dominate senior work.&lt;/li&gt;&lt;li&gt;AI can make wrong implementation paths look plausible enough that verification and debugging costs move later.&lt;/li&gt;&lt;li&gt;The useful boundary is where tools accelerate known work versus where humans still define what work should exist.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] I think SWE can get &gt;2x done in 2027</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t81jen/i_think_swe_can_get_2x_done_in_2027/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/cab796982153a11a807b3053347c3dd2bce1e50c</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A team lead describes AI gains coming from workflow investment rather than casual autocomplete: custom skills, API access, CI debugging, flaky-test triage, review support, and operational checks. The comments add the right caution: delivery claims only matter if shipped work remains battle-tested and downstream rework is counted.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Team-level gains come from giving agents context, tools, and repeatable workflows, not merely from issuing licenses.&lt;/li&gt;&lt;li&gt;Verification, CI, review, and investigation are high-leverage targets because they convert half-day checks into minutes.&lt;/li&gt;&lt;li&gt;Productivity measurement must include bugs, follow-up work, and rearchitecture, not only merged tickets.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] onboarding a new engineer in today's landscape</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t7j7xz/onboarding_a_new_engineer_in_todays_landscape/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/22e49610d84cea0471454fa11618c3318130d8f2</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The discussion asks how juniors learn a complex codebase when everyone pairs with AI instead of each other. The most useful responses recommend constraining AI during onboarding, forcing explanation and debugging practice, and treating year-long onboarding as a signal that the system itself needs repair.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;New engineers still need hands-on debugging pain to build runnable intuition.&lt;/li&gt;&lt;li&gt;AI can be allowed for navigation before it is allowed for code generation.&lt;/li&gt;&lt;li&gt;A codebase that takes a year to onboard into should trigger architecture and documentation work, not only better mentoring.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How Discord Automates ScyllaDB Clusters at Scale</title>
+      <link>https://discord.com/blog/how-discord-automates-scylladb-clusters-at-scale</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/ecd6de2d364538ecdea7a762579030d4411f98a0</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Discord explains how its persistence team replaced fragile scripts for ScyllaDB operations with a control-plane framework for shadow clusters, upgrades, parallelism constraints, precondition checks, retries, and resumable state. It is a practical example of turning institutional knowledge into safer automation without trying to build the whole platform upfront.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Old scripts failed because they were unsafe, unrecoverable, and hard to extend under real operational load.&lt;/li&gt;&lt;li&gt;Tasks declare inputs, preconditions, parallelism constraints, and persisted state so interrupted work can resume.&lt;/li&gt;&lt;li&gt;Incremental delivery kept the control plane usable while still moving toward principled automation.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How we made Notion available offline</title>
+      <link>https://www.notion.com/blog/how-we-made-notion-available-offline</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/e5a9512e7660b1890ae44b945bbb1042e05aa1fa</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Notion describes the data-model work behind offline mode: turning a best-effort SQLite cache into persistent storage with explicit offline page tracking, reason tracking, inheritance, sync guarantees, and CRDT migration boundaries. The most useful part is the modeling of why data is available offline, not just what is cached.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Offline mode needs completeness guarantees; showing partial pages offline is worse than refusing access.&lt;/li&gt;&lt;li&gt;A page can be offline for multiple independent reasons, so removal must wait until the last reason disappears.&lt;/li&gt;&lt;li&gt;Hierarchy and inheritance make offline state a graph/modeling problem, not a simple cache toggle.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] OpenAI's WebRTC Problem</title>
+      <link>https://moq.dev/blog/webrtc-is-the-problem/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/0b5c3b2eb27a34e1a6fcfdb4b60547a03ee1cc98</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The author argues that WebRTC is a poor fit for voice AI because it optimizes for conversational real-time conferencing, where dropping audio to preserve latency is acceptable. Voice AI often needs accurate prompt capture and faster-than-real-time TTS buffering, making QUIC-style media transport a better match than WebRTC&amp;#x27;s jitter-buffer and retransmission constraints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Voice AI prompt audio should often prefer slightly more delay over unrecoverable packet loss.&lt;/li&gt;&lt;li&gt;TTS output can be generated faster than real time, so buffering is useful rather than harmful.&lt;/li&gt;&lt;li&gt;WebRTC&amp;#x27;s port, NAT, Kubernetes, and firewall behavior creates scaling pressure unrelated to the actual product need.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Containers Aren't Just Linux Processes</title>
+      <link>https://labs.iximiuz.com/tutorials/oci-containers-explained</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/8b7bb8450fb5d6fc017b22d40becb7cf94015699</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Ivan Velichko reads the OCI runtime spec closely and shows why the common &amp;#x27;containers are just Linux processes&amp;#x27; explanation is incomplete. OCI defines a portable execution environment with common and platform-specific configuration, which can be implemented with Linux isolation, Windows mechanisms, or even VM-backed runtimes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A standard container is an environment for running processes with configurable isolation and resource limits.&lt;/li&gt;&lt;li&gt;Namespaces and cgroups are Linux implementation details, not the whole OCI abstraction.&lt;/li&gt;&lt;li&gt;VM-backed containers can still be OCI-compliant when they satisfy the standard container lifecycle and bundle contract.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Tech] Google Lighthouse Has A New Agentic Browsing Category</title>
+      <link>https://www.debugbear.com/blog/lighthouse-agentic-browsing</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/8ea9972c3416e5a6f79001829861ea421471eb56</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
       <category>Tech</category>
-      <description>&lt;p&gt;Mozilla describes how it turned modern AI security analysis into a reproducible hardening pipeline for Firefox, finding hundreds of latent vulnerabilities by pairing model search with test-case generation, fuzzing infrastructure, triage, and release process.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The useful unit was not a model prompt alone, but a harness that could form hypotheses, build reproducible test cases, and reject unreproducible speculation.&lt;/li&gt;&lt;li&gt;The strongest bugs involved browser-engine edge cases that fuzzers struggle to cover, including IPC races, sandbox escapes, layout overflows, and old parser subsystems.&lt;/li&gt;&lt;li&gt;Model upgrades compound when the pipeline is already in place: discovery, proof generation, explanation, deduplication, triage, and fixing all become easier to scale.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;DebugBear documents Lighthouse 13.3&amp;#x27;s new under-development Agentic Browsing category. The audits reuse practical web quality surfaces agents depend on: accessibility tree shape, layout stability, WebMCP metadata, and `llms.txt` guidance.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agent-friendly sites still depend on old web fundamentals such as stable layout and a correct accessibility tree.&lt;/li&gt;&lt;li&gt;WebMCP validation is emerging as a browser-side way to expose page actions to agents.&lt;/li&gt;&lt;li&gt;`llms.txt` is checked for basic structure, but the article notes that current tool adoption is still limited.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Use Protocols, Not Services</title>
-      <link>https://notnotp.com/notes/use-protocols-not-services/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/4ec38f27f3985d0ada3342b16eb6e477f9df3c90</guid>
-      <pubDate>Thu, 07 May 2026 22:10:09 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;This essay argues that centralized services are easy regulatory and operational choke points, while protocols preserve substitutability because users can change providers without abandoning the communication layer.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A government or platform policy can pressure one company; a protocol requires pressuring many independent operators across jurisdictions.&lt;/li&gt;&lt;li&gt;Email remains resilient despite provider concentration because SMTP still lets users migrate providers and keep communicating.&lt;/li&gt;&lt;li&gt;The durable design lesson is to separate interoperability from any single commercial service.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How Michael Abrash doubled Quake framerate</title>
-      <link>https://fabiensanglard.net/quake_asm_optimizations/index.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/46c2c660aa9113541506937a4450e4b40ac17f8e</guid>
-      <pubDate>Thu, 07 May 2026 22:10:09 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Fabien Sanglard rebuilds Quake with and without Michael Abrash&amp;#x27;s assembly optimizations and shows where the frame-rate gain came from: hot rendering loops, careful Pentium pipeline scheduling, and eliminating stalls around expensive floating-point operations.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The benchmark confirms Carmack&amp;#x27;s warning: disabling the assembly path drops WinQuake from about 42 fps to about 23 fps on a Pentium MMX 233.&lt;/li&gt;&lt;li&gt;Most of the gain comes from `D_DrawSpans8`, surface-block generation, and polyset rendering rather than broad micro-optimizing everywhere.&lt;/li&gt;&lt;li&gt;The important technique was overlap: issue slow FPU work early, then use integer pipelines to draw pixels while the divide is still in flight.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Untangling dialogs in React Router</title>
-      <link>https://programmingarehard.com/2026/05/06/react-router-dialogs.html/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/81a4db5e774a839f197c9626325077afffffd1c9</guid>
-      <pubDate>Thu, 07 May 2026 22:10:09 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The post turns modal dialogs into nested React Router routes so loading, mutations, errors, redirects, success feedback, and animations live in route-level primitives instead of scattered component state and effects.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Dedicated dialog routes make install and uninstall flows explicit in the route tree and remove fetcher/state plumbing from the parent list route.&lt;/li&gt;&lt;li&gt;`unstable_defaultShouldRevalidate`, `preventScrollReset`, flash session state, and client loaders handle the main UX details without forcing dialog logic into `useEffect`.&lt;/li&gt;&lt;li&gt;View transitions can preserve close animations when route navigation removes the dialog from the DOM.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How often do you break your head over a problem and it turn out to be a very simple thing you overlooked?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t6e35y/how_often_do_you_break_your_head_over_a_problem/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/bba68f673e6a8d20360db4a4222a84ba322aa277</guid>
-      <pubDate>Thu, 07 May 2026 22:10:09 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread starts from a concrete debugging miss: tests looked broken because an API gateway in the test environment pointed at the dev application gateway, and LLM assistance amplified the wrong search space instead of checking environment assumptions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;When behavior differs by environment, verify routing, endpoints, credentials, feature flags, and data source identity before deep code inspection.&lt;/li&gt;&lt;li&gt;Extra logs and AI review can waste time when the investigation assumes the code path is correct but the deployment path is not.&lt;/li&gt;&lt;li&gt;A simple checklist for environment parity prevents many long debugging loops.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Async writes to secondary store via MQ - how do you handle stale reads during the propagation window?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t5zvxu/async_writes_to_secondary_store_via_mq_how_do_you/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-07/084c443f2d3bb1287ba6651b4c1490dc2efdcb97</guid>
-      <pubDate>Thu, 07 May 2026 22:10:09 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread raises a standard distributed-systems problem: a primary write succeeds before an asynchronous secondary query store is updated, so reads can see stale or missing data unless the application exposes and handles that consistency boundary.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Read-your-writes usually requires routing recent reads to the primary, tracking propagation state, or delaying claims that data is globally visible.&lt;/li&gt;&lt;li&gt;A secondary query store needs reconciliation for lost events, failed processing, and drift from the primary source of truth.&lt;/li&gt;&lt;li&gt;The product contract matters: either define eventual consistency clearly or pay the complexity cost for synchronous confirmation.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] Claude Code Convinced Me To Simplify My SQL JOINs</title>
+      <link>https://www.bennadel.com/blog/4892-claude-code-convinced-me-to-simplify-my-sql-joins.htm</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/00c2e8e9fe17bef30672abf82411d0538f887d7f</guid>
+      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Ben Nadel describes Claude Code changing his mind about SQL style: moving filters out of `ON` clauses and into `WHERE` clauses because it separates relationship logic from row filtering and makes debugging easier. The useful meta-lesson is that an agent can be valuable when it supplies stronger reasoning than local habit, not just code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`JOIN` should describe table relationships; `WHERE` should describe row filtering.&lt;/li&gt;&lt;li&gt;Separating filters makes complex SQL easier to debug by removing and re-adding constraints in one place.&lt;/li&gt;&lt;li&gt;AI review is most useful when it challenges a personal convention with concrete maintainability arguments.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
