@@ -4,134 +4,118 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Mon, 11 May 2026 06:39:22 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 11:17:11 +0000</lastBuildDate>
     <item>
-      <title>[Frontend] When everyone has AI and the company still learns nothing</title>
-      <link>https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/fd8dbc50f3119b01ffe0a8b61d254ea4dc2ea939</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Robert Glaser argues that individual AI usage does not become organizational learning unless companies instrument the real loops where intent, agent work, verification, and human judgment happen. The useful measurement is not token spend, seat usage, or pull-request count; it is whether teams turn local discoveries into reusable capabilities, safer delegation, and faster learning.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI adoption moves from seat rollout to a messy middle where usage is uneven, hidden, and hard to compare.&lt;/li&gt;&lt;li&gt;Organizations need agent operations, loop intelligence, and capability distribution to meet in one feedback path.&lt;/li&gt;&lt;li&gt;Measuring people creates gaming; measuring loops can expose where backpressure, verification, or reusable workflows are missing.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Engineering] TBM 421: Minimally Viable Consistency (Part 3)</title>
-      <link>https://cutlefish.substack.com/p/tbm-421-minimally-viable-consistency</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/1a2c5f392b37f8215d64b5d9b36d40c3a0ea83a8</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;John Cutler separates consistency into sharp consistency, flexible consistency, and legible variety. The AI-specific angle is strong: agents can translate between local team reality and global reporting formats, but that translation can also remove the human sensemaking that normally builds alignment.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Use sharp consistency when sameness itself is valuable, flexible consistency when only intent must match, and legible variety when differences should stay visible.&lt;/li&gt;&lt;li&gt;AI can maintain multiple concurrent frames for the same work, but hidden translation can produce legibility without understanding.&lt;/li&gt;&lt;li&gt;A useful consistency rule should be tested by asking what would actually break if it disappeared tomorrow.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] An Interactive Intro to CRDTs</title>
-      <link>https://jakelazaroff.com/words/an-interactive-intro-to-crdts/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/65476faf6497f950cce46e55cba9169b725d0531</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <title>[Reddit Programming] Postmortem: TanStack npm supply-chain compromise</title>
+      <link>https://tanstack.com/blog/npm-supply-chain-compromise-postmortem</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/deab1d13763fc4cae2638a4b53245cc3b0f1fdcc</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Jake Lazaroff explains CRDTs through interactive visualizations and code instead of treating them as purely academic distributed-systems machinery. It is useful as a compact refresher on how replicas can accept local writes, merge state, and converge without central coordination.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;CRDTs trade coordination for carefully designed merge semantics.&lt;/li&gt;&lt;li&gt;Interactive examples make the conflict-resolution model easier to reason about than algebra-first explanations.&lt;/li&gt;&lt;li&gt;The core design question is not whether replicas diverge, but whether their later merge is deterministic and meaningful.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;TanStack documents an npm compromise caused by privileged GitHub Actions workflow behavior, cache poisoning across trust boundaries, and runtime OIDC token extraction, with dozens of malicious package versions published in minutes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`pull_request_target` remains dangerous when untrusted fork code can influence privileged workflow state.&lt;/li&gt;&lt;li&gt;CI cache boundaries are part of the trust model, not just a performance detail.&lt;/li&gt;&lt;li&gt;OIDC removes long-lived npm tokens but does not remove the need to protect runtime credential material.&lt;/li&gt;&lt;li&gt;Fast detection still leaves a blast radius for hosts that installed compromised versions.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Replacing a 3 GB SQLite database with a 10 MB FST</title>
-      <link>https://til.andrew-quinn.me/posts/replacing-a-3-gb-sqlite-database-with-a-7-mb-fst-finite-state-trandsucer-binary/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/ff9524ae67ec204676158e862c0fcc91dfbfcac1</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <title>[Reddit Programming] Mythos finds a curl vulnerability</title>
+      <link>https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/e81d5b5154920e56bf3cdb72656eba0d83766212</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Andrew Quinn documents replacing a large SQLite FTS dictionary artifact with a finite-state transducer and getting roughly a 300x size reduction. The lesson is not just the data structure win; it shows when a static, specialized representation beats a general database after the problem shape is better understood.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prefix and suffix sharing can make an FST dramatically smaller than a trie or SQLite FTS table for static language data.&lt;/li&gt;&lt;li&gt;A rough first solution can be the right move when it preserves learning and makes the later specialized solution obvious.&lt;/li&gt;&lt;li&gt;The right storage engine depends on mutability, query shape, and distribution constraints, not default familiarity.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Daniel Stenberg reports that Anthropic&amp;#x27;s Mythos scan of curl produced one confirmed low-severity vulnerability, several false positives or non-security bugs, and useful bug reports, making it a grounded reality check on AI security tooling.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI scanners helped curl, but human review reduced five claimed findings to one vulnerability.&lt;/li&gt;&lt;li&gt;The strongest output was variant hunting and known bug classes, not novel vulnerability discovery.&lt;/li&gt;&lt;li&gt;High-quality security reports still require direct source verification before recording a finding.&lt;/li&gt;&lt;li&gt;Mature projects benefit less dramatically because fuzzing, SAST, compiler warnings, and review already remove many obvious issues.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Idempotency Is Easy Until the Second Request Is Different</title>
-      <link>https://blog.dochia.dev/blog/idempotency/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/8f9134f3c5cb45b313255b7bcbf61a936e7789fa</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <title>[Reddit Programming] Package Manager CWEs</title>
+      <link>https://nesbitt.io/2026/05/04/package-manager-cwes.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/048101bd6aba050d6280daadea1f40aa2e3dc673</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Dochia&amp;#x27;s article treats idempotency as a durable operation contract, not a replay cache. It covers the failure modes real APIs hit: same key with different commands, concurrent retries, provider uncertainty, stale in-progress records, expiry, downstream events, and response replay semantics.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A robust idempotency record needs scope, operation name, canonical command hash, execution state, replayable result, and expiry policy.&lt;/li&gt;&lt;li&gt;Same scoped key plus different canonical command should be rejected with a stable conflict instead of silently replayed.&lt;/li&gt;&lt;li&gt;Retries after provider success, queue duplication, schema changes, or region failover need recovery paths, not optimistic re-execution.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Andrew Nesbitt surveys public CVEs against package managers and extracts recurring failure modes such as archive traversal, symlink handling, registry trust mistakes, and repeated client/server design bugs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Package-manager vulnerabilities repeat across ecosystems because new implementations rediscover old failure modes.&lt;/li&gt;&lt;li&gt;CVE counts understate design-level risks like install scripts, maintainer-transfer trust, and first-come namespaces.&lt;/li&gt;&lt;li&gt;Archive extraction needs separate handling for `..`, symlinks, platform path separators, and write targets.&lt;/li&gt;&lt;li&gt;Security review should be pattern-driven, not ecosystem-specific.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] AI coding CLIs face TrustFall risk from one-click MCP server execution</title>
-      <link>https://www.developer-tech.com/news/ai-coding-clis-trustfall-mcp-server-execution-risk/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/7ffbc5d37c96e5a57d0a9c88f02bcb01a08ae762</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <title>[Reddit Programming] Be careful with your Git: Investigating malware spreading through Git repositories</title>
+      <link>https://andrii.ro/blog/investigating-malware</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/5c9788d422f5751d8a3ca61df7a0238685efa33b</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The article reports on Adversa&amp;#x27;s TrustFall finding: project-defined MCP servers in coding CLI repositories can execute native processes after a broad folder-trust prompt, including in some automated CI contexts. The operational point is concrete: repository-controlled agent configuration is executable supply-chain surface.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Project `.mcp.json` and Claude settings can define or approve MCP servers that run with the user&amp;#x27;s privileges.&lt;/li&gt;&lt;li&gt;Folder trust is too broad when it implicitly approves executable agent tooling.&lt;/li&gt;&lt;li&gt;Teams should review MCP configuration changes, deny project-scoped auto-approval by default, and isolate agent CI from sensitive credentials.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The article walks through a fake recruiting attack that delivered a Git repo via Google Drive and compromised the developer through malicious Git hooks and obfuscated JavaScript.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Git repositories can execute attacker-controlled behavior before a project is ever built or installed.&lt;/li&gt;&lt;li&gt;&amp;quot;Review this repo for an interview&amp;quot; is now a realistic developer-targeting malware channel.&lt;/li&gt;&lt;li&gt;External repo archives should be treated differently from normal GitHub or GitLab clones.&lt;/li&gt;&lt;li&gt;Inspect hooks, config, branches, and scripts before running checkout or build commands from unknown sources.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How are you handling project conventions across Cursor / Claude Code / Copilot?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t8237u/how_are_you_handling_project_conventions_across/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/7519d9ddf3d4489ea94ef2c35beb35d25b98ce75</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <title>[Reddit Programming] How are you effectively interviewing devs now?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t9m4cq/how_are_you_effectively_interviewing_devs_now/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/b905e7e610455f839c11b63e954f1c13b1f2a142</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This discussion surfaces a real maintenance problem: tool-specific AI instruction files drift across Cursor, Claude Code, Copilot, and CI prompts. The strongest response points toward a small authoritative `AGENTS.md`-style file plus executable project commands, with generated or referenced tool-specific copies only where necessary.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI instruction drift is already a cross-tool configuration problem, not just a prompt-writing annoyance.&lt;/li&gt;&lt;li&gt;Concrete repo commands, dependency metadata, and decision rules age better than long duplicated prose prompts.&lt;/li&gt;&lt;li&gt;A neutral source of truth plus generation or references is safer than manually maintaining N parallel rule files.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The r/ExperiencedDevs thread shows teams moving away from take-home assignments toward review-based interviews, live debugging, and candidate accountability for AI-assisted work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code-review interviews test judgment better than generated take-home output.&lt;/li&gt;&lt;li&gt;AI-era interviews should ask candidates to explain defects, tradeoffs, maintainability, and rollout risk.&lt;/li&gt;&lt;li&gt;Some teams split interviews into no-AI reasoning checks and AI-allowed build or review tasks.&lt;/li&gt;&lt;li&gt;&amp;quot;The tool did it that way&amp;quot; is treated as lack of ownership, not a valid engineering defense.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] What part of your senior dev work still has zero AI in it?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t84nex/what_part_of_your_senior_dev_work_still_has_zero/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/78cfabf390e81114c524d5d471c53d4687299839</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <title>[Reddit Programming] How SIMD improved vector search performance in Elasticsearch</title>
+      <link>https://www.elastic.co/search-labs/blog/elasticsearch-vector-search-simdvec-engine</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/28de914fb3585bafa8dd6838afe42e9db56ac7b0</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread distinguishes implementation leverage from senior-engineering judgment. Commenters converge on people work, problem framing, contradictory priorities, coordination, and post-AI verification as the parts where current tools still lag or create hidden rework.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Coding is not always the bottleneck; contextualization, prioritization, and coordination often dominate senior work.&lt;/li&gt;&lt;li&gt;AI can make wrong implementation paths look plausible enough that verification and debugging costs move later.&lt;/li&gt;&lt;li&gt;The useful boundary is where tools accelerate known work versus where humans still define what work should exist.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Elastic explains `simdvec`, the SIMD kernel layer behind Elasticsearch vector distance computations, including AVX-512 and NEON kernels, prefetching, interleaved loads, and quantized-vector support.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Vector search performance collapses to repeated distance computation, so kernel-level memory behavior dominates.&lt;/li&gt;&lt;li&gt;Separate kernels for `float32`, `int8`, `bfloat16`, binary, and BBQ avoid forcing one representation through one generic path.&lt;/li&gt;&lt;li&gt;Prefetching and interleaved loading target the cache-miss path, not just arithmetic throughput.&lt;/li&gt;&lt;li&gt;Benchmark data needs to exceed CPU cache and resemble real query workloads before library comparisons mean much.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] I think SWE can get &gt;2x done in 2027</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t81jen/i_think_swe_can_get_2x_done_in_2027/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/cab796982153a11a807b3053347c3dd2bce1e50c</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <title>[Reddit Programming] Why do some employees intentionally create dependency instead of documenting and sharing knowledge?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tasfe3/why_do_some_employees_intentionally_create/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/1696eecdd119571f24d295023d330e893dde266c</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;A team lead describes AI gains coming from workflow investment rather than casual autocomplete: custom skills, API access, CI debugging, flaky-test triage, review support, and operational checks. The comments add the right caution: delivery claims only matter if shipped work remains battle-tested and downstream rework is counted.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Team-level gains come from giving agents context, tools, and repeatable workflows, not merely from issuing licenses.&lt;/li&gt;&lt;li&gt;Verification, CI, review, and investigation are high-leverage targets because they convert half-day checks into minutes.&lt;/li&gt;&lt;li&gt;Productivity measurement must include bugs, follow-up work, and rearchitecture, not only merged tickets.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The discussion reframes knowledge hoarding as a system problem shaped by job-security incentives, undervalued documentation, weak silo management, and automation versus documentation tradeoffs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Knowledge silos persist when firefighting and delivery pressure reward undocumented hero work.&lt;/li&gt;&lt;li&gt;Documentation loses value when teammates do not read it or managers do not enforce its use.&lt;/li&gt;&lt;li&gt;Automation often beats documentation for recurring operational paths.&lt;/li&gt;&lt;li&gt;Managers need explicit silo detection and ownership rotation; blaming only the individual misses the incentive structure.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] onboarding a new engineer in today's landscape</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1t7j7xz/onboarding_a_new_engineer_in_todays_landscape/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/22e49610d84cea0471454fa11618c3318130d8f2</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The discussion asks how juniors learn a complex codebase when everyone pairs with AI instead of each other. The most useful responses recommend constraining AI during onboarding, forcing explanation and debugging practice, and treating year-long onboarding as a signal that the system itself needs repair.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;New engineers still need hands-on debugging pain to build runnable intuition.&lt;/li&gt;&lt;li&gt;AI can be allowed for navigation before it is allowed for code generation.&lt;/li&gt;&lt;li&gt;A codebase that takes a year to onboard into should trigger architecture and documentation work, not only better mentoring.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How Discord Automates ScyllaDB Clusters at Scale</title>
-      <link>https://discord.com/blog/how-discord-automates-scylladb-clusters-at-scale</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/ecd6de2d364538ecdea7a762579030d4411f98a0</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Discord explains how its persistence team replaced fragile scripts for ScyllaDB operations with a control-plane framework for shadow clusters, upgrades, parallelism constraints, precondition checks, retries, and resumable state. It is a practical example of turning institutional knowledge into safer automation without trying to build the whole platform upfront.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Old scripts failed because they were unsafe, unrecoverable, and hard to extend under real operational load.&lt;/li&gt;&lt;li&gt;Tasks declare inputs, preconditions, parallelism constraints, and persisted state so interrupted work can resume.&lt;/li&gt;&lt;li&gt;Incremental delivery kept the control plane usable while still moving toward principled automation.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How we made Notion available offline</title>
-      <link>https://www.notion.com/blog/how-we-made-notion-available-offline</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/e5a9512e7660b1890ae44b945bbb1042e05aa1fa</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Notion describes the data-model work behind offline mode: turning a best-effort SQLite cache into persistent storage with explicit offline page tracking, reason tracking, inheritance, sync guarantees, and CRDT migration boundaries. The most useful part is the modeling of why data is available offline, not just what is cached.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Offline mode needs completeness guarantees; showing partial pages offline is worse than refusing access.&lt;/li&gt;&lt;li&gt;A page can be offline for multiple independent reasons, so removal must wait until the last reason disappears.&lt;/li&gt;&lt;li&gt;Hierarchy and inheritance make offline state a graph/modeling problem, not a simple cache toggle.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] OpenAI's WebRTC Problem</title>
-      <link>https://moq.dev/blog/webrtc-is-the-problem/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/0b5c3b2eb27a34e1a6fcfdb4b60547a03ee1cc98</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The author argues that WebRTC is a poor fit for voice AI because it optimizes for conversational real-time conferencing, where dropping audio to preserve latency is acceptable. Voice AI often needs accurate prompt capture and faster-than-real-time TTS buffering, making QUIC-style media transport a better match than WebRTC&amp;#x27;s jitter-buffer and retransmission constraints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Voice AI prompt audio should often prefer slightly more delay over unrecoverable packet loss.&lt;/li&gt;&lt;li&gt;TTS output can be generated faster than real time, so buffering is useful rather than harmful.&lt;/li&gt;&lt;li&gt;WebRTC&amp;#x27;s port, NAT, Kubernetes, and firewall behavior creates scaling pressure unrelated to the actual product need.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Containers Aren't Just Linux Processes</title>
-      <link>https://labs.iximiuz.com/tutorials/oci-containers-explained</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/8b7bb8450fb5d6fc017b22d40becb7cf94015699</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Ivan Velichko reads the OCI runtime spec closely and shows why the common &amp;#x27;containers are just Linux processes&amp;#x27; explanation is incomplete. OCI defines a portable execution environment with common and platform-specific configuration, which can be implemented with Linux isolation, Windows mechanisms, or even VM-backed runtimes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A standard container is an environment for running processes with configurable isolation and resource limits.&lt;/li&gt;&lt;li&gt;Namespaces and cgroups are Linux implementation details, not the whole OCI abstraction.&lt;/li&gt;&lt;li&gt;VM-backed containers can still be OCI-compliant when they satisfy the standard container lifecycle and bundle contract.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Tech] Google Lighthouse Has A New Agentic Browsing Category</title>
-      <link>https://www.debugbear.com/blog/lighthouse-agentic-browsing</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/8ea9972c3416e5a6f79001829861ea421471eb56</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
-      <category>Tech</category>
-      <description>&lt;p&gt;DebugBear documents Lighthouse 13.3&amp;#x27;s new under-development Agentic Browsing category. The audits reuse practical web quality surfaces agents depend on: accessibility tree shape, layout stability, WebMCP metadata, and `llms.txt` guidance.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agent-friendly sites still depend on old web fundamentals such as stable layout and a correct accessibility tree.&lt;/li&gt;&lt;li&gt;WebMCP validation is emerging as a browser-side way to expose page actions to agents.&lt;/li&gt;&lt;li&gt;`llms.txt` is checked for basic structure, but the article notes that current tool adoption is still limited.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Informatics] Claude Code Convinced Me To Simplify My SQL JOINs</title>
-      <link>https://www.bennadel.com/blog/4892-claude-code-convinced-me-to-simplify-my-sql-joins.htm</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-11/00c2e8e9fe17bef30672abf82411d0538f887d7f</guid>
-      <pubDate>Mon, 11 May 2026 06:39:22 +0000</pubDate>
+      <title>[Informatics] Soon We Can Finally Banish JavaScript to the ShadowRealm</title>
+      <link>https://css-tricks.com/soon-we-can-finally-banish-javascript-to-the-shadowrealm/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/f520fa10abfbc1772ca5323d169adefb8980072a</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Ben Nadel describes Claude Code changing his mind about SQL style: moving filters out of `ON` clauses and into `WHERE` clauses because it separates relationship logic from row filtering and makes debugging easier. The useful meta-lesson is that an agent can be valuable when it supplies stronger reasoning than local habit, not just code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`JOIN` should describe table relationships; `WHERE` should describe row filtering.&lt;/li&gt;&lt;li&gt;Separating filters makes complex SQL easier to debug by removing and re-adding constraints in one place.&lt;/li&gt;&lt;li&gt;AI review is most useful when it challenges a personal convention with concrete maintainability arguments.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The article explains TC39&amp;#x27;s proposed `ShadowRealm` API as an integrity boundary for running JavaScript in isolated global environments without adding new threads.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A JavaScript realm is a single-threaded execution environment with its own globals and intrinsics.&lt;/li&gt;&lt;li&gt;`ShadowRealm` isolates global scope and built-ins, but it is not a complete security boundary.&lt;/li&gt;&lt;li&gt;The proposed API surface is small: `evaluate()` for direct evaluation and `importValue()` for module exports.&lt;/li&gt;&lt;li&gt;Current status is pre-browser and useful for mental-model preparation rather than production use.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Informatics] Why Keyboard Users Can't Scroll Your Overflow Containers</title>
+      <link>https://css-tricks.com/why-keyboard-users-cant-scroll-your-overflow-containers/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/8a5b34f75dc353f3099ed45e4fcdbd7395ddf496</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;The article shows how overflow containers silently create keyboard-accessibility failures and gives concrete fixes for making scrollable regions reachable and understandable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Scroll containers and keyboard focus are separate browser systems; overflow content can be visible but unreachable by keyboard.&lt;/li&gt;&lt;li&gt;`overflow-x: auto` also implies `overflow-y: auto`, creating more scroll behavior than many teams expect.&lt;/li&gt;&lt;li&gt;`tabindex=&amp;quot;0&amp;quot;` can make a scroll container keyboard-focusable, but it needs an accessible name and visible focus styling.&lt;/li&gt;&lt;li&gt;Not every scroll container should enter tab order; unclear labeling is a signal to restructure content.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Programming] Migrating Data Ingestion Systems at Meta Scale</title>
+      <link>https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/03da587ac1c946ab27527b1ba0552584c7816938</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Meta documents a petabyte-scale MySQL-to-warehouse ingestion migration from customer-owned pipelines to a managed service, with emphasis on shadowing, rollback, and automated validation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Migration success criteria covered data equality, landing latency, and resource utilization before promotion.&lt;/li&gt;&lt;li&gt;Reverse shadowing let the new system write production data while the old system remained available for comparison and rollback.&lt;/li&gt;&lt;li&gt;Row-count and checksum comparison plus automated mismatch debugging gave engineers concrete failure evidence.&lt;/li&gt;&lt;li&gt;CDC rollback needed metadata-level bad-partition marking to stop corrupted deltas from propagating.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Engineering] Meet Your Users Where They Are with Obs.js</title>
+      <link>https://csswizardry.com/2026/05/meet-your-users-where-they-are-with-obs-js/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/979b01ec1c5b571b6fc17272be929574d47c0bc8</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;Harry Roberts argues for adapting frontend delivery to real user conditions by exposing browser signals such as latency, bandwidth, battery, CPU, and memory as CSS classes and analytics dimensions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Treat performance as partly site behavior and partly user context; the same code can perform differently across devices and conditions.&lt;/li&gt;&lt;li&gt;Separate raw statuses from derived stances so delivery policy remains explicit.&lt;/li&gt;&lt;li&gt;Use condition signals for small adaptations: lighter imagery, reduced motion, skipped autoplay, deferred fonts, or simplified checkout.&lt;/li&gt;&lt;li&gt;Beaconing capability classes into RUM data can separate code regressions from constrained-user cohorts.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Philosophy] Pluralistic: A fascist paradigm (12 May 2026)</title>
+      <link>https://pluralistic.net/2026/05/12/donella-meadows/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/c47d60ef7a65455f4f42a5f3f8caafd2cc7f2f2b</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Cory Doctorow applies Donella Meadows&amp;#x27; systems-thinking leverage points to authoritarian politics, arguing that durable change requires contesting system paradigms rather than only tuning laws, rules, or feedback loops.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Meadows&amp;#x27; leverage hierarchy separates low-level parameter fights from deeper fights over goals, power distribution, and governing assumptions.&lt;/li&gt;&lt;li&gt;Dysfunctional systems persist when shared paradigms make bad outcomes feel natural or inevitable.&lt;/li&gt;&lt;li&gt;Authoritarian movements can be analyzed as paradigm attacks that weaken belief in collective self-governance before changing institutions.&lt;/li&gt;&lt;li&gt;Counter-strategy needs to target the legitimacy of autocratic assumptions, not only individual policies or leaders.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Philosophy] Pluralistic: 2024 (apart from the obvious) (11 May 2026)</title>
+      <link>https://pluralistic.net/2026/05/11/postmortem/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/b0c58d9427fbf75e7562af622da55592be91e7f8</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Doctorow argues that compromise-first coalition management failed because it produced low-salience half-measures, muted material wins, and gave voters no affirmative change agenda.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A strategy optimized for keeping every faction partly satisfied can produce outcomes that no faction will defend.&lt;/li&gt;&lt;li&gt;Policy wins lose value when benefits arrive too late, are too narrow, or are not communicated as proof of power.&lt;/li&gt;&lt;li&gt;Institutional blockage requires explicit conflict strategy; quiet procedural work does not mobilize support.&lt;/li&gt;&lt;li&gt;Change needs concrete commitments people can recognize, not only opposition to a worse alternative.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Psychology] Going Beyond Correlations: Experimental Methods for Investigating the Role of Executive Functions in the Development of Academic Skills</title>
+      <link>https://onlinelibrary.wiley.com/doi/10.1111/mbe.70049</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-13/c122e61a3d4b22b5634233baf30faa31780326d2</guid>
+      <pubDate>Wed, 13 May 2026 11:17:11 +0000</pubDate>
+      <category>Psychology</category>
+      <description>&lt;p&gt;The paper surveys experimental methods for studying how executive functions affect academic skills, pushing the field beyond correlational claims toward causal tests.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Working memory, inhibitory control, and cognitive flexibility need different experimental manipulation strategies.&lt;/li&gt;&lt;li&gt;Adult cognitive methods can be adapted into developmental research instead of relying mainly on observational associations.&lt;/li&gt;&lt;li&gt;Working-memory manipulation is the more mature benchmark for judging progress in inhibitory-control and cognitive-flexibility methods.&lt;/li&gt;&lt;li&gt;The article is mainly valuable as a methods map for evaluating evidence quality in learning and cognition research.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
