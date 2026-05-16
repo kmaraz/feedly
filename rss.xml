@@ -4,70 +4,102 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Fri, 15 May 2026 11:04:44 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 16:48:50 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] The Pulse: Did capacity shortages turn Anthropic hostile to devs?</title>
-      <link>https://blog.pragmaticengineer.com/the-pulse-did-capacity-shortages-turn-anthropic-hostile-to-devs/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-15/1855af72bfad4b47ac8a93f2e1e24714552c4f46</guid>
-      <pubDate>Fri, 15 May 2026 11:04:44 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;Gergely Orosz ties Anthropic&amp;#x27;s recent Claude Code restrictions, model quality complaints, account bans, and later capacity expansion to a plausible compute-shortage story. The useful part is the product lesson: developer trust erodes quickly when a tool silently degrades or changes entitlement semantics under load.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Capacity pressure can surface as product behavior: lower limits, model routing changes, removed features, or unexplained account actions.&lt;/li&gt;&lt;li&gt;Claude Code&amp;#x27;s entitlement changes show why AI tooling needs explicit degradation and quota messaging instead of silent quality changes.&lt;/li&gt;&lt;li&gt;The SpaceX/xAI capacity deal is a reminder that frontier AI competition is also an infrastructure supply problem, not only a model-quality race.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] Convergence Mechanisms: Confidence in the Age of Agentic Engineering</title>
+      <link>https://www.abelenekes.com/p/convergence-mechanisms-confidence-in-the-age-of-agentic-engineering</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/4b50b41442390bfaf3e2e9f7d30238b7e4e64f23</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The article frames agentic coding risk as a failure to connect requirements to physical evidence. It argues that confidence comes from explicit requirements, executable contracts, reliable interpreters, and feedback loops that run close enough to the agent loop to steer work before review.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Treat tests, schemas, lint rules, traces, and reviews as mechanisms that evaluate whether named and implicit requirements still hold.&lt;/li&gt;&lt;li&gt;Agent instructions should route agents toward executable sources of truth instead of duplicating drifting guidance.&lt;/li&gt;&lt;li&gt;The riskiest quadrant is an implicit requirement that shares implementation with the change but has no automated check.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] mimalloc: A new, high-performance, scalable memory allocator for the modern era</title>
-      <link>https://www.microsoft.com/en-us/research/blog/mimalloc-a-high-performance-scalable-memory-allocator-for-the-modern-era/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-15/2502e85d0f74143826f5cd2466d5f87006cabe7f</guid>
-      <pubDate>Fri, 15 May 2026 11:04:44 +0000</pubDate>
+      <title>[Reddit Programming] Cloudflare rearchitected their Workflows control plane to handle 50,000 concurrent instances</title>
+      <link>https://blog.cloudflare.com/workflows-v2/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/b317f253e7074b034a01bae022b727986ac192b2</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Daan Leijen explains mimalloc&amp;#x27;s compact allocator design: thread-local heaps, 64 KiB pages, size classes, fast allocation paths without synchronization, and atomic-only cross-thread frees. The article is a useful systems design case study because it connects small data-structure choices to bounded latency, locality, fragmentation, and large-service scalability.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The fast path avoids locks by giving each thread its own heap and keeping small allocation pages directly addressable by size class.&lt;/li&gt;&lt;li&gt;Cross-thread frees are isolated onto an atomic thread-free list, so the common same-thread free path stays simple.&lt;/li&gt;&lt;li&gt;Allocator scalability depends as much on metadata layout and invariants as on low-level instruction count.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Cloudflare documents how agent-triggered workloads broke the assumptions of a single account-level coordinator. The V2 design moves instance truth to per-instance engines, shards lifecycle metadata through SousChefs, and uses Gatekeeper leases so concurrency pressure cannot overload the account coordinator.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Machine-speed agent workloads change control-plane bottlenecks even when the original human-triggered workflow design looked sufficient.&lt;/li&gt;&lt;li&gt;Moving ownership of lifecycle truth closer to each instance reduces hot-path hops and avoids singleton overload.&lt;/li&gt;&lt;li&gt;The migration avoided bulk metadata moves by converting old account Durable Objects into SousChef-compatible coordinators.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] OpenData Vector: MIT-licensed Vector Search on Object Storage</title>
-      <link>https://www.opendata.dev/blog/introducing-vector</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-15/c37f6bf43b3fd8f124f4a9e08d25f67c19985d3d</guid>
-      <pubDate>Fri, 15 May 2026 11:04:44 +0000</pubDate>
+      <title>[Reddit Programming] A History of IDEs at Google</title>
+      <link>https://laurent.le-brun.eu/blog/a-history-of-ides-at-google</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/88d84bf589f1aed3be9bf24e783c150e4c942ff5</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;OpenData Vector describes a stateless vector search engine that stores all durable state in object storage and lets any node serve any data. The interesting tradeoff is explicit: IVF-style indexes and SlateDB snapshots make the architecture simpler and cheaper to operate, while accepting warmer query latency and batched write acknowledgement.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Object storage can be the only source of truth when metadata, index data, and snapshots are designed around its latency model.&lt;/li&gt;&lt;li&gt;IVF-style indexing fits object storage better than graph traversal because it can batch reads instead of issuing many sequential object fetches.&lt;/li&gt;&lt;li&gt;The design buys operational simplicity and failover at the cost of sub-millisecond warm latency and immediate read-your-writes semantics.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Laurent Le Brun traces Google&amp;#x27;s path from fragmented editor choice to a VS Code-fronted cloud IDE backed by centralized code intelligence. The piece is a concrete developer-platform case study: standard tooling only became viable when it solved monorepo-specific indexing, review, version-control, and extension workflows better than local IDEs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A uniform IDE becomes attractive when backend services solve scale problems local tools cannot handle.&lt;/li&gt;&lt;li&gt;The VS Code frontend let Google reuse a mature editor while keeping its specialized indexing and code-review backend.&lt;/li&gt;&lt;li&gt;Standardized extensibility turned the IDE into a platform for internal teams and later AI features.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] 5x faster fast_blur in image-rs</title>
-      <link>https://apas.tel/blog/optimizing-image-rs-blur</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-15/5afa584b4c3b95c0891cbb1bf258aeeeb07d44d4</guid>
-      <pubDate>Fri, 15 May 2026 11:04:44 +0000</pubDate>
+      <title>[Reddit Programming] How to Write to SSDs</title>
+      <link>https://www.vldb.org/pvldb/vol19/p1469-lee.pdf</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/b246cda4cc2afb6b4bc517e026471b8ffaeb7c92</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Arthur Pastel walks through a concrete optimization of `image-rs` fast_blur: profile the hot path, remove per-pixel float conversion and `roundf` calls for `u8`, then preserve the generic API with a compile-time accumulator trait. The useful pattern is how a narrow numeric optimization was integrated without poisoning the rest of the abstraction.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Profiling showed the real cost was conversion and rounding, not the blur algorithm&amp;#x27;s high-level structure.&lt;/li&gt;&lt;li&gt;For `u8` pixels, integer accumulation plus biased integer division produced the same output without the float round trip.&lt;/li&gt;&lt;li&gt;A type-level accumulator trait let the optimized path coexist with the existing float path without runtime branching in the inner loop.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The PVLDB paper shows that DBMS write patterns can multiply SSD write amplification and shorten device lifetime. Its out-of-place LeanStore redesign combines page packing, deathtime grouping, GC-unit alignment, and newer SSD interfaces to improve throughput while reducing physical flash writes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Optimizing only database-level write amplification can still make total flash writes worse if SSD garbage collection is ignored.&lt;/li&gt;&lt;li&gt;The paper reports 1.65-2.24x higher YCSB-A throughput and 6.2-9.8x fewer flash writes per operation after the full redesign.&lt;/li&gt;&lt;li&gt;Storage engines have enough workload knowledge to coordinate write placement better than leaving all amplification control to lower layers.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] ORDER BY Has Come a Long Way</title>
-      <link>https://modern-sql.com/blog/2026-05/order-by-history</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-15/7695aee45d2faf8363fcf24f5e0cef2379f92eb7</guid>
-      <pubDate>Fri, 15 May 2026 11:04:44 +0000</pubDate>
+      <title>[Reddit Programming] SQL: Incorrect by Construction</title>
+      <link>https://chreke.com/posts/sql-incorrect-by-construction</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/4a690a9af679a7a431b73267f8be2fbf24928598</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Modern SQL traces how `ORDER BY` evolved from SQL-92 restrictions into today&amp;#x27;s support for non-selected columns, expressions, null ordering, and subquery placement. The durable value is the distinction between syntactic order, logical evaluation order, and actual execution order, which cuts through common SQL performance folklore.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The SQL standard defines result equivalence through logical transformations; engines are not required to execute clauses in that order.&lt;/li&gt;&lt;li&gt;Advice like &amp;#x27;filter early&amp;#x27; is about actual execution plans, not about manually rearranging query text or adding CTEs.&lt;/li&gt;&lt;li&gt;`ORDER BY` behavior varies across standards history and engines, so portability requires knowing which features are standard and which are tolerated extensions.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The post walks a simple money-transfer procedure through atomicity, TOCTOU, and deadlock failures to show how reasonable SQL can hide severe correctness bugs. Its broader point is that critical data systems need safer defaults and explicit concurrency contracts, not only developer discipline.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Wrapping writes in a transaction fixes atomicity but not stale precondition checks.&lt;/li&gt;&lt;li&gt;Row locks prevent one race while introducing lock-order and deadlock concerns.&lt;/li&gt;&lt;li&gt;Correctness-sensitive systems benefit when concurrency requirements are explicit enough for tooling to check.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Browsers Treat Big Sites Differently</title>
-      <link>https://denodell.com/blog/browsers-treat-big-sites-differently</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-15/2956da2b207a01775c1eb44529afe388a574eb89</guid>
-      <pubDate>Fri, 15 May 2026 11:04:44 +0000</pubDate>
+      <title>[Reddit Programming] Allowlisting Config Capabilities by Embedding Rye in Go</title>
+      <link>https://ryelang.org/blog/posts/whitelist-config-with-rye/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/f3f561d7cd8241fe96b6dd4ddfee225194ea0f56</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Den Odell documents domain-specific compatibility code in Safari and Firefox for sites such as TikTok, Netflix, Instagram, Amazon, and SeatGuru. The article is a useful frontend reality check: browser compatibility is not only standards compliance; it is also market-power economics and invisible vendor workarounds.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Firefox and WebKit ship site-specific interventions when major sites depend on broken assumptions or Chrome-only behavior.&lt;/li&gt;&lt;li&gt;Chrome often does not need equivalent quirks because the web already targets Chromium&amp;#x27;s behavior as the de facto baseline.&lt;/li&gt;&lt;li&gt;Regular Firefox and Safari testing catches failures that Chrome-only development can hide until a browser vendor patches around them.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The article explores embedding Rye as application configuration with a zero-capability baseline. Instead of embedding a full scripting language and trying to denylist dangerous operations, the host program registers only the words the config is allowed to call.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Capability allowlisting gives config authors exactly the operations the host exposes, starting from pure data notation.&lt;/li&gt;&lt;li&gt;The example grows from static values to arithmetic, environment fallbacks, route registration, request-time callbacks, and live debugging.&lt;/li&gt;&lt;li&gt;Execution limits still matter because capability control is not a full process sandbox.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How do you handle key rotations?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1td813q/how_do_you_handle_key_rotations/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-15/8c258df93696602c7a4e31793275b802e1c0f797</guid>
-      <pubDate>Fri, 15 May 2026 11:04:44 +0000</pubDate>
+      <title>[Reddit Programming] RPSD Manifesto</title>
+      <link>https://github.com/matteo-tinta/RPSD-manifesto/blob/main/README.md</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/1cb4c98feb44533fd0662cc683ec35f50274e758</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread surfaces a concrete secrets-management failure mode: an append-only key policy makes rotation auditable, but forces code/config changes, redeploys, growing secret payloads, and accidental resurrection of old compromised keys. The problem statement is useful because it frames rotation as an operational design issue, not a tooling checkbox.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Auditability and rollback semantics can conflict with the security requirement to retire compromised keys quickly.&lt;/li&gt;&lt;li&gt;Versioned secret names leak rotation mechanics into application code and increase deployment coupling.&lt;/li&gt;&lt;li&gt;A rotation design should separate logical key identity, active versions, retirement, and emergency revocation.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;RPSD formalizes agentic development into Research, Plan, Spike, and Develop phases with human gates between them. The useful part is not the acronym; it is the insistence that durable artifacts, falsifiable spikes, and plan-bound implementation reduce context drift in large codebases.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Separate research findings from implementation plans so early exploration does not quietly become authority.&lt;/li&gt;&lt;li&gt;Use spikes only for specific technical uncertainty that needs a proof of concept.&lt;/li&gt;&lt;li&gt;Development agents should report plan deviations instead of silently redesigning during implementation.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Need help navigating my new org's bureaucracy</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tczgsi/need_help_navigating_my_new_orgs_bureaucracy/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-15/e3960b6e51e39708aa19d7c1451c10ce7af19cf8</guid>
-      <pubDate>Fri, 15 May 2026 11:04:44 +0000</pubDate>
+      <title>[Reddit Programming] We had to change how we validate HMI code after AI started writing most of our code</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tecgvx/we_had_to_change_how_we_validate_hmi_code_after/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/18484dffd0688517283e02dcc3b50bbf40bb013d</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;An experienced developer describes moving from autonomous teams to a centralized monolith organization where routine access and connector work becomes serialized ticket queues. The signal is the platform tradeoff: central control can reduce local risk while quietly converting small technical tasks into multi-week coordination latency.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Centralized ownership imposes queueing cost; the damage shows up as elapsed lead time, not necessarily blocked developer time.&lt;/li&gt;&lt;li&gt;Sequential approval chains create artificial dependencies for work that used to be atomic.&lt;/li&gt;&lt;li&gt;Platform governance needs explicit service-level expectations, delegated paths, or self-service primitives to avoid turning safety into paralysis.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The thread describes an AI-assisted team whose implementation speed exposed weaknesses in a validation stack built around human-written code. The durable lesson is that generated code shifts pressure toward specs, tests, hardware-realistic validation, and compliance artifacts tied to actual verification output.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Writing tests after generated implementation invites rationalizing what the code did instead of checking what it should do.&lt;/li&gt;&lt;li&gt;Simulation coverage can miss failures that appear only on the real hardware cluster.&lt;/li&gt;&lt;li&gt;AI-assisted velocity is only useful when validation, documentation, and review scale with it.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How do you cope with multi agent workflows?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1ten4yg/how_do_you_cope_with_multi_agent_workflows/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/91088a60463f297a9bcce2cc0edcbceeb551c58e</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The discussion is a useful antidote to multi-agent hype. Experienced replies converge on a practical constraint: parallel agents help only when the maintainer can still understand, review, and own the resulting changes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;High parallelism is mostly useful for bounded, independent work; it is dangerous when it outruns review capacity.&lt;/li&gt;&lt;li&gt;Maintainers still need a risk model for the codebase so scrutiny matches the blast radius of each change.&lt;/li&gt;&lt;li&gt;Generated code volume is not delivery if nobody reads the output or understands the product requirements.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] My Team Built a Developer Productivity Platform for our Executive Team - It's Awful</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tdwa14/my_team_built_a_developer_productivity_platform/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/796e5e5243df5fa50ac673794552069d054f889f</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread describes an internal platform that aggregates Jira, Git, CI, meetings, cloud, security, and AI-tool telemetry into per-engineer activity summaries. The discussion is a high-signal warning about Goodharting, surveillance, and executive dashboards that measure activity instead of engineering outcomes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Once productivity dashboards become individual scoreboards, engineers optimize for visible events rather than useful work.&lt;/li&gt;&lt;li&gt;Cross-tool telemetry can erase context and make invisible work look like underperformance.&lt;/li&gt;&lt;li&gt;Developer-productivity systems need governance around purpose, aggregation level, and misuse before instrumentation expands.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How to tackle adding integration and end to end testing to a large UI project with 20+ microservices?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tdx705/how_to_tackle_adding_integration_and_end_to_end/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/ba4b6f25b09620cb4230715efb528aa4b8487934</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread gives pragmatic advice for a large Angular plus Spring system with no integration or E2E coverage. The best replies push against jumping straight into broad UI automation and instead recommend dependency mapping, acceptance criteria, contract tests, smoke coverage, and a small proof of concept.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Start by mapping which pages depend on which services; test strategy cannot compensate for unknown dependencies.&lt;/li&gt;&lt;li&gt;Use contract and API-level tests for service predictability, reserving E2E tests for critical user flows.&lt;/li&gt;&lt;li&gt;A small PoC exposes environment, data seeding, and ownership problems before management expects full coverage.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Hands-On Introduction to Unikernels</title>
+      <link>https://labs.iximiuz.com/tutorials/unikernels-intro-93976514</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-16/12d5987802e08aba9ba43dad76e75fd16044ffb5</guid>
+      <pubDate>Sat, 16 May 2026 16:48:50 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The tutorial explains unikernels as a way to get VM-grade isolation with a much smaller, application-specific guest image. It is useful as a systems refresher because it compares unikernels with microVMs, builds one, runs it through a hypervisor, and connects the model back to OCI-style packaging.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Unikernels trade general-purpose OS flexibility for smaller attack surface, faster boot, and tighter application packaging.&lt;/li&gt;&lt;li&gt;The tutorial grounds the concept in build, run, networking, and Docker integration steps instead of staying at architecture-diagram level.&lt;/li&gt;&lt;li&gt;The main tradeoff is operational specialization: better isolation and footprint, less compatibility with normal Linux process assumptions.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
