@@ -4,118 +4,102 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Mon, 18 May 2026 21:01:35 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 21:04:00 +0000</lastBuildDate>
     <item>
-      <title>[Engineering Management] TBM 422: Exception, Presence, Delegation</title>
-      <link>https://cutlefish.substack.com/p/tbm-422-exception-presence-delegation</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/95e242661a11efb2f597811eb15df2e45ceac6c6</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Engineering Management</category>
-      <description>&lt;p&gt;Cutler frames leadership as a balance between exception systems, direct presence, and delegation, then shows how each one fails when it is used alone. The model is directly useful for diagnosing AI-era org stress where dashboards, autonomy, and hands-on leadership each get treated as complete answers.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Exception systems should create shared causal understanding, not just clean dashboards.&lt;/li&gt;&lt;li&gt;Presence transfers tacit judgment and calibrates escalation, but becomes a bottleneck when every decision waits for one leader.&lt;/li&gt;&lt;li&gt;Delegation only works when teams also have shared signals, coaching, and feedback loops.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Engineering Management] Why senior developers fail to communicate their expertise</title>
-      <link>https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/9e15b0884a487588b897998d7044ee2f5871e97c</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Engineering Management</category>
-      <description>&lt;p&gt;Nair argues that senior engineers often speak in terms of complexity management while the business is trying to reduce uncertainty. The practical move is to translate restraint, reuse, and scope reduction into faster experiments rather than abstract warnings about maintainability.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Business stakeholders often hear complexity concerns as delay, not as risk reduction.&lt;/li&gt;&lt;li&gt;A senior engineer&amp;#x27;s strongest contribution can be avoiding unnecessary software while still helping the business learn.&lt;/li&gt;&lt;li&gt;Framing alternatives as quicker experiments connects engineering judgment to the business need for uncertainty reduction.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Frontend] Projecting React</title>
-      <link>https://tannerlinsley.com/posts/projecting-react</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/7e00f0f33af015b2c008b0a7c97433118cbe2909</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Linsley documents an AI-assisted React-compatible runtime projection scoped to TanStack Start, cutting unused React features while keeping the semantics his apps need. The useful part is not the replacement itself, but the method: treat code as a projection of a stable contract, then prove it through production bugs, benchmarks, and compatibility tests.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A smaller runtime only works if the retained semantic contract is explicit: hooks, Suspense, hydration, SSR streaming, and app-specific compatibility.&lt;/li&gt;&lt;li&gt;AI sped up implementation, but production traffic exposed the real bugs: reconciliation order, effect cleanup timing, hydration suspension, controlled inputs, and stream overhead.&lt;/li&gt;&lt;li&gt;Benchmarks had to move from jsdom to real Chrome because the wrong harness produced misleading optimization targets.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Frontend] Cross-Document View Transitions: The Gotchas Nobody Mentions</title>
-      <link>https://css-tricks.com/cross-document-view-transitions-part-1/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/eb58745d3e2e4432ee331724a95932f8f72c485a</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;The article gives the current implementation details for cross-document view transitions: the old meta opt-in is dead, transitions can silently time out, image snapshots need pseudo-element fixes, and pageswap/pagereveal are the lifecycle hooks that make the feature debuggable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Use the CSS `@view-transition { navigation: auto; }` opt-in; the old meta tag can fail silently.&lt;/li&gt;&lt;li&gt;Cross-document transitions have a hard 4-second renderability timeout, so logging `viewTransition.finished` is necessary for debugging.&lt;/li&gt;&lt;li&gt;Image transitions often warp unless `::view-transition-old()` and `::view-transition-new()` are styled with `object-fit` and appropriate positioning.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Frontend] Postmortem: TanStack npm supply-chain compromise</title>
-      <link>https://tanstack.com/blog/npm-supply-chain-compromise-postmortem</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/94703f6eb6005748c1aa61ce945360ed081d3e62</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;TanStack&amp;#x27;s postmortem traces a real npm compromise through `pull_request_target`, GitHub Actions cache poisoning, and OIDC token abuse during release runs. It is a concrete example of why CI trust boundaries matter even when no long-lived npm token is stolen.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`pull_request_target` becomes dangerous when it checks out or runs untrusted fork code with privileged repository context.&lt;/li&gt;&lt;li&gt;A poisoned GitHub Actions cache can cross from a fork PR into later trusted release jobs if cache keys and scopes line up.&lt;/li&gt;&lt;li&gt;Trusted publishing reduces static-token theft but still requires tight controls over which jobs can mint publish-capable OIDC tokens.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Frontend] The React2Shell Story</title>
-      <link>https://lachlan.nz/blog/the-react2shell-story/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/108ee741e2a6ab5f0b71cdc0c3e673980d9ac2e9</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Davidson walks through how React Flight&amp;#x27;s loose property lookup became a path to critical RCE in React Server Components. The lasting lesson is that undocumented protocols and TypeScript-only assumptions create attack surface when untrusted clients can send richer objects than plain JSON.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Server Function parameters still need runtime validation; TypeScript annotations do not constrain Flight payloads.&lt;/li&gt;&lt;li&gt;Protocol features such as references, prototype properties, promises, maps, and typed arrays can become exploit primitives.&lt;/li&gt;&lt;li&gt;Security review should treat framework-private wire formats as first-class input surfaces, not opaque JSON variants.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Frontend] Five Models, One React Stack: Why Every LLM Builds the Same App</title>
-      <link>https://saschb2b.com/blog/llm-default-react-stack</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/6179e1d84c10cbfe03e39cbcc8df7e1bc9b209c0</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Becker argues that AI coding tools converge on React, Tailwind, shadcn/ui, and adjacent defaults because those stacks fit token prediction, open-code component editing, and training-data feedback loops. The piece is useful as a warning that model defaults quietly narrow architecture and design choices unless prompts and repo instructions fight the monoculture.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tailwind is easy for models because styling stays colocated with JSX and avoids invented class-name coordination.&lt;/li&gt;&lt;li&gt;Open-code component systems like shadcn/ui are more model-friendly than opaque component packages with memorized prop APIs.&lt;/li&gt;&lt;li&gt;AI-generated code feeds future training corpora, so default stacks can become stronger simply because agents keep emitting them.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Learning Software Architecture</title>
-      <link>https://matklad.github.io/2026/05/12/software-architecture.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/f470c7ceb5696e464f34f31c03c182f73eef0681</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Matklad&amp;#x27;s answer to a researcher asking how to learn software design emphasizes practice, incentives, and social structure over architecture coursework. The rust-analyzer examples are the value: design decisions such as fast builds, stable toolchains, and feature isolation were chosen to fit contributor incentives, not only code aesthetics.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Software architecture follows social architecture; incentive structures often explain bad code better than ignorance does.&lt;/li&gt;&lt;li&gt;Design choices can intentionally attract different contributor types, such as deep core maintainers versus occasional feature contributors.&lt;/li&gt;&lt;li&gt;Quality bars can vary by subsystem when failures are isolated and runtime damage is contained.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Piping terminal output to the browser using systemfd</title>
-      <link>https://blog.izissise.net/posts/webdev-livecompile/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/d57603cafc5e124d64002992701498fafda44226</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;The post shows a concrete compiled-backend dev loop: `systemfd` keeps sockets open, `watchexec` rebuilds, `socat` streams build logs over the held socket, and the browser shows progress instead of connection errors. It is a small but transferable workflow improvement for slow rebuild cycles.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`systemfd` can keep a listening socket alive while the real server process is stopped for recompilation.&lt;/li&gt;&lt;li&gt;`socat ACCEPT-FD` can temporarily serve a streaming HTTP response from the same socket.&lt;/li&gt;&lt;li&gt;A browser-side terminal layer can replace blank reload failures with visible compiler output and reconnect behavior.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Email is crazy</title>
-      <link>https://samkhawase.com/blog/email-is-crazy/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/808c965f9300ae38f6e1830303438e1abdd49915</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Khawase explains email as a layered eventually-consistent delivery system with SMTP, MX routing, SPF, DKIM, DMARC, reputation filters, and opportunistic TLS bolted onto a trust-based protocol. The piece is a useful systems reminder that durable infrastructure often survives through accreted mitigations rather than clean design.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Email delivery is queue-based with retries, not truly real-time, even when modern providers make it feel instant.&lt;/li&gt;&lt;li&gt;SMTP separates routing envelope from visible `From` header, which is why later identity systems had to be bolted on.&lt;/li&gt;&lt;li&gt;SPF, DKIM, and DMARC solve different parts of sender authentication and remain fragile because configuration lives in DNS.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] On Rendering the Sky, Sunsets, and Planets</title>
-      <link>https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/4910d839c363ccad77851f48d37b254229d4a2ea</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Heckel builds atmospheric rendering in browser shaders from first principles: raymarching, optical depth, Rayleigh and Mie scattering, ozone absorption, and LUT-based optimization. The value is the stepwise translation from physical model to real-time graphics implementation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Realistic sky color comes from sampling atmospheric density and computing transmittance and scattering along view rays.&lt;/li&gt;&lt;li&gt;Rayleigh and Mie scattering model different particle interactions, so sunsets, haze, and planetary shells need separate terms.&lt;/li&gt;&lt;li&gt;Lookup-table approaches can move expensive atmosphere calculations out of the hot rendering path.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How do you manage complexity in migration-heavy system changes?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tgvoam/how_do_you_manage_complexity_in_migrationheavy/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/3800d7ea953501fe9241168056fb3f4b713b95c9</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
+      <title>[Reddit Programming] What Bazel taught us about Terraform</title>
+      <link>https://stategraph.com/blog/what-bazel-taught-us-about-terraform</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/5810e8fd3dd01b1f23fc85c35e7053d1663a9c43</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread surfaces a common failure mode in backend migrations: split PRs reduce size, but data migration, sync logic, rollout order, and review explanation still need a shared design record. The strongest comments converge on design docs, parity testing, adversarial edge-case validation, and explicit rollout and rollback checklists.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Migration-heavy work needs decision tracking while implementation context is fresh, not a retrospective explanation before review.&lt;/li&gt;&lt;li&gt;Parity tests against production-like samples can compare old and new flows where full dual operation is feasible.&lt;/li&gt;&lt;li&gt;Risky changes should have validation, rollout, and rollback checklists before merge.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Stategraph frames Terraform planning as an incremental build-system problem: complete input tracking, persistent dependency graphs, and fine-grained locks are what make caching and parallelism safe.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Speed depends on correctness because caches only work when every input is known and hashed.&lt;/li&gt;&lt;li&gt;A persistent HCL dependency graph enables affected-subgraph planning instead of rebuilding the whole graph for every run.&lt;/li&gt;&lt;li&gt;Sandboxing is a correctness tool: missing dependencies should fail loudly rather than silently poisoning cached output.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Which Git branching strategy is better for infrequent releases?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tgclbw/which_git_branching_strategy_is_better_for/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/aeedfa06161f8daa390da350879237ccf611003b</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
+      <title>[Reddit Programming] Type out the code</title>
+      <link>https://haskellforall.com/2026/05/type-out-the-code</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/b9fa029ad544bf5ea227137ec32ccfbc71a1d1c9</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The useful signal in the thread is the strong rejection of treating every feature as a separate hotfix-style prod merge after shared dev testing. Most experienced replies push toward trunk-based development, short-lived branches, promotion from one tested trunk, tags for releases, and feature flags for work that must merge before it ships.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Shipping a subset of features tested together creates an untested production combination.&lt;/li&gt;&lt;li&gt;A release should be a tag or promotion of an integrated state, not a second round of selective feature merges.&lt;/li&gt;&lt;li&gt;Feature flags solve early merge and delayed exposure more cleanly than long-lived environment branches.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The essay argues that AI-era programmers still need precise recall of syntax, schemas, names, and APIs because weak fluency makes it harder to reason, review, and avoid duplicate code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Typing code from memory builds the same generation effect that improves comprehension in other learning domains.&lt;/li&gt;&lt;li&gt;Agents do not remove the need to know local types, functions, imports, and project vocabulary.&lt;/li&gt;&lt;li&gt;Generated tests still need human scrutiny because self-contained trivial tests can validate the wrong thing.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Is the norm now that PRs are basically rubber stamps</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tf5jq1/is_the_norm_now_that_prs_are_basically_rubber/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-18/062bcd5a6820bf6f70719118e4f93b31f8612493</guid>
-      <pubDate>Mon, 18 May 2026 21:01:35 +0000</pubDate>
+      <title>[Reddit Programming] Learn the Shape of Your Data</title>
+      <link>https://sot.dev/learn-the-shape-of-your-data.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/010ae97e47484e9ba3e14e67ebc5724899e37805</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread is a direct field signal on AI-generated PR volume: reviewers are seeing larger changes, hallucinated APIs, and pressure to preserve velocity, while the useful comments still treat review as the main human interruption point in the AI coding loop.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Rubber-stamped PRs are functionally close to direct pushes, with less honesty about the risk.&lt;/li&gt;&lt;li&gt;AI increases code volume, so review scope and ownership need stronger boundaries rather than weaker ones.&lt;/li&gt;&lt;li&gt;The two key human control points are better upfront specifications and serious review of the generated decisions.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The piece shows how Rust strings, Go slices, and similar data structures become easier to debug once you reason about inline values, pointers, ownership, allocation, and copying.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Rust ownership feels less mystical when a String is understood as a small header that owns heap bytes.&lt;/li&gt;&lt;li&gt;Go slice behavior follows from the descriptor and backing-array split.&lt;/li&gt;&lt;li&gt;Data layout is a practical debugging and performance tool, not a compiler-engineer detour.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Fixing Every Bug</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1thkezf/fixing_every_bug/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/9a318d2919636f0b21cdd45d879cf58ecb2f726a</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread surfaces the hidden cost of policies that require every filed bug to be fixed by severity SLA, even when the defect has low value or no realistic priority.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Severity-based SLAs need explicit defer, acknowledge-only, or won&amp;#x27;t-fix outcomes.&lt;/li&gt;&lt;li&gt;Customer-service goals and engineering-capacity goals conflict unless prioritization is owned above the team.&lt;/li&gt;&lt;li&gt;A blanket fix-every-bug policy can make triage look objective while hiding opportunity cost.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Is it normal for a senior to have to spend so much time wrangling other teams for availability and approvals?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1th5o6z/is_it_normal_for_a_senior_to_have_to_spend_so/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/cb8a3b3504dc02ffb89cab96cdc8e2516de75278</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The discussion captures a common senior-engineer shift: cross-org delivery often becomes dependency management, escalation, and making approval latency visible rather than pure implementation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Missed design reviews and slow approvals are process ownership failures, not just personal inconvenience.&lt;/li&gt;&lt;li&gt;Senior scope often includes turning invisible dependency drag into visible risk.&lt;/li&gt;&lt;li&gt;Escalation paths, written decision records, and response SLAs matter when informal pings stop working.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] The just-say-no engineer was a ZIRP phenomenon</title>
+      <link>https://www.seangoedecke.com/the-just-say-no-engineer-was-a-zirp-phenomenon/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/db156a42b7a5fd3759dca83b0c61a6fa576dc490</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Sean Goedecke argues that broad engineering gatekeeping was easier to justify when companies had excess capacity; AI amplified the pressure, but post-ZIRP economics changed the incentives.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;High-bar gatekeeping is still valuable in core infrastructure and pure engineering domains.&lt;/li&gt;&lt;li&gt;Feature-experiment environments now reward controlled throughput more than broad resistance to code volume.&lt;/li&gt;&lt;li&gt;AI is not the only force weakening the just-say-no posture; capital discipline changed what organizations value.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] The Tacit Dimension: Why Your Best Engineers Can't Tell You What They Know</title>
+      <link>https://cekrem.github.io/posts/the-tacit-dimension/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/d9a5ba986f9073b3249a80c3bbdea2d288e8df1e</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The article uses tacit knowledge to explain why AI tools can follow explicit docs while still missing unwritten codebase conventions, historical constraints, and senior review judgment.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI assistance over-indexes on artifacts that can be written down and misses team-specific implicit knowledge.&lt;/li&gt;&lt;li&gt;Fluent code explanations are not evidence of grounded understanding of a particular codebase.&lt;/li&gt;&lt;li&gt;Pairing, review, and senior translation work preserve system knowledge that docs and tests cannot fully encode.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Using algebra to verify a flight-plan bug fix in Lean</title>
+      <link>https://jameshaydon.github.io/algebra-llms-lean-flight-plan/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/84ebb1b48ed528b92106de90273aa529f29b1757</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A real air-traffic-control bug fix became tractable in Lean only after the author replaced low-level index-heavy specs with an algebraic path/category model that made proof obligations explicit.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Specs over duplicated route identifiers need positional structure, not set membership.&lt;/li&gt;&lt;li&gt;LLMs were weak at inventing clean specs but effective at routine proof work once the abstraction was right.&lt;/li&gt;&lt;li&gt;A simple optimization can trigger substantial proof obligations when correctness is formalized.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] 314 npm packages just got compromised, 271 @antv, echarts-for-react, size-sensor, timeago.js</title>
+      <link>https://safedep.io/mini-shai-hulud-strikes-again-314-npm-packages-compromised/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/819556c89bfa1dd495bd4b265456a14da7496aa5</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;SafeDep documents a large npm supply-chain compromise that combined malicious semver-resolved package versions, preinstall hooks, GitHub-hosted payload delivery, CI token abuse, and local AI-agent persistence.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Semver ranges could install malicious higher versions even when the latest dist-tag did not move.&lt;/li&gt;&lt;li&gt;The payload targeted CI secrets, GitHub Actions OIDC token exchange, npm publish tokens, local Codex and Claude hooks, VS Code folder-open tasks, and Docker socket escape.&lt;/li&gt;&lt;li&gt;Useful IOCs include atool-published packages from 2026-05-19 01:44 to 02:06 UTC, bun run index.js preinstall hooks, and .claude or .vscode setup files.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Protocols for transactional usage of object storage</title>
+      <link>https://www.bitsxpages.com/p/protocols-for-transactional-usage</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/b81369fb916e4f541d8f81625720f138500815fc</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The article explains how databases can build serializable transactional protocols over object storage by combining atomic writes, conditional writes, consistent listing, manifests, and careful garbage collection.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Conditional writes turn object metadata into a compare-and-set primitive for coordinating writers.&lt;/li&gt;&lt;li&gt;Sequenced filenames reduce conflict cost and preserve history, but require explicit garbage-collection safety.&lt;/li&gt;&lt;li&gt;Age-based deletion alone can create branched histories when stalled writers resume, so fencing or boundary files are needed.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Simulating Infinity in Conway's Game of Life with Modern C++</title>
+      <link>https://ryanjk5.github.io/posts/GOLDE/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/13db5c25d312b2054413a91cb8200812565aab31</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The GOLDE writeup walks through a high-performance HashLife implementation using canonical immutable quadtrees, arena allocation, cached future states, and topology abstraction.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Canonical immutable quadtrees avoid recomputing identical subpatterns.&lt;/li&gt;&lt;li&gt;Arena allocation gives pointer stability and better locality for the memoized node graph.&lt;/li&gt;&lt;li&gt;Arbitrary-generation stepping can be decomposed into power-of-two jumps while bounded worlds reuse an algorithm designed for an infinite universe.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Philosophy] Pluralistic: There's no such thing as "age verification" (19 May 2026)</title>
+      <link>https://pluralistic.net/2026/05/19/shes-dead-of-course/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/f8fd845f3009e8531aaeaf565ac2df4b2e3fc43f</guid>
+      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Cory Doctorow treats age verification as a failed identity-attribution architecture: it creates surveillance and breach surfaces, is easy to evade, and pushes policy toward broader network control.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Age verification becomes internet-wide identity binding rather than a narrow safety check.&lt;/li&gt;&lt;li&gt;VPN evasion is predictable, so enforcement pressure escalates toward traffic and platform control.&lt;/li&gt;&lt;li&gt;Requirements that ignore adversarial adaptation produce new mandates, not working systems.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
