@@ -4,102 +4,110 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Tue, 19 May 2026 21:04:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 14:23:45 +0000</lastBuildDate>
     <item>
-      <title>[Reddit Programming] What Bazel taught us about Terraform</title>
-      <link>https://stategraph.com/blog/what-bazel-taught-us-about-terraform</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/5810e8fd3dd01b1f23fc85c35e7053d1663a9c43</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Stategraph frames Terraform planning as an incremental build-system problem: complete input tracking, persistent dependency graphs, and fine-grained locks are what make caching and parallelism safe.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Speed depends on correctness because caches only work when every input is known and hashed.&lt;/li&gt;&lt;li&gt;A persistent HCL dependency graph enables affected-subgraph planning instead of rebuilding the whole graph for every run.&lt;/li&gt;&lt;li&gt;Sandboxing is a correctness tool: missing dependencies should fail loudly rather than silently poisoning cached output.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Engineering] Google Cloud deletes Australian trading fund’s infra</title>
+      <link>https://blog.pragmaticengineer.com/google-cloud-deletes-australian-trading-funds-infra/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/5bb22361a30606cb90b9be9f0c1166ef1acfae29</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;Gergely Orosz documents how Google Cloud deleted UniSuper’s subscription and all associated data, including the regional replica, leaving the $124B Australian fund dependent on an external backup to recover. The useful lesson is blunt: cross-region replication inside one cloud account is not a deletion-resilience strategy.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Region-level redundancy did not help when the provider deleted the subscription boundary that owned both regions.&lt;/li&gt;&lt;li&gt;Critical data needs an independent backup plane controlled outside the primary cloud provider.&lt;/li&gt;&lt;li&gt;Rare provider errors are exactly the class of failure that backup design must assume, not dismiss.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Type out the code</title>
-      <link>https://haskellforall.com/2026/05/type-out-the-code</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/b9fa029ad544bf5ea227137ec32ccfbc71a1d1c9</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The essay argues that AI-era programmers still need precise recall of syntax, schemas, names, and APIs because weak fluency makes it harder to reason, review, and avoid duplicate code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Typing code from memory builds the same generation effect that improves comprehension in other learning domains.&lt;/li&gt;&lt;li&gt;Agents do not remove the need to know local types, functions, imports, and project vocabulary.&lt;/li&gt;&lt;li&gt;Generated tests still need human scrutiny because self-contained trivial tests can validate the wrong thing.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Engineering] The Pulse: Forward deployed engineering heats up again</title>
+      <link>https://blog.pragmaticengineer.com/the-pulse-forward-deployed-engineering-heats-up-again/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/b94f75f037ab861ac8df8813046816d608dcc83d</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;The Pragmatic Engineer tracks renewed demand for forward-deployed engineers at Google, OpenAI, Anthropic, and related deployment companies, and argues that many of these roles now look closer to AI solutions consulting than core product engineering. The piece is useful for reading the labor-market signal behind enterprise AI rollout work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;FDE hiring is being used to turn frontier-model capabilities into enterprise deployments and revenue faster.&lt;/li&gt;&lt;li&gt;Several roles mix coding, integration plumbing, customer hand-holding, and scope ambiguity more than long-term product engineering.&lt;/li&gt;&lt;li&gt;For early-career engineers the role can create real exposure; for experienced product builders it may be structurally less attractive.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Learn the Shape of Your Data</title>
-      <link>https://sot.dev/learn-the-shape-of-your-data.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/010ae97e47484e9ba3e14e67ebc5724899e37805</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The piece shows how Rust strings, Go slices, and similar data structures become easier to debug once you reason about inline values, pointers, ownership, allocation, and copying.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Rust ownership feels less mystical when a String is understood as a small header that owns heap bytes.&lt;/li&gt;&lt;li&gt;Go slice behavior follows from the descriptor and backing-array split.&lt;/li&gt;&lt;li&gt;Data layout is a practical debugging and performance tool, not a compiler-engineer detour.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Engineering] AI Won’t Save the Kingdoms We Built</title>
+      <link>https://cutlefish.substack.com/p/ai-wont-save-the-kingdoms-we-built</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/6288b54bb268b6629ee088c171dca96cbc5ef299</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;John Cutler argues that AI can lower information friction across organizations, but cannot repair unclear ownership, misaligned incentives, contested decision rights, or fiefdom-preserving structures. The sharp point is that AI can amplify either coherent operating models or avoidance dressed up as async productivity.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI can move context faster, but context transfer is not shared understanding or a decision mechanism.&lt;/li&gt;&lt;li&gt;Org fiefdoms created local accountability without enough responsibility for the end-to-end customer experience.&lt;/li&gt;&lt;li&gt;Agent-mediated work can become a new coordination theater if leaders still avoid prioritization and ownership calls.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Fixing Every Bug</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1thkezf/fixing_every_bug/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/9a318d2919636f0b21cdd45d879cf58ecb2f726a</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread surfaces the hidden cost of policies that require every filed bug to be fixed by severity SLA, even when the defect has low value or no realistic priority.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Severity-based SLAs need explicit defer, acknowledge-only, or won&amp;#x27;t-fix outcomes.&lt;/li&gt;&lt;li&gt;Customer-service goals and engineering-capacity goals conflict unless prioritization is owned above the team.&lt;/li&gt;&lt;li&gt;A blanket fix-every-bug policy can make triage look objective while hiding opportunity cost.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Frontend] My Thoughts on AI, Part 2: Agent Setup, Workflow, and Tools</title>
+      <link>https://blog.isquaredsoftware.com/2026/05/ai-thoughts-part-2-agent-workflow-tools/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/7a5068258b595d4d24bb35549d5dfd768f247c0e</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Mark Erikson lays out his personal AI coding workflow around OpenCode, CodeNomad, parent orchestrator sessions, focused subtasks, deterministic command approval, file-read caching, progress logs, and explicit handoffs. The value is in the operational detail: speed comes from agent research and implementation assistance while the human keeps task framing, review, and commits under direct control.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The workflow limits concurrency to what the developer can still understand and supervise.&lt;/li&gt;&lt;li&gt;Long-running parent sessions hold project context while child sessions do bounded research or implementation work.&lt;/li&gt;&lt;li&gt;Deterministic tooling, permissions, cached reads, and progress records are treated as part of the agent harness, not incidental convenience.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Is it normal for a senior to have to spend so much time wrangling other teams for availability and approvals?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1th5o6z/is_it_normal_for_a_senior_to_have_to_spend_so/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/cb8a3b3504dc02ffb89cab96cdc8e2516de75278</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The discussion captures a common senior-engineer shift: cross-org delivery often becomes dependency management, escalation, and making approval latency visible rather than pure implementation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Missed design reviews and slow approvals are process ownership failures, not just personal inconvenience.&lt;/li&gt;&lt;li&gt;Senior scope often includes turning invisible dependency drag into visible risk.&lt;/li&gt;&lt;li&gt;Escalation paths, written decision records, and response SLAs matter when informal pings stop working.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] A History of IDEs at Google</title>
+      <link>https://laurent.le-brun.eu/blog/a-history-of-ides-at-google</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/48f8c96fda98eb4aec7ac7bea146a9d7d662ed1d</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Laurent Le Brun explains how Google moved from a fragmented IDE ecosystem toward Cider V, a browser-based VS Code frontend backed by Google-scale code intelligence. The durable lesson is that standardizing around an extensible internal tool multiplies the value of developer-tooling investments, especially once AI features need deep codebase context.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;At monorepo scale, local IDE assumptions break because indexing, build metadata, references, and historical snapshots become backend problems.&lt;/li&gt;&lt;li&gt;A common editor platform reduced duplicated integration work and let internal teams ship their own workflow extensions.&lt;/li&gt;&lt;li&gt;AI features became more viable once most developers used one extensible tooling surface with access to shared code intelligence.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The just-say-no engineer was a ZIRP phenomenon</title>
-      <link>https://www.seangoedecke.com/the-just-say-no-engineer-was-a-zirp-phenomenon/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/db156a42b7a5fd3759dca83b0c61a6fa576dc490</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Sean Goedecke argues that broad engineering gatekeeping was easier to justify when companies had excess capacity; AI amplified the pressure, but post-ZIRP economics changed the incentives.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;High-bar gatekeeping is still valuable in core infrastructure and pure engineering domains.&lt;/li&gt;&lt;li&gt;Feature-experiment environments now reward controlled throughput more than broad resistance to code volume.&lt;/li&gt;&lt;li&gt;AI is not the only force weakening the just-say-no posture; capital discipline changed what organizations value.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] Advanced Tree Counting: Mathematical Layouts With sibling-index() And sibling-count()</title>
+      <link>https://smashingmagazine.com/2026/05/mathematical-layouts-sibling-index-sibling-count/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/bdf93827bd10fb78df786ca603640e78a633c357</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Durgesh Pawar shows how the proposed CSS sibling-index() and sibling-count() functions expose DOM child position and sibling count as numeric values inside declarations. That turns patterns previously handled with nth-child rules, Sass loops, inline JavaScript indexes, or mutation observers into pure CSS calculations.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sibling-index() returns a 1-based element position; sibling-count() returns the parent element-child count.&lt;/li&gt;&lt;li&gt;The functions can drive staggered animation delays, equal tab widths, hue distribution, circular layouts, and z-index stacking.&lt;/li&gt;&lt;li&gt;They count DOM structure, not visual layout, so display:none elements still affect the math and Shadow DOM boundaries matter.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The Tacit Dimension: Why Your Best Engineers Can't Tell You What They Know</title>
-      <link>https://cekrem.github.io/posts/the-tacit-dimension/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/d9a5ba986f9073b3249a80c3bbdea2d288e8df1e</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The article uses tacit knowledge to explain why AI tools can follow explicit docs while still missing unwritten codebase conventions, historical constraints, and senior review judgment.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI assistance over-indexes on artifacts that can be written down and misses team-specific implicit knowledge.&lt;/li&gt;&lt;li&gt;Fluent code explanations are not evidence of grounded understanding of a particular codebase.&lt;/li&gt;&lt;li&gt;Pairing, review, and senior translation work preserve system knowledge that docs and tests cannot fully encode.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] Stack Overflow: When We Stop Asking</title>
+      <link>https://css-tricks.com/stack-overflow-when-we-stop-asking/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/9338e2936ef898cf79c289b00e13f205e287ea32</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Sunkanmi Fafowora uses the collapse in Stack Overflow question volume to examine how developer learning changes when LLMs replace public asking and answering. The piece is not only nostalgia; it frames the risk that private AI interactions reduce the shared corpus and the discipline of debugging in public.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stack Overflow’s decline started before ChatGPT, but LLMs gave developers a faster and less socially costly alternative.&lt;/li&gt;&lt;li&gt;Private AI usage can answer today’s question while producing less reusable public knowledge for tomorrow’s developers and models.&lt;/li&gt;&lt;li&gt;The practical AI workflow remains small questions, output inspection, source checking, and tests rather than whole-system delegation.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Using algebra to verify a flight-plan bug fix in Lean</title>
-      <link>https://jameshaydon.github.io/algebra-llms-lean-flight-plan/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/84ebb1b48ed528b92106de90273aa529f29b1757</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <title>[Reddit Programming] The TrapDoor Supply Chain Attack: Coordinated Multi-Registry Campaign Hits npm, PyPI, and Crates.io</title>
+      <link>https://thecybersecguru.com/news/trapdoor-supply-chain-attack/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/b2ae556326bedff47a0262d17348a912545e436f</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;A real air-traffic-control bug fix became tractable in Lean only after the author replaced low-level index-heavy specs with an algebraic path/category model that made proof obligations explicit.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Specs over duplicated route identifiers need positional structure, not set membership.&lt;/li&gt;&lt;li&gt;LLMs were weak at inventing clean specs but effective at routine proof work once the abstraction was right.&lt;/li&gt;&lt;li&gt;A simple optimization can trigger substantial proof obligations when correctness is formalized.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The report describes a coordinated package-registry attack spanning npm, PyPI, and Crates.io, with ecosystem-specific install hooks and an unusual attempt to poison AI coding assistants through hidden Unicode instructions in files such as .cursorrules and CLAUDE.md. The AI-instruction angle makes it more relevant than another routine malicious-package roundup.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;npm postinstall hooks, Cargo build.rs, and Python import-time behavior each create different execution paths for developer-machine compromise.&lt;/li&gt;&lt;li&gt;The payloads reportedly validate credentials before exfiltration, making stolen data immediately actionable.&lt;/li&gt;&lt;li&gt;Agent instruction files are now part of the supply-chain attack surface and need review rules that expose invisible or bidirectional characters.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] 314 npm packages just got compromised, 271 @antv, echarts-for-react, size-sensor, timeago.js</title>
-      <link>https://safedep.io/mini-shai-hulud-strikes-again-314-npm-packages-compromised/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/819556c89bfa1dd495bd4b265456a14da7496aa5</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <title>[Reddit Programming] We are Changing our Developer Productivity Experiment Design</title>
+      <link>https://metr.org/blog/2026-02-24-uplift-update/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/73a6a3897a556c69e71897a7d72a8e94f44b42c2</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;SafeDep documents a large npm supply-chain compromise that combined malicious semver-resolved package versions, preinstall hooks, GitHub-hosted payload delivery, CI token abuse, and local AI-agent persistence.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Semver ranges could install malicious higher versions even when the latest dist-tag did not move.&lt;/li&gt;&lt;li&gt;The payload targeted CI secrets, GitHub Actions OIDC token exchange, npm publish tokens, local Codex and Claude hooks, VS Code folder-open tasks, and Docker socket escape.&lt;/li&gt;&lt;li&gt;Useful IOCs include atool-published packages from 2026-05-19 01:44 to 02:06 UTC, bun run index.js preinstall hooks, and .claude or .vscode setup files.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;METR explains why its newer AI productivity experiment no longer gives a clean estimate: developers increasingly avoid tasks or studies that might force them to work without AI, and concurrent agent use makes time tracking unreliable. The raw data hints at speedup, but the more important result is methodological: AI adoption is changing the measurement problem itself.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The earlier 2025 slowdown result and the newer 2026 speedup estimates are not directly comparable because participant and task selection shifted.&lt;/li&gt;&lt;li&gt;Developers who expect high AI uplift are more likely to opt out of AI-disallowed work, biasing controlled experiments downward.&lt;/li&gt;&lt;li&gt;Agentic workflows blur task timing because developers can run tools concurrently or switch work while waiting.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Protocols for transactional usage of object storage</title>
-      <link>https://www.bitsxpages.com/p/protocols-for-transactional-usage</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/b81369fb916e4f541d8f81625720f138500815fc</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <title>[Reddit Programming] Convergence Mechanisms: Confidence in the Age of Agentic Engineering</title>
+      <link>https://www.abelenekes.com/p/convergence-mechanisms-confidence-in-the-age-of-agentic-engineering</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/4b50b41442390bfaf3e2e9f7d30238b7e4e64f23</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The article explains how databases can build serializable transactional protocols over object storage by combining atomic writes, conditional writes, consistent listing, manifests, and careful garbage collection.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Conditional writes turn object metadata into a compare-and-set primitive for coordinating writers.&lt;/li&gt;&lt;li&gt;Sequenced filenames reduce conflict cost and preserve history, but require explicit garbage-collection safety.&lt;/li&gt;&lt;li&gt;Age-based deletion alone can create branched histories when stalled writers resume, so fencing or boundary files are needed.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Abel Enekes argues that coding agents make divergence cheap but do not automatically make changes converge on a coherent system state. The proposed model separates requirements, evidence, interpretation, and feedback, then ranks unwritten rules, written guidance, and executable contracts by how well they protect implicit requirements during agentic change.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A good change moves the system from one coherent requirement set to another, not merely from one passing diff to another.&lt;/li&gt;&lt;li&gt;The dangerous blind spot is an implicit requirement touched by a change but neither named in the task nor protected by an automated check.&lt;/li&gt;&lt;li&gt;Tests, schemas, architecture rules, dependency checks, monitoring, and traces are stronger agent guidance than prose because they provide deterministic pushback.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Simulating Infinity in Conway's Game of Life with Modern C++</title>
-      <link>https://ryanjk5.github.io/posts/GOLDE/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/13db5c25d312b2054413a91cb8200812565aab31</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
+      <title>[Reddit Programming] How do you prevent silent data inconsistency in automation pipelines?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tmgb4s/how_do_you_prevent_silent_data_inconsistency_in/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/aeb89bd5cdf4e3d6a8e807dfe2ccfde5cd786b9b</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The GOLDE writeup walks through a high-performance HashLife implementation using canonical immutable quadtrees, arena allocation, cached future states, and topology abstraction.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Canonical immutable quadtrees avoid recomputing identical subpatterns.&lt;/li&gt;&lt;li&gt;Arena allocation gives pointer stability and better locality for the memoized node graph.&lt;/li&gt;&lt;li&gt;Arbitrary-generation stepping can be decomposed into power-of-two jumps while bounded worlds reuse an algorithm designed for an infinite universe.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The thread prompt describes a document automation pipeline where OCR, metadata extraction, applicant matching, CRM sync, and review workflow all appear to succeed while duplicate profiles and incorrect document links accumulate. It is a compact example of semantic data corruption: the system needs reconciliation and confidence checks, not only hard-error alerts.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Pipeline success signals are inadequate when the failure mode is wrong-but-valid entity matching.&lt;/li&gt;&lt;li&gt;Matching systems need explicit identity confidence, idempotency, duplicate detection, and human-review queues for uncertain joins.&lt;/li&gt;&lt;li&gt;Downstream sync should be auditable and reversible because silent inconsistency often appears only after several successful-looking stages.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Philosophy] Pluralistic: There's no such thing as "age verification" (19 May 2026)</title>
-      <link>https://pluralistic.net/2026/05/19/shes-dead-of-course/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-19/f8fd845f3009e8531aaeaf565ac2df4b2e3fc43f</guid>
-      <pubDate>Tue, 19 May 2026 21:04:00 +0000</pubDate>
-      <category>Philosophy</category>
-      <description>&lt;p&gt;Cory Doctorow treats age verification as a failed identity-attribution architecture: it creates surveillance and breach surfaces, is easy to evade, and pushes policy toward broader network control.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Age verification becomes internet-wide identity binding rather than a narrow safety check.&lt;/li&gt;&lt;li&gt;VPN evasion is predictable, so enforcement pressure escalates toward traffic and platform control.&lt;/li&gt;&lt;li&gt;Requirements that ignore adversarial adaptation produce new mandates, not working systems.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Reddit Programming] the most productive thing i do every morning is read yesterday’s merged PRs</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tivlma/the_most_productive_thing_i_do_every_morning_is/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/f79d1fc129ecf2a7c16dc25bd7e30ba514e46de8</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The post argues for a low-tech senior-engineering habit: skim yesterday’s merged PRs to keep a current map of what changed, catch duplicate work, and notice architectural drift before it becomes invisible background. The useful part is the framing that senior work often depends on knowing what is happening, not only producing code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A daily PR skim catches cross-team duplication and interface drift that normal ticket-level focus misses.&lt;/li&gt;&lt;li&gt;The practice is shallow by design: maintain situational awareness, then dig only when a change touches your map.&lt;/li&gt;&lt;li&gt;It scales poorly at very high merge volume, which is itself a signal that teams need better change routing and ownership surfaces.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Does anyone actually think about what source code leaves your network when using AI coding agents?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tj1qv4/does_anyone_actually_think_about_what_source_code/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/71c80476be2cda62569c66e28b96cc0f7aca36e2</guid>
+      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The discussion prompt pushes on a practical security gap in agentic coding: tools may send imports, references, surrounding files, and inferred context beyond the single snippet a developer thinks they are sharing. The point is not generic fear of AI, but the mismatch between old vendor-review standards and casual daily agent usage.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agent context collection can include adjacent source and dependency context, not just the file under active edit.&lt;/li&gt;&lt;li&gt;Security review should inspect actual payload behavior and retention guarantees rather than relying on productivity pressure or vendor assurances.&lt;/li&gt;&lt;li&gt;The operational boundary is repo policy: which code, secrets, customer data, and unreleased design material may leave the network under which model and account.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
