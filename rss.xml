@@ -4,110 +4,62 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Mon, 25 May 2026 14:23:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 12:06:06 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] Google Cloud deletes Australian trading fund’s infra</title>
-      <link>https://blog.pragmaticengineer.com/google-cloud-deletes-australian-trading-funds-infra/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/5bb22361a30606cb90b9be9f0c1166ef1acfae29</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;Gergely Orosz documents how Google Cloud deleted UniSuper’s subscription and all associated data, including the regional replica, leaving the $124B Australian fund dependent on an external backup to recover. The useful lesson is blunt: cross-region replication inside one cloud account is not a deletion-resilience strategy.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Region-level redundancy did not help when the provider deleted the subscription boundary that owned both regions.&lt;/li&gt;&lt;li&gt;Critical data needs an independent backup plane controlled outside the primary cloud provider.&lt;/li&gt;&lt;li&gt;Rare provider errors are exactly the class of failure that backup design must assume, not dismiss.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Engineering] The Pulse: Forward deployed engineering heats up again</title>
-      <link>https://blog.pragmaticengineer.com/the-pulse-forward-deployed-engineering-heats-up-again/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/b94f75f037ab861ac8df8813046816d608dcc83d</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;The Pragmatic Engineer tracks renewed demand for forward-deployed engineers at Google, OpenAI, Anthropic, and related deployment companies, and argues that many of these roles now look closer to AI solutions consulting than core product engineering. The piece is useful for reading the labor-market signal behind enterprise AI rollout work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;FDE hiring is being used to turn frontier-model capabilities into enterprise deployments and revenue faster.&lt;/li&gt;&lt;li&gt;Several roles mix coding, integration plumbing, customer hand-holding, and scope ambiguity more than long-term product engineering.&lt;/li&gt;&lt;li&gt;For early-career engineers the role can create real exposure; for experienced product builders it may be structurally less attractive.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Engineering] AI Won’t Save the Kingdoms We Built</title>
-      <link>https://cutlefish.substack.com/p/ai-wont-save-the-kingdoms-we-built</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/6288b54bb268b6629ee088c171dca96cbc5ef299</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;John Cutler argues that AI can lower information friction across organizations, but cannot repair unclear ownership, misaligned incentives, contested decision rights, or fiefdom-preserving structures. The sharp point is that AI can amplify either coherent operating models or avoidance dressed up as async productivity.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI can move context faster, but context transfer is not shared understanding or a decision mechanism.&lt;/li&gt;&lt;li&gt;Org fiefdoms created local accountability without enough responsibility for the end-to-end customer experience.&lt;/li&gt;&lt;li&gt;Agent-mediated work can become a new coordination theater if leaders still avoid prioritization and ownership calls.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Frontend] My Thoughts on AI, Part 2: Agent Setup, Workflow, and Tools</title>
-      <link>https://blog.isquaredsoftware.com/2026/05/ai-thoughts-part-2-agent-workflow-tools/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/7a5068258b595d4d24bb35549d5dfd768f247c0e</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Mark Erikson lays out his personal AI coding workflow around OpenCode, CodeNomad, parent orchestrator sessions, focused subtasks, deterministic command approval, file-read caching, progress logs, and explicit handoffs. The value is in the operational detail: speed comes from agent research and implementation assistance while the human keeps task framing, review, and commits under direct control.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The workflow limits concurrency to what the developer can still understand and supervise.&lt;/li&gt;&lt;li&gt;Long-running parent sessions hold project context while child sessions do bounded research or implementation work.&lt;/li&gt;&lt;li&gt;Deterministic tooling, permissions, cached reads, and progress records are treated as part of the agent harness, not incidental convenience.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Informatics] A History of IDEs at Google</title>
-      <link>https://laurent.le-brun.eu/blog/a-history-of-ides-at-google</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/48f8c96fda98eb4aec7ac7bea146a9d7d662ed1d</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <title>[Informatics] Cross-Document View Transitions: Scaling Across Hundreds of Elements</title>
+      <link>https://css-tricks.com/cross-document-view-transitions-part-2/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/9d0afafb6875f0462207ddbc1ecf00757b8338a2</guid>
+      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Laurent Le Brun explains how Google moved from a fragmented IDE ecosystem toward Cider V, a browser-based VS Code frontend backed by Google-scale code intelligence. The durable lesson is that standardizing around an extensible internal tool multiplies the value of developer-tooling investments, especially once AI features need deep codebase context.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;At monorepo scale, local IDE assumptions break because indexing, build metadata, references, and historical snapshots become backend problems.&lt;/li&gt;&lt;li&gt;A common editor platform reduced duplicated integration work and let internal teams ship their own workflow extensions.&lt;/li&gt;&lt;li&gt;AI features became more viable once most developers used one extensible tooling surface with access to shared code intelligence.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Durgesh Rajubhai Pawar shows where cross-document view transitions break at product-grid scale: unique `view-transition-name` values identify element pairs, while shared `view-transition-class` values keep animation styling maintainable. The practical pattern is to assign names just in time during `pageswap` and `pagereveal`, then clean them up after the transition to avoid stale-name conflicts and wasted snapshots.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`view-transition-name` is identity, so every participating element needs a unique name per page.&lt;/li&gt;&lt;li&gt;`view-transition-class` is the styling hook, allowing one selector such as `::view-transition-group(*.card)` to style many named transitions.&lt;/li&gt;&lt;li&gt;Do not name every card at page load; assign the clicked item&amp;#x27;s name during navigation and remove it after `viewTransition.finished`.&lt;/li&gt;&lt;li&gt;Unsupported browsers degrade to normal page loads, making this a clean progressive enhancement when guarded for reduced motion.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] Advanced Tree Counting: Mathematical Layouts With sibling-index() And sibling-count()</title>
-      <link>https://smashingmagazine.com/2026/05/mathematical-layouts-sibling-index-sibling-count/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/bdf93827bd10fb78df786ca603640e78a633c357</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;Durgesh Pawar shows how the proposed CSS sibling-index() and sibling-count() functions expose DOM child position and sibling count as numeric values inside declarations. That turns patterns previously handled with nth-child rules, Sass loops, inline JavaScript indexes, or mutation observers into pure CSS calculations.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sibling-index() returns a 1-based element position; sibling-count() returns the parent element-child count.&lt;/li&gt;&lt;li&gt;The functions can drive staggered animation delays, equal tab widths, hue distribution, circular layouts, and z-index stacking.&lt;/li&gt;&lt;li&gt;They count DOM structure, not visual layout, so display:none elements still affect the math and Shadow DOM boundaries matter.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Philosophy] The AI bubble isn't like the internet bubble</title>
+      <link>https://pluralistic.net/2026/05/26/the-ai-will-continue/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/759509e198016295225b025cad0c185624e7ae02</guid>
+      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Cory Doctorow argues that the early web spread through worker demand, while current enterprise AI adoption is often pushed top-down through monitoring and mandates. The useful distinction is labor-led automation that improves quality versus capital-led automation that maximizes throughput even when the people doing the work do not find the tool worth adopting.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A technology workers route around policy to use is different from one management must force into workflows.&lt;/li&gt;&lt;li&gt;AI adoption pressure is a warning signal when it optimizes usage metrics instead of work quality.&lt;/li&gt;&lt;li&gt;Autonomous workers can still use AI as a centaur tool; coerced workers risk becoming peripherals for automation targets.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] Stack Overflow: When We Stop Asking</title>
-      <link>https://css-tricks.com/stack-overflow-when-we-stop-asking/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/9338e2936ef898cf79c289b00e13f205e287ea32</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;Sunkanmi Fafowora uses the collapse in Stack Overflow question volume to examine how developer learning changes when LLMs replace public asking and answering. The piece is not only nostalgia; it frames the risk that private AI interactions reduce the shared corpus and the discipline of debugging in public.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stack Overflow’s decline started before ChatGPT, but LLMs gave developers a faster and less socially costly alternative.&lt;/li&gt;&lt;li&gt;Private AI usage can answer today’s question while producing less reusable public knowledge for tomorrow’s developers and models.&lt;/li&gt;&lt;li&gt;The practical AI workflow remains small questions, output inspection, source checking, and tests rather than whole-system delegation.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] The TrapDoor Supply Chain Attack: Coordinated Multi-Registry Campaign Hits npm, PyPI, and Crates.io</title>
-      <link>https://thecybersecguru.com/news/trapdoor-supply-chain-attack/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/b2ae556326bedff47a0262d17348a912545e436f</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <title>[Reddit Programming] How soon is now in PostgreSQL?</title>
+      <link>https://event-driven.io/en/how-soon-is-now-in-postgresql/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/ac9d82f9577cc353774b4c1e000aef63ab19f702</guid>
+      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The report describes a coordinated package-registry attack spanning npm, PyPI, and Crates.io, with ecosystem-specific install hooks and an unusual attempt to poison AI coding assistants through hidden Unicode instructions in files such as .cursorrules and CLAUDE.md. The AI-instruction angle makes it more relevant than another routine malicious-package roundup.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;npm postinstall hooks, Cargo build.rs, and Python import-time behavior each create different execution paths for developer-machine compromise.&lt;/li&gt;&lt;li&gt;The payloads reportedly validate credentials before exfiltration, making stolen data immediately actionable.&lt;/li&gt;&lt;li&gt;Agent instruction files are now part of the supply-chain attack surface and need review rules that expose invisible or bidirectional characters.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Oskar Dudycz documents a distributed-locking bug where retrying inside one database transaction made PostgreSQL `now()` stay fixed at transaction start time, so timeout checks never advanced. The fix was to use `clock_timestamp()` for the lock-acquisition decision and add an end-to-end test around the crash-takeover path.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`now()` is `transaction_timestamp()` in PostgreSQL; it is stable for the whole transaction.&lt;/li&gt;&lt;li&gt;Timeout predicates inside retries need a wall-clock source such as `clock_timestamp()` when the transaction stays open.&lt;/li&gt;&lt;li&gt;Green unit tests missed the failure because the bug lived in the interaction between retry policy, transaction lifetime, and stored procedure time semantics.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] We are Changing our Developer Productivity Experiment Design</title>
-      <link>https://metr.org/blog/2026-02-24-uplift-update/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/73a6a3897a556c69e71897a7d72a8e94f44b42c2</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <title>[Reddit Programming] Postmortem: Nx Console v18.95.0 supply-chain compromise</title>
+      <link>https://nx.dev/blog/nx-console-v18-95-0-postmortem</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/f8eae95f423458c888b94dbb58dff916ba922572</guid>
+      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;METR explains why its newer AI productivity experiment no longer gives a clean estimate: developers increasingly avoid tasks or studies that might force them to work without AI, and concurrent agent use makes time tracking unreliable. The raw data hints at speedup, but the more important result is methodological: AI adoption is changing the measurement problem itself.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The earlier 2025 slowdown result and the newer 2026 speedup estimates are not directly comparable because participant and task selection shifted.&lt;/li&gt;&lt;li&gt;Developers who expect high AI uplift are more likely to opt out of AI-disallowed work, biasing controlled experiments downward.&lt;/li&gt;&lt;li&gt;Agentic workflows blur task timing because developers can run tools concurrently or switch work while waiting.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The Nx team traces the malicious Nx Console 18.95.0 VS Code extension to a chained supply-chain failure: a contributor installed a compromised TanStack package, a GitHub CLI token was stolen, and a single-actor marketplace publish path allowed the extension release. The postmortem is valuable because it names the exact broken controls: unenforced `minimum-release-age`, locally retrievable `gh` credentials, missing release approval, and insufficient audit monitoring.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;If `packageManager` pins pnpm below 10.16, `minimum-release-age` is silently ignored and does not protect installs.&lt;/li&gt;&lt;li&gt;A `gh` token on disk is high-blast-radius local state; secret-manager wrapping only works if enforced.&lt;/li&gt;&lt;li&gt;Any registry or marketplace publish path needs a second human gate and audit monitoring for suspicious workflow changes.&lt;/li&gt;&lt;li&gt;Users with Nx Console 18.95.0 during the exposure window should treat developer credentials as exposed.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Convergence Mechanisms: Confidence in the Age of Agentic Engineering</title>
-      <link>https://www.abelenekes.com/p/convergence-mechanisms-confidence-in-the-age-of-agentic-engineering</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/4b50b41442390bfaf3e2e9f7d30238b7e4e64f23</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <title>[Reddit Programming] Blueprint: Section-Scoped Structural Graph Retrieval and Post-Turn Compression for Agentic LLM Coding</title>
+      <link>https://zenodo.org/records/20381860</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/6ead770f63375ef50cdfc471c456e32cb462b5f9</guid>
+      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Abel Enekes argues that coding agents make divergence cheap but do not automatically make changes converge on a coherent system state. The proposed model separates requirements, evidence, interpretation, and feedback, then ranks unwritten rules, written guidance, and executable contracts by how well they protect implicit requirements during agentic change.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A good change moves the system from one coherent requirement set to another, not merely from one passing diff to another.&lt;/li&gt;&lt;li&gt;The dangerous blind spot is an implicit requirement touched by a change but neither named in the task nor protected by an automated check.&lt;/li&gt;&lt;li&gt;Tests, schemas, architecture rules, dependency checks, monitoring, and traces are stronger agent guidance than prose because they provide deterministic pushback.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This paper reports a counterintuitive result from a coding-agent retrieval experiment: adding a 6500-token structural graph increased total provider-billed input from about 41K to about 63K tokens because the model explored more confidently and read more relevant files. The useful framing is not raw token reduction, but separating bounded orientation cost from execution-context accumulation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A codebase map can increase total context by giving the model confidence to follow deeper call chains.&lt;/li&gt;&lt;li&gt;Structural context and execution context are different budgets; optimizing one can expose the cost of the other.&lt;/li&gt;&lt;li&gt;For write tasks, lower token use caused by navigational uncertainty may be a quality failure rather than an efficiency win.&lt;/li&gt;&lt;li&gt;Compression of large tool outputs helps history growth, but it does not replace disciplined read budgets.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How do you prevent silent data inconsistency in automation pipelines?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tmgb4s/how_do_you_prevent_silent_data_inconsistency_in/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/aeb89bd5cdf4e3d6a8e807dfe2ccfde5cd786b9b</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <title>[Reddit Programming] How I made my Zig gameplay code hot reloadable</title>
+      <link>https://www.madrigalgames.com/blog/how-i-made-my-zig-gameplay-code-hot-reloadable/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/57293d9df39c83de6c1ed030bec66c655e779367</guid>
+      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread prompt describes a document automation pipeline where OCR, metadata extraction, applicant matching, CRM sync, and review workflow all appear to succeed while duplicate profiles and incorrect document links accumulate. It is a compact example of semantic data corruption: the system needs reconciliation and confidence checks, not only hard-error alerts.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Pipeline success signals are inadequate when the failure mode is wrong-but-valid entity matching.&lt;/li&gt;&lt;li&gt;Matching systems need explicit identity confidence, idempotency, duplicate detection, and human-review queues for uncertain joins.&lt;/li&gt;&lt;li&gt;Downstream sync should be auditable and reversible because silent inconsistency often appears only after several successful-looking stages.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Sebastian describes hot-reloading native Zig gameplay code inside a C++ engine by synchronizing reload points, preserving long-lived allocator-owned state, and repairing runtime interface function pointers after the new DLL loads. The article is a useful implementation case study because it states the constraints directly: memory layout changes remain unsafe, global data must be moved into reload-stable storage, and vtables need explicit fixup.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Hot reload needs a safe synchronization point so no thread is executing code from a library being unloaded.&lt;/li&gt;&lt;li&gt;Keeping state alive across reloads is easier when allocation ownership is explicit and separated from the reloadable module.&lt;/li&gt;&lt;li&gt;Runtime interfaces with function pointers need a post-reload repair pass or they will point at stale code.&lt;/li&gt;&lt;li&gt;A practical hot-reload system can be scoped to logic and constant changes instead of trying to support arbitrary data-layout edits.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] the most productive thing i do every morning is read yesterday’s merged PRs</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tivlma/the_most_productive_thing_i_do_every_morning_is/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/f79d1fc129ecf2a7c16dc25bd7e30ba514e46de8</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
+      <title>[Reddit Programming] How do you talk to your EM about job security anxiety affecting your performance?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tn9y01/how_do_you_talk_to_your_em_about_job_security/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/393e2bf31a6fb2bc02883dbaf8c9ce8162431462</guid>
+      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The post argues for a low-tech senior-engineering habit: skim yesterday’s merged PRs to keep a current map of what changed, catch duplicate work, and notice architectural drift before it becomes invisible background. The useful part is the framing that senior work often depends on knowing what is happening, not only producing code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A daily PR skim catches cross-team duplication and interface drift that normal ticket-level focus misses.&lt;/li&gt;&lt;li&gt;The practice is shallow by design: maintain situational awareness, then dig only when a change touches your map.&lt;/li&gt;&lt;li&gt;It scales poorly at very high merge volume, which is itself a signal that teams need better change routing and ownership surfaces.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Does anyone actually think about what source code leaves your network when using AI coding agents?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tj1qv4/does_anyone_actually_think_about_what_source_code/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-25/71c80476be2cda62569c66e28b96cc0f7aca36e2</guid>
-      <pubDate>Mon, 25 May 2026 14:23:45 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The discussion prompt pushes on a practical security gap in agentic coding: tools may send imports, references, surrounding files, and inferred context beyond the single snippet a developer thinks they are sharing. The point is not generic fear of AI, but the mismatch between old vendor-review standards and casual daily agent usage.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agent context collection can include adjacent source and dependency context, not just the file under active edit.&lt;/li&gt;&lt;li&gt;Security review should inspect actual payload behavior and retention guarantees rather than relying on productivity pressure or vendor assurances.&lt;/li&gt;&lt;li&gt;The operational boundary is repo policy: which code, secrets, customer data, and unreleased design material may leave the network under which model and account.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The thread surfaces a blunt senior-engineering management lesson: do not present job-security anxiety as an emotional problem for a manager to absorb; convert it into a concrete discussion about visibility, priorities, ownership, and how to become valuable in the mission-critical work. The comments also point out that startup environments reward autonomy and force engineers to map strategy into visible delivery.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ask for higher-visibility work, clearer priority ranking, and explicit growth paths instead of vague reassurance.&lt;/li&gt;&lt;li&gt;When senior teammates own a complex silo, competing ticket-by-ticket is weaker than negotiating a defined learning and ownership lane.&lt;/li&gt;&lt;li&gt;A manager who only gives generic advice needs specific tradeoff questions: which system should I invest in, what impact matters, and what does success look like this quarter.&lt;/li&gt;&lt;li&gt;Job-security risk can be real; the operational move is to increase business-critical leverage while maintaining an external fallback.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
