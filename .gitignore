@@ -2,6 +2,7 @@
 # Keep generated public assets trackable and ignore all intermediate workflow files.
 *
 !.gitignore
+!.nojekyll
 !*.html
 !*.css
 !*.xml
