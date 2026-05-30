@@ -4,62 +4,118 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Tue, 26 May 2026 12:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 12:56:48 +0000</lastBuildDate>
     <item>
-      <title>[Informatics] Cross-Document View Transitions: Scaling Across Hundreds of Elements</title>
-      <link>https://css-tricks.com/cross-document-view-transitions-part-2/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/9d0afafb6875f0462207ddbc1ecf00757b8338a2</guid>
-      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
+      <title>[Frontend] Why Japanese companies do so many different things</title>
+      <link>https://leadershipintech.com/newsletters/2287-why-japanese-companies-do-so-many-different-things</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/702cdeca111f3843b22f2d9092a61050bd276ef8</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Explains Japanese corporate diversification through firm structure rather than random strategy: companies like Toto can become semiconductor suppliers because long employment, internal capability transfer, and stakeholder constraints push them to redeploy people and know-how instead of narrowing around one product line.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A company portfolio reflects its labor market, governance model, and capital pressure as much as its explicit strategy.&lt;/li&gt;&lt;li&gt;Broad capability reuse can create surprising adjacent businesses, but it can also slow decisive exits from weak markets.&lt;/li&gt;&lt;li&gt;When evaluating an organization, inspect the constraints that make its current shape rational before judging the shape itself.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Informatics] Algorithmic Theming Engines: Building Self-Correcting Color Systems With contrast-color()</title>
+      <link>https://www.smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/b7b56792c2f2e40a36f2ad2bc675ba5bc56ec628</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Durgesh Rajubhai Pawar shows where cross-document view transitions break at product-grid scale: unique `view-transition-name` values identify element pairs, while shared `view-transition-class` values keep animation styling maintainable. The practical pattern is to assign names just in time during `pageswap` and `pagereveal`, then clean them up after the transition to avoid stale-name conflicts and wasted snapshots.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`view-transition-name` is identity, so every participating element needs a unique name per page.&lt;/li&gt;&lt;li&gt;`view-transition-class` is the styling hook, allowing one selector such as `::view-transition-group(*.card)` to style many named transitions.&lt;/li&gt;&lt;li&gt;Do not name every card at page load; assign the clicked item&amp;#x27;s name during navigation and remove it after `viewTransition.finished`.&lt;/li&gt;&lt;li&gt;Unsupported browsers degrade to normal page loads, making this a clean progressive enhancement when guarded for reduced motion.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Shows how CSS `contrast-color()` moves accessible foreground selection from JavaScript and design-system conventions into browser style computation, with the current Level 5 tradeoff that it only returns black or white and should be treated as a primitive for safer dynamic theming.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`contrast-color()` lets text color respond directly to runtime theme values before paint, avoiding hydration flashes and duplicated contrast logic.&lt;/li&gt;&lt;li&gt;The current function is intentionally narrow: it returns a color, not a ratio, and only chooses between black and white.&lt;/li&gt;&lt;li&gt;Design systems still need semantic tokens and fallback policy, but the browser can own the most mechanical contrast decision.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Philosophy] The AI bubble isn't like the internet bubble</title>
-      <link>https://pluralistic.net/2026/05/26/the-ai-will-continue/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/759509e198016295225b025cad0c185624e7ae02</guid>
-      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
+      <title>[Informatics] Using My Fucking Brain</title>
+      <link>https://terriblesoftware.org/2026/05/27/using-my-fucking-brain/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/d18c62ead3b4c78ede48bc2470649674b854d29d</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Argues from a real AI-assisted bug-fix workflow that correctness is not enough: the dangerous failure mode is a process that looks identical whether the model is right or wrong because the engineer never formed their own theory, read the diff, or understood the rollback boundary.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI should challenge and extend the engineer’s investigation, not replace the first pass of understanding.&lt;/li&gt;&lt;li&gt;A merged AI-generated fix is unacceptable if the responsible engineer cannot explain the bug, the fix, the missed edge cases, and the rollback trigger.&lt;/li&gt;&lt;li&gt;The core skill at risk is not typing code but doing the diagnostic reps that make judgment reliable.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Philosophy] AI and a world without migrants</title>
+      <link>https://pluralistic.net/2026/05/27/unnecessariat/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/f87794e11003c63e6908f89ca505f6ed7a8ab169</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
       <category>Philosophy</category>
-      <description>&lt;p&gt;Cory Doctorow argues that the early web spread through worker demand, while current enterprise AI adoption is often pushed top-down through monitoring and mandates. The useful distinction is labor-led automation that improves quality versus capital-led automation that maximizes throughput even when the people doing the work do not find the tool worth adopting.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A technology workers route around policy to use is different from one management must force into workflows.&lt;/li&gt;&lt;li&gt;AI adoption pressure is a warning signal when it optimizes usage metrics instead of work quality.&lt;/li&gt;&lt;li&gt;Autonomous workers can still use AI as a centaur tool; coerced workers risk becoming peripherals for automation targets.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Frames AI investment as a fantasy of production without inconvenient people: workers, migrants, bureaucrats, artists, and customers who resist being optimized around elite priorities. The useful part is the mental model, not the polemic: automation rhetoric often hides a desire to remove negotiation, dependency, and moral obligation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Automation stories should be tested for whose agency they erase and whose bargaining power they weaken.&lt;/li&gt;&lt;li&gt;Replacing people with systems often shifts pressure onto the remaining humans, who become peripherals serving expensive capital assets.&lt;/li&gt;&lt;li&gt;AI governance debates are also labor, migration, and institutional-accountability debates.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How soon is now in PostgreSQL?</title>
-      <link>https://event-driven.io/en/how-soon-is-now-in-postgresql/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/ac9d82f9577cc353774b4c1e000aef63ab19f702</guid>
-      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Oskar Dudycz documents a distributed-locking bug where retrying inside one database transaction made PostgreSQL `now()` stay fixed at transaction start time, so timeout checks never advanced. The fix was to use `clock_timestamp()` for the lock-acquisition decision and add an end-to-end test around the crash-takeover path.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`now()` is `transaction_timestamp()` in PostgreSQL; it is stable for the whole transaction.&lt;/li&gt;&lt;li&gt;Timeout predicates inside retries need a wall-clock source such as `clock_timestamp()` when the transaction stays open.&lt;/li&gt;&lt;li&gt;Green unit tests missed the failure because the bug lived in the interaction between retry policy, transaction lifetime, and stored procedure time semantics.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Programming] SilverTorch: Index as Model — A New Retrieval Paradigm for Recommendation Systems</title>
+      <link>https://engineering.fb.com/2026/05/26/ml-applications/silvertorch-index-as-model-new-retrieval-paradigm-recommendation-systems/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/3c0b6d6aa4e8a987fd851011e13446cf2b774b32</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Meta describes a recommendation retrieval architecture that treats indexing as part of the model layer, composing retrieval modules as PyTorch components so ranking, filtering, ANN search, and infrastructure can be jointly optimized on GPUs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The architectural move is to collapse the boundary between retrieval infrastructure and ML model code into a shared tensor-native system.&lt;/li&gt;&lt;li&gt;Meta reports large throughput and cost-efficiency gains while improving recommendation quality, which makes the piece useful beyond the exact stack.&lt;/li&gt;&lt;li&gt;The pattern points toward retrieval systems where operational constraints are trained and served with the model instead of bolted on afterward.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Postmortem: Nx Console v18.95.0 supply-chain compromise</title>
-      <link>https://nx.dev/blog/nx-console-v18-95-0-postmortem</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/f8eae95f423458c888b94dbb58dff916ba922572</guid>
-      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The Nx team traces the malicious Nx Console 18.95.0 VS Code extension to a chained supply-chain failure: a contributor installed a compromised TanStack package, a GitHub CLI token was stolen, and a single-actor marketplace publish path allowed the extension release. The postmortem is valuable because it names the exact broken controls: unenforced `minimum-release-age`, locally retrievable `gh` credentials, missing release approval, and insufficient audit monitoring.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;If `packageManager` pins pnpm below 10.16, `minimum-release-age` is silently ignored and does not protect installs.&lt;/li&gt;&lt;li&gt;A `gh` token on disk is high-blast-radius local state; secret-manager wrapping only works if enforced.&lt;/li&gt;&lt;li&gt;Any registry or marketplace publish path needs a second human gate and audit monitoring for suspicious workflow changes.&lt;/li&gt;&lt;li&gt;Users with Nx Console 18.95.0 during the exposure window should treat developer credentials as exposed.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Tech] Smarter Website Caching With No-Vary-Search</title>
+      <link>https://www.debugbear.com/blog/no-vary-search</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/ceab7aba7c773e04c27fc6f3296d5e4b33d69ef6</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
+      <category>Tech</category>
+      <description>&lt;p&gt;Explains the experimental `No-Vary-Search` response header, which lets a server tell caches which query parameters are irrelevant for cache matching. The practical value is higher hit rates for tracking-parameter variants, with the main risk being unsafe reuse when ignored parameters actually change content.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`No-Vary-Search` can reduce cache fragmentation for URLs that differ only by marketing or ordering parameters.&lt;/li&gt;&lt;li&gt;Never ignore parameters tied to personalization, auth, localization, experiments, search queries, or pagination.&lt;/li&gt;&lt;li&gt;The hard part is not syntax; it is proving which parts of the URL define the response.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Blueprint: Section-Scoped Structural Graph Retrieval and Post-Turn Compression for Agentic LLM Coding</title>
-      <link>https://zenodo.org/records/20381860</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/6ead770f63375ef50cdfc471c456e32cb462b5f9</guid>
-      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
+      <title>[Reddit Programming] Anyone else realized that 90% of architecture is just talking to people?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tqfcfj/anyone_else_realized_that_90_of_architecture_is/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/d29ba9c46d997e70266cb4d153e28aa604a320bf</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;This paper reports a counterintuitive result from a coding-agent retrieval experiment: adding a 6500-token structural graph increased total provider-billed input from about 41K to about 63K tokens because the model explored more confidently and read more relevant files. The useful framing is not raw token reduction, but separating bounded orientation cost from execution-context accumulation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A codebase map can increase total context by giving the model confidence to follow deeper call chains.&lt;/li&gt;&lt;li&gt;Structural context and execution context are different budgets; optimizing one can expose the cost of the other.&lt;/li&gt;&lt;li&gt;For write tasks, lower token use caused by navigational uncertainty may be a quality failure rather than an efficiency win.&lt;/li&gt;&lt;li&gt;Compression of large tool outputs helps history growth, but it does not replace disciplined read budgets.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A high-signal experienced-dev thread on solving performance and architecture problems by finding dead consumers, unclear ownership, and obsolete business processes before adding infrastructure. The strongest comments converge on the same staff-engineer lesson: communication is often the cheapest architecture work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Start with root cause and ownership before reaching for queues, caches, abstractions, or platform work.&lt;/li&gt;&lt;li&gt;Many expensive technical systems are compensating for stale requirements or teams that stopped talking.&lt;/li&gt;&lt;li&gt;The highest-leverage architecture decision is sometimes deleting a job, standardizing a process, or getting one team to stop calling an endpoint.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How I made my Zig gameplay code hot reloadable</title>
-      <link>https://www.madrigalgames.com/blog/how-i-made-my-zig-gameplay-code-hot-reloadable/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/57293d9df39c83de6c1ed030bec66c655e779367</guid>
-      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
+      <title>[Reddit Programming] Keeping PRs small won't solve your code review bottleneck</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tpbhra/keeping_prs_small_wont_solve_your_code_review/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/a052e809f25c9addca201ab5908a549c5a0ba1bb</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Sebastian describes hot-reloading native Zig gameplay code inside a C++ engine by synchronizing reload points, preserving long-lived allocator-owned state, and repairing runtime interface function pointers after the new DLL loads. The article is a useful implementation case study because it states the constraints directly: memory layout changes remain unsafe, global data must be moved into reload-stable storage, and vtables need explicit fixup.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Hot reload needs a safe synchronization point so no thread is executing code from a library being unloaded.&lt;/li&gt;&lt;li&gt;Keeping state alive across reloads is easier when allocation ownership is explicit and separated from the reloadable module.&lt;/li&gt;&lt;li&gt;Runtime interfaces with function pointers need a post-reload repair pass or they will point at stale code.&lt;/li&gt;&lt;li&gt;A practical hot-reload system can be scoped to logic and constant changes instead of trying to support arbitrary data-layout edits.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Argues that AI-era code review should shift from diff size as the primary signal to blast radius, rollback readiness, access control, observability, and rollout plan. The proposal is useful because it treats review attention as scarce and assigns it according to operational risk.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Small PRs can fragment context; low-risk PRs are not the same thing as short PRs.&lt;/li&gt;&lt;li&gt;Human-written why/what, explicit rollback steps, and rollout instrumentation are better review inputs than raw line count.&lt;/li&gt;&lt;li&gt;Risk scoring should distinguish feature-flagged internal changes from migrations, shared-contract changes, and high-cardinality data operations.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How do you talk to your EM about job security anxiety affecting your performance?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tn9y01/how_do_you_talk_to_your_em_about_job_security/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-26/393e2bf31a6fb2bc02883dbaf8c9ce8162431462</guid>
-      <pubDate>Tue, 26 May 2026 12:06:06 +0000</pubDate>
+      <title>[Reddit Programming] We did a full security review before approving our AI coding assistant and still got the data handling completely wrong</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tozxo8/we_did_a_full_security_review_before_approving/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/6d01e31b6f788db3cc811da9b739a09041ae4b1c</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread surfaces a blunt senior-engineering management lesson: do not present job-security anxiety as an emotional problem for a manager to absorb; convert it into a concrete discussion about visibility, priorities, ownership, and how to become valuable in the mission-critical work. The comments also point out that startup environments reward autonomy and force engineers to map strategy into visible delivery.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ask for higher-visibility work, clearer priority ranking, and explicit growth paths instead of vague reassurance.&lt;/li&gt;&lt;li&gt;When senior teammates own a complex silo, competing ticket-by-ticket is weaker than negotiating a defined learning and ownership lane.&lt;/li&gt;&lt;li&gt;A manager who only gives generic advice needs specific tradeoff questions: which system should I invest in, what impact matters, and what does success look like this quarter.&lt;/li&gt;&lt;li&gt;Job-security risk can be real; the operational move is to increase business-critical leverage while maintaining an external fallback.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Documents a procurement failure mode where sales/security review missed the actual technical data path: editor context, open files, recently edited code, retention terms, and opt-out mechanics differed from the high-level vendor story.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI coding-tool approval needs review of technical data-handling docs, not only DPAs and sales security summaries.&lt;/li&gt;&lt;li&gt;The meaningful unit of disclosure is the whole context sent per completion or agent request, not the file the developer thinks they selected.&lt;/li&gt;&lt;li&gt;Training opt-outs, retention windows, and enterprise support-only switches should be verified before rollout.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] AI code quality and security are the same problem and we have been treating them separately</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1totel4/ai_code_quality_and_security_are_the_same_problem/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/7f70730032bc62e17205ac2705c527833bf8fde4</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Surfaces a useful operating model: AI-generated output increased code volume faster than review depth and scanner tuning could scale, so quality and security degraded from the same throughput mismatch rather than from separate process failures.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Existing review and scanning controls may fail when AI changes the volume, shape, and distribution of code changes.&lt;/li&gt;&lt;li&gt;Security noise and review shallowness share a root cause when output speed outpaces verification bandwidth.&lt;/li&gt;&lt;li&gt;AI adoption should budget for verification capacity, scanner retuning, and risk-based review gates, not only tool licenses.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Node.js worker threads are problematic, but they work great for us</title>
+      <link>https://www.inngest.com/blog/node-worker-threads</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/1fe5770985a84cdc51e539308393fce83a4432e1</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Inngest explains why Node worker threads solved event-loop starvation in their Connect runtime but required treating the worker as a separate program with its own entry point, message protocol, bundling rules, logging path, and respawn strategy.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Worker threads are useful for hard isolation, especially when user code can block heartbeats or other runtime internals.&lt;/li&gt;&lt;li&gt;The cost is architectural: no function passing, cloned messages, separate bundles, memory overhead, and explicit protocol design.&lt;/li&gt;&lt;li&gt;Production worker use needs failure handling, backoff, and logging delegation, not just `new Worker()`.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] js-logger-pack Operator Turns Hugging Face into a Malware CDN and Exfiltration Backend</title>
+      <link>https://research.jfrog.com/post/hugging-face-exfil/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/9d4afd9d1dc9ce7e14608dae8d371993f73d1a28</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;JFrog analyzes `js-logger-pack@1.1.27`, a malicious npm package that uses a postinstall downloader to fetch cross-platform Node SEA binaries named `MicrosoftSystem64`, persist on Windows/macOS/Linux, keylog, scan files, and exfiltrate through private Hugging Face datasets.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Trusted AI infrastructure can become both malware distribution and exfiltration infrastructure, making egress allowlists less comforting.&lt;/li&gt;&lt;li&gt;Postinstall scripts remain a high-leverage supply-chain execution point; suspicious dependency additions in large AI-generated diffs deserve explicit review.&lt;/li&gt;&lt;li&gt;Affected hosts should be treated as fully compromised: rotate secrets, inspect source-control and registry activity, and remove platform-specific persistence.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Is anyone actually running lean base images in production? how much did it help your CVE count?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tpo0yt/is_anyone_actually_running_lean_base_images_in/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/7e48bade5968e82f171ca9cc9ed45fc0b9646d4d</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A practical thread on the tradeoff between distroless or lean container images and production debugging. The useful framing is that shrinking images can materially reduce scanner noise, but the operational design has to replace shell-based debugging with logs, probes, ephemeral debug containers, and reproducible builds.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Base-image CVEs often dominate scan reports even when the application does not use the vulnerable packages directly.&lt;/li&gt;&lt;li&gt;Distroless images reduce attack surface and noise, but teams need a planned debugging path before removing shells and package managers.&lt;/li&gt;&lt;li&gt;The decision should be tied to runtime observability and incident workflow, not only CVE count.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] The transactional outbox pattern: keeping a database and Kafka consistent</title>
+      <link>https://www.reddit.com/r/programming/comments/1tp3kq2/the_transactional_outbox_pattern_keeping_a/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-30/96f904bb3375bd4b42a2eace5a42cc3af4588211</guid>
+      <pubDate>Sat, 30 May 2026 12:56:48 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A concise systems-design discussion of the dual-write problem: database state and Kafka publication cannot be made reliably consistent by hope, exactly-once marketing, or two-phase commit in ordinary service architectures, so the outbox pattern converts silent loss into retryable duplicates.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The outbox pattern saves the intent to publish in the same local transaction as the business change.&lt;/li&gt;&lt;li&gt;The tradeoff is not magic exactly-once delivery; consumers still need idempotency and teams must operate the relay path.&lt;/li&gt;&lt;li&gt;Polling versus CDC is an implementation choice, but the core invariant is that committed state and queued event intent move together.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
