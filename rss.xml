@@ -4,86 +4,150 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Sun, 31 May 2026 21:40:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 12:31:37 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] Front-End's Missing Metric: The TBT Window</title>
-      <link>https://csswizardry.com/2026/06/front-ends-missing-metric-the-tbt-window/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/eea7b7ec64381ab81edc7b431fbf3766a5ea1a90</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;Explains why Total Blocking Time can jump when FCP or TTI moves even if the page&amp;#x27;s long tasks barely changed. The useful diagnostic is the TBT Window: the FCP-to-TTI interval where blocking work is counted.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;TBT is not all blocking work in a trace; it is blocking work inside the FCP-to-TTI window.&lt;/li&gt;&lt;li&gt;A performance improvement can make TBT look worse if it moves FCP earlier or TTI later and exposes more existing work to the metric.&lt;/li&gt;&lt;li&gt;Front-end performance dashboards should surface the TBT Window alongside TBT so teams can separate real regressions from measurement-window shifts.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Engineering] TBM 424: Why We Help (And How To Stay Helpful)</title>
-      <link>https://cutlefish.substack.com/p/tbm-424-why-we-help-and-how-to-stay</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/566039b96dda1db7439c782dfc0d401fa1128276</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;Models the impulse to help as four modes: method advocacy, tension absorption, mission focus, and agency building. The article is useful for senior technical work because each mode can solve a problem or become a power and identity trap.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A helping impulse becomes risky when it outruns the group&amp;#x27;s readiness, consent, or ownership.&lt;/li&gt;&lt;li&gt;Method, mission, tension relief, and agency building each trigger different resistance patterns.&lt;/li&gt;&lt;li&gt;Change work requires noticing how power and identity shape the helper&amp;#x27;s reaction as much as the target system.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Frontend] The Secret to Skip-level One-on-ones</title>
-      <link>https://mgrebler.substack.com/p/the-secret-to-skip-level-one-on-ones</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/be0887cd98ef7fc5f590f80e1d08961404ccbab8</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
+      <title>[Frontend] Component Architecture for React Server Components</title>
+      <link>https://aurorascharff.no/posts/component-architecture-for-react-server-components/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/08b79e36711e0decfa4fa63180546fa498a869a7</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
       <category>Frontend</category>
-      <description>&lt;p&gt;Argues that skip-level one-on-ones only reveal cultural problems when leaders move past broad questions and name concrete concerns carefully. The practical value is the balance: reduce social risk for the speaker, then validate across conversations instead of treating one report as fact.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Broad prompts often produce safe answers; naming a suspected problem can make the hidden issue discussable.&lt;/li&gt;&lt;li&gt;The same probing can plant an idea, so leaders need corroboration and counter-evidence.&lt;/li&gt;&lt;li&gt;Skip-levels are an early-warning system for teams whose direct manager manages upward better than they manage the team.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Shows how React Server Components move data ownership back into server components instead of route loaders, then uses Suspense boundaries and colocated skeletons to design loading behavior explicitly. The durable part is the architecture tradeoff: component autonomy, streaming order, and loading-state drift are treated as design constraints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Route loaders centralize server fetching but couple reusable components to every route that must supply their data shape.&lt;/li&gt;&lt;li&gt;RSCs let server components own their reads while React cache handles per-request deduplication, though batching still needs deliberate design.&lt;/li&gt;&lt;li&gt;Suspense boundary placement is a UX decision: it controls where users wait and whether sections stream independently or as groups.&lt;/li&gt;&lt;li&gt;Keeping skeletons next to the components they mirror reduces layout drift and makes edits easier for humans and coding agents.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Halfway through an LLM gateway evaluation and the criteria i started with were wrong</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1ts0egn/halfway_through_an_llm_gateway_evaluation_and_the/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/964c40e1f4c8deb29a690a58bc3db3370851d9ca</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;A staff engineer reframes LLM gateway selection from a feature matrix into an infrastructure decision about ownership, reversibility, provider failure modes, routing reality, and governance fit.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Model count, latency, and dashboard quality are weak criteria if exit cost and ownership are not explicit.&lt;/li&gt;&lt;li&gt;Managed gateways shift operational risk rather than removing it; self-hosting makes the team the vendor.&lt;/li&gt;&lt;li&gt;Preserving native provider APIs can be more valuable than a clean abstraction if reversibility matters.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Frontend] The Next.js bloom filter and how it can break App Router migrations</title>
+      <link>https://darios.blog/posts/the-ghost-in-your-nextjs-router</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/b606f28790e3d966ed711f733ba43f078109f883</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Documents a concrete migration failure where Next.js encodes App Router paths in a client-side bloom filter, false-positives a Pages Router route, forces a hard navigation, duplicates basePath, and produces apparently random 404s. The diagnostic path and config tradeoffs are directly actionable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The client router filter is probabilistic: it avoids false negatives for App Router paths but can false-positive Pages Router paths.&lt;/li&gt;&lt;li&gt;The dangerous combination is mixed pages/app routing plus basePath, where a false positive can produce a doubled prefix.&lt;/li&gt;&lt;li&gt;Disabling experimental.clientRouterFilter fixes the symptom but removes automatic cross-router hard-navigation detection.&lt;/li&gt;&lt;li&gt;Lowering clientRouterFilterAllowedRate trades a larger client bundle for fewer false positives.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Our AI spending has gotten so high that layoffs wouldnt make a meaningful difference.</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1trx6te/our_ai_spending_has_gotten_so_high_that_layoffs/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/136d235261fe42a30f504587b19a016db4381edf</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;A manager reports AI spend approaching infrastructure-scale cost while measured productivity gains remain marginal, forcing quota, approval, and model-tier governance questions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI cost can stop being tooling noise and become a material operating expense.&lt;/li&gt;&lt;li&gt;Usage growth needs to be evaluated against delivered output, not adoption rate alone.&lt;/li&gt;&lt;li&gt;Daily quotas, exception workflows, chargeback, and model restrictions are governance tools, not just finance controls.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Frontend] My Thoughts on AI, Part 2: Agent Setup, Workflow, and Tools</title>
+      <link>https://blog.isquaredsoftware.com/2026/05/ai-thoughts-part-2-agent-workflow-tools/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/7a5068258b595d4d24bb35549d5dfd768f247c0e</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Mark Erikson documents a concrete AI-agent development setup: a parent orchestration session, interactive subtasks, deterministic command permissions, code-structure search, session-history tooling, and human review before commits. The value is in the operational details of making agent work inspectable and repeatable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Separate orchestration from implementation so the parent session preserves goal context while subtasks do bounded work.&lt;/li&gt;&lt;li&gt;Use deterministic scripts and command policies for repeatable workflow management instead of relying on ad hoc agent behavior.&lt;/li&gt;&lt;li&gt;Code-structure search and cached reads reduce context bloat compared with repeatedly reading large files.&lt;/li&gt;&lt;li&gt;The workflow keeps the human responsible for intent, review, staging, and commits while delegating research and patch expansion.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] is building abstractions for domain experts just part of the job?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tsqyf5/is_building_abstractions_for_domain_experts_just/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/f421379c80bf5f4c987261fa45c3f117903be149</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Frames product engineering as building safe abstractions that let domain experts encode knowledge directly instead of routing every domain change through engineers.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Repeated engineer-mediated domain updates signal a missing abstraction.&lt;/li&gt;&lt;li&gt;Good internal tools move knowledge ownership closer to domain experts without exposing the full data model.&lt;/li&gt;&lt;li&gt;The pattern applies beyond marketplaces to finance, healthcare, legal, and enterprise workflows.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] Applying The Transactional Outbox Pattern In ColdFusion</title>
+      <link>https://www.bennadel.com/blog/4896-applying-the-transactional-outbox-pattern-in-coldfusion.htm</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/98b2a1227e99c95d935c49d476c3767a1f828d01</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Applies the transactional outbox pattern to comment-email delivery in a small ColdFusion app, turning fragile post-transaction external calls into database-backed messages processed asynchronously. The implementation is stack-specific, but the failure analysis is portable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The danger zone is after the database transaction commits but before all required external effects finish.&lt;/li&gt;&lt;li&gt;Do not put remote calls inside the database transaction; long and unreliable external work holds locks and connections open.&lt;/li&gt;&lt;li&gt;Persisting outbox messages inside the same transaction changes external work from at-most-once toward at-least-once processing.&lt;/li&gt;&lt;li&gt;The consumer must handle duplicates, failures, dead-letter behavior, and any hidden async layer such as mail spooling.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Mobile won the platform war on distribution, not capability</title>
-      <link>https://prashamhtrivedi.in/mobile-lost-on-distribution/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/0dd7833ffa207fbef6f33794141ea9f94ab241b5</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Argues that mobile&amp;#x27;s durable advantage came from channel control, install paths, push, payment rails, and platform policy rather than a broad native capability gap.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Capability explains only a narrow residue of native-only software; distribution explains much more of the platform outcome.&lt;/li&gt;&lt;li&gt;Electron&amp;#x27;s success supports the view that maintainer-controlled updates and open channels matter more than rendering technology.&lt;/li&gt;&lt;li&gt;PWA limits and Android hardening show how platform policy can reprice what independent software can ship.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] ::search-text</title>
+      <link>https://css-tricks.com/almanac/pseudo-selectors/s/search-text/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/8e0ba48d2b4a42bb5dc96ba58f1fb6d2fb30ef95</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Explains the CSS ::search-text pseudo-element for styling browser find-in-page matches, including the :current state for the active match and the limited property set browsers allow. It is a compact reference for a platform feature that affects real document UX.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;::search-text styles text matched by browser find-in-page, not arbitrary app search results.&lt;/li&gt;&lt;li&gt;::search-text:current targets the active match separately from all other matches.&lt;/li&gt;&lt;li&gt;Supported styling is intentionally limited to color, background, text decoration, text shadow, and custom properties.&lt;/li&gt;&lt;li&gt;The feature is useful for document-heavy interfaces where find-in-page feedback should match the product&amp;#x27;s visual system.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] How do you handle a teammate who uses AI to code in a stack they don't know, and will not take accountability it.</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tsj3yc/how_do_you_handle_a_teammate_who_uses_ai_to_code/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/5e1cb7cdd7993321bb2870b56f0d40cec4b4616e</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Surfaces a clean AI-code-review boundary: using a model does not change the submitter&amp;#x27;s responsibility to understand, explain, test, and own the code they ask others to approve.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The problem is accountability and repository stewardship, not tool usage.&lt;/li&gt;&lt;li&gt;Review standards should require local evidence, stack-specific understanding, and an explanation of the change.&lt;/li&gt;&lt;li&gt;Teams need explicit AI-use policy before ambiguity becomes pressure to approve unowned code.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Philosophy] Pluralistic: The tedious power of storytelling</title>
+      <link>https://pluralistic.net/2026/06/02/must-we-pretend/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/732475d536a64d6a48f4f6ec1f3cca2f89698cd7</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Philosophy</category>
+      <description>&lt;p&gt;Uses Brian Eno&amp;#x27;s framing of art to argue that art carries intent, while generated text and images can dilute a small prompt into a large artifact without an intending maker behind each choice. The useful model is not anti-tool reflex; it is a sharper distinction between beauty, intent, and the viewer&amp;#x27;s habit of hallucinating intention.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The essay separates beauty from art by asking whether an artifact was made to make someone feel something.&lt;/li&gt;&lt;li&gt;Generated artifacts can appear intentional while containing only the diluted intent supplied by the prompt.&lt;/li&gt;&lt;li&gt;Viewers often infer an imaginary maker behind coherent outputs, which changes how they emotionally process them.&lt;/li&gt;&lt;li&gt;The frame is useful when evaluating AI-generated work: ask where intention enters and where scale dilutes it.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] I saw the LLM leaderboard and it is nowhere accurate.</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1ts4udq/i_saw_the_llm_leaderboard_and_it_is_nowhere/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/533c27729db3deec34ffc7d07a884c35e597e939</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Shows how generated-LOC leaderboards can rank a non-coding user highly because documentation, scans, reviews, and Jira hygiene inflate the metric.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Generated LOC is a weak proxy for engineering output or AI productivity.&lt;/li&gt;&lt;li&gt;Usage dashboards need task classification before they are used for performance judgment.&lt;/li&gt;&lt;li&gt;Measurement can distort behavior or produce false rankings faster than it improves delivery.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Programming] AI Engineering for Developers</title>
+      <link>https://www.lucavall.in/blog/ai-engineering-for-developers</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/1814d57a37cc97928977b030b0e790719a18092c</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;A long production-oriented primer for backend engineers moving into AI application work: prompts, RAG, tools, agents, evals, model routing, cost, latency, and observability. It is broad, but it centers the non-glamorous system work that determines whether AI features survive production.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI engineering is mostly application-layer work around pretrained models: grounding, evaluation, orchestration, and operations.&lt;/li&gt;&lt;li&gt;Use prompts first, RAG when domain context is missing, and finetuning only after cheaper controls plateau.&lt;/li&gt;&lt;li&gt;Build eval datasets early; prompt, retrieval, model, and tool changes all create regression risk.&lt;/li&gt;&lt;li&gt;Model choice should include task fit, cost at projected volume, latency, context, structured output support, and data constraints.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Is it possible to be Staff+ without doing "politics" ?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tstjap/is_it_possible_to_be_staff_without_doing_politics/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-05-31/43db1b1c81a0605f016fa5b9bf11dab3d1c1f0cc</guid>
-      <pubDate>Sun, 31 May 2026 21:40:38 +0000</pubDate>
+      <title>[Programming] The invisible engineering behind Lambda's network</title>
+      <link>https://www.allthingsdistributed.com/2026/04/the-invisible-engineering-behind-lambdas-network.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/43be4658649ef6d0eb791691a686c46e96dc73ec</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Describes how AWS Lambda&amp;#x27;s networking team spent years removing VPC cold-start and density bottlenecks by moving expensive tunnel setup off the hot path with eBPF, replacing stateful NAT paths, and drastically simplifying firewall rule scale. It is a strong case study in invisible infrastructure work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The original VPC cold-start cost came from per-function tunnel setup and density-related kernel/network overhead.&lt;/li&gt;&lt;li&gt;Precreating tunnels with dummy VNIs and rewriting Geneve headers with eBPF moved setup from the hot path to the pool.&lt;/li&gt;&lt;li&gt;The redesign reduced tunnel latency from milliseconds to microseconds and enabled much higher microVM density per worker.&lt;/li&gt;&lt;li&gt;The broader lesson is to instrument the full path before optimizing; the bottleneck was not where a simple cold-start model would suggest.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Programming] Selective Test Execution at Stripe: Fast CI for a 50M-line Ruby monorepo</title>
+      <link>https://stripe.dev/blog/selective-test-execution-at-stripe-fast-ci-for-a-50m-line-ruby-monorepo</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/7d8fce9e0101199e36de0cd4e6498ed1bff6c987</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Explains Stripe&amp;#x27;s selective test execution system for a 50-million-line Ruby monorepo: record which files tests open at runtime, index those dependencies compactly, and rerun only tests touched by changed files. The Feedly excerpt gives the key architecture: runtime dependency observation instead of static guessing.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stripe tracks test-to-file dependencies at runtime, which captures dynamic Ruby behavior better than static analysis alone.&lt;/li&gt;&lt;li&gt;The system reduces average runs to a small fraction of the full suite while still being repeatable across many weekly builds.&lt;/li&gt;&lt;li&gt;A compact dependency index makes selective lookup fast enough for ordinary CI use.&lt;/li&gt;&lt;li&gt;The design is useful anywhere full-suite correctness is valuable but the complete suite is too large for every change.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Programming] Being oncall taught me everything</title>
+      <link>https://yaoyue.org/blog/2026-oncall/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/a3abb3af7bcc7bef9b9481da80e36c4316199668</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Yao Yue argues from Twitter cache operations that production on-call work teaches system reality: tail latency, simple architecture, observability, defaults, accountability, and cross-team incident collaboration. The strongest claim is that software understanding is incomplete until the engineer has watched the system fail in production.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tail behavior and predictability matter more than average-case speed in large production systems.&lt;/li&gt;&lt;li&gt;Operational excellence comes from design choices, not last-minute observability added before launch.&lt;/li&gt;&lt;li&gt;Owning mistakes and narrowing unknowns with help from specialists are core incident-response skills.&lt;/li&gt;&lt;li&gt;Engineers who build software should also deploy, monitor, and debug it enough to understand its real operating constraints.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Tech] New to the web platform in May</title>
+      <link>https://web.dev/blog/web-platform-05-2026?hl=en</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/04ea459d7434d614ff64f9b3c118fe778fb7f468</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Tech</category>
+      <description>&lt;p&gt;Summarizes May 2026 stable and beta browser platform changes, including Baseline :open, name-only container queries, container style queries for custom properties, lazy loading for media, Document Picture-in-Picture, Web Serial expansion, and beta CSS/API changes. It is a useful monthly browser-platform checkpoint.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;:open is now Baseline and gives a semantic selector for open details, dialogs, selects, and picker controls.&lt;/li&gt;&lt;li&gt;Name-only container queries and custom-property style queries broaden container-query design options.&lt;/li&gt;&lt;li&gt;Chrome added loading=&amp;quot;lazy&amp;quot; for video and audio, while Firefox expanded Document Picture-in-Picture and Web Serial support.&lt;/li&gt;&lt;li&gt;Upcoming beta changes include CSS gap decorations, scroll method promises, BFCache behavior with WebSockets, and field-sizing.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Visualization] Population in Japan continues decline</title>
+      <link>https://www.nytimes.com/interactive/2026/05/29/world/asia/japan-census-population-decline.html?unlocked_article_code=1.mlA.L-rM.hLNfnKB8xz2g&amp;smid=url-share</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/d1ccd1efe8e75f46e797d2850b26b77cec8ff8ef</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Visualization</category>
+      <description>&lt;p&gt;FlowingData points to a New York Times chart/map piece on Japan&amp;#x27;s population decline and highlights a design detail: red-orange hatching makes the negative range legible, while axis annotations reinforce increase versus decrease. The keep is the visual encoding lesson, not the demographic fact alone.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A step chart can make cumulative population change easier to scan than a smoother trend line.&lt;/li&gt;&lt;li&gt;Hatching can distinguish a negative region without relying only on color intensity.&lt;/li&gt;&lt;li&gt;Axis-side annotations reduce ambiguity when values cross between increase and decline.&lt;/li&gt;&lt;li&gt;The piece is a useful example of aligning visual emphasis with the direction of the claim.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Visualization] What's the oldest name in the U.S.?</title>
+      <link>https://erdavis.com/2026/05/29/whats-the-oldest-name-in-the-u-s/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/75caaaaa5b171fe19155f7888b5f8b8b545ca212</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Visualization</category>
+      <description>&lt;p&gt;Combines baby-name counts with survival estimates to approximate the current age distribution of U.S. names, then exposes an interactive lookup. The method is simple enough to audit and the stated limitation, immigration, is the right kind of caveat.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Combining annual name counts with survival estimates turns historical birth data into an estimated living-age distribution.&lt;/li&gt;&lt;li&gt;Weighted averages make the result interpretable, but they compress multimodal name histories into one number.&lt;/li&gt;&lt;li&gt;Immigration is a material missing variable when names enter the population outside U.S. birth records.&lt;/li&gt;&lt;li&gt;The piece is a good example of using public demographic tables to build a small, inspectable derived dataset.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Maximizing an operational step that isn't a bottleneck will not significantly improve the overall productivity of the system</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tvd1ly/maximizing_an_operational_step_that_isnt_a/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/5d05bcb91e4b0674d057b8ce27a43f00dc8f0b82</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;A new staff engineer describes being measured on cross-team impact inside an org whose structure blocks cross-team access, sponsorship, and decision forums.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Staff+ impact requires access paths, sponsors, and rooms where cross-team decisions happen.&lt;/li&gt;&lt;li&gt;&amp;quot;Go get buy-in&amp;quot; is not actionable when org design prevents contact with the people whose buy-in is required.&lt;/li&gt;&lt;li&gt;The failure mode may be role design and operating structure, not individual execution.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Applies Theory of Constraints to the claim that AI makes development much faster: optimizing code-writing only improves total throughput if code-writing is the actual bottleneck. The prompt is short, but it is a useful corrective to AI productivity arguments that ignore queues, review, requirements, deployment, and coordination.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A local speedup does not matter much when the system bottleneck is elsewhere.&lt;/li&gt;&lt;li&gt;AI coding claims should be evaluated against end-to-end delivery throughput, not typing or implementation speed alone.&lt;/li&gt;&lt;li&gt;If review, integration, product decisions, or operational validation are the bottleneck, faster code generation can create more queue pressure.&lt;/li&gt;&lt;li&gt;The right question is which step constrains profitable, high-quality software delivery.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Mini Shai-Hulud "Miasma" Hits @redhat-cloud-services: Multiple Packages at Risk</title>
+      <link>https://safedep.io/redhat-cloud-services-hit-by-mini-shai-hulud-npm-worm</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/510747d0e5778ba7d6539487d403f0a17d127b97</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;SafeDep documents a June 2026 npm supply-chain compromise where trusted publishing and GitHub Actions OIDC were abused to ship malicious @redhat-cloud-services packages with valid provenance. The mechanics matter: branch-scoped workflow replacement, preinstall execution, cloud-secret harvesting, and self-propagation through repository access.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Trusted provenance can still be malicious when the trust rule binds to repository and workflow filename rather than the intended branch policy.&lt;/li&gt;&lt;li&gt;Preinstall hooks execute early enough to steal cloud, npm, GitHub, Kubernetes, Vault, and password-manager credentials in CI and local installs.&lt;/li&gt;&lt;li&gt;Short-lived attacker branches can exchange OIDC tokens for publish tokens if workflow permissions and publishing rules are too broad.&lt;/li&gt;&lt;li&gt;Package install controls and CI policy checks need to inspect behavior and workflow provenance, not only signatures.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Reviewing large changes with Jujutsu</title>
+      <link>https://ben.gesoff.uk/posts/reviewing-large-changes-with-jj/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/552bdbf1d409e482e9c3dcdc192c8f24daada001</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Presents a Jujutsu workflow for reviewing large PRs locally: duplicate the change, insert an empty review commit before it, and squash reviewed hunks into that parent until the remaining diff is empty. It directly targets the growing problem of large code-agent PRs and review-state tracking.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Local review state can be represented as version-control history rather than browser memory or viewed-file checkboxes.&lt;/li&gt;&lt;li&gt;Squashing reviewed hunks into a parent commit leaves the unreviewed remainder visible with ordinary diff/stat commands.&lt;/li&gt;&lt;li&gt;Inline review notes can be carried locally and then transferred to the PR after the full context is understood.&lt;/li&gt;&lt;li&gt;The workflow lowers cognitive load for large changes without forcing the whole team to adopt a new review system.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] strace-ui, Bonsai_term, and the TUI renaissance</title>
+      <link>https://blog.janestreet.com/strace-ui-bonsai-term-and-the-tui-renaissance/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/e1d71f029717523bb81bd890809af71dbd1af96f</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Jane Street describes turning strace into an interactive TUI with filtering, file-descriptor navigation, PID labeling, DNS hints, and man-page lookup, then connects it to Bonsai_term and AI-agent-friendly text screenshot tests. The piece is both a debugging-tool case study and a concrete argument for modern TUIs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Debugging tools benefit from exploration loops: hide noise, follow file descriptors, and refine the trace without rerunning from scratch.&lt;/li&gt;&lt;li&gt;A reactive TUI framework can share the same state-management ideas as web UIs while staying terminal-native.&lt;/li&gt;&lt;li&gt;Textual screenshot tests make UI regression output legible to humans and coding agents.&lt;/li&gt;&lt;li&gt;The terminal is attractive for agent-era tools because it is portable, scriptable, fast, and already embedded in developer workflows.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Putting Code Under a Microscope: Wavelet-Based Context for LLMs</title>
+      <link>https://yogthos.net/posts/2026-06-02-wavescope.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/e36d1dc213daccf6f378755d84c7bea7a7c2db7b</guid>
+      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Proposes WaveScope, an MCP server that scores source lines and uses wavelet transforms to give LLM agents multi-resolution code context: fine local lines, medium function/class structure, and coarse file sections. The interesting claim is that codebase navigation needs structural position, not just grep matches or semantic embeddings.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Large context windows do not remove the need to prioritize which code structure deserves attention.&lt;/li&gt;&lt;li&gt;Line-level structural signals can be transformed into multi-scale boundaries without a full language-specific AST parser.&lt;/li&gt;&lt;li&gt;The resulting JSON can give an agent coarse overview plus precise local code around the task.&lt;/li&gt;&lt;li&gt;Entropy-style signals can help triage dense or irregular code regions for refactoring.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
