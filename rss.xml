@@ -4,150 +4,142 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Wed, 03 Jun 2026 12:31:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 20:54:41 +0000</lastBuildDate>
     <item>
-      <title>[Frontend] Component Architecture for React Server Components</title>
-      <link>https://aurorascharff.no/posts/component-architecture-for-react-server-components/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/08b79e36711e0decfa4fa63180546fa498a869a7</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Frontend] Domain Expertise Has Always Been the Real Moat</title>
+      <link>https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/ce1aff4544070da2ea9d949061c7fcefdbc7bbc3</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Frontend</category>
-      <description>&lt;p&gt;Shows how React Server Components move data ownership back into server components instead of route loaders, then uses Suspense boundaries and colocated skeletons to design loading behavior explicitly. The durable part is the architecture tradeoff: component autonomy, streaming order, and loading-state drift are treated as design constraints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Route loaders centralize server fetching but couple reusable components to every route that must supply their data shape.&lt;/li&gt;&lt;li&gt;RSCs let server components own their reads while React cache handles per-request deduplication, though batching still needs deliberate design.&lt;/li&gt;&lt;li&gt;Suspense boundary placement is a UX decision: it controls where users wait and whether sections stream independently or as groups.&lt;/li&gt;&lt;li&gt;Keeping skeletons next to the components they mirror reduces layout drift and makes edits easier for humans and coding agents.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Brethorst argues that agentic AI shifts the scarce skill from writing code to judging whether generated software is correct in a real domain. A strong generalist can verify implementation quality, but without a domain oracle they can still accept plausible, expensive wrong answers.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agent output makes implementation cheaper, but it raises the value of knowing what correct outputs look like.&lt;/li&gt;&lt;li&gt;Useful verification requires both software judgment and a domain model deep enough to write meaningful tests.&lt;/li&gt;&lt;li&gt;The durable career edge is pairing engineering skill with a specific industry, regulatory, physical, or operational domain.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Frontend] The Next.js bloom filter and how it can break App Router migrations</title>
-      <link>https://darios.blog/posts/the-ghost-in-your-nextjs-router</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/b606f28790e3d966ed711f733ba43f078109f883</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Frontend] How To Make Your Design System AI-Ready</title>
+      <link>https://www.smashingmagazine.com/2026/06/how-make-design-system-ai-ready/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/2897ae05d519bac27a6be322ee29008e9f1268c1</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Frontend</category>
-      <description>&lt;p&gt;Documents a concrete migration failure where Next.js encodes App Router paths in a client-side bloom filter, false-positives a Pages Router route, forces a hard navigation, duplicates basePath, and produces apparently random 404s. The diagnostic path and config tradeoffs are directly actionable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The client router filter is probabilistic: it avoids false negatives for App Router paths but can false-positive Pages Router paths.&lt;/li&gt;&lt;li&gt;The dangerous combination is mixed pages/app routing plus basePath, where a false positive can produce a doubled prefix.&lt;/li&gt;&lt;li&gt;Disabling experimental.clientRouterFilter fixes the symptom but removes automatic cross-router hard-navigation detection.&lt;/li&gt;&lt;li&gt;Lowering clientRouterFilterAllowedRate trades a larger client bundle for fewer false positives.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Friedman treats design decisions as machine-readable infrastructure: spec files, token layers, audit tools, and sync routines give AI prototypes fewer gaps to hallucinate across. The practical point is that AI quality depends less on prettier mockups and more on explicit, current decision records.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Put component rules, accessibility priorities, spacing, colors, and decision principles into text specs that agents can read.&lt;/li&gt;&lt;li&gt;Use a closed token set so generated UI chooses named values instead of inventing plausible hard-coded ones.&lt;/li&gt;&lt;li&gt;Run audits for detached instances, missing states, token drift, and outdated specs as part of the AI generation loop.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Frontend] My Thoughts on AI, Part 2: Agent Setup, Workflow, and Tools</title>
-      <link>https://blog.isquaredsoftware.com/2026/05/ai-thoughts-part-2-agent-workflow-tools/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/7a5068258b595d4d24bb35549d5dfd768f247c0e</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Mark Erikson documents a concrete AI-agent development setup: a parent orchestration session, interactive subtasks, deterministic command permissions, code-structure search, session-history tooling, and human review before commits. The value is in the operational details of making agent work inspectable and repeatable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Separate orchestration from implementation so the parent session preserves goal context while subtasks do bounded work.&lt;/li&gt;&lt;li&gt;Use deterministic scripts and command policies for repeatable workflow management instead of relying on ad hoc agent behavior.&lt;/li&gt;&lt;li&gt;Code-structure search and cached reads reduce context bloat compared with repeatedly reading large files.&lt;/li&gt;&lt;li&gt;The workflow keeps the human responsible for intent, review, staging, and commits while delegating research and patch expansion.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Informatics] Applying The Transactional Outbox Pattern In ColdFusion</title>
-      <link>https://www.bennadel.com/blog/4896-applying-the-transactional-outbox-pattern-in-coldfusion.htm</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/98b2a1227e99c95d935c49d476c3767a1f828d01</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Informatics] Another Stab at the Perfect CSS Pie Chart... Sans JavaScript!</title>
+      <link>https://css-tricks.com/another-stab-at-the-perfect-css-pie-chart-sans-javascript/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/4bbdfb58c40987d5c6664429b16636b69b1be482</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Applies the transactional outbox pattern to comment-email delivery in a small ColdFusion app, turning fragile post-transaction external calls into database-backed messages processed asynchronously. The implementation is stack-specific, but the failure analysis is portable.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The danger zone is after the database transaction commits but before all required external effects finish.&lt;/li&gt;&lt;li&gt;Do not put remote calls inside the database transaction; long and unreliable external work holds locks and connections open.&lt;/li&gt;&lt;li&gt;Persisting outbox messages inside the same transaction changes external work from at-most-once toward at-least-once processing.&lt;/li&gt;&lt;li&gt;The consumer must handle duplicates, failures, dead-letter behavior, and any hidden async layer such as mail spooling.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Villepreux removes the small JavaScript accumulator from a semantic CSS pie chart by moving slice values onto the parent element and deriving per-slice values with typed attr(), nth-child(), and accumulated custom properties. The article is a useful example of working with the current limits of CSS rather than pretending those limits are gone.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The hard part of a pure CSS pie chart is sibling state: each slice needs the accumulated value of previous slices.&lt;/li&gt;&lt;li&gt;Moving values to the parent gives CSS a shared context for indexed variables and accumulation rules.&lt;/li&gt;&lt;li&gt;The result preserves semantic markup and HTML-side customization, but it requires repetitive rules until native primitives improve.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] ::search-text</title>
-      <link>https://css-tricks.com/almanac/pseudo-selectors/s/search-text/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/8e0ba48d2b4a42bb5dc96ba58f1fb6d2fb30ef95</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Informatics] @function</title>
+      <link>https://css-tricks.com/almanac/rules/f/function/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/1ddfda0e3b102123209b9a470409c458f140071b</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Explains the CSS ::search-text pseudo-element for styling browser find-in-page matches, including the :current state for the active match and the limited property set browsers allow. It is a compact reference for a platform feature that affects real document UX.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;::search-text styles text matched by browser find-in-page, not arbitrary app search results.&lt;/li&gt;&lt;li&gt;::search-text:current targets the active match separately from all other matches.&lt;/li&gt;&lt;li&gt;Supported styling is intentionally limited to color, background, text decoration, text shadow, and custom properties.&lt;/li&gt;&lt;li&gt;The feature is useful for document-heavy interfaces where find-in-page feedback should match the product&amp;#x27;s visual system.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The CSS-Tricks almanac entry explains native CSS custom functions: typed parameters, defaults, return types, cascade-aware result descriptors, local custom properties, and invalidation on circular dependencies. This is experimental, but it is the kind of platform primitive that could move design-token logic out of preprocessors.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;CSS functions can type-check arguments and return values, making invalid calls fail early in large stylesheets.&lt;/li&gt;&lt;li&gt;Function bodies follow cascade rules, so conditional group rules can decide which result wins.&lt;/li&gt;&lt;li&gt;A CSS @function returns one value only; side effects and multi-declaration generation remain a separate mixin problem.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Philosophy] Pluralistic: The tedious power of storytelling</title>
-      <link>https://pluralistic.net/2026/06/02/must-we-pretend/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/732475d536a64d6a48f4f6ec1f3cca2f89698cd7</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Philosophy] Pluralistic: Delusion as a service</title>
+      <link>https://pluralistic.net/2026/06/03/mission-space/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/8c3e71af46993e2a1f9549282aabf10c449a54a9</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Philosophy</category>
-      <description>&lt;p&gt;Uses Brian Eno&amp;#x27;s framing of art to argue that art carries intent, while generated text and images can dilute a small prompt into a large artifact without an intending maker behind each choice. The useful model is not anti-tool reflex; it is a sharper distinction between beauty, intent, and the viewer&amp;#x27;s habit of hallucinating intention.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The essay separates beauty from art by asking whether an artifact was made to make someone feel something.&lt;/li&gt;&lt;li&gt;Generated artifacts can appear intentional while containing only the diluted intent supplied by the prompt.&lt;/li&gt;&lt;li&gt;Viewers often infer an imaginary maker behind coherent outputs, which changes how they emotionally process them.&lt;/li&gt;&lt;li&gt;The frame is useful when evaluating AI-generated work: ask where intention enters and where scale dilutes it.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Doctorow frames chatbots as machines that can surface or amplify rare psychological vulnerabilities at population scale, using Disney&amp;#x27;s Mission: Space as the analogy for a mostly safe system that still reveals latent tail risks. The useful product lesson is that median-user safety is not enough when deployment scale turns rare failures into many harmed users.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A product can be benign for most users and still require redesign when rare failure modes are predictable at scale.&lt;/li&gt;&lt;li&gt;Chatbots can act as always-available reinforcement loops for delusions, not just as passive information tools.&lt;/li&gt;&lt;li&gt;The vendor defense that harm only surfaces preexisting vulnerability does not remove responsibility to mitigate the tail risk.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Programming] AI Engineering for Developers</title>
-      <link>https://www.lucavall.in/blog/ai-engineering-for-developers</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/1814d57a37cc97928977b030b0e790719a18092c</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Programming] Lights Out, Systems On: Validating Instant Power Loss Readiness</title>
+      <link>https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/94cd46bd7c77a065a204be01ecc6e0b1cd952a59</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Programming</category>
-      <description>&lt;p&gt;A long production-oriented primer for backend engineers moving into AI application work: prompts, RAG, tools, agents, evals, model routing, cost, latency, and observability. It is broad, but it centers the non-glamorous system work that determines whether AI features survive production.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI engineering is mostly application-layer work around pretrained models: grounding, evaluation, orchestration, and operations.&lt;/li&gt;&lt;li&gt;Use prompts first, RAG when domain context is missing, and finetuning only after cheaper controls plateau.&lt;/li&gt;&lt;li&gt;Build eval datasets early; prompt, retrieval, model, and tool changes all create regression risk.&lt;/li&gt;&lt;li&gt;Model choice should include task fit, cost at projected volume, latency, context, structured output support, and data constraints.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Meta documents how it validates instant regional power loss by combining defense-in-depth, control-plane bootstrap tests, circular-dependency detection, bounded-impact tradeoffs, and progressive blast-radius expansion. The piece is strong because it names the concrete failure modes: Twine control-plane ouroboros dependencies, shutdown signals that disable their own orchestrator, and the need to test real production regions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Disaster readiness needs explicit lines between unacceptable impacts, such as data loss, and tolerable transient errors.&lt;/li&gt;&lt;li&gt;Control planes need bootstrap and circular-dependency tests before a region-wide outage forces every service to start at once.&lt;/li&gt;&lt;li&gt;High-risk validation can be staged through pre-production, shadow regions, small production regions, then large critical regions.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Programming] The invisible engineering behind Lambda's network</title>
-      <link>https://www.allthingsdistributed.com/2026/04/the-invisible-engineering-behind-lambdas-network.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/43be4658649ef6d0eb791691a686c46e96dc73ec</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Describes how AWS Lambda&amp;#x27;s networking team spent years removing VPC cold-start and density bottlenecks by moving expensive tunnel setup off the hot path with eBPF, replacing stateful NAT paths, and drastically simplifying firewall rule scale. It is a strong case study in invisible infrastructure work.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The original VPC cold-start cost came from per-function tunnel setup and density-related kernel/network overhead.&lt;/li&gt;&lt;li&gt;Precreating tunnels with dummy VNIs and rewriting Geneve headers with eBPF moved setup from the hot path to the pool.&lt;/li&gt;&lt;li&gt;The redesign reduced tunnel latency from milliseconds to microseconds and enabled much higher microVM density per worker.&lt;/li&gt;&lt;li&gt;The broader lesson is to instrument the full path before optimizing; the bottleneck was not where a simple cold-start model would suggest.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Selective Test Execution at Stripe: Fast CI for a 50M-line Ruby monorepo</title>
-      <link>https://stripe.dev/blog/selective-test-execution-at-stripe-fast-ci-for-a-50m-line-ruby-monorepo</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/7d8fce9e0101199e36de0cd4e6498ed1bff6c987</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Explains Stripe&amp;#x27;s selective test execution system for a 50-million-line Ruby monorepo: record which files tests open at runtime, index those dependencies compactly, and rerun only tests touched by changed files. The Feedly excerpt gives the key architecture: runtime dependency observation instead of static guessing.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Stripe tracks test-to-file dependencies at runtime, which captures dynamic Ruby behavior better than static analysis alone.&lt;/li&gt;&lt;li&gt;The system reduces average runs to a small fraction of the full suite while still being repeatable across many weekly builds.&lt;/li&gt;&lt;li&gt;A compact dependency index makes selective lookup fast enough for ordinary CI use.&lt;/li&gt;&lt;li&gt;The design is useful anywhere full-suite correctness is valuable but the complete suite is too large for every change.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Being oncall taught me everything</title>
-      <link>https://yaoyue.org/blog/2026-oncall/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/a3abb3af7bcc7bef9b9481da80e36c4316199668</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Yao Yue argues from Twitter cache operations that production on-call work teaches system reality: tail latency, simple architecture, observability, defaults, accountability, and cross-team incident collaboration. The strongest claim is that software understanding is incomplete until the engineer has watched the system fail in production.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tail behavior and predictability matter more than average-case speed in large production systems.&lt;/li&gt;&lt;li&gt;Operational excellence comes from design choices, not last-minute observability added before launch.&lt;/li&gt;&lt;li&gt;Owning mistakes and narrowing unknowns with help from specialists are core incident-response skills.&lt;/li&gt;&lt;li&gt;Engineers who build software should also deploy, monitor, and debug it enough to understand its real operating constraints.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Tech] New to the web platform in May</title>
-      <link>https://web.dev/blog/web-platform-05-2026?hl=en</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/04ea459d7434d614ff64f9b3c118fe778fb7f468</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
-      <category>Tech</category>
-      <description>&lt;p&gt;Summarizes May 2026 stable and beta browser platform changes, including Baseline :open, name-only container queries, container style queries for custom properties, lazy loading for media, Document Picture-in-Picture, Web Serial expansion, and beta CSS/API changes. It is a useful monthly browser-platform checkpoint.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;:open is now Baseline and gives a semantic selector for open details, dialogs, selects, and picker controls.&lt;/li&gt;&lt;li&gt;Name-only container queries and custom-property style queries broaden container-query design options.&lt;/li&gt;&lt;li&gt;Chrome added loading=&amp;quot;lazy&amp;quot; for video and audio, while Firefox expanded Document Picture-in-Picture and Web Serial support.&lt;/li&gt;&lt;li&gt;Upcoming beta changes include CSS gap decorations, scroll method promises, BFCache behavior with WebSockets, and field-sizing.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Visualization] Population in Japan continues decline</title>
-      <link>https://www.nytimes.com/interactive/2026/05/29/world/asia/japan-census-population-decline.html?unlocked_article_code=1.mlA.L-rM.hLNfnKB8xz2g&amp;smid=url-share</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/d1ccd1efe8e75f46e797d2850b26b77cec8ff8ef</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Visualization] Rise in remote work a factor in young worker unemployment</title>
+      <link>https://flowingdata.com/2026/06/03/rise-in-remote-work-a-factor-in-young-worker-unemployment/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/e389b6387fe35b680473db82bad893c58db020ae</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Visualization</category>
-      <description>&lt;p&gt;FlowingData points to a New York Times chart/map piece on Japan&amp;#x27;s population decline and highlights a design detail: red-orange hatching makes the negative range legible, while axis annotations reinforce increase versus decrease. The keep is the visual encoding lesson, not the demographic fact alone.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A step chart can make cumulative population change easier to scan than a smoother trend line.&lt;/li&gt;&lt;li&gt;Hatching can distinguish a negative region without relying only on color intensity.&lt;/li&gt;&lt;li&gt;Axis-side annotations reduce ambiguity when values cross between increase and decline.&lt;/li&gt;&lt;li&gt;The piece is a useful example of aligning visual emphasis with the direction of the claim.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;FlowingData points to NBER work arguing that higher unemployment among young college graduates is concentrated in remotable occupations and tracks the remote-work shock more than AI exposure. It is a useful counterweight to easy AI labor-market narratives because the method compares age gaps across remotable and non-remotable work before and after 2020.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The age gap in unemployment rose in remotable occupations while older workers in those sectors did not see the same increase.&lt;/li&gt;&lt;li&gt;The timing starts with the 2020 remote-work shock and persists afterward, which weakens a simple AI-causation story.&lt;/li&gt;&lt;li&gt;The chart needs more annotation, but the comparison structure is reusable for evaluating labor-market claims.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Visualization] What's the oldest name in the U.S.?</title>
-      <link>https://erdavis.com/2026/05/29/whats-the-oldest-name-in-the-u-s/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/75caaaaa5b171fe19155f7888b5f8b8b545ca212</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
-      <category>Visualization</category>
-      <description>&lt;p&gt;Combines baby-name counts with survival estimates to approximate the current age distribution of U.S. names, then exposes an interactive lookup. The method is simple enough to audit and the stated limitation, immigration, is the right kind of caveat.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Combining annual name counts with survival estimates turns historical birth data into an estimated living-age distribution.&lt;/li&gt;&lt;li&gt;Weighted averages make the result interpretable, but they compress multimodal name histories into one number.&lt;/li&gt;&lt;li&gt;Immigration is a material missing variable when names enter the population outside U.S. birth records.&lt;/li&gt;&lt;li&gt;The piece is a good example of using public demographic tables to build a small, inspectable derived dataset.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Maximizing an operational step that isn't a bottleneck will not significantly improve the overall productivity of the system</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tvd1ly/maximizing_an_operational_step_that_isnt_a/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/5d05bcb91e4b0674d057b8ce27a43f00dc8f0b82</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Reddit Programming] I checked which code-health metrics predict real bugs across 21 repos. Behavioral metrics beat structural ones</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1twswpi/i_checked_which_codehealth_metrics_predict_real/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/67871c4fc0415cc05f1935cc8e14f89d14a38196</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Applies Theory of Constraints to the claim that AI makes development much faster: optimizing code-writing only improves total throughput if code-writing is the actual bottleneck. The prompt is short, but it is a useful corrective to AI productivity arguments that ignore queues, review, requirements, deployment, and coordination.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A local speedup does not matter much when the system bottleneck is elsewhere.&lt;/li&gt;&lt;li&gt;AI coding claims should be evaluated against end-to-end delivery throughput, not typing or implementation speed alone.&lt;/li&gt;&lt;li&gt;If review, integration, product decisions, or operational validation are the bottleneck, faster code generation can create more queue pressure.&lt;/li&gt;&lt;li&gt;The right question is which step constrains profitable, high-quality software delivery.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A developer tested 25 deterministic file-level risk metrics across 21 repositories and found behavioral signals such as co-change coupling, ownership spread, and erratic change history more predictive of later bug fixes than cyclomatic complexity or nesting depth. The strongest detail is the corrected leakage: a previous top metric collapsed after scoring was moved before the prediction window.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Behavioral history can be a better bug-risk signal than structural complexity alone.&lt;/li&gt;&lt;li&gt;Time-aware scoring matters; metrics that include future fix activity create false confidence.&lt;/li&gt;&lt;li&gt;Co-change and ownership data deserve more attention in code-health dashboards.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Mini Shai-Hulud "Miasma" Hits @redhat-cloud-services: Multiple Packages at Risk</title>
-      <link>https://safedep.io/redhat-cloud-services-hit-by-mini-shai-hulud-npm-worm</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/510747d0e5778ba7d6539487d403f0a17d127b97</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Reddit Programming] How do you keep configs in sync across services and environments when deploying?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1twnesy/how_do_you_keep_configs_in_sync_across_services/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/3f73667f1ee8944d292c51adce03b15fcc7a2541</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;SafeDep documents a June 2026 npm supply-chain compromise where trusted publishing and GitHub Actions OIDC were abused to ship malicious @redhat-cloud-services packages with valid provenance. The mechanics matter: branch-scoped workflow replacement, preinstall execution, cloud-secret harvesting, and self-propagation through repository access.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Trusted provenance can still be malicious when the trust rule binds to repository and workflow filename rather than the intended branch policy.&lt;/li&gt;&lt;li&gt;Preinstall hooks execute early enough to steal cloud, npm, GitHub, Kubernetes, Vault, and password-manager credentials in CI and local installs.&lt;/li&gt;&lt;li&gt;Short-lived attacker branches can exchange OIDC tokens for publish tokens if workflow permissions and publishing rules are too broad.&lt;/li&gt;&lt;li&gt;Package install controls and CI policy checks need to inspect behavior and workflow provenance, not only signatures.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The thread describes a practical config-drift failure mode: auth services, rate limits, notification templates, env vars, Redis, and vendors all require manual updates, and missing config can fail silently. Even without comments, the scenario is a compact checklist of why operational config needs ownership, validation, and deployment coupling.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Config that changes behavior should be versioned, reviewed, and deployed with the code path that depends on it.&lt;/li&gt;&lt;li&gt;Silent missing defaults, such as unenforced rate limits, need startup or rollout validation instead of QA-only detection.&lt;/li&gt;&lt;li&gt;Cross-service client onboarding needs an explicit source of truth rather than manual writes into every service and vendor.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Reviewing large changes with Jujutsu</title>
-      <link>https://ben.gesoff.uk/posts/reviewing-large-changes-with-jj/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/552bdbf1d409e482e9c3dcdc192c8f24daada001</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Reddit Programming] How do you document glue work so it actually counts in promotion reviews?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1twf46y/how_do_you_document_glue_work_so_it_actually/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/252492f3920b1be5034709f58ddcdd70c00b5879</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Presents a Jujutsu workflow for reviewing large PRs locally: duplicate the change, insert an empty review commit before it, and squash reviewed hunks into that parent until the remaining diff is empty. It directly targets the growing problem of large code-agent PRs and review-state tracking.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Local review state can be represented as version-control history rather than browser memory or viewed-file checkboxes.&lt;/li&gt;&lt;li&gt;Squashing reviewed hunks into a parent commit leaves the unreviewed remainder visible with ordinary diff/stat commands.&lt;/li&gt;&lt;li&gt;Inline review notes can be carried locally and then transferred to the PR after the full context is understood.&lt;/li&gt;&lt;li&gt;The workflow lowers cognitive load for large changes without forcing the whole team to adopt a new review system.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The post gives a useful promotion-review framing for invisible engineering work: document glue work only when it created leverage and can be turned into evidence. The strong version turns mentoring, coordination, prevention, and process repair into measurable changed outcomes rather than generic helpfulness.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ask whether the work created leverage and whether evidence exists; if not, automate, rotate, or decline it.&lt;/li&gt;&lt;li&gt;Translate invisible support into changed outcomes, such as faster onboarding or fewer repeated setup questions.&lt;/li&gt;&lt;li&gt;Promotion packets should make prevention and coordination legible to the business, not only to engineers.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] strace-ui, Bonsai_term, and the TUI renaissance</title>
-      <link>https://blog.janestreet.com/strace-ui-bonsai-term-and-the-tui-renaissance/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/e1d71f029717523bb81bd890809af71dbd1af96f</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Reddit Programming] change of heart</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tvu7ot/change_of_heart/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/71c26cc1e3b50fa0c86bc9e6b29a13afcdf612ea</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Jane Street describes turning strace into an interactive TUI with filtering, file-descriptor navigation, PID labeling, DNS hints, and man-page lookup, then connects it to Bonsai_term and AI-agent-friendly text screenshot tests. The piece is both a debugging-tool case study and a concrete argument for modern TUIs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Debugging tools benefit from exploration loops: hide noise, follow file descriptors, and refine the trace without rerunning from scratch.&lt;/li&gt;&lt;li&gt;A reactive TUI framework can share the same state-management ideas as web UIs while staying terminal-native.&lt;/li&gt;&lt;li&gt;Textual screenshot tests make UI regression output legible to humans and coding agents.&lt;/li&gt;&lt;li&gt;The terminal is attractive for agent-era tools because it is portable, scriptable, fast, and already embedded in developer workflows.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;An experienced developer describes a pragmatic agentic workflow: use the model to produce a detailed design and implementation plan, review the intermediate decomposition, then let code generation follow only after the plan is sound. The useful signal is that agents lower the cost of exploring a wrong path, but only when planning and review remain human-controlled.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agentic coding works better when the first artifact is a reviewed design or implementation plan, not direct code.&lt;/li&gt;&lt;li&gt;The highest-leverage human work is decomposing the change, spotting bad intermediate steps, and deciding when to abandon a path.&lt;/li&gt;&lt;li&gt;Cheap exploration can turn previously expensive migrations or RCA-to-autofix ideas into reasonable experiments.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Putting Code Under a Microscope: Wavelet-Based Context for LLMs</title>
-      <link>https://yogthos.net/posts/2026-06-02-wavescope.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-03/e36d1dc213daccf6f378755d84c7bea7a7c2db7b</guid>
-      <pubDate>Wed, 03 Jun 2026 12:31:37 +0000</pubDate>
+      <title>[Reddit Programming] Stealing from Biologists to Compile Haskell Faster</title>
+      <link>https://www.iankduncan.com/engineering/2026-05-30-stealing-from-biologists-to-compile-haskell-faster/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/7a4df89fc54ce46bf175148e61cc42890af83e0a</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Proposes WaveScope, an MCP server that scores source lines and uses wavelet transforms to give LLM agents multi-resolution code context: fine local lines, medium function/class structure, and coarse file sections. The interesting claim is that codebase navigation needs structural position, not just grep matches or semantic embeddings.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Large context windows do not remove the need to prioritize which code structure deserves attention.&lt;/li&gt;&lt;li&gt;Line-level structural signals can be transformed into multi-scale boundaries without a full language-specific AST parser.&lt;/li&gt;&lt;li&gt;The resulting JSON can give an agent coarse overview plus precise local code around the task.&lt;/li&gt;&lt;li&gt;Entropy-style signals can help triage dense or irregular code regions for refactoring.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Duncan attacks GHC&amp;#x27;s expensive optimal ApplicativeDo scheduling by reframing the dependency-layout problem as dynamic programming over spans, borrowing ideas from RNA folding, and adding bounds that collapse many tie searches. The article is a good example of using differential testing and problem reduction before trying to optimize compiler internals.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The compiler problem is only about dependencies and grouping, not statement contents.&lt;/li&gt;&lt;li&gt;Greedy scheduling can add unnecessary remote-call rounds, while optimal scheduling was historically too slow at O(n^3).&lt;/li&gt;&lt;li&gt;Longest-chain lower bounds and extreme-cut shortcuts can reduce cut checks while preserving the same optimal tree.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] 1-Click GitHub Token Stealing via a VSCode Bug</title>
+      <link>https://blog.ammaraskar.com/github-token-stealing/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/5cdc421115e91a21260640c2f1b59185830f5efa</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Askar shows how github.dev&amp;#x27;s VS Code webview boundary could be abused: untrusted notebook JavaScript could spoof keydown messages, trigger extension installation paths, and steal a broadly scoped GitHub token. The exploit is useful beyond VS Code because it shows how convenience bridges across browser/editor boundaries become security APIs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A token posted from github.com to github.dev was broad enough to access private repositories, increasing exploit impact.&lt;/li&gt;&lt;li&gt;Forwarding keyboard events from webviews to the host let untrusted content drive privileged editor actions.&lt;/li&gt;&lt;li&gt;Workspace trust and extension recommendation flows need to be treated as security surfaces, not just UX features.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] NULLs in ClickHouse can hurt performance</title>
+      <link>https://rushter.com/blog/clickhouse-nulls/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/fb45710447e23885569695047f9ab13eef0e541a</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Golubin explains why Nullable columns are not free in ClickHouse: the engine stores a separate byte null map, reads it during filtering and aggregation, and usually misses sparse serialization wins that default values can use. In the benchmark, a 1-billion-row group-by ran 13.696 seconds with NULLs versus 10.153 seconds with sentinel zeros, while the article notes that mostly-null aggregation can reverse the tradeoff.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Columnar storage makes null maps a scan-time cost, not just a semantic convenience.&lt;/li&gt;&lt;li&gt;Sentinel defaults can reduce storage and improve aggregation speed when the domain has a safe unused value.&lt;/li&gt;&lt;li&gt;Nullable design should be benchmarked against the real query shape and null distribution.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] A tale about fixing eBPF spinlock issues in the Linux kernel</title>
+      <link>https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/3116b7ff390ce2a0ef2e529e99ba229372d1a2aa</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The Superluminal team traces periodic Fedora freezes to a minimal eBPF repro where sampling interrupts and context-switch tracepoints both reserve from a ring buffer guarded by a resilient queued spinlock. The investigation is valuable for its method: reproduce on physical hardware, reduce the program until only the interaction remains, then read kernel locking code when debuggers fail.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Kernel freezes need a minimal repro path because ordinary debugger breakpoints may fail during the lockup itself.&lt;/li&gt;&lt;li&gt;The issue required both sampling events and context-switch events, pointing to an interrupt/context interaction.&lt;/li&gt;&lt;li&gt;A nearly empty eBPF program can still expose kernel locking behavior when it runs from the wrong attach-point combination.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Every byte matters</title>
+      <link>https://fzakaria.com/2026/06/01/every-byte-matters</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/1b8786479126faa521b773051b54b19295f6a8ac</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Zakaria uses small C-style examples to show how struct size and data layout move hot loops between cache tiers. The durable lesson is that for random access patterns, doubling a struct can double the working set and push the same algorithm into slower memory even though the big-O notation did not change.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Array-of-structs wastes cache bandwidth when the hot loop needs only one field.&lt;/li&gt;&lt;li&gt;Struct-of-arrays can pack the hot field densely and produce large speedups for the right access pattern.&lt;/li&gt;&lt;li&gt;For random access, total working-set size determines which cache or DRAM tier dominates latency.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How I took my Rust GUI from 135 MB to 30 MB by ditching the GPU</title>
+      <link>https://trystan-sarrade.com/article/rust-gui-135mb-to-30mb-egui-to-slint/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-04/4c288df081a6335a0eb9e06474fa22bd6cf26e8a</guid>
+      <pubDate>Thu, 04 Jun 2026 20:54:41 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Sarrade explains that a small Linux process monitor spent most of its memory not on app data but on GUI dependencies and GPU machinery. Rewriting from egui to Slint with a software renderer cut resident memory from about 135 MB to 30 MB, while forcing careful handling of live graphs, refresh races, optional GPU libraries, icon caching, and dependency trimming.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;For mostly static 2D desktop tools, a GPU renderer can be a memory tax rather than a performance win.&lt;/li&gt;&lt;li&gt;Retained-mode UI and software rendering match low-refresh operational tools better than immediate-mode redraw loops.&lt;/li&gt;&lt;li&gt;The AI-assisted rewrite worked because architecture, memory decisions, and tricky refresh bugs stayed under human control.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
