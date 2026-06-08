@@ -28,6 +28,22 @@
           <h3><a href="https://performance.dev/how-is-linear-so-fast-a-technical-breakdown">How&#x27;s Linear so fast? A technical breakdown</a></h3>
           <p>Brotzky breaks down Linear&#x27;s perceived speed as an architecture choice: IndexedDB-backed local state, optimistic mutations, background sync, small modern-browser bundles, precaching, and animations that avoid blocking the workflow.</p>
           <ul><li>The browser-side database removes network latency from the core interaction loop; sync becomes a background concern.</li><li>Fast product feel is cumulative: local-first data, chunking, service-worker precache, GPU-friendly animation, and keyboard-first flows reinforce each other.</li><li>The tradeoff is architectural commitment; Linear started with a sync engine because that foundation is hard to retrofit later.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://matthuggins.com/blog/posts/building-a-predictive-text-input-in-react">Building a predictive text input in React</a></h3>
+          <p>Huggins shows why inline autocomplete is awkward in React: mixed plain and ghost text pushes the implementation from standard inputs into contentEditable, cursor management, direct DOM mutation, and update-loop guards.</p>
+          <ul><li>Native inputs are too limited when a single editing surface needs both accepted text and styled prediction text.</li><li>React&#x27;s declarative model can be the wrong abstraction at the cursor boundary; refs and controlled mutation flags become practical tools.</li><li>The hard parts are selection preservation, programmatic text replacement, and preventing internal DOM edits from re-triggering React updates.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://frontendmasters.com/blog/react-server-components-in-tanstack/">React server components in TanStack</a></h3>
+          <p>Rackis explains TanStack Start&#x27;s explicit RSC model: server-only component trees and server functions can remove browser JavaScript when the tree shape or dependencies justify the split.</p>
+          <ul><li>RSC is most useful when it prevents large server-only dependencies or component subtrees from entering the client bundle.</li><li>Explicit server functions make the server/client boundary easier to reason about than implicit framework magic.</li><li>The benefit is workload-dependent; simple client-heavy screens may gain little from the extra model.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://formisch.dev/blog/one-core-six-frameworks/">One core, six frameworks, zero runtime abstraction</a></h3>
+          <p>Hiller describes a cross-framework form library that shares core logic while compiling to each framework&#x27;s native reactivity instead of shipping a runtime adapter layer.</p>
+          <ul><li>A cross-framework library does not have to collapse everything into a lowest-common-denominator abstraction.</li><li>Build-time specialization preserves native signals, refs, state cells, batching, and scheduling semantics.</li><li>Shared core logic gives multi-framework leverage, while framework-specific reactivity keeps runtime overhead low.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://jjenzz.com/best-loading-states-are-no-loading-states/">The best loading states are no loading states</a></h3>
+          <p>Smith argues that teams should spend less effort polishing spinners and skeletons and more effort making navigation land on finished pages through preloading, route-level data work, and slow-path fixes.</p>
+          <ul><li>Loading UI is often a symptom of latency that should be hidden or removed, not a destination for more design polish.</li><li>Hover, viewport, and route-level prefetch can move waiting time before the user commits to navigation.</li><li>Persistent loading states are performance feedback; fix the slow path instead of normalizing the wait.</li></ul>
         </article>
       </section><section class="digest-section">
         <h2>Programming</h2>
@@ -35,6 +51,10 @@
           <h3><a href="https://seriot.ch/computation/jira.html">Jira IS Turing-Complete</a></h3>
           <p>Seriot turns the old Jira automation joke into a concrete reduction: linked issue counts act as registers, Epic status acts as the program counter, and automation rules implement Minsky-machine branching.</p>
           <ul><li>The proof includes a concrete setup and execution trace, not just the folklore claim.</li><li>Workflow state, issue creation/deletion, and conditional JQL rules are enough to model increment, decrement, branch, and halt.</li><li>The exercise is a useful reminder that sufficiently flexible automation systems become programming languages whether or not they are designed that way.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://fzakaria.com/2026/06/01/every-byte-matters">Every byte matters</a></h3>
+          <p>Zakaria uses cache sizes and access patterns to show that object layout and byte count can dominate performance once memory bandwidth and cache locality are the bottleneck.</p>
+          <ul><li>Asymptotic complexity is not enough when the working set no longer fits the relevant cache level.</li><li>Array-of-structs and struct-of-arrays choices depend on how the program actually reads fields.</li><li>Smaller structures reduce bandwidth pressure and can beat cleaner-looking layouts when access patterns are hot.</li></ul>
         </article>
       </section><section class="digest-section">
         <h2>Reddit Programming</h2>

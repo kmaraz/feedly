@@ -22,12 +22,52 @@
       <description>&lt;p&gt;Brotzky breaks down Linear&amp;#x27;s perceived speed as an architecture choice: IndexedDB-backed local state, optimistic mutations, background sync, small modern-browser bundles, precaching, and animations that avoid blocking the workflow.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The browser-side database removes network latency from the core interaction loop; sync becomes a background concern.&lt;/li&gt;&lt;li&gt;Fast product feel is cumulative: local-first data, chunking, service-worker precache, GPU-friendly animation, and keyboard-first flows reinforce each other.&lt;/li&gt;&lt;li&gt;The tradeoff is architectural commitment; Linear started with a sync engine because that foundation is hard to retrofit later.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
+      <title>[Frontend] Building a predictive text input in React</title>
+      <link>https://matthuggins.com/blog/posts/building-a-predictive-text-input-in-react</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/d4296022ea502f06c0b8ee9ca94266e1e178e95d</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Huggins shows why inline autocomplete is awkward in React: mixed plain and ghost text pushes the implementation from standard inputs into contentEditable, cursor management, direct DOM mutation, and update-loop guards.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Native inputs are too limited when a single editing surface needs both accepted text and styled prediction text.&lt;/li&gt;&lt;li&gt;React&amp;#x27;s declarative model can be the wrong abstraction at the cursor boundary; refs and controlled mutation flags become practical tools.&lt;/li&gt;&lt;li&gt;The hard parts are selection preservation, programmatic text replacement, and preventing internal DOM edits from re-triggering React updates.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Frontend] React server components in TanStack</title>
+      <link>https://frontendmasters.com/blog/react-server-components-in-tanstack/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/9c6b4cf1cdcd89e2c1deec1abef489139e7677ab</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Rackis explains TanStack Start&amp;#x27;s explicit RSC model: server-only component trees and server functions can remove browser JavaScript when the tree shape or dependencies justify the split.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;RSC is most useful when it prevents large server-only dependencies or component subtrees from entering the client bundle.&lt;/li&gt;&lt;li&gt;Explicit server functions make the server/client boundary easier to reason about than implicit framework magic.&lt;/li&gt;&lt;li&gt;The benefit is workload-dependent; simple client-heavy screens may gain little from the extra model.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Frontend] One core, six frameworks, zero runtime abstraction</title>
+      <link>https://formisch.dev/blog/one-core-six-frameworks/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/e28c625ff75c5bfc0f333bfb0fef6c02ab9df08e</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Hiller describes a cross-framework form library that shares core logic while compiling to each framework&amp;#x27;s native reactivity instead of shipping a runtime adapter layer.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A cross-framework library does not have to collapse everything into a lowest-common-denominator abstraction.&lt;/li&gt;&lt;li&gt;Build-time specialization preserves native signals, refs, state cells, batching, and scheduling semantics.&lt;/li&gt;&lt;li&gt;Shared core logic gives multi-framework leverage, while framework-specific reactivity keeps runtime overhead low.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Frontend] The best loading states are no loading states</title>
+      <link>https://jjenzz.com/best-loading-states-are-no-loading-states/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/b5e28bade368e57cf25d0e5c5ad24012cbe4df51</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Smith argues that teams should spend less effort polishing spinners and skeletons and more effort making navigation land on finished pages through preloading, route-level data work, and slow-path fixes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Loading UI is often a symptom of latency that should be hidden or removed, not a destination for more design polish.&lt;/li&gt;&lt;li&gt;Hover, viewport, and route-level prefetch can move waiting time before the user commits to navigation.&lt;/li&gt;&lt;li&gt;Persistent loading states are performance feedback; fix the slow path instead of normalizing the wait.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>[Programming] Jira IS Turing-Complete</title>
       <link>https://seriot.ch/computation/jira.html</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/be61ba5440c695def33b796170a4c729f0fa7a0d</guid>
       <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
       <category>Programming</category>
       <description>&lt;p&gt;Seriot turns the old Jira automation joke into a concrete reduction: linked issue counts act as registers, Epic status acts as the program counter, and automation rules implement Minsky-machine branching.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The proof includes a concrete setup and execution trace, not just the folklore claim.&lt;/li&gt;&lt;li&gt;Workflow state, issue creation/deletion, and conditional JQL rules are enough to model increment, decrement, branch, and halt.&lt;/li&gt;&lt;li&gt;The exercise is a useful reminder that sufficiently flexible automation systems become programming languages whether or not they are designed that way.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Programming] Every byte matters</title>
+      <link>https://fzakaria.com/2026/06/01/every-byte-matters</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/b5bf09976c3c58291d80f25c50c858e46e5dae8c</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Zakaria uses cache sizes and access patterns to show that object layout and byte count can dominate performance once memory bandwidth and cache locality are the bottleneck.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Asymptotic complexity is not enough when the working set no longer fits the relevant cache level.&lt;/li&gt;&lt;li&gt;Array-of-structs and struct-of-arrays choices depend on how the program actually reads fields.&lt;/li&gt;&lt;li&gt;Smaller structures reduce bandwidth pressure and can beat cleaner-looking layouts when access patterns are hot.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>[Reddit Programming] Reverse engineering the Creative Katana V2X soundbar to be able to control it from Linux</title>
