@@ -4,158 +4,54 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Sat, 06 Jun 2026 19:26:41 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 13:29:32 +0000</lastBuildDate>
     <item>
-      <title>[Informatics] Vynalezli budoucnost. Mysleli, že dělají překladač.</title>
-      <link>https://www.umeligence.cz/blog/historie-ai-vznik-transformeru</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/9c7773901c9096e53ef21d303011e06bcb896a5b</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;The essay uses the 2017 Transformer paper as a check on AI authority claims: the architecture behind modern generative systems was built for a narrower machine-translation problem, and its broader impact surprised even its builders. The durable lesson is to judge AI forecasts by mechanisms and incentives, not by whether the speaker helped build the underlying technology.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Transformer started as an engineering move to make translation models faster and more parallelizable.&lt;/li&gt;&lt;li&gt;Implementation expertise gives better visibility into near-term capability, not automatic insight into long-term social or economic consequences.&lt;/li&gt;&lt;li&gt;Long-horizon AI claims need arguments about adoption, incentives, and user behavior, not status borrowed from the original builders.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Engineering] TBM 425: AI and Agency</title>
+      <link>https://cutlefish.substack.com/p/tbm-425-ai-and-agency</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/a001fe6d5ed3f796cafabc239e3237266bfab359</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <category>Engineering</category>
+      <description>&lt;p&gt;Cutler argues that AI adoption mandates often destroy the agency they claim to promote: teams need room to test, reject, and adapt tools against real problems, not perform adoption for executive metrics.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI adoption is not just a training problem; trust, autonomy, and local context determine whether people use the tools well.&lt;/li&gt;&lt;li&gt;Skepticism is part of agency, especially when teams are being asked to change craft practices under management pressure.&lt;/li&gt;&lt;li&gt;Useful AI rollout starts from real work and evidence, not quota-style proof that people are prompting enough.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Philosophy] Pluralistic: Criticizing the everything machine (06 Jun 2026)</title>
-      <link>https://pluralistic.net/2026/06/06/applied-counterescatology/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/b91e40d7f14b7477e230a2d4f716dcdeefaf405e</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Philosophy</category>
-      <description>&lt;p&gt;Doctorow frames AI debate as a Gish gallop: governance, labor, data centers, synthetic media, customer service, model economics, and AGI claims are bundled into one impossible argument. The useful move is to split the bundle, start with unit economics and funding paths, and refuse to debate speculative future capability before the present business model and infrastructure costs make sense.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A serious AI critique has to separate commercial deployment, public-sector governance, labor substitution, data-center buildout, and AGI claims.&lt;/li&gt;&lt;li&gt;The current economics matter before the futurism: subsidized usage and worsening unit costs change which predictions are plausible.&lt;/li&gt;&lt;li&gt;Criti-hype still accepts the industry&amp;#x27;s premise; useful criticism tests the premise before arguing about consequences.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Frontend] How's Linear so fast? A technical breakdown</title>
+      <link>https://performance.dev/how-is-linear-so-fast-a-technical-breakdown</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/9cc94bb3b0c315577057ff14d7dffb56821df8be</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Brotzky breaks down Linear&amp;#x27;s perceived speed as an architecture choice: IndexedDB-backed local state, optimistic mutations, background sync, small modern-browser bundles, precaching, and animations that avoid blocking the workflow.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The browser-side database removes network latency from the core interaction loop; sync becomes a background concern.&lt;/li&gt;&lt;li&gt;Fast product feel is cumulative: local-first data, chunking, service-worker precache, GPU-friendly animation, and keyboard-first flows reinforce each other.&lt;/li&gt;&lt;li&gt;The tradeoff is architectural commitment; Linear started with a sync engine because that foundation is hard to retrofit later.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Philosophy] Pluralistic: Refining humanity (05 Jun 2026)</title>
-      <link>https://pluralistic.net/2026/06/05/defining-humanity/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/d63bf06f7ba5df7cb3a753e88abbf0b1171b0604</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Philosophy</category>
-      <description>&lt;p&gt;Doctorow argues that programming has historically forced tacit human knowledge into explicit rules, while machine learning can produce useful behavior without that full explicit model. The practical point is not that machines become people when they imitate creative outputs, but that each new machine capability narrows sloppy definitions of what humans uniquely do.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Software exposes broken assumptions because computers need explicit instructions where humans use context and exceptions.&lt;/li&gt;&lt;li&gt;Machine learning changes the old bargain by producing useful classifications without forcing every human rule into source code.&lt;/li&gt;&lt;li&gt;AI output should refine definitions of creativity and personhood rather than smuggling machines into moral categories meant for living beings.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Programming] Jira IS Turing-Complete</title>
+      <link>https://seriot.ch/computation/jira.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/be61ba5440c695def33b796170a4c729f0fa7a0d</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <category>Programming</category>
+      <description>&lt;p&gt;Seriot turns the old Jira automation joke into a concrete reduction: linked issue counts act as registers, Epic status acts as the program counter, and automation rules implement Minsky-machine branching.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The proof includes a concrete setup and execution trace, not just the folklore claim.&lt;/li&gt;&lt;li&gt;Workflow state, issue creation/deletion, and conditional JQL rules are enough to model increment, decrement, branch, and halt.&lt;/li&gt;&lt;li&gt;The exercise is a useful reminder that sufficiently flexible automation systems become programming languages whether or not they are designed that way.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Psychology] Isolated Detection of Misconceptions in an Adaptive Program Tracing Instrument</title>
-      <link>http://ieeexplore.ieee.org/document/11494248</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/e0a6cce62e8282c416945b26fa2d37bdcc65a56b</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Psychology</category>
-      <description>&lt;p&gt;The paper describes an adaptive assessment for novice programming misconceptions around control flow, using a decision-tree model to isolate errors that ordinary tests tend to conflate. In a 97-student evaluation, the adaptive version reduced required items by 33% and predicted unseen responses with about 86% accuracy.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Programming assessments can diagnose misconceptions more efficiently when item selection adapts to the learner&amp;#x27;s previous answers.&lt;/li&gt;&lt;li&gt;The interesting construct is the shadowed misconception: an error pattern hidden by another error unless the test isolates it.&lt;/li&gt;&lt;li&gt;The approach is relevant beyond education because it treats debugging a learner model like debugging a system with confounded signals.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Visualization] What LLM speed looks like when generating output</title>
-      <link>https://flowingdata.com/2026/06/05/what-llm-speed-looks-like-when-generating-output/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/66e918b6b15ed5a2b1db442f8c0099142c90ca85</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Visualization</category>
-      <description>&lt;p&gt;FlowingData points to an interactive visualization that turns tokens-per-second into visible output speed across text, code, thinking, and agent-style responses. It is a small but useful example of translating model metrics into a UX measure people can actually feel.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tokens per second is a machine metric; visible response cadence is the product metric users understand.&lt;/li&gt;&lt;li&gt;Different output modes need separate speed expectations because code, prose, reasoning, and agent traces read differently.&lt;/li&gt;&lt;li&gt;A speed demo is more useful when it shows generation over time instead of reporting a scalar benchmark.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Stop Using Conventional Commits</title>
-      <link>https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/056f1d39c562544090b344180decfdc29f705b14</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
+      <title>[Reddit Programming] Reverse engineering the Creative Katana V2X soundbar to be able to control it from Linux</title>
+      <link>https://blog.nns.ee/2026/02/20/katana-v2x-re</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/e7c67e5d63d81afd352c7b55bf9147cbd09b9fa0</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Evans argues that Conventional Commits put the least useful metadata first: type, not scope. The stronger case is operational rather than aesthetic: debuggers, contributors, and incident responders usually need to know which subsystem changed, while changelogs and semantic-version decisions need a different, release-level artifact.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Scope is the high-value part of a commit subject because it maps a change to the code area people need to inspect.&lt;/li&gt;&lt;li&gt;Commit logs and changelogs serve different audiences; forcing one format to feed both produces weak results.&lt;/li&gt;&lt;li&gt;Build and release automation should inspect diffs and release intent, not trust a manually typed `fix` or `feat` prefix.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The write-up documents a disciplined hardware/protocol reverse-engineering path: inspect the vendor app, capture USB traffic operation by operation, infer the serial framing, and build Linux control tooling from reproducible packet evidence.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Separate captures per UI operation turn opaque proprietary behavior into a tractable protocol map.&lt;/li&gt;&lt;li&gt;Firmware update traffic can expose payload format and command structure when ordinary controls are still unclear.&lt;/li&gt;&lt;li&gt;The method matters more than the soundbar: isolate the transport, record known actions, infer framing, then implement the minimum useful control surface.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The perils of UUID primary keys in SQLite</title>
-      <link>https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/a87bb0a0041818521e85642eb17475c156db90ba</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
+      <title>[Reddit Programming] As an AI cautionist, I wish some of my coworkers would at least use it as a basic sanity check</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tymls8/as_an_ai_cautionist_i_wish_some_of_my_coworkers/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/451f0a97d57be02496c824435941250c3df05587</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Murphy benchmarks how UUID4 primary keys interact with SQLite clustered storage: random insert order drives B-tree rebalancing and turns roughly one-million-row batches from about 1.1 seconds with integer rowids into 10-12 seconds at scale. UUID7 restores locality and brings insert time back near the integer baseline, with a modest cost from the wider key.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Random UUID primary keys are not just larger identifiers; they change write locality in clustered indexes.&lt;/li&gt;&lt;li&gt;Profiling points to tree balancing and extra reads/writes, not an abstract SQLite weakness.&lt;/li&gt;&lt;li&gt;Time-ordered identifiers such as UUID7 preserve most UUID ergonomics while avoiding the worst insertion pattern.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The thread surfaces a practical middle position on AI in engineering: even skeptics can use models as cheap review assistants for obvious mistakes, leakage, bad payload paths, and ignored error logs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The useful baseline is not autonomous coding; it is catching defects a careful reviewer would catch when humans are moving too fast.&lt;/li&gt;&lt;li&gt;AI review adds value when paired with engineering judgment and concrete diffs, not when treated as authority.&lt;/li&gt;&lt;li&gt;The examples point to process failure: teams that will not inspect logs or test assumptions need stronger review habits, with or without AI.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Configuration flags are where software goes to rot</title>
-      <link>https://00f.net/2026/04/11/config-flags/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/4ed18fed42139e4f7b14ba7339fc3bc3d19fdb78</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
+      <title>[Reddit Programming] Allowing LLM's to work fully autonomously is only viable when you have a process that automatically verifies it</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tylg0z/allowing_llms_to_work_fully_autonomously_is_only/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/5df5451e7ec95cb4cef963a9c01a25087b28be0e</guid>
+      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Denis treats configuration flags as maintenance debt: each flag creates another supported world, and combinations of flags create states no one designed or tested. The durable rule is that a flag needs an owner, a purpose, and an expiration story before it enters the interface.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A boolean option can multiply test, support, documentation, and compatibility obligations.&lt;/li&gt;&lt;li&gt;Flags often hide unresolved design decisions by preserving both old and new behavior indefinitely.&lt;/li&gt;&lt;li&gt;Temporary migration or experiment flags should ship with removal criteria before users build dependencies around them.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Using local ClickHouse for data processing</title>
-      <link>https://rushter.com/blog/clickhouse-data-processing/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/573df3d6442ef724ba4727ed775f3f1a2691f203</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Rushter shows `clickhouse-local` as a better middle ground between shell pipelines and maintaining a Spark or ClickHouse cluster for one-off cold-data jobs. The useful pattern is to stream S3 or local data into a single binary, write SQL instead of fragile `jq`/`awk`/`sort` chains, spill to disk when needed, and scale the same query shape to a cluster later.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`clickhouse-local` keeps the throwaway-job ergonomics of shell pipelines while adding SQL, typed parsing, and many output formats.&lt;/li&gt;&lt;li&gt;It can query S3, files, HTTP, MySQL, PostgreSQL, MongoDB, Kafka, Hive, and other sources without standing up a service.&lt;/li&gt;&lt;li&gt;The same query can often move from local execution to distributed `s3Cluster` execution when data volume crosses the single-node line.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How we reduced the time to run tests from hours to just minutes</title>
-      <link>https://balusc.omnifaces.org/2026/06/from-hours-to-minutes-glassfish-pool.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/8e99b56b1f819cff260213eb8cfb86bd168efe0b</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;BalusC documents a concrete test-infrastructure win: Jakarta Faces TCK moved from 3+ hours to under 4 minutes by migrating old JavaTest cases into JUnit/Arquillian, consolidating WARs, and sharing a pool of pre-started GlassFish instances across parallel Maven forks. The strongest detail is the tradeoff list: parallelism exposed hardcoded ports, hardcoded URLs, cross-app singletons, persisted state, and serialized aggregator goals.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The wall-clock problem was mostly container cold-start and deployment churn, not test logic execution.&lt;/li&gt;&lt;li&gt;A reusable server pool preserved isolation at the JVM slot level while avoiding a fresh application server per module.&lt;/li&gt;&lt;li&gt;Large speedups expose hidden contracts; fixing parallelism means removing hardcoded ports, stale state, and root-level reactor bottlenecks.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Porting our Django backend to Rust improved the infra usage by 90%</title>
-      <link>https://wasmer.io/posts/ported-wasmer-backend-django-to-rust</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/823a4352ffdcd7a86b69c5e345c845f32ba53739</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Wasmer reports a production rewrite from Django to Rust that cut allocated compute from 220 CPUs and 800 GB RAM to 24 CPUs and 64 GB, with p95 latency dropping from 120 ms to 30 ms. The useful signal is not language triumphalism: they credit team Rust expertise, stronger typing, async execution, architecture simplification, AI-assisted mechanical migration, and verification that database migrations matched between implementations.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A rewrite was lower risk because the public GraphQL API was already abstracted, so clients did not need to change.&lt;/li&gt;&lt;li&gt;The migration paired AI-generated mechanical work with staging on production data and checks that Python and Rust migrations stayed equivalent.&lt;/li&gt;&lt;li&gt;Rust also removed some operational conveniences, including dynamic production scripts and `manage.py shell` style debugging.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Jo's two-world architecture to solve the fine-grained sandboxing problem at compile-time</title>
-      <link>https://jo-lang.org/security/two-worlds.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/8471a9a178985e0ac313c548ce105287c0415e44</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Jo&amp;#x27;s security model splits code into confined and trusted compilation worlds: AI-generated or untrusted code can depend only on confined libraries, while trusted harness code owns FFI and passes attenuated capabilities across a compile-time link boundary. The interesting design choice is that capability shape is checked before runtime, with no reflection, dynamic imports, or late substitution across the boundary.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A confined library cannot transitively depend on trusted code, so adding a helper cannot silently widen authority.&lt;/li&gt;&lt;li&gt;`defer def` declares exactly which capabilities the untrusted implementation may receive.&lt;/li&gt;&lt;li&gt;The trusted harness can wrap broad resources into narrower capability objects, such as user-scoped read-only database access.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] A faster bump allocator for rust</title>
-      <link>https://owen.cafe/posts/stumpalo/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/901e207ddb16819d21115edd711103da64f3ab60</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The Stumpalo post is a compact allocator performance note: its fast path uses compile-time size/alignment knowledge, a top-and-bottom chunk representation, and scoped stack reset support to beat `bumpalo` and `blink` on many microbenchmarks. The practical value is the assembly-level explanation of where allocator fast-path instructions disappear.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Arena allocation performance is dominated by the fast path: room check, pointer movement, write, and return.&lt;/li&gt;&lt;li&gt;Keeping top and bottom pointers directly in the arena avoids one layer of chunk-header indirection.&lt;/li&gt;&lt;li&gt;Scoped stacks make temporary arena usage safer by resetting to a previous position while preserving outer references.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How are you guys doing end to end and regression testing on AI-written code?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1twyt87/how_are_you_guys_doing_end_to_end_and_regression/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/21a865a6d16b2bc0bd13fed11e3cb82d2bb7052c</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread frames the unresolved testing gap in agentic development: unit tests are easy for agents to generate, but stateful end-to-end and regression tests against third-party integrations still need realistic environments, fixtures, and review discipline. The visible prompt is valuable because it identifies the exact layer where fast AI coding creates false confidence.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI-generated unit tests do not replace stateful workflow tests that exercise integrations and persistent side effects.&lt;/li&gt;&lt;li&gt;The hard part is not writing assertions; it is supplying a sandbox with credible third-party states and repeatable data setup.&lt;/li&gt;&lt;li&gt;Code review plus unit tests is a weak gate when the failure mode lives across service boundaries.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] If a client asks you why they cant just one-shot the app? How do you counter by explaining the software development process?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1txpw2x/if_a_client_asks_you_why_they_cant_just_oneshot/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/7171b01b52778f6fbb8d48833d8d0ad37d3e0c95</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread captures a recurring AI-era client-management problem: explaining why production software is not a single prompt-to-app transaction. The reusable framing is to make the hidden work explicit: requirements, domain decisions, architecture, integration risk, data modeling, security, observability, testing, deployment, maintenance, and accountability.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The answer to one-shot claims should list the engineering work AI does not validate on its own.&lt;/li&gt;&lt;li&gt;The gap is ownership and judgment, not typing speed: someone must decide what correct, secure, maintainable, and operable mean.&lt;/li&gt;&lt;li&gt;A good explanation turns software delivery into visible phases and risk controls instead of arguing abstractly about AI limits.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How do you keep a current map of what your company runs on?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1txlluf/how_do_you_keep_a_current_map_of_what_your/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/acaef418c3ec770b146f1381d9e2051f0e77992e</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread surfaces an operational inventory failure: a B2B SaaS team tried to answer a third-party services questionnaire and found that vendor, AI-tool, payment, product, and engineering dependencies lived in no shared source of truth. The useful signal is that dependency maps rot unless ownership and update triggers are part of the process, not a cleanup project after audits arrive.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A useful company map answers owner, data, process dependency, failure impact, and renewal/security context.&lt;/li&gt;&lt;li&gt;Four senior engineers producing four different dependency lists is evidence of a process gap, not a documentation typo.&lt;/li&gt;&lt;li&gt;SSO discovery, procurement, security review, and architecture changes need to feed the same inventory or it will decay.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] What are some good practices for threat intelligence integration in 2026?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1txeigq/what_are_some_good_practices_for_threat/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/232dc4be4856d07dafc706211acb4cdcd34ccc26</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread describes a vulnerability that was correctly ticketed, reviewed, deferred, and covered with compensating controls, then became actively exploited before the organization noticed the risk had changed. The practical point is that exploitability context has to update remediation priority while the ticket is waiting for CAB, vendor certification, and maintenance windows.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A reasonable point-in-time deferral can become wrong when threat context changes faster than the change process.&lt;/li&gt;&lt;li&gt;Threat intelligence should flow into existing vulnerability and CAB workflows instead of living as a separate analyst feed.&lt;/li&gt;&lt;li&gt;Compensating controls need revalidation triggers tied to exploitation activity, not just initial approval.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] How do you handle oversized PRs?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1twzcd2/how_do_you_handle_oversized_prs/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/0c49c3c01ea413ee07ee2e2428bfd9f24fd8944c</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread is a clean signal on review economics: 1,000-5,000 line pull requests turn review into archaeology, especially when the size is mostly feature code rather than generated or test scaffolding. The durable lesson is to treat PR size as a throughput and correctness constraint, not a reviewer preference.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Large PRs reduce review quality because reviewers shift from reasoning about intent to scanning for obvious breakage.&lt;/li&gt;&lt;li&gt;Test-heavy diffs and generated diffs have different review cost than dense product logic and should not share one line-count rule.&lt;/li&gt;&lt;li&gt;Teams need mergeable slices, early design review, and explicit exceptions for genuinely indivisible changes.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Those of you on Amazon SES: what did getting it production-ready actually cost you?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1txfrw6/those_of_you_on_amazon_ses_what_did_getting_it/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-06/b0abd3da5befd49c5b7d4db78a4b3961e0377311</guid>
-      <pubDate>Sat, 06 Jun 2026 19:26:41 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread asks the right build-versus-buy email question: SES can be much cheaper per message, but production readiness includes DMARC, bounce handling, suppression, sandbox exit, deliverability monitoring, and operational ownership. The relevant cost is not the API price; it is the engineering burden needed to become a competent email service operator.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Cheap transport pricing is incomplete without deliverability, compliance, bounce, and suppression workflows.&lt;/li&gt;&lt;li&gt;A managed ESP buys operational defaults and support paths, not just message delivery.&lt;/li&gt;&lt;li&gt;SES makes sense when the team wants the control surface and accepts the ongoing owner role.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The post argues from a legacy-porting case that agentic coding only becomes viable when every change is constrained by an independent verifier, such as deterministic output diffs between old and new systems.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The hard part of AI coding is not generating code; it is proving that behavior stayed correct.&lt;/li&gt;&lt;li&gt;A good autonomy loop gives the model a task, runs it against a verifier, feeds back the concrete mismatch, and repeats.&lt;/li&gt;&lt;li&gt;Verification has to be external to the model&amp;#x27;s own explanation, especially for legacy migrations where plausible code can still be wrong.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
