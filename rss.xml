@@ -4,94 +4,118 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Mon, 08 Jun 2026 13:29:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 11:21:26 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] TBM 425: AI and Agency</title>
-      <link>https://cutlefish.substack.com/p/tbm-425-ai-and-agency</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/a001fe6d5ed3f796cafabc239e3237266bfab359</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;Cutler argues that AI adoption mandates often destroy the agency they claim to promote: teams need room to test, reject, and adapt tools against real problems, not perform adoption for executive metrics.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI adoption is not just a training problem; trust, autonomy, and local context determine whether people use the tools well.&lt;/li&gt;&lt;li&gt;Skepticism is part of agency, especially when teams are being asked to change craft practices under management pressure.&lt;/li&gt;&lt;li&gt;Useful AI rollout starts from real work and evidence, not quota-style proof that people are prompting enough.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] The Benefits Of Cognitive Inclusion In UX Research</title>
+      <link>https://www.smashingmagazine.com/2026/06/benefits-cognitive-inclusion-ux-research/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/b5c808d176707189624eb8e612b47a538a14add3</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Documents a small but useful UX research study where participants with cognitive disabilities surfaced substantially more usability issues and suggestions than general-population participants, especially around content, affordances, visual elements, media, predictability, and cognitive load.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The study found 197 issues from cognitive participants versus 113 from general-population participants, and 93 suggestions versus 54.&lt;/li&gt;&lt;li&gt;Cognitive participants should be included in ordinary product research, not only accessibility audits.&lt;/li&gt;&lt;li&gt;Task completion is too thin a metric; ask about energy, focus, predictability, distractions, and confidence.&lt;/li&gt;&lt;li&gt;The sample is small and partly AI-prototyped, so treat the numbers as directional evidence and the method as the durable lesson.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Frontend] How's Linear so fast? A technical breakdown</title>
-      <link>https://performance.dev/how-is-linear-so-fast-a-technical-breakdown</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/9cc94bb3b0c315577057ff14d7dffb56821df8be</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Brotzky breaks down Linear&amp;#x27;s perceived speed as an architecture choice: IndexedDB-backed local state, optimistic mutations, background sync, small modern-browser bundles, precaching, and animations that avoid blocking the workflow.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The browser-side database removes network latency from the core interaction loop; sync becomes a background concern.&lt;/li&gt;&lt;li&gt;Fast product feel is cumulative: local-first data, chunking, service-worker precache, GPU-friendly animation, and keyboard-first flows reinforce each other.&lt;/li&gt;&lt;li&gt;The tradeoff is architectural commitment; Linear started with a sync engine because that foundation is hard to retrofit later.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] Creating Memorable Web Experiences: A Modern CSS Toolkit</title>
+      <link>https://css-tricks.com/creating-memorable-web-experiences-a-modern-css-toolkit/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/3bfe271dcd13b09b9b57969546240f5e650281a0</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Shows how current CSS and SVG features can carry expressive interaction without defaulting to JavaScript-heavy animation, while keeping motion tied to intent, accessibility, and browser-native performance.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Define the intended emotional and interaction vocabulary before adding motion; animation without intent adds noise.&lt;/li&gt;&lt;li&gt;Modern CSS primitives such as scroll-driven animations, view transitions, custom properties, masks, clip paths, and 3D transforms can replace heavier interaction stacks.&lt;/li&gt;&lt;li&gt;Split-text and SVG animation techniques need explicit accessibility handling because visual text manipulation can confuse assistive technology.&lt;/li&gt;&lt;li&gt;Choose clipping for hard geometric cuts and masks for soft edges, gradients, textures, or complex shapes.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Frontend] Building a predictive text input in React</title>
-      <link>https://matthuggins.com/blog/posts/building-a-predictive-text-input-in-react</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/d4296022ea502f06c0b8ee9ca94266e1e178e95d</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Huggins shows why inline autocomplete is awkward in React: mixed plain and ghost text pushes the implementation from standard inputs into contentEditable, cursor management, direct DOM mutation, and update-loop guards.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Native inputs are too limited when a single editing surface needs both accepted text and styled prediction text.&lt;/li&gt;&lt;li&gt;React&amp;#x27;s declarative model can be the wrong abstraction at the cursor boundary; refs and controlled mutation flags become practical tools.&lt;/li&gt;&lt;li&gt;The hard parts are selection preservation, programmatic text replacement, and preventing internal DOM edits from re-triggering React updates.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Informatics] Scroll-Driven, Scroll-Triggered, Scroll States, and View Transitions</title>
+      <link>https://css-tricks.com/scroll-driven-scroll-triggered-scroll-states-and-view-transitions/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/95008c9394434c7db4e7843e1390adc827f0205f</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Clarifies four browser-platform concepts that are easy to conflate: scroll-driven animation, scroll-triggered animation, container query scroll state, and view transitions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Scroll-driven animation ties animation progress directly to scroll progress.&lt;/li&gt;&lt;li&gt;Scroll-triggered animation starts when an element crosses a threshold, then runs independently of scroll progress.&lt;/li&gt;&lt;li&gt;Container query scroll state updates styles when a scroll condition such as sticky position is met.&lt;/li&gt;&lt;li&gt;View transitions are a separate API for same-document and cross-document visual transitions, not a scroll feature.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Frontend] React server components in TanStack</title>
-      <link>https://frontendmasters.com/blog/react-server-components-in-tanstack/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/9c6b4cf1cdcd89e2c1deec1abef489139e7677ab</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Rackis explains TanStack Start&amp;#x27;s explicit RSC model: server-only component trees and server functions can remove browser JavaScript when the tree shape or dependencies justify the split.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;RSC is most useful when it prevents large server-only dependencies or component subtrees from entering the client bundle.&lt;/li&gt;&lt;li&gt;Explicit server functions make the server/client boundary easier to reason about than implicit framework magic.&lt;/li&gt;&lt;li&gt;The benefit is workload-dependent; simple client-heavy screens may gain little from the extra model.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Frontend] One core, six frameworks, zero runtime abstraction</title>
-      <link>https://formisch.dev/blog/one-core-six-frameworks/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/e28c625ff75c5bfc0f333bfb0fef6c02ab9df08e</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Hiller describes a cross-framework form library that shares core logic while compiling to each framework&amp;#x27;s native reactivity instead of shipping a runtime adapter layer.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A cross-framework library does not have to collapse everything into a lowest-common-denominator abstraction.&lt;/li&gt;&lt;li&gt;Build-time specialization preserves native signals, refs, state cells, batching, and scheduling semantics.&lt;/li&gt;&lt;li&gt;Shared core logic gives multi-framework leverage, while framework-specific reactivity keeps runtime overhead low.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Frontend] The best loading states are no loading states</title>
-      <link>https://jjenzz.com/best-loading-states-are-no-loading-states/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/b5e28bade368e57cf25d0e5c5ad24012cbe4df51</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
-      <category>Frontend</category>
-      <description>&lt;p&gt;Smith argues that teams should spend less effort polishing spinners and skeletons and more effort making navigation land on finished pages through preloading, route-level data work, and slow-path fixes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Loading UI is often a symptom of latency that should be hidden or removed, not a destination for more design polish.&lt;/li&gt;&lt;li&gt;Hover, viewport, and route-level prefetch can move waiting time before the user commits to navigation.&lt;/li&gt;&lt;li&gt;Persistent loading states are performance feedback; fix the slow path instead of normalizing the wait.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Jira IS Turing-Complete</title>
-      <link>https://seriot.ch/computation/jira.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/be61ba5440c695def33b796170a4c729f0fa7a0d</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Seriot turns the old Jira automation joke into a concrete reduction: linked issue counts act as registers, Epic status acts as the program counter, and automation rules implement Minsky-machine branching.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The proof includes a concrete setup and execution trace, not just the folklore claim.&lt;/li&gt;&lt;li&gt;Workflow state, issue creation/deletion, and conditional JQL rules are enough to model increment, decrement, branch, and halt.&lt;/li&gt;&lt;li&gt;The exercise is a useful reminder that sufficiently flexible automation systems become programming languages whether or not they are designed that way.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Programming] Every byte matters</title>
-      <link>https://fzakaria.com/2026/06/01/every-byte-matters</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/b5bf09976c3c58291d80f25c50c858e46e5dae8c</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
-      <category>Programming</category>
-      <description>&lt;p&gt;Zakaria uses cache sizes and access patterns to show that object layout and byte count can dominate performance once memory bandwidth and cache locality are the bottleneck.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Asymptotic complexity is not enough when the working set no longer fits the relevant cache level.&lt;/li&gt;&lt;li&gt;Array-of-structs and struct-of-arrays choices depend on how the program actually reads fields.&lt;/li&gt;&lt;li&gt;Smaller structures reduce bandwidth pressure and can beat cleaner-looking layouts when access patterns are hot.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Reverse engineering the Creative Katana V2X soundbar to be able to control it from Linux</title>
-      <link>https://blog.nns.ee/2026/02/20/katana-v2x-re</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/e7c67e5d63d81afd352c7b55bf9147cbd09b9fa0</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <title>[Reddit Programming] Dependency models in npm, Yarn, pnpm, Bun, and Deno</title>
+      <link>https://blog.gaborkoos.com/posts/2026-06-11-Your-Package-Manager-Is-Lying-to-You/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/b980097cc28b90333a8bdaf951ca18910fc7b49a</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The write-up documents a disciplined hardware/protocol reverse-engineering path: inspect the vendor app, capture USB traffic operation by operation, infer the serial framing, and build Linux control tooling from reproducible packet evidence.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Separate captures per UI operation turn opaque proprietary behavior into a tractable protocol map.&lt;/li&gt;&lt;li&gt;Firmware update traffic can expose payload format and command structure when ordinary controls are still unclear.&lt;/li&gt;&lt;li&gt;The method matters more than the soundbar: isolate the transport, record known actions, infer framing, then implement the minimum useful control surface.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Compares JavaScript package managers by dependency model rather than speed: npm favors compatibility, Yarn Berry favors reproducibility, pnpm favors explicit dependency boundaries, Bun favors fast integrated tooling, and Deno favors explicit web-native security.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Package-manager migrations fail when tools assume a different filesystem and module-resolution model, even if app code and lockfiles look correct.&lt;/li&gt;&lt;li&gt;npm hides undeclared dependency access through hoisting; pnpm exposes it through stricter isolation.&lt;/li&gt;&lt;li&gt;Yarn Berry can deliver strong reproducibility for large controlled environments, but Plug&amp;#x27;n&amp;#x27;Play still pays an ecosystem compatibility tax.&lt;/li&gt;&lt;li&gt;Bun and Deno change more than installation speed because each brings runtime assumptions into dependency management.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] As an AI cautionist, I wish some of my coworkers would at least use it as a basic sanity check</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tymls8/as_an_ai_cautionist_i_wish_some_of_my_coworkers/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/451f0a97d57be02496c824435941250c3df05587</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <title>[Reddit Programming] How to read distributed traces when you didn’t write the code</title>
+      <link>https://newsletter.signoz.io/p/how-to-read-distributed-traces-when</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/1c52ab29d349222c40811236af78784984661bf0</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The thread surfaces a practical middle position on AI in engineering: even skeptics can use models as cheap review assistants for obvious mistakes, leakage, bad payload paths, and ignored error logs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The useful baseline is not autonomous coding; it is catching defects a careful reviewer would catch when humans are moving too fast.&lt;/li&gt;&lt;li&gt;AI review adds value when paired with engineering judgment and concrete diffs, not when treated as authority.&lt;/li&gt;&lt;li&gt;The examples point to process failure: teams that will not inspect logs or test assumptions need stronger review habits, with or without AI.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Gives a practical reading method for unfamiliar distributed traces: start at the root, classify spans, follow the critical path rather than the longest span, and use attributes and events to map runtime behavior back to code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Treat a trace as production documentation: root span, service boundaries, child spans, attributes, and events describe the real request path.&lt;/li&gt;&lt;li&gt;The critical path is the chain of dependent operations that blocks completion; a long parallel span may contribute nothing to latency.&lt;/li&gt;&lt;li&gt;Common trace shapes point to failure modes: staircases suggest serial work or N+1 calls, gaps suggest uninstrumented work or waiting, and synchronized endings suggest timeouts or locks.&lt;/li&gt;&lt;li&gt;Span names, service names, code attributes, and exception events can narrow an unfamiliar code search to a repo, function, file, or line.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Allowing LLM's to work fully autonomously is only viable when you have a process that automatically verifies it</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1tylg0z/allowing_llms_to_work_fully_autonomously_is_only/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-08/5df5451e7ec95cb4cef963a9c01a25087b28be0e</guid>
-      <pubDate>Mon, 08 Jun 2026 13:29:32 +0000</pubDate>
+      <title>[Reddit Programming] Inside the Miasma Software Supply Chain Attack Toolkit</title>
+      <link>https://safedep.io/inside-the-miasma-supply-chain-attack-toolkit/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/d2e05c7cd1bdc1cf6e226806ace8065c28c8b8f7</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;The post argues from a legacy-porting case that agentic coding only becomes viable when every change is constrained by an independent verifier, such as deterministic output diffs between old and new systems.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The hard part of AI coding is not generating code; it is proving that behavior stayed correct.&lt;/li&gt;&lt;li&gt;A good autonomy loop gives the model a task, runs it against a verifier, feeds back the concrete mismatch, and repeats.&lt;/li&gt;&lt;li&gt;Verification has to be external to the model&amp;#x27;s own explanation, especially for legacy migrations where plausible code can still be wrong.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Dissects leaked Miasma source as a full supply-chain attack toolkit rather than a simple worm, spanning npm, PyPI, RubyGems, GitHub Actions, AI coding-tool config poisoning, SSH movement, secret harvesting, GitHub-based C2, and provenance abuse.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The toolkit uses GitHub itself as command, control, and exfiltration infrastructure, which weakens network-level C2 detection.&lt;/li&gt;&lt;li&gt;Stolen PATs can become infrastructure for later infections when exfiltration commits embed encrypted token payloads discoverable through GitHub search.&lt;/li&gt;&lt;li&gt;The npm path includes both stolen-token publishing and OIDC trusted-publishing abuse, including Sigstore provenance generation for trojanized packages.&lt;/li&gt;&lt;li&gt;AI coding-tool config files, GitHub Actions semver tags, deployment records, and runner memory are all treated as executable attack surfaces.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] How we sync Postgres to the browser: ElectricSQL for rows, Yjs for documents</title>
+      <link>https://plain.jxd.dev/blog/realtime</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/ca6ef2180ad1026994468e6f9d3788486c2d0246</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Explains Plain&amp;#x27;s realtime architecture as a substrate rather than a per-feature bolt-on: ElectricSQL mirrors authorized Postgres row subsets into browser stores, Yjs handles collaborative documents, and TanStack DB bridges optimistic local state with authoritative database updates.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Separate state by consistency model: authoritative rows belong to Postgres replication, while concurrent document editing belongs to CRDTs.&lt;/li&gt;&lt;li&gt;The Shape proxy is the tenancy boundary; clients choose allowed tables and org scope, while the server writes the actual filters.&lt;/li&gt;&lt;li&gt;Optimistic mutations are reconciled with authoritative Electric updates by matching transaction IDs, so overlays are confirmed or rolled back rather than left stale.&lt;/li&gt;&lt;li&gt;Making liveness the default pays off for developer platforms where issues, CI, messages, agents, and teammates mutate the same objects continuously.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] SQLite improving performance with pre-sort</title>
+      <link>https://andersmurphy.com/2026/06/07/sqlite-improving-performance-with-pre-sort.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/ae73ca8153f82fa90b8c99c4fc696328b958b63e</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Shows that batching random primary-key inserts into SQLite can be improved by pre-sorting keys before insertion, because ordered B+ tree writes avoid page churn, splits, and rebalancing caused by random write order.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Random 160-bit keys preserve entropy but create the same insertion-locality problem as UUID4-style identifiers.&lt;/li&gt;&lt;li&gt;When records are already batched, sorting by key before insertion can make the storage engine&amp;#x27;s ordered data structure work with the workload rather than against it.&lt;/li&gt;&lt;li&gt;The optimization is workload-specific: it helps when random keys are inserted in large batches and the sort cost is lower than the B+ tree churn it prevents.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Optimization catalog. When float division beats integer division</title>
+      <link>https://blog.andr2i.com/posts/2026-06-08-optimization-catalog-when-float-division-beats-integer-division</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/e8479b9415def7e3dd49e8cb1b38ce515590abc1</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Walks through a counterintuitive hot-path optimization where replacing variable integer division with float64 division and conversion wins because IDIVQ throughput is worse than DIVSD for the measured independent divisions.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The benchmark showed a 28% Intel win and a smaller AMD win before broader unrolled variants were tested.&lt;/li&gt;&lt;li&gt;The speedup comes from replacing IDIVQ with DIVSD, not from removing divide-by-zero or overflow checks.&lt;/li&gt;&lt;li&gt;Correctness depends on numeric bounds: operands and quotient precision must stay within ranges where float64 represents the integer result exactly.&lt;/li&gt;&lt;li&gt;For repeated divisors, reciprocal multiplication or fast division libraries can beat the float trick; benchmark the actual hot path before changing code.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Making numpy-ts as fast as native</title>
+      <link>https://nico.codes/notes/numpyts-optimization/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/71299c5f177bcdbf4dc47db0c3c5f2d7fdfb9a25</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Documents how numpy-ts moved from broad TypeScript NumPy compatibility at roughly 15x slower than native NumPy to parity by moving hot kernels to WASM and, more importantly, moving ndarray storage into WASM-owned memory to avoid copy-in/copy-out overhead.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Pure TypeScript scalar loops were not competing with Python; they were competing with NumPy&amp;#x27;s native SIMD, BLAS, LAPACK, and mature memory model.&lt;/li&gt;&lt;li&gt;WASM kernels cut the gap but hit a ceiling while every operation copied TypedArray data into and out of WASM linear memory.&lt;/li&gt;&lt;li&gt;The architectural turn was ownership of bytes: JavaScript kept metadata and ergonomics, while data buffers and kernel outputs stayed in WASM memory.&lt;/li&gt;&lt;li&gt;Native-like performance imports native-like problems, including allocator design, lifetime tracking, dtype gaps, and explicit cleanup for long-running workloads.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] The biggest problem with AI is not correctness - it is architecture sanity</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u1tgjq/the_biggest_problem_with_ai_is_not_correctness_it/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/28ef0c30802f170c645870d48905310283aecd9d</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Argues that the harder AI-code failure mode is architectural accumulation rather than local correctness: agents readily add schemas, converters, migrations, and tests, but rarely propose deleting state or simplifying a design boundary.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tests and review can catch local defects while missing structural debt that makes future features harder to fit.&lt;/li&gt;&lt;li&gt;AI agents tend to extend existing shape instead of challenging whether the shape should exist.&lt;/li&gt;&lt;li&gt;Manual architecture and schema review remains the controlling layer; agents are better used to fill implementation space inside boundaries that humans set.&lt;/li&gt;&lt;li&gt;The failure appears later, when a major feature no longer fits the accumulated schema and the agent starts producing plausible but misaligned code.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] Mentoring juniors is still alive in the age of AI</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u2f1gl/mentoring_juniors_is_still_alive_in_the_age_of_ai/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/ae5984dd5e44a83a07564aa40f06fd61ea4224da</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;Frames junior mentoring in the AI era around system-design mental models rather than code generation: durable data contracts, composability, editable state, brittleness, failure modes, extensibility, scale, and separation still determine whether AI-assisted implementation works.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The teachable skill is not typing code faster; it is decomposing products into schemas, queues, artifacts, contracts, and state transitions.&lt;/li&gt;&lt;li&gt;AI can help juniors ask theory questions, but it does not replace the need to reason about durability, failure modes, and boundaries.&lt;/li&gt;&lt;li&gt;Juniors who vibe-code without architecture return with brittle systems; juniors who model the system first can use AI to fill in implementation effectively.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Psychology] AI construed as a brilliant friend...Claude's New Constitution</title>
+      <link>https://mindblog.dericbownds.net/2026/06/ai-construed-as-brilliant-friendclaudes.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/fc01bff7c9dd6e31fa00bf1bfce9c54a2fcd06b6</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Psychology</category>
+      <description>&lt;p&gt;Critiques Anthropic&amp;#x27;s new Claude constitution as a revealing artifact: a private firm tries to encode safety, usefulness, personality, discretion, and commercial viability into a model while speaking to it in language normally reserved for moral agents.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The hierarchy of safety, ethics, policy compliance, and helpfulness is read as a business model written in moral language.&lt;/li&gt;&lt;li&gt;Anthropomorphic training can become circular: models are taught the language of selfhood, then that language is treated as evidence of inner life.&lt;/li&gt;&lt;li&gt;Preference for standards over rules relocates discretion into the model and the company&amp;#x27;s priors rather than eliminating power.&lt;/li&gt;&lt;li&gt;The essay&amp;#x27;s strongest warning is over-reliance on a warm expert-like tool that lacks licensing, fiduciary duties, and ordinary accountability.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Visualization] Bot traffic surpasses human traffic</title>
+      <link>https://flowingdata.com/2026/06/08/bot-traffic-surpasses-human-traffic/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-11/fe92b972cac308f3683475c479adfd39a65e1080</guid>
+      <pubDate>Thu, 11 Jun 2026 11:21:26 +0000</pubDate>
+      <category>Visualization</category>
+      <description>&lt;p&gt;Notes Cloudflare CEO Matthew Prince&amp;#x27;s claim that agentic traffic has pushed bot traffic past human traffic online, only nine months after bots were around 30% of web traffic.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI scraping and agentic traffic are changing the baseline assumption that web traffic primarily represents human attention.&lt;/li&gt;&lt;li&gt;Analytics, rate limits, caching, content economics, and abuse detection become harder when automated traffic is the majority.&lt;/li&gt;&lt;li&gt;The item is short, but the direction of travel is a useful marker for product, publishing, and infrastructure planning.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
