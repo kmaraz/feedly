@@ -4,12 +4,12 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Wed, 17 Jun 2026 18:25:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 18:31:09 +0000</lastBuildDate>
     <item>
       <title>[Engineering] TBM 426: The Trouble With Mirrors</title>
       <link>https://cutlefish.substack.com/p/tbm-426-the-trouble-with-mirrors</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/00d0d46d2f7aeeb0c5f68503660e8b47c4cf8b96</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Engineering</category>
       <description>&lt;p&gt;Cutler separates organizational mirrors from mirroring: transparency tools expose one framed reality, but change requires safety, shared incentives, and recognition of people&amp;#x27;s perspective. The useful lesson is that making work visible is not neutral; truth in organizations is negotiated through frame, power, agenda, and timing.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Visibility does not create change unless people are safe and incentivized to act on what they see.&lt;/li&gt;&lt;li&gt;Dashboards, org charts, and retrospectives frame reality; the owner of the frame has power.&lt;/li&gt;&lt;li&gt;Mirroring people&amp;#x27;s experience can matter more than showing them an abstract organizational truth.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -17,7 +17,7 @@
       <title>[Frontend] Cleaning up after AI rockstar developers</title>
       <link>https://www.codingwithjesse.com/blog/rockstar-developers/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/80d1b293030e5d82510ea16b08d2ccea3efc1aed</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Frontend</category>
       <description>&lt;p&gt;Skinner uses the old rockstar-developer cleanup problem as a model for AI-generated code: fast output can leave teams with complex, inconsistent systems nobody owns. The argument is not anti-AI; it is a demand for deliberate control, simpler designs, and human taste over impressive-looking code volume.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI can scale the same maintainability failure mode as a brilliant but unreadable solo developer.&lt;/li&gt;&lt;li&gt;Speed is negative when the team cannot understand, run, or safely change what was generated.&lt;/li&gt;&lt;li&gt;The human job is to preserve a coherent design direction, not merely accept larger diffs faster.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -25,7 +25,7 @@
       <title>[Frontend] A new era for software testing</title>
       <link>https://antirez.com/news/168</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/92812ef07ebf36d7bc8b6bf8171741e050a05f50</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Frontend</category>
       <description>&lt;p&gt;Sanfilippo argues that LLMs are strongest as an added QA layer, not a replacement for deterministic test suites. Agents can follow task lists, exercise recent changes, inspect integration behavior, and perform checks that teams used to skip because manual QA was too expensive.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Use agents above normal tests for exploratory scenarios, regressions, visual checks, and integration behavior.&lt;/li&gt;&lt;li&gt;A Markdown QA task list can turn vague manual testing into repeatable agent work.&lt;/li&gt;&lt;li&gt;The result still needs human review; the value is broader coverage, not blind trust.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -33,7 +33,7 @@
       <title>[Frontend] Loop Engineering</title>
       <link>https://addyo.substack.com/p/loop-engineering</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/835943dcf9f67f2594d6194c4cf18e155210dbbe</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Frontend</category>
       <description>&lt;p&gt;Osmani describes the move from prompting one coding agent to designing loops that find work, dispatch agents, preserve project knowledge, and review outputs. The important constraint is that a loop compounds both progress and mistakes, so isolation, budgets, review, and rollback become part of the engineering problem.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The leverage shifts from writing prompts to designing the system that prompts and evaluates agents.&lt;/li&gt;&lt;li&gt;Parallel workspaces, persistent project memory, tool access, and reviewer agents are the core building blocks.&lt;/li&gt;&lt;li&gt;Loop speed is dangerous without cost limits, evidence capture, review gates, and failure recovery.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -41,7 +41,7 @@
       <title>[Frontend] The Conductor Rewrite: What They Changed to Make It Fast</title>
       <link>https://performance.dev/the-conductor-rewrite</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/bc8b95fc7956954717b02d01f9eacc6381f946b4</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Frontend</category>
       <description>&lt;p&gt;Brotzky documents a concrete rewrite of an AI coding desktop app around the actual slow surfaces: chat, worktrees, code viewing, local state, rendering, and startup path. The article is useful as a product-performance case study because the wins came from dogfooding, profiling, and cutting interactive latency where users felt it.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Performance rewrites work when scoped around measured user pain instead of abstract stack preference.&lt;/li&gt;&lt;li&gt;Dogfooding made latency impossible to ignore and turned vague complaints into specific engineering work.&lt;/li&gt;&lt;li&gt;Fast AI tools need local state, render discipline, and background-work control as much as model quality.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -49,7 +49,7 @@
       <title>[Frontend] Performance Is Not a Technical Problem</title>
       <link>https://shud.in/thoughts/performance-is-not-a-technical-problem</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/a53599a99999bd30155431615b7744d911b2da2f</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Frontend</category>
       <description>&lt;p&gt;Shu Ding argues from hundreds of performance PRs that regressions are entropy, not isolated code mistakes. The durable fix is to encode performance knowledge into defaults, constraints, instrumentation, and shared systems so teams do not rely on every engineer remembering hidden costs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Modern codebases grow faster than individual context, so performance cannot depend on memory and discipline alone.&lt;/li&gt;&lt;li&gt;Abstractions hide cost unless the system exposes or prevents the expensive path.&lt;/li&gt;&lt;li&gt;Sustainable performance work turns repeated fixes into tooling, linting, measurement, and architectural constraints.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -57,7 +57,7 @@
       <title>[Informatics] You Got Faster. Your Company Didn't.</title>
       <link>https://terriblesoftware.org/2026/06/17/you-got-faster-your-company-didnt/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/6542f2ea4bfa6ae25d0d5461bf3ae4e7a3d307c6</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Informatics</category>
       <description>&lt;p&gt;The piece explains why individual AI-assisted speed can slow a company down: unedited generated docs, PRs, tests, and decisions transfer verification work from one author to many readers. The useful rule is simple: if the author cannot defend the sentence or code path, the work is not done.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI drafts save author time but can multiply reviewer time when claims are unverified.&lt;/li&gt;&lt;li&gt;Long, confident output is not productivity when readers must re-do the thinking.&lt;/li&gt;&lt;li&gt;Compression, editing, and fact-checking are the real service a writer owes reviewers.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -65,39 +65,23 @@
       <title>[Informatics] The Siren Song of ariaNotify()</title>
       <link>https://css-tricks.com/the-siren-song-of-arianotify/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/929af4446ee845a71d63e2ed98623dc33b8f20a9</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Informatics</category>
       <description>&lt;p&gt;The article explains the new `ariaNotify()` API by comparing it with live regions, then argues for restraint: programmatic screen-reader narration solves a real accessibility gap but is easy to abuse. The durable point is that an ergonomic platform feature can still be the wrong product decision.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`ariaNotify()` can replace brittle live-region hacks for some dynamic announcements.&lt;/li&gt;&lt;li&gt;Screen-reader interruption is a user-experience cost, not a free notification channel.&lt;/li&gt;&lt;li&gt;The first question should be whether the feature should interrupt the user at all.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Informatics] Designing With Uncertainty: How AI Supercharges Probabilistic Thinking</title>
-      <link>https://smashingmagazine.com/2026/06/designing-uncertainty-how-ai-supercharges-probabilistic-thinking/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/ea6aae18275eb2cd0a8855eca75f9bffa67a5a9e</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
-      <category>Informatics</category>
-      <description>&lt;p&gt;The article frames AI product risk as probabilistic systems wrapped in deterministic interfaces. It argues that teams need to design for uncertainty explicitly: show confidence, account for model bias and perceived risk, and avoid presenting predictions as policy or fact.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI outputs are probabilistic predictions, but interfaces often make them look deterministic.&lt;/li&gt;&lt;li&gt;Product copy, defaults, and escalation paths should expose uncertainty where the user can be harmed.&lt;/li&gt;&lt;li&gt;AI is more useful as a thinking aid than as an authority layer hidden behind a polished UI.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>[Informatics] Vývojáři, víte, proč vám váš CEO bere práci, a proč je to dobrá věc?</title>
       <link>https://www.vzhurudolu.cz/blog/264-ceo-bere-praci/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/a284288903d298e8ed79c69f00bf44be7a20be9d</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Informatics</category>
       <description>&lt;p&gt;Vzhuru dolu argues that AI lets product people, CEOs, and other generalists put context directly into code through prototypes and small product changes. The strong version is not that non-engineers replace developers, but that developers must own quality and process while generalists inject customer, sales, marketing, and product context faster.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;For small product increments, writing the prototype can be cheaper than writing a long handoff document.&lt;/li&gt;&lt;li&gt;Generalists can add missing context, but code quality still needs engineering review and process.&lt;/li&gt;&lt;li&gt;Narrow I-shaped specialization is riskier when AI lowers the cost for adjacent roles to cross into implementation.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Philosophy] Pluralistic: AI and amateurism</title>
-      <link>https://pluralistic.net/2026/06/15/vernacular/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/87a3c4cb31a02202fe82b966e4b8586fa60d6a65</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
-      <category>Philosophy</category>
-      <description>&lt;p&gt;Doctorow distinguishes amateur, vernacular, and automated cultural production in the AI debate. The useful frame is that the problem is not people making imperfect work with tools; it is industrial systems using generated output to displace agency, accountability, labor, and local meaning.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Bad amateur work and extractive automated work are different social objects.&lt;/li&gt;&lt;li&gt;The AI critique is stronger when it targets power, labor, and accountability rather than taste alone.&lt;/li&gt;&lt;li&gt;Tool-assisted expression can be vernacular when the human context and intent remain load-bearing.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>[Reddit Programming] Gave in for some demo weeks in my company to do AI assisted development</title>
       <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u82dto/gave_in_for_some_demo_weeks_in_my_company_to_do/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/0caf1c760355ea9cb0061b35ac48c53aaf549521</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Reddit Programming</category>
       <description>&lt;p&gt;A mid-level developer reports real AI-assisted delivery on unfamiliar production code: strong domain context and narrow files made Claude useful, but testing still took much longer than generation. The thread is a useful field report because it separates where AI helped from where understanding and verification remained expensive.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI worked best when the human supplied domain knowledge, scoped the change, and debugged against real system behavior.&lt;/li&gt;&lt;li&gt;Generated implementation speed did not remove the cost of tests and confidence building.&lt;/li&gt;&lt;li&gt;The highest leverage came from automating painful internal workflows, not from novelty demos.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -105,7 +89,7 @@
       <title>[Reddit Programming] The real "superpower" AI unblocked is ability to ask tons of stupid questions</title>
       <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u80tnf/the_real_superpower_ai_unblocked_is_ability_to/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/055d2f723209aec1444b57508e244f1ef7e54f1e</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Reddit Programming</category>
       <description>&lt;p&gt;The post identifies a high-value AI use case that is not code generation: asking many basic system questions without social cost. For experienced engineers, that means faster context acquisition across Kafka, Terraform, Bazel, Kubernetes, internal Slack history, metrics, and database evidence.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI can turn hidden embarrassment into explicit learning loops.&lt;/li&gt;&lt;li&gt;The best workflow is iterative questioning plus evidence from internal systems, not passive explanation.&lt;/li&gt;&lt;li&gt;Context acquisition may be a larger productivity gain than producing code directly.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -113,7 +97,7 @@
       <title>[Reddit Programming] Complexity for the sake of Security</title>
       <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u7vpf3/complexity_for_the_sake_of_security/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/f4012172c2594813693298448e5e293fb12238a9</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Reddit Programming</category>
       <description>&lt;p&gt;The thread raises a common architecture failure mode: bespoke security mechanisms that add implementation and maintenance complexity without a clear threat-model win. The useful takeaway is to force security proposals through a concrete comparison against standard controls, attack paths, and operational cost.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Security complexity needs a threat model, not just an intuition that indirection is safer.&lt;/li&gt;&lt;li&gt;Standard components can be safer than custom controls because they are understood, maintained, and observable.&lt;/li&gt;&lt;li&gt;A design review should ask what attack is prevented and what new failure modes are introduced.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -121,7 +105,7 @@
       <title>[Reddit Programming] 20 YoE high coupling, low cohesion led to my current survival mantra: income, not outcome</title>
       <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u7itpp/20_yoe_high_coupling_low_cohesion_led_to_my/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/a245648cc37cede58351b476a546cf7ff131f4dc</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Reddit Programming</category>
       <description>&lt;p&gt;An experienced developer describes an AI-heavy healthcare startup where non-engineers and checked-out engineers ship LLM pipelines without evaluation, data discipline, or security boundaries. The post is valuable as a negative field report: document risks, state the case clearly, and recognize when the organization will not adopt the engineering controls it needs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;LLM pipelines in regulated domains need empirical evaluation before velocity metrics mean anything.&lt;/li&gt;&lt;li&gt;Vibe-coded data products can create security, quota, causal-inference, and data-quality failures at once.&lt;/li&gt;&lt;li&gt;When an organization refuses controls, written risk records become part of professional hygiene.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -129,7 +113,7 @@
       <title>[Reddit Programming] British Columbia, Time Zones, and Postgres</title>
       <link>https://www.crunchydata.com/blog/british-columbia-and-time-zone-changes</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/b892fff99b53f370bceb1f4be64c389856bad3c5</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Reddit Programming</category>
       <description>&lt;p&gt;Crunchy Data uses British Columbia&amp;#x27;s 2026 move to year-round UTC-7 as a concrete failure case for future scheduling. A `timestamptz` stores an instant, not the user&amp;#x27;s intended wall-clock appointment, so tzdata updates can make future local times drift from what the user entered.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Future appointments are wall-clock commitments, not just UTC instants.&lt;/li&gt;&lt;li&gt;`timestamptz` conversion depends on the timezone rules known at insert and query time.&lt;/li&gt;&lt;li&gt;Store the intended local time, timezone, and rule context when users care about calendar semantics.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -137,7 +121,7 @@
       <title>[Reddit Programming] Don't run SQL migrations in tests: How I sped up the test suite by 2x</title>
       <link>https://gaultier.github.io/blog/I_sped_up_the_test_suite_by_x2.html</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/fa7af79ced7220de7ee92807ddb6eda3943e4244</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Reddit Programming</category>
       <description>&lt;p&gt;Gaultier shows a practical test-suite speedup: stop replaying thousands of SQL migrations for every database test and copy a generated golden schema database instead. The article is useful because it starts with an upper-bound experiment before doing the real optimization.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Before optimizing, fake the ideal state to estimate the maximum possible win.&lt;/li&gt;&lt;li&gt;Database tests often need the latest schema, not the historical process that produced it.&lt;/li&gt;&lt;li&gt;A generated golden database can remove repeated migration cost while preserving test isolation.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -145,7 +129,7 @@
       <title>[Reddit Programming] Cell-Based Architecture for Resilient Payment Systems</title>
       <link>https://americanexpress.io/cell-based-architecture-for-resilient-payment-systems/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/e8cfa0f70684fc8b1ecf8eda01bb3ff91f34a921</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Reddit Programming</category>
       <description>&lt;p&gt;American Express explains how its payment platform uses independently deployable cells to bound failures, keep data local, and avoid synchronous cross-cell dependencies in transaction paths. The tradeoff is operational complexity, but the case is concrete enough to show when the blast-radius reduction is worth it.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Cells should be defined by failure boundaries, not by a fashionable infrastructure unit.&lt;/li&gt;&lt;li&gt;Critical transaction paths avoid synchronous cross-cell dependencies.&lt;/li&gt;&lt;li&gt;Reference data can be replicated ahead of time so local processing does not fall through to central systems.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -153,15 +137,31 @@
       <title>[Reddit Programming] Formal methods and the future of programming</title>
       <link>https://blog.janestreet.com/formal-methods-at-jane-street-index/</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/386c11791b5e448a29d15233d0edbf97ea452b77</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Reddit Programming</category>
       <description>&lt;p&gt;Jane Street explains why agentic coding changes its cost-benefit view of formal methods. Models lower part of the proof-writing cost, but more importantly they make verification more valuable because generated code creates a larger gap between plausible code and code safe enough to release.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agentic coding increases the value of machine-checkable verification, not just code production.&lt;/li&gt;&lt;li&gt;Formal methods may become practical when agents reduce proof boilerplate and broaden who can use the tools.&lt;/li&gt;&lt;li&gt;The hard part shifts toward specifications, invariants, and deciding what must be proven.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] We're relying on Sentry to catch all issues, but it doesn't. So what's being done about silent failures?</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u6u51a/were_relying_on_sentry_to_catch_all_issues_but_it/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/bf3b27a8da67898ec598fa0ea8c1901e9266c0c2</guid>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;The thread surfaces a monitoring gap that error tracking alone does not cover: frozen buttons, stuck forms, broken UI state, and abandoned sessions can produce no exception, no log, and no alert. The useful prompt is to treat silent failure detection as a product-observability problem, not a Sentry configuration problem.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Error trackers catch thrown failures; they miss user journeys that fail quietly.&lt;/li&gt;&lt;li&gt;Silent failures need signals such as funnel drop-offs, interaction telemetry, synthetic checks, and targeted session review.&lt;/li&gt;&lt;li&gt;A monitoring process should define expected user progress, not only unexpected exceptions.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Reddit Programming] A Wild Register Appears: Hunting the 30-Year-Old World of Xeen MT-32 Crash</title>
+      <link>https://finalpatch.github.io/xeen/index.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/ce39abdd551c884d6f530328dfca78e769c4958c</guid>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
+      <category>Reddit Programming</category>
+      <description>&lt;p&gt;A detailed debugging writeup traces a decades-old World of Xeen MT-32 crash to an interrupt-time fade routine using an uninitialized `BX` register, which randomly decremented driver memory and eventually corrupted executable code. It is a strong example of narrowing a timing-sensitive bug with negative evidence, watchpoints, and a minimal binary patch.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The investigation ruled out plausible causes before anchoring on the exact corrupted driver byte.&lt;/li&gt;&lt;li&gt;Hardware watchpoints on the corrupted address exposed the wild write directly.&lt;/li&gt;&lt;li&gt;The root cause was timing-sensitive because an interrupt handler inherited whatever `BX` value the main game held.&lt;/li&gt;&lt;li&gt;The final patch fixed the crash within the original binary-size constraint.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>[Tech] What's The Fastest Train Booking Website In Europe?</title>
       <link>https://www.debugbear.com/blog/which-european-country-has-the-fastest-train-website</link>
       <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/23e3174cca70a3ebcab14061457e57585db73ea8</guid>
-      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2026 18:31:09 +0000</pubDate>
       <category>Tech</category>
       <description>&lt;p&gt;DebugBear compares European train booking sites with CrUX Core Web Vitals and then explains why lab waterfalls can disagree with real-user performance. The useful part is not the ranking alone; it is the LCP, INP, CLS, TTFB, render-blocking CSS, and preload analysis on real transactional websites.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A fast LCP ranking can hide poor INP or CLS on multi-step booking flows.&lt;/li&gt;&lt;li&gt;Real-user CrUX data and lab waterfalls answer different questions and should be read together.&lt;/li&gt;&lt;li&gt;Large uncompressed CSS, embedded assets, and late LCP image discovery can waste performance even on apparently fast sites.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>

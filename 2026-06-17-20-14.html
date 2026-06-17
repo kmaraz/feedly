@@ -11,7 +11,7 @@
       <header class="page-header">
         <div>
           <h1>Feedly Digest</h1>
-          <p class="meta">Generated: 2026-06-17T18:25:35.131508Z</p>
+          <p class="meta">Generated: 2026-06-17T18:31:09.380213Z</p>
         </div>
         <a class="nav-link" href="./archive.html">Archive</a>
       </header>
@@ -56,20 +56,9 @@
           <p>The article explains the new `ariaNotify()` API by comparing it with live regions, then argues for restraint: programmatic screen-reader narration solves a real accessibility gap but is easy to abuse. The durable point is that an ergonomic platform feature can still be the wrong product decision.</p>
           <ul><li>`ariaNotify()` can replace brittle live-region hacks for some dynamic announcements.</li><li>Screen-reader interruption is a user-experience cost, not a free notification channel.</li><li>The first question should be whether the feature should interrupt the user at all.</li></ul>
         </article><article class="card">
-          <h3><a href="https://smashingmagazine.com/2026/06/designing-uncertainty-how-ai-supercharges-probabilistic-thinking/">Designing With Uncertainty: How AI Supercharges Probabilistic Thinking</a></h3>
-          <p>The article frames AI product risk as probabilistic systems wrapped in deterministic interfaces. It argues that teams need to design for uncertainty explicitly: show confidence, account for model bias and perceived risk, and avoid presenting predictions as policy or fact.</p>
-          <ul><li>AI outputs are probabilistic predictions, but interfaces often make them look deterministic.</li><li>Product copy, defaults, and escalation paths should expose uncertainty where the user can be harmed.</li><li>AI is more useful as a thinking aid than as an authority layer hidden behind a polished UI.</li></ul>
-        </article><article class="card">
           <h3><a href="https://www.vzhurudolu.cz/blog/264-ceo-bere-praci/">Vývojáři, víte, proč vám váš CEO bere práci, a proč je to dobrá věc?</a></h3>
           <p>Vzhuru dolu argues that AI lets product people, CEOs, and other generalists put context directly into code through prototypes and small product changes. The strong version is not that non-engineers replace developers, but that developers must own quality and process while generalists inject customer, sales, marketing, and product context faster.</p>
           <ul><li>For small product increments, writing the prototype can be cheaper than writing a long handoff document.</li><li>Generalists can add missing context, but code quality still needs engineering review and process.</li><li>Narrow I-shaped specialization is riskier when AI lowers the cost for adjacent roles to cross into implementation.</li></ul>
-        </article>
-      </section><section class="digest-section">
-        <h2>Philosophy</h2>
-        <article class="card">
-          <h3><a href="https://pluralistic.net/2026/06/15/vernacular/">Pluralistic: AI and amateurism</a></h3>
-          <p>Doctorow distinguishes amateur, vernacular, and automated cultural production in the AI debate. The useful frame is that the problem is not people making imperfect work with tools; it is industrial systems using generated output to displace agency, accountability, labor, and local meaning.</p>
-          <ul><li>Bad amateur work and extractive automated work are different social objects.</li><li>The AI critique is stronger when it targets power, labor, and accountability rather than taste alone.</li><li>Tool-assisted expression can be vernacular when the human context and intent remain load-bearing.</li></ul>
         </article>
       </section><section class="digest-section">
         <h2>Reddit Programming</h2>
@@ -105,6 +94,14 @@
           <h3><a href="https://blog.janestreet.com/formal-methods-at-jane-street-index/">Formal methods and the future of programming</a></h3>
           <p>Jane Street explains why agentic coding changes its cost-benefit view of formal methods. Models lower part of the proof-writing cost, but more importantly they make verification more valuable because generated code creates a larger gap between plausible code and code safe enough to release.</p>
           <ul><li>Agentic coding increases the value of machine-checkable verification, not just code production.</li><li>Formal methods may become practical when agents reduce proof boilerplate and broaden who can use the tools.</li><li>The hard part shifts toward specifications, invariants, and deciding what must be proven.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://www.reddit.com/r/ExperiencedDevs/comments/1u6u51a/were_relying_on_sentry_to_catch_all_issues_but_it/">We&#x27;re relying on Sentry to catch all issues, but it doesn&#x27;t. So what&#x27;s being done about silent failures?</a></h3>
+          <p>The thread surfaces a monitoring gap that error tracking alone does not cover: frozen buttons, stuck forms, broken UI state, and abandoned sessions can produce no exception, no log, and no alert. The useful prompt is to treat silent failure detection as a product-observability problem, not a Sentry configuration problem.</p>
+          <ul><li>Error trackers catch thrown failures; they miss user journeys that fail quietly.</li><li>Silent failures need signals such as funnel drop-offs, interaction telemetry, synthetic checks, and targeted session review.</li><li>A monitoring process should define expected user progress, not only unexpected exceptions.</li></ul>
+        </article><article class="card">
+          <h3><a href="https://finalpatch.github.io/xeen/index.html">A Wild Register Appears: Hunting the 30-Year-Old World of Xeen MT-32 Crash</a></h3>
+          <p>A detailed debugging writeup traces a decades-old World of Xeen MT-32 crash to an interrupt-time fade routine using an uninitialized `BX` register, which randomly decremented driver memory and eventually corrupted executable code. It is a strong example of narrowing a timing-sensitive bug with negative evidence, watchpoints, and a minimal binary patch.</p>
+          <ul><li>The investigation ruled out plausible causes before anchoring on the exact corrupted driver byte.</li><li>Hardware watchpoints on the corrupted address exposed the wild write directly.</li><li>The root cause was timing-sensitive because an interrupt handler inherited whatever `BX` value the main game held.</li><li>The final patch fixed the crash within the original binary-size constraint.</li></ul>
         </article>
       </section><section class="digest-section">
         <h2>Tech</h2>
