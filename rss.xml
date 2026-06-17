@@ -4,134 +4,166 @@
     <title>Feedly Digest</title>
     <link>https://www.maraz.sk/feedly/</link>
     <description>Current article list from the Feedly digest on maraz.sk.</description>
-    <lastBuildDate>Sat, 13 Jun 2026 20:40:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 18:25:35 +0000</lastBuildDate>
     <item>
-      <title>[Engineering] The Pulse: a trend of trying to cut back on AI spend within eng departments?</title>
-      <link>https://blog.pragmaticengineer.com/the-pulse-a-trend-of-trying-to-cut-back-on-ai-spend-within-eng-departments/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/0c02618a56376c9079ebb01ef5f6cb8f85a3adcf</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Engineering] TBM 426: The Trouble With Mirrors</title>
+      <link>https://cutlefish.substack.com/p/tbm-426-the-trouble-with-mirrors</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/00d0d46d2f7aeeb0c5f68503660e8b47c4cf8b96</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Engineering</category>
-      <description>&lt;p&gt;Reports an emerging shift from AI-tool adoption metrics to AI-tool cost control: code-assist usage is rising, but leaders still struggle to connect token spend and AI-generated commits to shipped product outcomes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Usage metrics such as AI-generated commits and token consumption are weak ROI proxies unless tied to work that would otherwise have stayed below the line.&lt;/li&gt;&lt;li&gt;Large companies are moving toward token budgets, model routing, cheaper fallback models, and explicit usage justification.&lt;/li&gt;&lt;li&gt;Smaller teams are using fixed-price Claude Code or Codex subscriptions as a way to cap API exposure while keeping developers on capable tools.&lt;/li&gt;&lt;li&gt;AI efficiency is becoming an engineering operations problem, not only an individual prompting skill.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Cutler separates organizational mirrors from mirroring: transparency tools expose one framed reality, but change requires safety, shared incentives, and recognition of people&amp;#x27;s perspective. The useful lesson is that making work visible is not neutral; truth in organizations is negotiated through frame, power, agenda, and timing.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Visibility does not create change unless people are safe and incentivized to act on what they see.&lt;/li&gt;&lt;li&gt;Dashboards, org charts, and retrospectives frame reality; the owner of the frame has power.&lt;/li&gt;&lt;li&gt;Mirroring people&amp;#x27;s experience can matter more than showing them an abstract organizational truth.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Engineering] The Pulse: Antigravity 2.0 takes 'IDE' out of its new IDE</title>
-      <link>https://blog.pragmaticengineer.com/the-pulse-antigravity-2-0-takes-ide-out-of-its-new-ide/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/c2beef4d65de0d58517ea0b7799fb74c2cc440b5</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
-      <category>Engineering</category>
-      <description>&lt;p&gt;Dissects Google&amp;#x27;s Antigravity 2.0 relaunch as a rushed split between the old IDE and a Codex-like conversational app, with early feedback centered on bugs, confusing product direction, weak model support, and quota burn.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI coding tools now compete as workflow surfaces, not just model wrappers; a confusing migration path damages trust quickly.&lt;/li&gt;&lt;li&gt;Quota economics show up directly in UX when an agent can consume a monthly plan&amp;#x27;s daily allowance in minutes.&lt;/li&gt;&lt;li&gt;Model availability matters as much as UI polish when developers compare agent tools across Anthropic, OpenAI, Google, and local ecosystems.&lt;/li&gt;&lt;li&gt;A vendor replacing an open CLI with a closed one is a product-strategy signal, not just a packaging change.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Frontend] Cleaning up after AI rockstar developers</title>
+      <link>https://www.codingwithjesse.com/blog/rockstar-developers/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/80d1b293030e5d82510ea16b08d2ccea3efc1aed</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Skinner uses the old rockstar-developer cleanup problem as a model for AI-generated code: fast output can leave teams with complex, inconsistent systems nobody owns. The argument is not anti-AI; it is a demand for deliberate control, simpler designs, and human taste over impressive-looking code volume.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI can scale the same maintainability failure mode as a brilliant but unreadable solo developer.&lt;/li&gt;&lt;li&gt;Speed is negative when the team cannot understand, run, or safely change what was generated.&lt;/li&gt;&lt;li&gt;The human job is to preserve a coherent design direction, not merely accept larger diffs faster.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] Why Isn't My 3D View Transition Working?</title>
-      <link>https://css-tricks.com/why-isnt-my-3d-view-transition-working/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/d5176654266524ba04c931c05af474c6bbc9cbe8</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Frontend] A new era for software testing</title>
+      <link>https://antirez.com/news/168</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/92812ef07ebf36d7bc8b6bf8171741e050a05f50</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Sanfilippo argues that LLMs are strongest as an added QA layer, not a replacement for deterministic test suites. Agents can follow task lists, exercise recent changes, inspect integration behavior, and perform checks that teams used to skip because manual QA was too expensive.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Use agents above normal tests for exploratory scenarios, regressions, visual checks, and integration behavior.&lt;/li&gt;&lt;li&gt;A Markdown QA task list can turn vague manual testing into repeatable agent work.&lt;/li&gt;&lt;li&gt;The result still needs human review; the value is broader coverage, not blind trust.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Frontend] Loop Engineering</title>
+      <link>https://addyo.substack.com/p/loop-engineering</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/835943dcf9f67f2594d6194c4cf18e155210dbbe</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Osmani describes the move from prompting one coding agent to designing loops that find work, dispatch agents, preserve project knowledge, and review outputs. The important constraint is that a loop compounds both progress and mistakes, so isolation, budgets, review, and rollback become part of the engineering problem.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The leverage shifts from writing prompts to designing the system that prompts and evaluates agents.&lt;/li&gt;&lt;li&gt;Parallel workspaces, persistent project memory, tool access, and reviewer agents are the core building blocks.&lt;/li&gt;&lt;li&gt;Loop speed is dangerous without cost limits, evidence capture, review gates, and failure recovery.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Frontend] The Conductor Rewrite: What They Changed to Make It Fast</title>
+      <link>https://performance.dev/the-conductor-rewrite</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/bc8b95fc7956954717b02d01f9eacc6381f946b4</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Brotzky documents a concrete rewrite of an AI coding desktop app around the actual slow surfaces: chat, worktrees, code viewing, local state, rendering, and startup path. The article is useful as a product-performance case study because the wins came from dogfooding, profiling, and cutting interactive latency where users felt it.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Performance rewrites work when scoped around measured user pain instead of abstract stack preference.&lt;/li&gt;&lt;li&gt;Dogfooding made latency impossible to ignore and turned vague complaints into specific engineering work.&lt;/li&gt;&lt;li&gt;Fast AI tools need local state, render discipline, and background-work control as much as model quality.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Frontend] Performance Is Not a Technical Problem</title>
+      <link>https://shud.in/thoughts/performance-is-not-a-technical-problem</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/a53599a99999bd30155431615b7744d911b2da2f</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <category>Frontend</category>
+      <description>&lt;p&gt;Shu Ding argues from hundreds of performance PRs that regressions are entropy, not isolated code mistakes. The durable fix is to encode performance knowledge into defaults, constraints, instrumentation, and shared systems so teams do not rely on every engineer remembering hidden costs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Modern codebases grow faster than individual context, so performance cannot depend on memory and discipline alone.&lt;/li&gt;&lt;li&gt;Abstractions hide cost unless the system exposes or prevents the expensive path.&lt;/li&gt;&lt;li&gt;Sustainable performance work turns repeated fixes into tooling, linting, measurement, and architectural constraints.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Informatics] You Got Faster. Your Company Didn't.</title>
+      <link>https://terriblesoftware.org/2026/06/17/you-got-faster-your-company-didnt/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/6542f2ea4bfa6ae25d0d5461bf3ae4e7a3d307c6</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Explains why cross-document View Transition snapshots flatten normal 3D transforms and shows the practical fix: use the `perspective()` transform function in the keyframes instead of relying on a parent `perspective` property.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;View transition pseudo-elements are rendered outside the ordinary DOM flow, so parent-based 3D context can disappear.&lt;/li&gt;&lt;li&gt;`perspective` as a property needs a parent; `perspective()` as a transform function travels with the animated pseudo-element.&lt;/li&gt;&lt;li&gt;For root-level page flips, put `perspective(1100px)` inside the `transform` used by `::view-transition-old()` and `::view-transition-new()` animations.&lt;/li&gt;&lt;li&gt;A comment adds another valid route: set perspective on `::view-transition-image-pair(root)`, the direct parent of the old and new images.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The piece explains why individual AI-assisted speed can slow a company down: unedited generated docs, PRs, tests, and decisions transfer verification work from one author to many readers. The useful rule is simple: if the author cannot defend the sentence or code path, the work is not done.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI drafts save author time but can multiply reviewer time when claims are unverified.&lt;/li&gt;&lt;li&gt;Long, confident output is not productivity when readers must re-do the thinking.&lt;/li&gt;&lt;li&gt;Compression, editing, and fact-checking are the real service a writer owes reviewers.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Informatics] I Am Not a Reverse Centaur</title>
-      <link>https://blog.miguelgrinberg.com/post/i-am-not-a-reverse-centaur</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/a631a425811c18cd3f7de38e716f58b057d78e3d</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Informatics] The Siren Song of ariaNotify()</title>
+      <link>https://css-tricks.com/the-siren-song-of-arianotify/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/929af4446ee845a71d63e2ed98623dc33b8f20a9</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Informatics</category>
-      <description>&lt;p&gt;Argues that LLM-generated drive-by pull requests shift review labor onto maintainers, and sets a hard contribution policy: discuss the issue first, prove human engagement, and do not expect maintainers to audit machine-generated code on demand.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The maintainer bottleneck moves from writing code to deciding whether unsolicited generated code deserves attention.&lt;/li&gt;&lt;li&gt;Contribution rules can require prior issue discussion so the maintainer evaluates intent before reviewing a large patch.&lt;/li&gt;&lt;li&gt;A no-unsolicited-PR policy is a rational response when generated patches destroy the old signal that a contributor invested real effort.&lt;/li&gt;&lt;li&gt;The durable lesson is review-cost control: maintainer time is a scarce resource and generated code can spend it without consent.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The article explains the new `ariaNotify()` API by comparing it with live regions, then argues for restraint: programmatic screen-reader narration solves a real accessibility gap but is easy to abuse. The durable point is that an ergonomic platform feature can still be the wrong product decision.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;`ariaNotify()` can replace brittle live-region hacks for some dynamic announcements.&lt;/li&gt;&lt;li&gt;Screen-reader interruption is a user-experience cost, not a free notification channel.&lt;/li&gt;&lt;li&gt;The first question should be whether the feature should interrupt the user at all.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Philosophy] Google's new remote attestation scheme is every bit as terrible as its old remote attestation scheme</title>
-      <link>https://pluralistic.net/2026/06/12/compelled-speech/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/c535bbd79e47839877da898fb821f87da208837b</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Informatics] Designing With Uncertainty: How AI Supercharges Probabilistic Thinking</title>
+      <link>https://smashingmagazine.com/2026/06/designing-uncertainty-how-ai-supercharges-probabilistic-thinking/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/ea6aae18275eb2cd0a8855eca75f9bffa67a5a9e</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;The article frames AI product risk as probabilistic systems wrapped in deterministic interfaces. It argues that teams need to design for uncertainty explicitly: show confidence, account for model bias and perceived risk, and avoid presenting predictions as policy or fact.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI outputs are probabilistic predictions, but interfaces often make them look deterministic.&lt;/li&gt;&lt;li&gt;Product copy, defaults, and escalation paths should expose uncertainty where the user can be harmed.&lt;/li&gt;&lt;li&gt;AI is more useful as a thinking aid than as an authority layer hidden behind a polished UI.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Informatics] Vývojáři, víte, proč vám váš CEO bere práci, a proč je to dobrá věc?</title>
+      <link>https://www.vzhurudolu.cz/blog/264-ceo-bere-praci/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/a284288903d298e8ed79c69f00bf44be7a20be9d</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <category>Informatics</category>
+      <description>&lt;p&gt;Vzhuru dolu argues that AI lets product people, CEOs, and other generalists put context directly into code through prototypes and small product changes. The strong version is not that non-engineers replace developers, but that developers must own quality and process while generalists inject customer, sales, marketing, and product context faster.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;For small product increments, writing the prototype can be cheaper than writing a long handoff document.&lt;/li&gt;&lt;li&gt;Generalists can add missing context, but code quality still needs engineering review and process.&lt;/li&gt;&lt;li&gt;Narrow I-shaped specialization is riskier when AI lowers the cost for adjacent roles to cross into implementation.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>[Philosophy] Pluralistic: AI and amateurism</title>
+      <link>https://pluralistic.net/2026/06/15/vernacular/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/87a3c4cb31a02202fe82b966e4b8586fa60d6a65</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Philosophy</category>
-      <description>&lt;p&gt;Frames Google&amp;#x27;s new Android remote-attestation proposal as the same anti-user-agent pattern as earlier Web Environment Integrity efforts: servers get more power to demand proof of an approved client environment.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The core objection is architectural: a browser should act for the user, not prove user compliance to every remote service.&lt;/li&gt;&lt;li&gt;Remote attestation makes modified clients, privacy tools, accessibility tooling, and de-Googled devices easier to exclude.&lt;/li&gt;&lt;li&gt;Changing the interaction shape, such as adding QR-code flows, does not remove the platform-control problem.&lt;/li&gt;&lt;li&gt;The long-term risk is a web where interoperability is conditional on vendor-approved execution environments.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Doctorow distinguishes amateur, vernacular, and automated cultural production in the AI debate. The useful frame is that the problem is not people making imperfect work with tools; it is industrial systems using generated output to displace agency, accountability, labor, and local meaning.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Bad amateur work and extractive automated work are different social objects.&lt;/li&gt;&lt;li&gt;The AI critique is stronger when it targets power, labor, and accountability rather than taste alone.&lt;/li&gt;&lt;li&gt;Tool-assisted expression can be vernacular when the human context and intent remain load-bearing.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Philosophy] Shareholder supremacy and the precog CEO</title>
-      <link>https://pluralistic.net/2026/06/13/minority-shareholder-report/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/a38de794090017171eef0cc662dff91805c9ce26</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
-      <category>Philosophy</category>
-      <description>&lt;p&gt;Uses shareholder supremacy as a case study in fake objectivity: &amp;#x27;maximize shareholder value&amp;#x27; looks like a clean management rule, but it becomes unfalsifiable once decisions require predicting alternate futures.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A metric can look objective while still being impossible to evaluate without a counterfactual world.&lt;/li&gt;&lt;li&gt;The phrase &amp;#x27;as much money as possible&amp;#x27; quietly turns into &amp;#x27;try to make as much money as possible&amp;#x27;, which reintroduces judgment and excuses.&lt;/li&gt;&lt;li&gt;Bright-line business rules can become accountability sinks when leaders use them to justify decisions after the fact.&lt;/li&gt;&lt;li&gt;The useful management lesson is to distrust crisp slogans that cannot be tested at decision time.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] Analysis: code duplication change across open-source codebases</title>
-      <link>https://rkochanowski.com/article/analysis-code-duplication/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/30323ddaada9c1a996938cec5559e3f000df28ea</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Reddit Programming] Gave in for some demo weeks in my company to do AI assisted development</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u82dto/gave_in_for_some_demo_weeks_in_my_company_to_do/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/0caf1c760355ea9cb0061b35ac48c53aaf549521</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Tests the claim that AI coding increases duplication across 14 established open-source projects and finds no clear trend, with the stronger result being methodological: averages, project selection, and duplicate-detection definitions can manufacture misleading narratives.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Semantic similarity is more relevant than exact copies when evaluating AI-style duplication, but it is also harder to interpret.&lt;/li&gt;&lt;li&gt;The average hid large per-project variance; some projects rose, some fell, and some fluctuated.&lt;/li&gt;&lt;li&gt;The analysis does not prove AI has no duplication effect; it proves this small method cannot support the claim.&lt;/li&gt;&lt;li&gt;For AI-code-quality arguments, the evidence design matters more than whether the chart fits the preferred story.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;A mid-level developer reports real AI-assisted delivery on unfamiliar production code: strong domain context and narrow files made Claude useful, but testing still took much longer than generation. The thread is a useful field report because it separates where AI helped from where understanding and verification remained expensive.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI worked best when the human supplied domain knowledge, scoped the change, and debugged against real system behavior.&lt;/li&gt;&lt;li&gt;Generated implementation speed did not remove the cost of tests and confidence building.&lt;/li&gt;&lt;li&gt;The highest leverage came from automating painful internal workflows, not from novelty demos.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] The No-Thought Push for AI has Taken the Little Joy I had Left for Corporate Software Engineering</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u37ew1/the_nothought_push_for_ai_has_taken_the_little/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/bd5575ec75c4686b6f9950ee2d0eb03d66827062</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Reddit Programming] The real "superpower" AI unblocked is ability to ask tons of stupid questions</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u80tnf/the_real_superpower_ai_unblocked_is_ability_to/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/055d2f723209aec1444b57508e244f1ef7e54f1e</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;A senior developer describes mandated AI adoption where token-use pressure, generated migration skills, and teammates unable to explain generated architecture create more review and ownership cost than manual implementation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI adoption metrics can incentivize worse engineering when they reward token use instead of verified outcomes.&lt;/li&gt;&lt;li&gt;Generated migration helpers still need architecture judgment, handholding, and review; those costs belong in the ROI calculation.&lt;/li&gt;&lt;li&gt;If an author cannot explain generated architecture or flow, the team has inherited code without real ownership.&lt;/li&gt;&lt;li&gt;The useful boundary is verifiability: use AI where outputs can be checked cheaply and reject it where review costs exceed implementation costs.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The post identifies a high-value AI use case that is not code generation: asking many basic system questions without social cost. For experienced engineers, that means faster context acquisition across Kafka, Terraform, Bazel, Kubernetes, internal Slack history, metrics, and database evidence.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI can turn hidden embarrassment into explicit learning loops.&lt;/li&gt;&lt;li&gt;The best workflow is iterative questioning plus evidence from internal systems, not passive explanation.&lt;/li&gt;&lt;li&gt;Context acquisition may be a larger productivity gain than producing code directly.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Strange experience with DDD</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u4viql/strange_experience_with_ddd/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/3cafff03d628d475063b0e3cb559c8404f46ba9d</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Reddit Programming] Complexity for the sake of Security</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u7vpf3/complexity_for_the_sake_of_security/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/f4012172c2594813693298448e5e293fb12238a9</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;A ten-year developer describes a ten-person team maintaining roughly 50 tiny microservices because every table became its own service, creating pipeline and infrastructure drag while the team labels the result DDD.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;DDD does not require one service per database table; service boundaries should reflect cohesive business capabilities.&lt;/li&gt;&lt;li&gt;A modular monolith can preserve internal ownership and boundaries without multiplying deployment, pipeline, and observability overhead.&lt;/li&gt;&lt;li&gt;When framework, CI, infra, and config dominate business logic, service granularity is probably too fine.&lt;/li&gt;&lt;li&gt;The migration argument should be operational: quantify pipeline time, failure rate, ownership friction, and duplicated platform work.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;The thread raises a common architecture failure mode: bespoke security mechanisms that add implementation and maintenance complexity without a clear threat-model win. The useful takeaway is to force security proposals through a concrete comparison against standard controls, attack paths, and operational cost.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Security complexity needs a threat model, not just an intuition that indirection is safer.&lt;/li&gt;&lt;li&gt;Standard components can be safer than custom controls because they are understood, maintained, and observable.&lt;/li&gt;&lt;li&gt;A design review should ask what attack is prevented and what new failure modes are introduced.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Signals, the push-pull based algorithm</title>
-      <link>https://willybrauner.com/journal/signal-the-push-pull-based-algorithm</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/2eae37f51cdc3f37825066c11b68adce01d1ee9e</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Reddit Programming] 20 YoE high coupling, low cohesion led to my current survival mantra: income, not outcome</title>
+      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u7itpp/20_yoe_high_coupling_low_cohesion_led_to_my/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/a245648cc37cede58351b476a546cf7ff131f4dc</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Walks through signal reactivity as a push-pull algorithm: sources push invalidation through the graph while derived computations pull fresh values lazily when observed.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Signals model state as source values plus derived rules, closer to a spreadsheet than an event bus.&lt;/li&gt;&lt;li&gt;Pure derived values can be invalidated eagerly without recomputing until someone reads them.&lt;/li&gt;&lt;li&gt;The push phase propagates dirtiness; the pull phase recomputes only what is demanded.&lt;/li&gt;&lt;li&gt;Understanding the algorithm clarifies why signal systems can avoid broad component rerenders while preserving dependency tracking.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;An experienced developer describes an AI-heavy healthcare startup where non-engineers and checked-out engineers ship LLM pipelines without evaluation, data discipline, or security boundaries. The post is valuable as a negative field report: document risks, state the case clearly, and recognize when the organization will not adopt the engineering controls it needs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;LLM pipelines in regulated domains need empirical evaluation before velocity metrics mean anything.&lt;/li&gt;&lt;li&gt;Vibe-coded data products can create security, quota, causal-inference, and data-quality failures at once.&lt;/li&gt;&lt;li&gt;When an organization refuses controls, written risk records become part of professional hygiene.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] A Wild Register Appears: Hunting the 30-Year-Old World of Xeen MT-32 Crash</title>
-      <link>https://finalpatch.github.io/xeen/index.html</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/ce39abdd551c884d6f530328dfca78e769c4958c</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Reddit Programming] British Columbia, Time Zones, and Postgres</title>
+      <link>https://www.crunchydata.com/blog/british-columbia-and-time-zone-changes</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/b892fff99b53f370bceb1f4be64c389856bad3c5</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;A disciplined debugging writeup traces a decades-old MT-32 crash in World of Xeen to an uninitialized `BX` register in an interrupt-time fade routine that randomly decremented driver memory and eventually corrupted executable code.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The author eliminated plausible causes with negative evidence before anchoring on confirmed corrupted driver bytes.&lt;/li&gt;&lt;li&gt;Hardware watchpoints on the exact corrupted byte exposed the wild write instead of relying on broad abnormality heuristics.&lt;/li&gt;&lt;li&gt;The root bug was timing-sensitive because the timer interrupt used whatever `BX` value the main game code happened to hold.&lt;/li&gt;&lt;li&gt;The final fix was a length-preserving ten-byte binary patch that also corrected a hidden percussion/effects channel transposition.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Crunchy Data uses British Columbia&amp;#x27;s 2026 move to year-round UTC-7 as a concrete failure case for future scheduling. A `timestamptz` stores an instant, not the user&amp;#x27;s intended wall-clock appointment, so tzdata updates can make future local times drift from what the user entered.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Future appointments are wall-clock commitments, not just UTC instants.&lt;/li&gt;&lt;li&gt;`timestamptz` conversion depends on the timezone rules known at insert and query time.&lt;/li&gt;&lt;li&gt;Store the intended local time, timezone, and rule context when users care about calendar semantics.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Ported my C game to WASM, here's every bug that I hit</title>
-      <link>https://ernesernesto.github.io/writes/portingmatchmorphosistowasm/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/03fd9fa4ed0cb321a4e11d80be7d2d9d554e3bb8</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Reddit Programming] Don't run SQL migrations in tests: How I sped up the test suite by 2x</title>
+      <link>https://gaultier.github.io/blog/I_sped_up_the_test_suite_by_x2.html</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/fa7af79ced7220de7ee92807ddb6eda3943e4244</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;A practical C-to-WASM porting report documents non-obvious failures around 32-bit pointers, serialized runtime structs, WebGL strictness, GLSL ES differences, and Emscripten exports.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Persisted asset formats must not serialize raw pointers or native struct layouts; WASM&amp;#x27;s 32-bit address space changes offsets.&lt;/li&gt;&lt;li&gt;A 32-bit native build can reproduce many WASM-only memory layout failures before debugging in the browser.&lt;/li&gt;&lt;li&gt;Bugs masked by 64-bit pointer sizes can become immediate corruption when pointer fields shrink to four bytes.&lt;/li&gt;&lt;li&gt;Graphics and runtime glue failures are often stricter API-contract issues, not only compiler or Emscripten problems.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Gaultier shows a practical test-suite speedup: stop replaying thousands of SQL migrations for every database test and copy a generated golden schema database instead. The article is useful because it starts with an upper-bound experiment before doing the real optimization.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Before optimizing, fake the ideal state to estimate the maximum possible win.&lt;/li&gt;&lt;li&gt;Database tests often need the latest schema, not the historical process that produced it.&lt;/li&gt;&lt;li&gt;A generated golden database can remove repeated migration cost while preserving test isolation.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] astro.config.mjs Supply Chain Attack via Blockchain C2</title>
-      <link>https://safedep.io/astro-config-blockchain-c2-supply-chain/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/db9522677a08cf0ea8cf537615b2673d3cde76e5</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Reddit Programming] Cell-Based Architecture for Resilient Payment Systems</title>
+      <link>https://americanexpress.io/cell-based-architecture-for-resilient-payment-systems/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/e8cfa0f70684fc8b1ecf8eda01bb3ff91f34a921</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;Breaks down a malicious pull request that hid an executable payload in `astro.config.mjs`, used horizontal whitespace to evade GitHub diff review, and resolved second-stage commands through public blockchain infrastructure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Build and dev config files are executable attack surfaces; reviewing dependency changes alone misses this class of compromise.&lt;/li&gt;&lt;li&gt;Horizontal whitespace can hide payloads from normal vertical diff review, so suspicious config changes need raw-file or wrap-aware inspection.&lt;/li&gt;&lt;li&gt;A plausible PR description and fake test plan are part of the exploit, not incidental noise.&lt;/li&gt;&lt;li&gt;Public blockchain RPC can act as resilient command infrastructure, so blocking fixed C2 hosts may not be enough.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;American Express explains how its payment platform uses independently deployable cells to bound failures, keep data local, and avoid synchronous cross-cell dependencies in transaction paths. The tradeoff is operational complexity, but the case is concrete enough to show when the blast-radius reduction is worth it.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Cells should be defined by failure boundaries, not by a fashionable infrastructure unit.&lt;/li&gt;&lt;li&gt;Critical transaction paths avoid synchronous cross-cell dependencies.&lt;/li&gt;&lt;li&gt;Reference data can be replicated ahead of time so local processing does not fall through to central systems.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Currently migrating an old app from a new tech stack -- new tech lead wants to change the tech stack during mid-migration, and we're redesigning the UI at the same time. Is this a good idea?</title>
-      <link>https://www.reddit.com/r/ExperiencedDevs/comments/1u3q7rp/currently_migrating_an_old_app_from_a_new_tech/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/14f9b43abb89fbbd9346c3666bc58637528a2d11</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
+      <title>[Reddit Programming] Formal methods and the future of programming</title>
+      <link>https://blog.janestreet.com/formal-methods-at-jane-street-index/</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/386c11791b5e448a29d15233d0edbf97ea452b77</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
       <category>Reddit Programming</category>
-      <description>&lt;p&gt;A team is 20% through a Meteor-to-Angular migration when a new React-oriented lead wants to restart the target stack while a UI redesign is also in flight, partly arguing that AI can absorb the framework knowledge gap.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Changing framework, migration target, and UI design at once destroys the ability to isolate risk.&lt;/li&gt;&lt;li&gt;Stack choice should be a project decision with explicit constraints, not a function of the current lead&amp;#x27;s strongest framework.&lt;/li&gt;&lt;li&gt;AI familiarity with React is not a substitute for team ownership, debugging depth, and migration sequencing.&lt;/li&gt;&lt;li&gt;A safer plan would separate redesign, migration, and framework pivot into independently reversible decisions.&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Jane Street explains why agentic coding changes its cost-benefit view of formal methods. Models lower part of the proof-writing cost, but more importantly they make verification more valuable because generated code creates a larger gap between plausible code and code safe enough to release.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agentic coding increases the value of machine-checkable verification, not just code production.&lt;/li&gt;&lt;li&gt;Formal methods may become practical when agents reduce proof boilerplate and broaden who can use the tools.&lt;/li&gt;&lt;li&gt;The hard part shifts toward specifications, invariants, and deciding what must be proven.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>[Reddit Programming] Tracing an 8kb Postgres read</title>
-      <link>https://frn.sh/8kb-read/</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/9072614a07c1e1a0c8d18f423dd467d6a3ce8635</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Recreates a production IOPS incident to show the real cost of a scattered Postgres index scan across shared buffers, the OS page cache, local NVMe, and network-attached EBS.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A shared-buffer miss is not automatically a disk read; the OS page cache can still serve the block in microseconds.&lt;/li&gt;&lt;li&gt;The same 504 reads cost about 0.57 ms from shared buffers, 2.3 ms from OS cache, and 40 ms from local NVMe in the reproduction.&lt;/li&gt;&lt;li&gt;Read order matters: sorted heap access enables readahead, while random index-order reads force per-page latency.&lt;/li&gt;&lt;li&gt;Production EBS reads were roughly another order slower, turning an inefficient plan into an IOPS incident.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>[Reddit Programming] A Drizzle Migration Linter for Zero-Downtime Postgres Deploys</title>
-      <link>https://archestra.ai/blog/drizzle-migration-linter</link>
-      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-13/8f258190fe91d0335910ab5c1057871bb5bc39f2</guid>
-      <pubDate>Sat, 13 Jun 2026 20:40:43 +0000</pubDate>
-      <category>Reddit Programming</category>
-      <description>&lt;p&gt;Shows why generated Drizzle migrations can be schema-correct but rollout-unsafe, then describes a CI linter that rejects drops, renames, required columns, and other changes that break old and new pods running together.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Zero-downtime deploys require compatibility across old code, new code, workers, and the database at the same time.&lt;/li&gt;&lt;li&gt;Expand/contract migration phases should be enforced mechanically rather than rediscovered in every review.&lt;/li&gt;&lt;li&gt;A final schema can be correct while the path to it is unsafe during a rolling deploy.&lt;/li&gt;&lt;li&gt;The useful CI rule is boring and explicit: block dangerous operations unless the migration is split or documented as a maintenance-window change.&lt;/li&gt;&lt;/ul&gt;</description>
+      <title>[Tech] What's The Fastest Train Booking Website In Europe?</title>
+      <link>https://www.debugbear.com/blog/which-european-country-has-the-fastest-train-website</link>
+      <guid isPermaLink="false">https://www.maraz.sk/feedly/rss.xml/2026-06-17/23e3174cca70a3ebcab14061457e57585db73ea8</guid>
+      <pubDate>Wed, 17 Jun 2026 18:25:35 +0000</pubDate>
+      <category>Tech</category>
+      <description>&lt;p&gt;DebugBear compares European train booking sites with CrUX Core Web Vitals and then explains why lab waterfalls can disagree with real-user performance. The useful part is not the ranking alone; it is the LCP, INP, CLS, TTFB, render-blocking CSS, and preload analysis on real transactional websites.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;A fast LCP ranking can hide poor INP or CLS on multi-step booking flows.&lt;/li&gt;&lt;li&gt;Real-user CrUX data and lab waterfalls answer different questions and should be read together.&lt;/li&gt;&lt;li&gt;Large uncompressed CSS, embedded assets, and late LCP image discovery can waste performance even on apparently fast sites.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
